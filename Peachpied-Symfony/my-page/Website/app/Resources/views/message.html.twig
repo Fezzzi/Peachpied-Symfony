@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% set endings = [
+    'Best Wishes',
+    'Kind Regards',
+    'Yours respectfully',
+    'Have A Nice Day',
+    'Regards',
+    'Sincerely',
+    'Best Regards',
+    'Yours Faithfully',
+    'Cheers',
+    'XOXO',
+    'Love',
+    'Take Care'
+] %}
+
+{% block body %}
+    {% set ending = random(endings) %}
+    <form>
+        <h2><strong>Dear Creator,</strong></h2>
+        <textarea class="message-input" rows="7" cols="90" style="resize: vertical; overflow: auto"
+                    placeholder="Type your message there."></textarea>
+        <h2><strong>{{ ending }}</strong></h2>
+        <h3 style="margin-top: 0">{{ app.user.username }}</h3>
+
+        <div style="width: 100%; text-align: center; display: inline-block">
+            <button class="form-control btn-login btn-made-sport fa fa-envelope fa-2x" type="button"
+                    style="margin-top: 50px; margin-left: 0; width: 100px;" onclick='corfirmMail("{{ ending }}")'></button>
+        </div>
+    </form>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.18.0/sweetalert2.all.min.js"></script>
+
+    <script>
+        function corfirmMail(ending){
+            let mail = $('textarea')[0].value;
+            if(mail === "") {
+                $('button')[0].classList.add("apply-shake");
+                $('button')[0].addEventListener("animationend", (e) => {
+                    $('button')[0].classList.remove("apply-shake");
+                });
+            }
+            else
+                swal({
+                    html:`
+                        <h2 style="margin-left: 15px; margin-right: 15px">Do you want to send this message to the creator?</h2>
+                        <div align="left" style="margin-left: 30px">
+                            <h3><strong>Dear Creator,<strong></h3>
+                            <h4 style="margin-left: 15px; margin-right: 60px">` + mail + `</h4>
+                            <h3><strong>` + ending + `</strong></h3>
+                            <h4 style="margin-top: 0">{{ app.user.username }}</h4>
+                        <div>
+                    `,
+                    width: '70%',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'send',
+                    cancelButtonText: 'cancel',
+                    confirmButtonClass: 'btn btn-success js-sp-error',
+                    cancelButtonClass: 'btn btn-danger',
+                    buttonsStyling: false,
+                    reverseButtons: true,
+                }).then((value) => {
+                    if (value.value === true){
+                        const url = Routing.generate('log_message');
+                        console.log(url);
+                        let data = JSON.stringify(mail);
+                        $.ajax({
+                            url,
+                            method: 'POST',
+                            data: data
+                        }).then((data) => {
+                            swal({
+                                title: 'Message sent successfully.',
+                                type: 'success',
+                                showConfirmButton: false,
+                                timer: 800,
+                            }).then((data) => {
+                                location.reload();
+                            });
+                        }).catch((jqXHR) => {
+                            swal({
+                                title: 'Ooops, looks like something went wrong.',
+                                type: 'warning',
+                                showConfirmButton: false,
+                                timer: 2000,
+                            });
+                        });
+                    }
+                })
+        }
+    </script>
+{% endblock %}

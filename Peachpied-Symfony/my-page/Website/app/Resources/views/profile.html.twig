@@ -1,0 +1,491 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="row" style="margin-left: 5px; margin-right: 5px">
+        <div class="js-profile-wrapper">
+            <table align="center" style="margin-top: 50px; margin-bottom: 50px">
+                <tr>
+                    <td width="30%">
+                        <div style="position: relative" class="pull-right">
+                            <img src="{{ user_info.avatar }}" class="img-circle js-avatar my-img-style-static pull-right"
+                             width="250" height="250" style="z-index: 4" onerror="imageError(this)">
+                            {% if allow_edit %}
+                                <label for="file" class="btn" style="color: darkgray; position: absolute">
+                                    <i class="fa fa-pencil"></i>
+                                </label>
+                                <input type="file" name="file" id="file" class="inputFile" onchange="readURL(this);" />
+                            {% endif %}
+
+                            {% if user_info.tMemberGender == "fa fa-genderless" %}
+                                {% set color = "#66FF5C" %}
+                                {% set memmargin = '0px' %}
+                                {% set checked = ["","","checked"] %}
+                            {% elseif user_info.tMemberGender == "fa fa-mars" %}
+                                {% set color = "#71A7FF" %}
+                                {% set memmargin = '-3px' %}
+                                {% set checked = ["","checked",""] %}
+                            {% else %}
+                                {% set color = "#FF6E7C" %}
+                                {% set memmargin = '8px' %}
+                                {% set checked = ["checked","",""] %}
+                            {% endif %}
+
+                            <span style="position: absolute; z-index: 5; margin-top: 210px; margin-left: 210px"
+                                  onclick="
+                                {% if allow_edit %}
+                                    {{ 'changeGender("' ~ user_info.teammember ~ '",
+                                        ' ~ checked|json_encode|raw ~ ')' }}
+                                {% endif %}">
+
+                                <span class=" {% if allow_edit %}btn{% endif %} fa-stack fa-lg"
+                                      style="padding-top: 0">
+                                    <i class="{{ user_info.tMemberGender }} fa-stack-2x"
+                                       style="margin-left: 5px; text-align: left; top: {{ memmargin }};
+                                               color: {{ color }}"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </td>
+
+                    <td style="padding-left: 50px">
+                        <div style="vertical-align: top">
+                            <h3 style="display: inline">Team </h3>
+                            <h1 style="display: inline" class="highlighted"><strong>{{ user_info.username}},</strong></h1>
+                            {% if allow_edit %}
+                                <div class="btn" onclick="changeData('Username', 'text')" style="color: darkgray;
+                                    vertical-align: text-bottom"><i class="fa fa-pencil"></i></div>
+                            {% endif %}
+                            <h2></h2>
+
+                            <h3 style="display: inline"> also known as </h3>
+                            <h2 style="display: inline;" class="js-level highlighted"><strong>{{ '---' }}, </strong></h2>
+                            <h2></h2>
+
+                            <h3 style="display: inline">using e-mail address</h3>
+                            <h3 style="display: inline" class="highlighted"><strong>{{ user_info.emailCanonical }}</strong></h3>
+                            {% if allow_edit %}
+                                <div class="btn" onclick="changeData('Email','email')" style="color: darkgray; vertical-align: text-bottom">
+                                    <i class="fa fa-pencil"></i>
+                                </div>
+                            {% endif %}
+                            <h2></h2>
+
+                            <h3 style="display: inline">with nick </h3>
+                            <h2 style="display: inline" class="highlighted"><strong> {{ user_info.teammember }}</strong></h2>
+                            {% if allow_edit %}
+                            <div class="btn" onclick="changeData('Name 1','text')"
+                                 style="color: darkgray; vertical-align: text-bottom"><i class="fa fa-pencil"></i>
+                            </div>
+                            {% endif %}
+                            <h2></h2>
+
+                            <h3 style="display: inline">has so far completed</h3>
+                            <h2 style="display: inline" class="highlighted"><strong>{{ completed_challenges }}</strong></h2>
+                            <h3 style="display: inline"> out of </h3>
+                            <h2 style="display: inline" class="highlighted"><strong>{{ all_challenges }}</strong></h2>
+                            <h3 style="display: inline"> {% if (all_challenges != 1) %} active challenges.
+                                                         {% else %} challenge.
+                                                         {% endif %}
+                            </h3>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table align="left" style="margin-top: 50px; margin-bottom: 50px; width: 100%">
+                <tr style="width: 100%" valign="top">
+                    <td style="width: 50%">
+                        <h2><strong>STATS</strong></h2>
+                        <h2></h2>
+                        <div class="stats" style="margin-left: 25px">
+                            <h3 style="display: inline">Team has earned </h3>
+                            <h2 style="display: inline" class="highlighted"><strong> {{ points }} </strong></h2>
+                            <h3 style="display: inline"> points until now</h3>
+                            <h2></h2>
+
+                            <h3 style="display: inline">and made sport </h3>
+                            <h2 style="display: inline" class="highlighted"><strong> {{ total_sport_logs }} </strong></h2>
+                            <h3 style="display: inline"> times in total.</h3>
+                            <h2></h2>
+
+                            <h3 style="display: inline"> {{ user_info.username}} has yet tried </h3>
+                            <h2 style="display: inline" class="highlighted"><strong> {{ completed_sports }} </strong></h2>
+                            <h3 style="display: inline"> of </h3>
+                            <h2 style="display: inline" class="highlighted"><strong> {{ all_sports }} </strong></h2>
+                            <h3 style="display: inline"> sports logged. </h3>
+                            <h2></h2>
+
+                            <h3 style="display: inline"> {{ user_info.teammember|capitalize }}'s activity has brought</h3>
+                            <h2 style="display: inline" class="highlighted"><strong> {{ achv_count }} </strong></h2>
+                            <h3 style="display: inline"> achievement{% if achv_count != 1 %}s{% endif %} out of </h3>
+                            <h2></h2>
+                            <h3 style="display: inline">which were </h3>
+                            <h2 style="display: inline" class="highlighted"><strong> {{ achv_types.bronze }} </strong></h2>
+                            <h3 style="display: inline"> bronze, </h3>
+                            <h2 style="display: inline" class="highlighted"><strong> {{ achv_types.silver }} </strong></h2>
+                            <h3 style="display: inline"> silver and </h3>
+                            <h2 style="display: inline" class="highlighted"><strong> {{ achv_types.gold }} </strong></h2>
+                            <h3 style="display: inline"> gold. </h3>
+                            <h2></h2>
+
+                            <h3 style="display: inline">Most often completed challenge by this user</h3>
+                            <h2></h2>
+
+                            <h3 style="display: inline">is </h3>
+                            <h2 style="display: inline" class="highlighted"><strong> {{ max_challenge }}.</strong></h2>
+                            <h2></h2>
+
+                            <h3 style="display: inline">The most enjoyed sport is</h3>
+                            <h2></h2>
+
+                            <h2 style="display: inline" class="highlighted"><strong> {{ max_sport }} .</strong></h2>
+                        </div>
+                    </td>
+
+                    <td style="vertical-align: top; padding-left: 50px; width: 40%">
+                        <h2 align="center"><strong>ACHIEVEMENTS</strong></h2>
+                        <div class="js-list-achvs">
+
+                        </div>
+                        <div class="centered">
+                        <span class="js-achvs-page">
+                            <i class="btn fa fa-caret-left fa-3x js-page-left" style="display: none"></i>
+                            <strong class="h3 js-page" style="vertical-align: middle;margin-left: 50px; margin-right: 50px; display: none"></strong>
+                            <i class="btn fa fa-caret-right fa-3x js-page-right" style="display: none"></i>
+                        </span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <h2 style="margin-bottom: 30px"><strong>CHALLENGES</strong></h2>
+                <table class="col-sm-12 js-challenges" style="margin-bottom: 50px; margin-left: 25px">
+                    {% if challenges is empty %}
+                        <tr style="height: 60px">
+                            <td>
+                                <h3 style="color: #CBCBCB"><i>There is nothing to be seen there.</i></h3>
+                            </td>
+                        </tr>
+                    {% else %}
+                        {% for challenge in challenges %}
+                            <tr style="height: 60px">
+                                <td>
+                                    <h2 style="display: inline" class="js-completed-challenge">
+                                        <img src="{{ asset('assets/images/log.png') }}" height="50px" width="50px" class="img-rounded">
+                                        <strong style="display: none; padding-top: 20px; padding-bottom: 20px">
+                                            {{ challenge['name']|lower }}
+                                        </strong>
+                                    </h2>
+                                    <h3 style="display: inline">
+                                        was completed on
+                                        <strong class="highlighted">{{ challenge['date']|date('j. F Y') }} </strong>
+                                        and it was
+                                        <strong class="highlighted">{{ random([
+                                            'Raining', 'Epic', 'Nice', 'Good', 'The Best', 'Though', 'Stunning',
+                                            'Exhausting', 'Easy', 'Splendid', 'Marvelous', 'Wonderful', 'Crazy', 'Scary', 'Huge',
+                                            'Booooring', 'Unbelievable', 'Great', 'Rewarding', 'Thrilling', 'Frightening',
+                                            'Totaly Awesome', 'Pretty Damn Hot', 'Beautiful', 'Sick', 'Very Refreshing', 'Satisfying',
+                                            'Fabulous', 'Spectacular', 'Efortless', 'Perfect','Amazing', 'Unreal','Tiring'
+                                            ,challenge['date']|date('l')]) }}!
+                                        </strong>
+                                    </h3>
+                                </td>
+                            </tr>
+                            <h2></h2>
+                        {% endfor %}
+                    {% endif %}
+                </table>
+            </div>
+            <div class="js-gallery">
+                <h2 style="margin-bottom: 30px"><strong>GALLERY</strong></h2>
+                <div class="js-achievements-list-wrapper col-sm-12" style="margin-bottom: 50px">
+                    {% if user_imgs is empty %}
+                        <h3 style="color: #CBCBCB; margin-left: 10px"><i>There is nothing to be seen there.</i></h3>
+                    {% else %}
+                        {% for image in user_imgs %}
+                            <div class="col-sm-2 js-image-wraper" data-img="{{ image[1] }}"
+                                 style="margin-bottom: 6px; cursor: pointer; position: relative">
+                                {% if allow_edit %}
+                                    <i class="btn fa fa-times btn-min" onclick="deleteImg({{ image[1] }})"
+                                       style="position: absolute; margin-left: -9px; margin-top: -9px"></i>
+                                {% endif %}
+                                <img src="{{ image[0] }}" width="170px" height="170px"
+                                     class="js-show-image my-img-style"
+                                     onerror="imageError(this)">
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            {% if allow_edit %}
+                <div class="centered">
+                    <a class="btn minimal-padding" style="text-align: center; margin-top: 50px" onclick="deleteAccount()">
+                        <span class="fa fa-times fa-2x minimal-padding"></span>
+                        <h3 class="minimal-padding"> Delete your account and all associated data.</h3>
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.18.0/sweetalert2.all.min.js"></script>
+    <script src="{{ asset('assets/js/scripts/AchievementRequirements.js') }}"></script>
+    <script src="{{ asset('assets/js/scripts/UpdateAchievements.js') }}"></script>
+    <script src="{{ asset('assets/js/scripts/levels.js') }}"></script>
+    <script src="{{ asset('assets/js/ProfileApp.js') }}"></script>
+
+    <script>
+        $(document).ready(function() {
+            let $achvsListWrapper = $('.js-list-achvs');
+            let $achvsPageWrapper = $('.js-achvs-page');
+            let $galleryWrapper = $('.js-gallery');
+            let $challengesWrapper = $('.js-challenges');
+            let achvs = {{ achv_data.userdata.achvs|json_encode|raw }};
+
+            let profileApp = new ProfileApp(
+                $achvsListWrapper, $achvsPageWrapper, $galleryWrapper, $challengesWrapper, achvs, {{ points }});
+        });
+    </script>
+
+    <script>
+        function deleteImg(logId) {
+            if ({{ allow_edit }}) {
+                const entity = "image";
+                const preConf = () => {
+                    const url = Routing.generate('profile_delete_img');
+                    $.ajax({
+                        url,
+                        method: 'POST',
+                        data: JSON.stringify([logId, {{ user_info.id }}])
+                    }).then((data) => {
+                        $('.js-image-wraper[data-img = "' + logId + '"]').remove();
+                    });
+                };
+
+                deleteSwal(entity, preConf);
+            }
+        }
+    </script>
+
+    <script>
+        function readURL(input) {
+            if({{ allow_edit }}) {
+                let reader = new FileReader();
+
+                if (!(input.files && input.files[0] && input.files[0].name.match(/\.(jpg|jpeg|png|gif)$/))) {
+                    swal({
+                        title: 'Input file\'s formate not supported.',
+                        type: 'warning',
+                        showConfirmButton: false,
+                        timer: 2000,
+                    });
+                }
+                else if (!(input.files[0].size < 1048576)) {
+                    swal({
+                        title: 'Input file is too big! Maximum supported size is 1MB.',
+                        type: 'warning',
+                        showConfirmButton: false,
+                        timer: 2000,
+                    });
+                }
+                else {
+                    reader.onload = function (e) {
+                        const url = Routing.generate('profile_edit');
+
+                        $.ajax({
+                            url,
+                            method: 'POST',
+                            data: JSON.stringify([e.target.result, 'Avatar'])
+                        }).then((data) => {
+                            location.reload();
+                        }).catch((jqXHR) => {
+                            swal({
+                                title: 'Ooops, looks like something went wrong!',
+                                text: 'I like your original avatar more anyway!',
+                                type: 'warning',
+                                showConfirmButton: false,
+                                timer: 2000,
+                            });
+                        });
+                    };
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+        }
+    </script>
+    <script>
+        if({{ allow_edit }}) {
+            function deleteAccount() {
+                swal({
+                    title: 'Are you sure you want to do this?',
+                    text: 'All data associated with your account will be erased!',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'delete',
+                    cancelButtonText: 'cancel',
+                    confirmButtonClass: 'btn btn-success js-sp-error',
+                    cancelButtonClass: 'btn btn-danger',
+                    buttonsStyling: false,
+                    reverseButtons: true,
+                }).then((value) => {
+                    if (value['dismiss'] === undefined) {
+                        const url = Routing.generate('profile_delete');
+                        $.ajax({
+                            url,
+                            method: 'POST'
+                        }).then((data) => {
+                            location.reload();
+                        }).catch((jqXHR) => {
+                            swal({
+                                title: 'Ooops, looks like something went wrong!',
+                                text: 'What about giving me a another chance :) ?',
+                                type: 'warning',
+                                showConfirmButton: false,
+                                timer: 2000,
+                            });
+                        });
+                    }
+                });
+            }
+        }
+    </script>
+    <script>
+        if({{ allow_edit }}){
+            function changeGender($member, checked){
+                swal({
+                    html: `
+                        <h3 style="margin-top: 0; margin-left: 30px; margin-right: 30px"><strong>Choose New Gender:</strong></h3>
+                        <table align="center" style="margin-bottom: 15px">
+                            <tr>
+                                <td>
+                                    <h4>` + $member + `</h4>
+                                    <input class="fa fa-fw fa-venus fa-2x radio-female js-radio" type="radio" name="gender"
+                                            value="fa fa-venus"` + checked[0] + `>
+                                    <input class="fa fa-fw fa-mars fa-2x radio-male js-radio" type="radio" name="gender"
+                                            value="fa fa-mars"` + checked[1] + `>
+                                    <input class="fa fa-fw fa-genderless fa-2x radio-nonele js-radio" type="radio" name="gender"
+                                            value="fa fa-genderless"` + checked[2] + `>
+                                </td>
+                            </tr>
+                        </table>
+                        `,
+                    width: 'auto',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'change',
+                    cancelButtonText: 'cancel',
+                    confirmButtonClass: 'btn btn-success js-sp-error',
+                    cancelButtonClass: 'btn btn-danger',
+                    buttonsStyling: false,
+                    reverseButtons: true,
+                    preConfirm: () => {
+                        let ret = [];
+                        let idx = 0;
+                        let matches = 0;
+                        for(let val of document.getElementsByClassName('js-radio')){
+                            if(val.checked) {
+                                ret.push(val.value);
+                                if(checked[idx] !== "")
+                                    ++matches;
+                            }
+                            ++idx;
+                        }
+                        if(matches === 1)
+                            return null;
+                        return ret;
+                    }
+                }).then((value) => {
+                    if (value.value !== true && value.value !== undefined)
+                        if (value.value.length === 1) {
+                            const url = Routing.generate('profile_edit');
+                            let data = JSON.stringify(['Gender', value.value]);
+                            console.log(data);
+                            $.ajax({
+                                url,
+                                method: 'POST',
+                                data: data
+                            }).then((data) => {
+                                location.reload();
+                            }).catch((jqXHR) => {
+                                swal({
+                                    title: 'Ooops, looks like something went wrong.',
+                                    type: 'warning',
+                                    showConfirmButton: false,
+                                    timer: 2000,
+                                });
+                            });
+                        }
+                })
+            }
+        }
+    </script>
+    <script>
+        if({{ allow_edit }}){
+        function changeData(fieldName, fieldType, fieldHtml = "") {
+            swal({
+                title: 'Choose New ' + fieldName + ':',
+                input: fieldType,
+                html: fieldHtml,
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'change',
+                cancelButtonText: 'cancel',
+                confirmButtonClass: 'btn btn-success js-sp-error',
+                cancelButtonClass: 'btn btn-danger',
+                buttonsStyling: false,
+                reverseButtons: true,
+                inputValidator: (value) => {
+                    return new Promise((resolve) => {
+                        re = /^[a-z0-9!#$%&'*+/=?^_`{|}~]+@[a-z0-9!#$%&'*+/=?^_`{|}~]+\.[a-z0-9.]+$/;
+                        console.log(re.test(value.toLowerCase()));
+                        if (value.length >= 2 && ((fieldType != 'email' && value.length <= 10)
+                            || (fieldType == 'email' && value.length <= 20))) {
+                            if(fieldType != 'email' || re.test(value.toLowerCase()))
+                                resolve();
+                            else
+                                resolve('Invalid email address!');
+                        } else {
+                            resolve(fieldType == 'email' ? 'You need to enter between 2 to 20 characters!' : 'You need to enter between 2 to 10 characters!')
+                        }
+                    })
+                }
+            }).then((value) => {
+                if (value['dismiss'] === undefined) {
+                    const url = Routing.generate('profile_edit');
+                    let data;
+                    if (fieldType == 'file') {
+                        data = JSON.stringify([$('.js-avatar').src, fieldName]);
+                    }
+                    else
+                        data = JSON.stringify([value['value'], fieldName]);
+
+                    $.ajax({
+                        url,
+                        method: 'POST',
+                        data: data
+                    }).then((data) => {
+                        location.reload();
+                    }).catch((jqXHR) => {
+                        swal({
+                            title: 'Ooops, looks like some other user is already using such ' + fieldName + '.',
+                            text: 'I like your original ' + fieldName + 'more anyway!',
+                            type: 'warning',
+                            showConfirmButton: false,
+                            timer: 2000,
+                        });
+                    });
+                }
+            })
+        }
+        }
+    </script>
+    <script>
+        if({{ allow_edit }})
+            updateAchvs({{ achv_data|json_encode|raw }})
+    </script>
+{% endblock %}

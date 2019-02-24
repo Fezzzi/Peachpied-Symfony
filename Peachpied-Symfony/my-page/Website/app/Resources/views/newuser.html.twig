@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div>
+        <h3 class="alert alert-success">
+            <span class="fa fa-thumbs-up"></span> <strong>Congratulations {{ user.username }}!</strong> Your account is now activated!
+        </h3>
+    </div>
+
+    <meta http-equiv="refresh" content="1;{{ link }}" />
+{% endblock %}

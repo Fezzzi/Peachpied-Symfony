@@ -1,0 +1,121 @@
+{% extends 'base.html.twig' %}
+
+{%  block body %}
+    <div class="row" style="margin-left: 5px; margin-right: 5px">
+        <div style="display: none" class="js-new-chalsp-form">
+            <div class="js-chalsp-log-table">
+                <h2 class="h2Head">
+                    <strong>Log New {{ dataName }}!</strong>
+                    <a href="#x" onclick="$('.js-new-chalsp-form').slideUp('medium'); $('.js-add-chalsp-btn').show()"
+                       class="btn btn-login" style="margin-left: 25px; margin-bottom: 5px">
+                        <span class="fa fa-minus"></span>
+                    </a>
+                </h2>
+                <div class="js-new-chalsp-log-form-wrapper">
+                    {{ include('_ChalSpform.html.twig') }}
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="h2Head" style="padding-top: 5px">
+                <strong>{{ dataName }}s</strong>
+                <a href="#x" onclick="$('.js-new-chalsp-form').slideDown('medium'); $(this).hide()"
+                   class="btn btn-login js-add-chalsp-btn" style="margin-left: 25px; margin-bottom: 5px">
+                    <span class="fa fa-plus"></span>
+                </a>
+            </h2>
+
+            <div class="js-chalsp-list-wrapper col-sm-12">
+                {% set counter = 0 %}
+                {% for entity in data %}
+                    <div class="col-sm-3">
+                        <span>
+                            <span class="col-sm-12" style="text-align:center; position: relative">
+                                <span style="position: absolute; margin-top: -8px; margin-left: -8px" class="btn btn-min">
+                                    <a href="#x"
+                                       class="js-delete-chalsp"
+                                       data-url="{{ path( dataName|lower ~ '_delete', { 'id': entity.id }) }}">
+                                        <span class="fa fa-times"></span>
+                                    </a>
+                                </span>
+                                <span class="js-show-detail"
+                                      data-compNum="0"
+                                      {% if entity.points is defined %}
+                                        data-pts="{{ entity.points }}" data-multiply="undefined"
+                                      {% else %}
+                                        data-multiply="{{ entity.multiplier }}"  data-pts="undefined"
+                                      {% endif %}
+                                      data-id="{{ entity.id }}"
+                                      data-detail="{{ entity.description }}"
+                                      data-name="{{ entity.name }}">
+                                    <img src="{{ entity.image }}" onerror="imageError(this)"
+                                         class="img-rounded my-img-style" width="200" height="200"
+                                         style="border-radius: 25px"/>
+                                </span>
+                            </span>
+                            <span class="h4 col-sm-12" style="text-align:center">
+                                <label style="text-align: center;">{{ entity.name|truncate(12) }}</label>
+                            </span>
+                        </span>
+                    </div>
+                    {% set counter = counter + 1 %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.18.0/sweetalert2.all.min.js"></script>
+    <script src="{{ asset('assets/js/ChalSpListApp.js') }}"></script>
+    <script src="{{ asset('assets/js/ChalSpLogApp.js') }}"></script>
+
+    <script>
+        $(document).ready(function() {
+            let $wrapper = $('.js-chalsp-list-wrapper');
+            let $logs = {{ logs|json_encode|raw }};
+            let chalSpListApp = new ChalSpListApp($wrapper, "{{ dataName|lower }}", $logs, {{ points }});
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            let $wrapper = $('.js-new-chalsp-log-form-wrapper');
+            let chalSpLogApp = new ChalSpLogApp($wrapper, "{{ dataName|lower }}");
+        });
+    </script>
+
+    <script>
+        function readURL(input) {
+            let reader = new FileReader();
+
+            if (!(input.files && input.files[0] && input.files[0].name.match(/\.(jpg|jpeg|png|gif)$/))){
+                swal({
+                    title: 'Input file\'s formate not supported.',
+                    type: 'warning',
+                    showConfirmButton: false,
+                    timer: 2000,
+                });
+            }
+            else if(!(input.files[0].size < 1048576)) {
+                swal({
+                    title: 'Input file is too big! Maximum supported size is 1MB.',
+                    type: 'warning',
+                    showConfirmButton: false,
+                    timer: 2000,
+                });
+            }
+            else{
+                reader.onload = function (e) {
+                    $('#imageId')
+                        .attr('src', e.target.result)
+                        .width(300)
+                        .height(300);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+{% endblock %}

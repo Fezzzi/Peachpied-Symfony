@@ -1,0 +1,44 @@
+{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'),
+                    'attr': {'class': 'fos_user_registration_register form-signin', 'style': 'text-align: center'}}) }}
+
+    <h3>Register! Don't Be A Blister!</h3>
+
+    <hr class="colorgraph-reverse" />
+
+    <br/>
+
+    {% if(regErrors|length > 0) %}
+        {% for error in regErrors %}
+            <div class="alert alert-block alert-danger">{{ error|trans }}</div>
+        {% endfor %}
+    {% endif %}
+
+    {% for field in form.children %}
+        <div class="form-group">
+            {% if field.vars.name == "tMemberGender" %}
+                <span id="fos_user_registration_form_{{ field.vars.name }}">
+                    <input class="fa fa-fw fa-venus fa-2x radio-female js-radio" type="radio"
+                           value="fa fa-venus" name="fos_user_registration_form[{{ field.vars.name }}]"
+                           id="fos_user_registration_form_{{ field.vars.name }}_0">
+                    <input class="fa fa-fw fa-mars fa-2x radio-male js-radio" type="radio"
+                           value="fa fa-mars" name="fos_user_registration_form[{{ field.vars.name }}]"
+                           id="fos_user_registration_form_{{ field.vars.name }}_1">
+                    <input class="fa fa-fw fa-genderless fa-2x radio-nonele js-radio" type="radio"
+                           value="fa fa-genderless" name="fos_user_registration_form[{{ field.vars.name }}]"
+                           id="fos_user_registration_form_{{ field.vars.name }}_2" checked>
+                </span>
+            {% elseif field.vars.name == "teamMember" %}
+                <input type="text" id="fos_user_registration_form_teamMember"
+                       name="fos_user_registration_form[teamMember]" required="required" maxlength="10"
+                       placeholder="nickname" class="form-control">
+            {% else %}
+                {{ form_widget(field) }}
+            {% endif %}
+        </div>
+    {% endfor %}
+
+    <div>
+        <input type="submit" value="{{ 'Register'|trans }}" class="btn btn-login btn-primary btn-lg btn-block submit-btn" />
+    </div>
+
+{{ form_end(form, {'render_rest': false}) }}

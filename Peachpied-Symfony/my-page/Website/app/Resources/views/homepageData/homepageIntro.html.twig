@@ -1,0 +1,73 @@
+<h2 style="margin-bottom: 20px">
+    <strong>What Is Sport Log?</strong>
+</h2>
+<div style="margin-left: 25px; margin-right: 25px; padding-bottom: 200px">
+    <h4>
+        Sport Log is a place for all people who like to move!
+    </h4>
+    <div style="margin-top: 25px">
+        <div class="col-sm-3" align="center">
+            <p><strong>Choose Challenge</strong></p>
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                <a href="{{ path('challenges') }}">
+            {% endif %}
+            <img src="{{ asset('assets/images/challenges.png') }}" height="150" width="150" onerror="imageError(this)"
+                 class="img-circle {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %} my-img-style {% else %} my-img-style-static
+                        {% endif %}">
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                </a>
+            {% endif %}
+        </div>
+        <div class="col-sm-3" align="center">
+            <div class="col-sm-2" style="margin-left: -35px; padding-top: 80px">
+                <h1 style="display: inline"><strong>+</strong></h1>
+            </div>
+            <div>
+                <p><strong>Choose Sport</strong></p>
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                <a href="{{ path('sports') }}">
+                    {% endif %}
+                    <img src="{{ asset('assets/images/sports.png') }}" height="150" width="150" onerror="imageError(this)"
+                         class="img-circle {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %} my-img-style {% else %} my-img-style-static
+                            {% endif %}">
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-sm-3" align="center">
+            <div class="col-sm-2" style="margin-left: -45px; padding-top: 85px">
+                <h1 style="display: inline"><strong>🡪</strong></h1>
+            </div>
+            <div>
+                <p><strong>Log It</strong></p>
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                <a href="{{ path('sport_logs') }}">
+                    {% endif %}
+                    <img src="{{ asset('assets/images/log.png') }}" height="150" width="150" onerror="imageError(this)"
+                         class="img-circle {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %} my-img-style {% else %} my-img-style-static
+                            {% endif %}">
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                </a>
+                {%  endif %}
+            </div>
+        </div>
+        <div class="col-sm-3" align="center">
+            <div class="col-sm-2" style="margin-left: -45px; padding-top: 85px">
+                <h1 style="display: inline"><strong>🡪</strong></h1>
+            </div>
+            <div>
+                <p><strong>Compete With Friends</strong></p>
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                <a href="{{ path('groups') }}">
+                    {% endif %}
+                    <img src="{{ asset('assets/images/groups.png') }}" height="150" width="150" onerror="imageError(this)"
+                         class="img-circle {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %} my-img-style {% else %} my-img-style-static
+                            {% endif %}">
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

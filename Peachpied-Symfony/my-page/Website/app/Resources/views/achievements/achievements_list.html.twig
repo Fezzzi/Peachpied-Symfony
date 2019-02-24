@@ -1,0 +1,95 @@
+{% extends 'base.html.twig' %}
+
+{%  block body %}
+    <div class="row" style="margin-left: 5px; margin-right: 5px">
+        <div style="display: none" class="js-new-achv-form">
+            <div class="js-achievement-log-table">
+                <h2 class="h2Head">
+                    <strong>Log New Achievement!</strong>
+                    <a href="#x" onclick="$('.js-new-achv-form').slideUp('medium'); $('.js-add-achv-btn').show()"
+                       class="btn btn-login" style="margin-left: 25px; margin-bottom: 5px">
+                        <span class="fa fa-minus"></span>
+                    </a>
+                </h2>
+                <div class="js-new-achievement-log-form-wrapper">
+                    {{ include('achievements/_achvform.html.twig') }}
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="h2Head" style="padding-top: 5px">
+                <strong>Achievements</strong>
+                <a href="#x" onclick="$('.js-new-achv-form').slideDown('medium'); $(this).hide()" class="btn btn-login js-add-achv-btn" style="margin-left: 25px; margin-bottom: 5px">
+                    <span class="fa fa-plus"></span>
+                </a>
+            </h2>
+
+            <div class="js-achievements-list-wrapper col-sm-12">
+                {% set counter = 0 %}
+                {% for achievement in all_achvs %}
+                    <div class="col-sm-3">
+                        <span>
+                            <span class="col-sm-12" style="text-align:center; position: relative">
+                                <span style="position: absolute" class="btn btn-min">
+                                    <a href="#x"
+                                       class="js-delete-achievement"
+                                       data-url="{{ path('achievement_delete', { 'id': achievement.id }) }}">
+                                        <span class="fa fa-times"></span>
+                                    </a>
+                                </span>
+                                <span class="js-show-detail"
+                                      data-img="{{ asset('assets/images/achievement' ~ achievement.type ~ '.png') }}"
+                                      data-name="{{ achievement.name }}"
+                                      data-type="{{ achievement.type }}"
+                                      data-id ="{{ achievement.id }}"
+                                      data-date ="{{ (achvs_req_data['lockedachvs'][achievement.id] is defined)
+                                      ? "" : achvs_req_data['userdata']['achvs'][achievement.id]['date'] }}">
+                                    <img src="   {% if (achvs_req_data['lockedachvs'][achievement.id] is defined) %}
+                                                    {{ asset('assets/images/achievementLocked.png') }}
+                                                {% else %}
+                                                    {{ asset('assets/images/achievement' ~ achievement.type ~ '.png') }}
+                                                {% endif %}"
+                                         class="img-circle my-img-style" width="200" height="200" onerror="imageError(this)">
+                                </span>
+                            </span>
+                            <span class="h4 col-sm-12" style="text-align:center">
+                                <label style="text-align: center;">{{ achievement.name|truncate(12) }}</label>
+                            </span>
+                        </span>
+                    </div>
+                    {% set counter = counter + 1 %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.18.0/sweetalert2.all.min.js"></script>
+    <script src="{{ asset('assets/js/scripts/AchievementRequirements.js') }}"></script>
+    <script src="{{ asset('assets/js/scripts/UpdateAchievements.js') }}"></script>
+    <script src="{{ asset('assets/js/AchievementsListApp.js') }}"></script>
+    <script src="{{ asset('assets/js/AchievementLogApp.js') }}"></script>
+
+    <script>
+        $(document).ready(function() {
+            let $wrapper = $('.js-new-achievement-log-form-wrapper');
+            let $middleColumn = $('.js-achv-middle');
+            let achievementLogApp = new AchievementLogApp($wrapper, $middleColumn);
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            let $wrapper = $('.js-achievements-list-wrapper');
+            let $achvsData = {{ achvs_req_data|json_encode|raw }};
+            let $achvsNames = {{ achvs_names|json_encode|raw }};
+            let $chalsNames = {{ chals_names|json_encode|raw }};
+            let $spsNames = {{ sps_names|json_encode|raw }};
+
+            let achievementsListApp = new AchievementsListApp($wrapper, $achvsData, $achvsNames, $chalsNames, $spsNames);
+        });
+    </script>
+{% endblock %}

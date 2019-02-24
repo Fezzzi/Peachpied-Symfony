@@ -1,0 +1,190 @@
+<form class="form-inline js-new-achievement-log-form" novalidate data-url="{{ path('achievement_new') }}"
+        style="margin-bottom: 50px; width: 100%;">
+    <table align="left" style="width:100%; margin-bottom: 50px">
+        <tr style="width: 100%">
+            <td width="32%">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="form-group" style="margin-right: 25px">
+                                <a class="btn btn-login js-new-achievement-challenge-req form-pos-field">
+                                    <span class="fa fa-plus"></span>
+                                </a>
+                            </div>
+                        </td>
+                        <td width="100%">
+                            <div id="js-chal-req" style="white-space:nowrap; width: 100%">
+                                <div class="form-group" style="width:50%">
+                                    <select name="challenge"
+                                            required="required"
+                                            class="form-control form-pos-field"
+                                            style="width: 100%; margin-left: 0">
+
+                                        <option value="" selected="selected">Challenge</option>
+                                        {% for choice in challenge_choices %}
+                                            <option value="{{ choice.id }}"> {{ choice.name }} </option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only control-label required" for="challenge_count">
+                                        Set Challenge's Count
+                                    </label>
+                                    <input type="number" name="challenge_count"
+                                           required="required"
+                                           placeholder="#"
+                                           oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                           maxlength = "2"
+                                           class="form-control form-pos-field"
+                                           style="width: 3.5em; margin-left: 1px"/>
+                                </div>
+                                <a id="js-delete-chal-req" hidden>
+                                    <span class="btn fa fa-times form-control form-pos-field no-shadow"
+                                          style="color: Red"></span>
+                                </a>
+                            </div>
+                            <div id="js-chal-req-adds"></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 50px"></tr>
+                    <tr>
+                        <td>
+                            <div class="form-group" style="margin-right: 25px">
+                                <a class="btn btn-login js-new-achievement-sport-req form-pos-field">
+                                    <span class="fa fa-plus"></span>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="js-sp-req" style="white-space:nowrap;">
+                                <div class="form-group" style="width: 50%;">
+                                    <select name="sport"
+                                            required="required"
+                                            class="form-control form-pos-field"
+                                            style="width: 100%; margin-left: 0">
+
+                                        <option value="" selected="selected">Sport</option>
+                                        {% for choice in sport_choices %}
+                                            <option value="{{ choice.id }}"> {{ choice.name }} </option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="sport_count"
+                                           required="required"
+                                           placeholder="#"
+                                           oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                           maxlength = "2"
+                                           class="form-control form-pos-field"
+                                           style="width: 3.5em; margin-left: 1px"/>
+                                </div>
+                                <a id="js-delete-sp-req" hidden>
+                                    <span class="btn fa fa-times form-control form-pos-field no-shadow"
+                                          style="color: Red"></span>
+                                </a>
+                            </div>
+                            <div id="js-sp-req-adds"></div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="36%" align="center" class="js-achv-middle" style="vertical-align: middle">
+                <span>
+                    <a class="btn fa fa-caret-left fa-2x" style="margin-right: 15px"></a>
+                    <img src="{{ asset('assets/images/achievementbronze.png') }}" onerror="imageError(this)"
+                         class="img-circle my-img-style-static" width="200" height="200">
+                    <a class="btn fa fa-caret-right fa-2x" style="margin-left: 15px"></a>
+                </span>
+                <span class="form-group no-padding">
+                    <input type="text" style="text-align: center; margin-left: 0; padding-left: 0"
+                           class="form-control form-pos-field" name="name" maxlength="15"
+                           placeholder="Achievement Name" required="required">
+                </span>
+                <div style="margin-top: 50px">
+                    <input type="submit" class="btn btn-login btn-made-sport form-group" name="requirements"
+                            value="submit">
+                </div>
+                <span class="js-field-error help-block js-sp-error"></span>
+            </td>
+            <td width="32%">
+                <table>
+                    <tr>
+                        <td align="right">
+                            <div id="js-chalsp-req" style="white-space:nowrap; margin-right: 0">
+                                <a id="js-delete-chalsp-req" hidden>
+                                    <span class="btn fa fa-times form-control form-pos-field no-shadow pull-left"
+                                          style="color: Red; margin-left: 0; margin-right: 10px"></span>
+                                </a>
+                                <div class="form-group" style="width:40%; margin-right: 1px">
+                                    <select name="chal"
+                                            required="required"
+                                            class="form-control form-pos-field"
+                                            style="width: 100%; margin-left: 0; margin-right: 0">
+
+                                        <option value="" selected="selected">Challenge</option>
+                                        {% for choice in challenge_choices %}
+                                            <option value="{{ choice.id }}"> {{ choice.name }} </option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="form-group" style="width: 38%; margin-right: 0">
+                                    <select name="sp"
+                                            required="required"
+                                            class="form-control form-pos-field"
+                                            style="width: 100%; margin-left: 0">
+
+                                        <option value="" selected="selected">Sport</option>
+                                        {% for choice in sport_choices %}
+                                            <option value="{{ choice.id }}"> {{ choice.name }} </option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="js-chalsp-req-adds"></div>
+                        </td>
+                        <td>
+                            <div class="form-group" style="margin-right: 25px">
+                                <a class="btn btn-login js-new-achievement-chalsp-req form-pos-field">
+                                    <span class="fa fa-plus"></span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="height: 50px"></tr>
+                    <tr>
+                        <td align="right">
+                            <div id="js-ach-req" style="white-space:nowrap; margin-left: 0">
+                                <a id="js-delete-ach-req" hidden>
+                                    <span class="btn fa fa-times form-control form-pos-field no-shadow pull-left"
+                                          style="color: Red; margin-left: 0; margin-right: 10px"></span>
+                                </a>
+                                <div class="form-group" style="width: 65%">
+                                    <select name="achievement"
+                                            required="required"
+                                            class="form-control form-pos-field"
+                                            style="width: 100%; margin-left: 0">
+
+                                        <option value="" selected="selected">Achievement</option>
+                                        {% for choice in achievement_choices %}
+                                            <option value="{{ choice.id }}"> {{ choice.name }} </option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="js-ach-req-adds"></div>
+                        </td>
+                        <td>
+                            <div class="form-group" style="margin-right: 25px">
+                                <a class="btn btn-login js-new-achievement-achievement-req form-pos-field">
+                                    <span class="fa fa-plus"></span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <input type="file" name="file" id="file" class="inputFile" onchange="readURL(this);" />
+</form>

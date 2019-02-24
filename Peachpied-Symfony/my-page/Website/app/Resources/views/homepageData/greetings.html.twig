@@ -1,0 +1,27 @@
+{% set name = app.user.username %}
+{% set greetings = [
+    'It\'s always pleasure to see you ' ~ name ~ '.',
+    'Don\'t tell others but you are my favourite users!',
+    'How are you feeling today, ' ~ name ~ '?',
+    'Did you know, you can browse other profiles by clicking on their name on Log Some Sport page?!',
+    'The average golf ball has 336 dimples.',
+    'In 1906, the UK parliament banned women from participating in dangerous sports',
+    'The first yellow tennis ball was used at Wimbledon in 1986.',
+    'Olympic gold medals are actually made of silver.',
+    'A man in Mississippi was briefly imprisoned for “sorcery” in 1884 after throwing a curveball at a county fair.',
+    'Most people burn nearly 600 calories an hour jogging.',
+    'Unlike swimming and biking, jogging can make your bones stronger!',
+    'Your ability to fight the flu may increase if you’re a jogger.',
+    'The record for most marathons run on consecutive days is 365!',
+    'An average man has enough energy in his fat stores to run non-stop for 3 days at 24km per hour.',
+    'An hour of vigorous swimming will burn up to 650 calories.',
+    'Over 50% of world-class swimmers suffer from shoulder pain.',
+    'Swimming helps reduce stress.',
+    'Swimming strengthens the heart and lungs.',
+    'The first recorded swimming races were held in Japan in 36 B.C.',
+    'Over half the people in the U.S can’t swim.',
+    'The average person swims in a pool six times a year.',
+    'Bicycle commuting burns an average of 540 calories per hour.',
+] %}
+
+<h1 style="margin-bottom: 40px; color: Red"><i>"{{ random(greetings) }}"</i></h1>

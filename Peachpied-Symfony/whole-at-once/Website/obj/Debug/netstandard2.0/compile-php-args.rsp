@@ -1,0 +1,1152 @@
+--temp-output:obj\Debug\netstandard2.0\
+--out:obj\Debug\netstandard2.0\whole-at-once.dll
+--output-name:whole-at-once
+--optimize:false
+--debug-type:portable
+--version:1.0.0
+--emit-entry-point:false
+--target-framework:netstandard2.0
+--define:DEBUG
+--reference:C:\Users\Fezzi\.nuget\packages\devsense.php.parser\1.4.82\lib\netstandard2.0\Devsense.PHP.Parser.dll
+--reference:C:\Users\Fezzi\.nuget\packages\devsense.php.phar\1.0.15\lib\netstandard1.5\Devsense.PHP.Phar.dll
+--reference:C:\Users\Fezzi\.nuget\packages\htmlagilitypack\1.8.9\lib\netstandard2.0\HtmlAgilityPack.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.applicationinsights\2.4.0\lib\netstandard1.3\Microsoft.ApplicationInsights.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.csharp\4.0.1\ref\netstandard1.0\Microsoft.CSharp.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.dotnet.platformabstractions\2.1.0\lib\netstandard1.3\Microsoft.DotNet.PlatformAbstractions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection.abstractions\2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection\2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencymodel\2.1.0\lib\netstandard1.6\Microsoft.Extensions.DependencyModel.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\Microsoft.Win32.Primitives.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\mscorlib.dll
+--reference:C:\Users\Fezzi\.nuget\packages\mysqlconnector\0.46.1\lib\netstandard2.0\MySqlConnector.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\netstandard.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\9.0.1\lib\netstandard1.0\Newtonsoft.Json.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.codeanalysis\0.9.34\lib\netstandard2.0\Peachpie.CodeAnalysis.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.compiler.diagnostics\1.0.1\lib\netstandard2.0\Peachpie.Compiler.Diagnostics.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library\0.9.34\lib\netstandard2.0\Peachpie.Library.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library.graphics\0.9.34\lib\netstandard2.0\Peachpie.Library.Graphics.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library.mssql\0.9.34\lib\netstandard2.0\Peachpie.Library.MsSql.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library.mysql\0.9.34\lib\netstandard2.0\Peachpie.Library.MySql.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library.network\0.9.34\lib\netstandard2.0\Peachpie.Library.Network.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library.pdo\0.9.34\lib\netstandard2.0\Peachpie.Library.PDO.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library.scripting\0.9.34\lib\netstandard2.0\Peachpie.Library.Scripting.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library.xmldom\0.9.34\lib\netstandard2.0\Peachpie.Library.XmlDom.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.microsoft.codeanalysis\0.9.2\lib\netstandard1.3\Peachpie.Microsoft.CodeAnalysis.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.runtime\0.9.34\lib\netstandard2.0\Peachpie.Runtime.dll
+--reference:C:\Users\Fezzi\.nuget\packages\sixlabors.core\1.0.0-beta0005\lib\netstandard1.1\SixLabors.Core.dll
+--reference:C:\Users\Fezzi\.nuget\packages\sixlabors.fonts\1.0.0-beta0005\lib\netstandard2.0\SixLabors.Fonts.dll
+--reference:C:\Users\Fezzi\.nuget\packages\sixlabors.imagesharp\1.0.0-beta0004\lib\netstandard2.0\SixLabors.ImageSharp.dll
+--reference:C:\Users\Fezzi\.nuget\packages\sixlabors.imagesharp.drawing\1.0.0-beta0004\lib\netstandard2.0\SixLabors.ImageSharp.Drawing.dll
+--reference:C:\Users\Fezzi\.nuget\packages\sixlabors.shapes\1.0.0-beta0005\lib\netstandard2.0\SixLabors.Shapes.dll
+--reference:C:\Users\Fezzi\.nuget\packages\sixlabors.shapes.text\1.0.0-beta0005\lib\netstandard2.0\SixLabors.Shapes.Text.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.AppContext.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.buffers\4.4.0\ref\netstandard2.0\System.Buffers.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Collections.Concurrent.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Collections.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.collections.immutable\1.5.0\lib\netstandard2.0\System.Collections.Immutable.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Collections.NonGeneric.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Collections.Specialized.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.ComponentModel.Composition.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.ComponentModel.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.ComponentModel.EventBasedAsync.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.ComponentModel.Primitives.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.ComponentModel.TypeConverter.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.composition.attributedmodel\1.1.0\lib\netstandard2.0\System.Composition.AttributedModel.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.composition.convention\1.1.0\lib\netstandard2.0\System.Composition.Convention.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.composition.hosting\1.1.0\lib\netstandard2.0\System.Composition.Hosting.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.composition.runtime\1.1.0\lib\netstandard2.0\System.Composition.Runtime.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.composition.typedparts\1.1.0\lib\netstandard2.0\System.Composition.TypedParts.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Console.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Core.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Data.Common.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Data.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.data.sqlclient\4.4.3\ref\netstandard2.0\System.Data.SqlClient.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Diagnostics.Contracts.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Diagnostics.Debug.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.diagnostics.diagnosticsource\4.4.1\lib\netstandard1.3\System.Diagnostics.DiagnosticSource.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Diagnostics.FileVersionInfo.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Diagnostics.Process.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Diagnostics.StackTrace.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Diagnostics.TextWriterTraceListener.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Diagnostics.Tools.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Diagnostics.TraceSource.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Diagnostics.Tracing.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Drawing.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Drawing.Primitives.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Dynamic.Runtime.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Globalization.Calendars.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Globalization.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Globalization.Extensions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.IO.Compression.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.IO.Compression.FileSystem.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.IO.Compression.ZipFile.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.IO.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.IO.FileSystem.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.IO.FileSystem.DriveInfo.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.IO.FileSystem.Primitives.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.IO.FileSystem.Watcher.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.IO.IsolatedStorage.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.IO.MemoryMappedFiles.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.IO.Pipes.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.IO.UnmanagedMemoryStream.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Linq.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Linq.Expressions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Linq.Parallel.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Linq.Queryable.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.memory\4.5.0\ref\netstandard2.0\System.Memory.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Net.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Net.Http.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Net.NameResolution.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Net.NetworkInformation.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Net.Ping.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Net.Primitives.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Net.Requests.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Net.Security.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Net.Sockets.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Net.WebHeaderCollection.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Net.WebSockets.Client.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Net.WebSockets.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Numerics.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.numerics.vectors\4.4.0\ref\netstandard2.0\System.Numerics.Vectors.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.ObjectModel.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Reflection.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.reflection.emit.ilgeneration\4.3.0\ref\netstandard1.0\System.Reflection.Emit.ILGeneration.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.reflection.emit.lightweight\4.3.0\ref\netstandard1.0\System.Reflection.Emit.Lightweight.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Reflection.Extensions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.reflection.metadata\1.6.0\lib\netstandard2.0\System.Reflection.Metadata.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Reflection.Primitives.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.reflection.typeextensions\4.1.0\ref\netstandard1.5\System.Reflection.TypeExtensions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Resources.Reader.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Resources.ResourceManager.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Resources.Writer.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.runtime.compilerservices.unsafe\4.5.0\ref\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Runtime.CompilerServices.VisualC.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Runtime.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Runtime.Extensions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Runtime.Handles.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Runtime.InteropServices.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Runtime.InteropServices.RuntimeInformation.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.runtime.loader\4.3.0\ref\netstandard1.5\System.Runtime.Loader.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Runtime.Numerics.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Runtime.Serialization.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Runtime.Serialization.Formatters.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Runtime.Serialization.Json.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Runtime.Serialization.Primitives.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Runtime.Serialization.Xml.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Security.Claims.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Security.Cryptography.Algorithms.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Security.Cryptography.Csp.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Security.Cryptography.Encoding.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Security.Cryptography.Primitives.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Security.Cryptography.X509Certificates.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Security.Principal.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Security.SecureString.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.ServiceModel.Web.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.text.encoding.codepages\4.4.0\ref\netstandard2.0\System.Text.Encoding.CodePages.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Text.Encoding.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Text.Encoding.Extensions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Text.RegularExpressions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Threading.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Threading.Overlapped.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Threading.Tasks.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.threading.tasks.extensions\4.3.0\lib\netstandard1.0\System.Threading.Tasks.Extensions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Threading.Tasks.Parallel.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Threading.Thread.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Threading.ThreadPool.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Threading.Timer.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Transactions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.ValueTuple.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Web.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Windows.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Xml.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Xml.Linq.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Xml.ReaderWriter.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Xml.Serialization.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Xml.XDocument.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Xml.XmlDocument.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Xml.XmlSerializer.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Xml.XPath.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Xml.XPath.XDocument.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.xml.xpath.xmldocument\4.3.0\ref\netstandard1.3\System.Xml.XPath.XmlDocument.dll
+config\bootstrap.php
+config\bundles.php
+index.php
+public\index.php
+src\Kernel.php
+var\cache\dev\ContainerXemYbda\getArgumentResolver_ServiceService.php
+var\cache\dev\ContainerXemYbda\getCacheClearerService.php
+var\cache\dev\ContainerXemYbda\getCacheWarmerService.php
+var\cache\dev\ContainerXemYbda\getCache_AppClearerService.php
+var\cache\dev\ContainerXemYbda\getCache_AppService.php
+var\cache\dev\ContainerXemYbda\getCache_GlobalClearerService.php
+var\cache\dev\ContainerXemYbda\getCache_SystemClearerService.php
+var\cache\dev\ContainerXemYbda\getCache_SystemService.php
+var\cache\dev\ContainerXemYbda\getConsole_CommandLoaderService.php
+var\cache\dev\ContainerXemYbda\getConsole_Command_AboutService.php
+var\cache\dev\ContainerXemYbda\getConsole_Command_AssetsInstallService.php
+var\cache\dev\ContainerXemYbda\getConsole_Command_CacheClearService.php
+var\cache\dev\ContainerXemYbda\getConsole_Command_CachePoolClearService.php
+var\cache\dev\ContainerXemYbda\getConsole_Command_CachePoolDeleteService.php
+var\cache\dev\ContainerXemYbda\getConsole_Command_CachePoolPruneService.php
+var\cache\dev\ContainerXemYbda\getConsole_Command_CacheWarmupService.php
+var\cache\dev\ContainerXemYbda\getConsole_Command_ConfigDebugService.php
+var\cache\dev\ContainerXemYbda\getConsole_Command_ConfigDumpReferenceService.php
+var\cache\dev\ContainerXemYbda\getConsole_Command_ContainerDebugService.php
+var\cache\dev\ContainerXemYbda\getConsole_Command_DebugAutowiringService.php
+var\cache\dev\ContainerXemYbda\getConsole_Command_EventDispatcherDebugService.php
+var\cache\dev\ContainerXemYbda\getConsole_Command_RouterDebugService.php
+var\cache\dev\ContainerXemYbda\getConsole_Command_RouterMatchService.php
+var\cache\dev\ContainerXemYbda\getConsole_Command_YamlLintService.php
+var\cache\dev\ContainerXemYbda\getConsole_ErrorListenerService.php
+var\cache\dev\ContainerXemYbda\getFilesystemService.php
+var\cache\dev\ContainerXemYbda\getHttpExceptionListenerService.php
+var\cache\dev\ContainerXemYbda\getRedirectControllerService.php
+var\cache\dev\ContainerXemYbda\getRouter_CacheWarmerService.php
+var\cache\dev\ContainerXemYbda\getRouting_LoaderService.php
+var\cache\dev\ContainerXemYbda\getServicesResetterService.php
+var\cache\dev\ContainerXemYbda\getSessionService.php
+var\cache\dev\ContainerXemYbda\getSession_Storage_NativeService.php
+var\cache\dev\ContainerXemYbda\getTemplateControllerService.php
+var\cache\dev\ContainerXemYbda\removed-ids.php
+var\cache\dev\ContainerXemYbda\srcApp_KernelDevDebugContainer.php
+var\cache\dev\srcApp_KernelDevDebugContainer.php
+var\cache\dev\srcApp_KernelDevDebugContainerUrlGenerator.php
+var\cache\dev\srcApp_KernelDevDebugContainerUrlMatcher.php
+vendor\autoload.php
+vendor\composer\autoload_classmap.php
+vendor\composer\autoload_files.php
+vendor\composer\autoload_namespaces.php
+vendor\composer\autoload_psr4.php
+vendor\composer\autoload_real.php
+vendor\composer\autoload_static.php
+vendor\composer\ClassLoader.php
+vendor\psr\cache\src\CacheException.php
+vendor\psr\cache\src\CacheItemInterface.php
+vendor\psr\cache\src\CacheItemPoolInterface.php
+vendor\psr\cache\src\InvalidArgumentException.php
+vendor\psr\container\src\ContainerExceptionInterface.php
+vendor\psr\container\src\ContainerInterface.php
+vendor\psr\container\src\NotFoundExceptionInterface.php
+vendor\psr\log\Psr\Log\AbstractLogger.php
+vendor\psr\log\Psr\Log\InvalidArgumentException.php
+vendor\psr\log\Psr\Log\LoggerAwareInterface.php
+vendor\psr\log\Psr\Log\LoggerAwareTrait.php
+vendor\psr\log\Psr\Log\LoggerInterface.php
+vendor\psr\log\Psr\Log\LoggerTrait.php
+vendor\psr\log\Psr\Log\LogLevel.php
+vendor\psr\log\Psr\Log\NullLogger.php
+vendor\psr\simple-cache\src\CacheException.php
+vendor\psr\simple-cache\src\CacheInterface.php
+vendor\psr\simple-cache\src\InvalidArgumentException.php
+vendor\symfony\cache\Adapter\AbstractAdapter.php
+vendor\symfony\cache\Adapter\AdapterInterface.php
+vendor\symfony\cache\Adapter\ApcuAdapter.php
+vendor\symfony\cache\Adapter\ArrayAdapter.php
+vendor\symfony\cache\Adapter\ChainAdapter.php
+vendor\symfony\cache\Adapter\DoctrineAdapter.php
+vendor\symfony\cache\Adapter\FilesystemAdapter.php
+vendor\symfony\cache\Adapter\MemcachedAdapter.php
+vendor\symfony\cache\Adapter\NullAdapter.php
+vendor\symfony\cache\Adapter\PdoAdapter.php
+vendor\symfony\cache\Adapter\PhpArrayAdapter.php
+vendor\symfony\cache\Adapter\PhpFilesAdapter.php
+vendor\symfony\cache\Adapter\ProxyAdapter.php
+vendor\symfony\cache\Adapter\RedisAdapter.php
+vendor\symfony\cache\Adapter\SimpleCacheAdapter.php
+vendor\symfony\cache\Adapter\TagAwareAdapter.php
+vendor\symfony\cache\Adapter\TagAwareAdapterInterface.php
+vendor\symfony\cache\Adapter\TraceableAdapter.php
+vendor\symfony\cache\Adapter\TraceableTagAwareAdapter.php
+vendor\symfony\cache\CacheItem.php
+vendor\symfony\cache\DataCollector\CacheDataCollector.php
+vendor\symfony\cache\DependencyInjection\CacheCollectorPass.php
+vendor\symfony\cache\DependencyInjection\CachePoolClearerPass.php
+vendor\symfony\cache\DependencyInjection\CachePoolPass.php
+vendor\symfony\cache\DependencyInjection\CachePoolPrunerPass.php
+vendor\symfony\cache\DoctrineProvider.php
+vendor\symfony\cache\Exception\CacheException.php
+vendor\symfony\cache\Exception\InvalidArgumentException.php
+vendor\symfony\cache\Exception\LogicException.php
+vendor\symfony\cache\LockRegistry.php
+vendor\symfony\cache\Marshaller\DefaultMarshaller.php
+vendor\symfony\cache\Marshaller\MarshallerInterface.php
+vendor\symfony\cache\PruneableInterface.php
+vendor\symfony\cache\ResettableInterface.php
+vendor\symfony\cache\Simple\AbstractCache.php
+vendor\symfony\cache\Simple\ApcuCache.php
+vendor\symfony\cache\Simple\ArrayCache.php
+vendor\symfony\cache\Simple\ChainCache.php
+vendor\symfony\cache\Simple\DoctrineCache.php
+vendor\symfony\cache\Simple\FilesystemCache.php
+vendor\symfony\cache\Simple\MemcachedCache.php
+vendor\symfony\cache\Simple\NullCache.php
+vendor\symfony\cache\Simple\PdoCache.php
+vendor\symfony\cache\Simple\PhpArrayCache.php
+vendor\symfony\cache\Simple\PhpFilesCache.php
+vendor\symfony\cache\Simple\Psr6Cache.php
+vendor\symfony\cache\Simple\RedisCache.php
+vendor\symfony\cache\Simple\TraceableCache.php
+vendor\symfony\cache\Traits\AbstractTrait.php
+vendor\symfony\cache\Traits\ApcuTrait.php
+vendor\symfony\cache\Traits\ArrayTrait.php
+vendor\symfony\cache\Traits\ContractsTrait.php
+vendor\symfony\cache\Traits\DoctrineTrait.php
+vendor\symfony\cache\Traits\FilesystemCommonTrait.php
+vendor\symfony\cache\Traits\FilesystemTrait.php
+vendor\symfony\cache\Traits\MemcachedTrait.php
+vendor\symfony\cache\Traits\PdoTrait.php
+vendor\symfony\cache\Traits\PhpArrayTrait.php
+vendor\symfony\cache\Traits\PhpFilesTrait.php
+vendor\symfony\cache\Traits\ProxyTrait.php
+vendor\symfony\cache\Traits\RedisClusterProxy.php
+vendor\symfony\cache\Traits\RedisProxy.php
+vendor\symfony\cache\Traits\RedisTrait.php
+vendor\symfony\config\ConfigCache.php
+vendor\symfony\config\ConfigCacheFactory.php
+vendor\symfony\config\ConfigCacheFactoryInterface.php
+vendor\symfony\config\ConfigCacheInterface.php
+vendor\symfony\config\Definition\ArrayNode.php
+vendor\symfony\config\Definition\BaseNode.php
+vendor\symfony\config\Definition\BooleanNode.php
+vendor\symfony\config\Definition\Builder\ArrayNodeDefinition.php
+vendor\symfony\config\Definition\Builder\BooleanNodeDefinition.php
+vendor\symfony\config\Definition\Builder\BuilderAwareInterface.php
+vendor\symfony\config\Definition\Builder\EnumNodeDefinition.php
+vendor\symfony\config\Definition\Builder\ExprBuilder.php
+vendor\symfony\config\Definition\Builder\FloatNodeDefinition.php
+vendor\symfony\config\Definition\Builder\IntegerNodeDefinition.php
+vendor\symfony\config\Definition\Builder\MergeBuilder.php
+vendor\symfony\config\Definition\Builder\NodeBuilder.php
+vendor\symfony\config\Definition\Builder\NodeDefinition.php
+vendor\symfony\config\Definition\Builder\NodeParentInterface.php
+vendor\symfony\config\Definition\Builder\NormalizationBuilder.php
+vendor\symfony\config\Definition\Builder\NumericNodeDefinition.php
+vendor\symfony\config\Definition\Builder\ParentNodeDefinitionInterface.php
+vendor\symfony\config\Definition\Builder\ScalarNodeDefinition.php
+vendor\symfony\config\Definition\Builder\TreeBuilder.php
+vendor\symfony\config\Definition\Builder\ValidationBuilder.php
+vendor\symfony\config\Definition\Builder\VariableNodeDefinition.php
+vendor\symfony\config\Definition\ConfigurationInterface.php
+vendor\symfony\config\Definition\Dumper\XmlReferenceDumper.php
+vendor\symfony\config\Definition\Dumper\YamlReferenceDumper.php
+vendor\symfony\config\Definition\EnumNode.php
+vendor\symfony\config\Definition\Exception\DuplicateKeyException.php
+vendor\symfony\config\Definition\Exception\Exception.php
+vendor\symfony\config\Definition\Exception\ForbiddenOverwriteException.php
+vendor\symfony\config\Definition\Exception\InvalidConfigurationException.php
+vendor\symfony\config\Definition\Exception\InvalidDefinitionException.php
+vendor\symfony\config\Definition\Exception\InvalidTypeException.php
+vendor\symfony\config\Definition\Exception\TreeWithoutRootNodeException.php
+vendor\symfony\config\Definition\Exception\UnsetKeyException.php
+vendor\symfony\config\Definition\FloatNode.php
+vendor\symfony\config\Definition\IntegerNode.php
+vendor\symfony\config\Definition\NodeInterface.php
+vendor\symfony\config\Definition\NumericNode.php
+vendor\symfony\config\Definition\Processor.php
+vendor\symfony\config\Definition\PrototypedArrayNode.php
+vendor\symfony\config\Definition\PrototypeNodeInterface.php
+vendor\symfony\config\Definition\ScalarNode.php
+vendor\symfony\config\Definition\VariableNode.php
+vendor\symfony\config\Exception\FileLoaderImportCircularReferenceException.php
+vendor\symfony\config\Exception\FileLoaderLoadException.php
+vendor\symfony\config\Exception\FileLocatorFileNotFoundException.php
+vendor\symfony\config\Exception\LoaderLoadException.php
+vendor\symfony\config\FileLocator.php
+vendor\symfony\config\FileLocatorInterface.php
+vendor\symfony\config\Loader\DelegatingLoader.php
+vendor\symfony\config\Loader\FileLoader.php
+vendor\symfony\config\Loader\GlobFileLoader.php
+vendor\symfony\config\Loader\Loader.php
+vendor\symfony\config\Loader\LoaderInterface.php
+vendor\symfony\config\Loader\LoaderResolver.php
+vendor\symfony\config\Loader\LoaderResolverInterface.php
+vendor\symfony\config\ResourceCheckerConfigCache.php
+vendor\symfony\config\ResourceCheckerConfigCacheFactory.php
+vendor\symfony\config\ResourceCheckerInterface.php
+vendor\symfony\config\Resource\ClassExistenceResource.php
+vendor\symfony\config\Resource\ComposerResource.php
+vendor\symfony\config\Resource\DirectoryResource.php
+vendor\symfony\config\Resource\FileExistenceResource.php
+vendor\symfony\config\Resource\FileResource.php
+vendor\symfony\config\Resource\GlobResource.php
+vendor\symfony\config\Resource\ReflectionClassResource.php
+vendor\symfony\config\Resource\ResourceInterface.php
+vendor\symfony\config\Resource\SelfCheckingResourceChecker.php
+vendor\symfony\config\Resource\SelfCheckingResourceInterface.php
+vendor\symfony\config\Util\Exception\InvalidXmlException.php
+vendor\symfony\config\Util\Exception\XmlParsingException.php
+vendor\symfony\config\Util\XmlUtils.php
+vendor\symfony\console\Application.php
+vendor\symfony\console\CommandLoader\CommandLoaderInterface.php
+vendor\symfony\console\CommandLoader\ContainerCommandLoader.php
+vendor\symfony\console\CommandLoader\FactoryCommandLoader.php
+vendor\symfony\console\Command\Command.php
+vendor\symfony\console\Command\HelpCommand.php
+vendor\symfony\console\Command\ListCommand.php
+vendor\symfony\console\Command\LockableTrait.php
+vendor\symfony\console\ConsoleEvents.php
+vendor\symfony\console\DependencyInjection\AddConsoleCommandPass.php
+vendor\symfony\console\Descriptor\ApplicationDescription.php
+vendor\symfony\console\Descriptor\Descriptor.php
+vendor\symfony\console\Descriptor\DescriptorInterface.php
+vendor\symfony\console\Descriptor\JsonDescriptor.php
+vendor\symfony\console\Descriptor\MarkdownDescriptor.php
+vendor\symfony\console\Descriptor\TextDescriptor.php
+vendor\symfony\console\Descriptor\XmlDescriptor.php
+vendor\symfony\console\EventListener\ErrorListener.php
+vendor\symfony\console\Event\ConsoleCommandEvent.php
+vendor\symfony\console\Event\ConsoleErrorEvent.php
+vendor\symfony\console\Event\ConsoleEvent.php
+vendor\symfony\console\Event\ConsoleTerminateEvent.php
+vendor\symfony\console\Exception\CommandNotFoundException.php
+vendor\symfony\console\Exception\ExceptionInterface.php
+vendor\symfony\console\Exception\InvalidArgumentException.php
+vendor\symfony\console\Exception\InvalidOptionException.php
+vendor\symfony\console\Exception\LogicException.php
+vendor\symfony\console\Exception\NamespaceNotFoundException.php
+vendor\symfony\console\Exception\RuntimeException.php
+vendor\symfony\console\Formatter\OutputFormatter.php
+vendor\symfony\console\Formatter\OutputFormatterInterface.php
+vendor\symfony\console\Formatter\OutputFormatterStyle.php
+vendor\symfony\console\Formatter\OutputFormatterStyleInterface.php
+vendor\symfony\console\Formatter\OutputFormatterStyleStack.php
+vendor\symfony\console\Formatter\WrappableOutputFormatterInterface.php
+vendor\symfony\console\Helper\DebugFormatterHelper.php
+vendor\symfony\console\Helper\DescriptorHelper.php
+vendor\symfony\console\Helper\FormatterHelper.php
+vendor\symfony\console\Helper\Helper.php
+vendor\symfony\console\Helper\HelperInterface.php
+vendor\symfony\console\Helper\HelperSet.php
+vendor\symfony\console\Helper\InputAwareHelper.php
+vendor\symfony\console\Helper\ProcessHelper.php
+vendor\symfony\console\Helper\ProgressBar.php
+vendor\symfony\console\Helper\ProgressIndicator.php
+vendor\symfony\console\Helper\QuestionHelper.php
+vendor\symfony\console\Helper\SymfonyQuestionHelper.php
+vendor\symfony\console\Helper\Table.php
+vendor\symfony\console\Helper\TableCell.php
+vendor\symfony\console\Helper\TableRows.php
+vendor\symfony\console\Helper\TableSeparator.php
+vendor\symfony\console\Helper\TableStyle.php
+vendor\symfony\console\Input\ArgvInput.php
+vendor\symfony\console\Input\ArrayInput.php
+vendor\symfony\console\Input\Input.php
+vendor\symfony\console\Input\InputArgument.php
+vendor\symfony\console\Input\InputAwareInterface.php
+vendor\symfony\console\Input\InputDefinition.php
+vendor\symfony\console\Input\InputInterface.php
+vendor\symfony\console\Input\InputOption.php
+vendor\symfony\console\Input\StreamableInputInterface.php
+vendor\symfony\console\Input\StringInput.php
+vendor\symfony\console\Logger\ConsoleLogger.php
+vendor\symfony\console\Output\BufferedOutput.php
+vendor\symfony\console\Output\ConsoleOutput.php
+vendor\symfony\console\Output\ConsoleOutputInterface.php
+vendor\symfony\console\Output\ConsoleSectionOutput.php
+vendor\symfony\console\Output\NullOutput.php
+vendor\symfony\console\Output\Output.php
+vendor\symfony\console\Output\OutputInterface.php
+vendor\symfony\console\Output\StreamOutput.php
+vendor\symfony\console\Question\ChoiceQuestion.php
+vendor\symfony\console\Question\ConfirmationQuestion.php
+vendor\symfony\console\Question\Question.php
+vendor\symfony\console\Style\OutputStyle.php
+vendor\symfony\console\Style\StyleInterface.php
+vendor\symfony\console\Style\SymfonyStyle.php
+vendor\symfony\console\Terminal.php
+vendor\symfony\console\Tester\ApplicationTester.php
+vendor\symfony\console\Tester\CommandTester.php
+vendor\symfony\console\Tester\TesterTrait.php
+vendor\symfony\contracts\Cache\CacheInterface.php
+vendor\symfony\contracts\Cache\CacheTrait.php
+vendor\symfony\contracts\Cache\CallbackInterface.php
+vendor\symfony\contracts\Cache\ItemInterface.php
+vendor\symfony\contracts\Cache\TagAwareCacheInterface.php
+vendor\symfony\contracts\Service\ResetInterface.php
+vendor\symfony\contracts\Service\ServiceLocatorTrait.php
+vendor\symfony\contracts\Service\ServiceSubscriberInterface.php
+vendor\symfony\contracts\Service\ServiceSubscriberTrait.php
+vendor\symfony\contracts\Translation\LocaleAwareInterface.php
+vendor\symfony\contracts\Translation\TranslatorInterface.php
+vendor\symfony\contracts\Translation\TranslatorTrait.php
+vendor\symfony\debug\BufferingLogger.php
+vendor\symfony\debug\Debug.php
+vendor\symfony\debug\DebugClassLoader.php
+vendor\symfony\debug\ErrorHandler.php
+vendor\symfony\debug\ExceptionHandler.php
+vendor\symfony\debug\Exception\ClassNotFoundException.php
+vendor\symfony\debug\Exception\FatalErrorException.php
+vendor\symfony\debug\Exception\FatalThrowableError.php
+vendor\symfony\debug\Exception\FlattenException.php
+vendor\symfony\debug\Exception\OutOfMemoryException.php
+vendor\symfony\debug\Exception\SilencedErrorContext.php
+vendor\symfony\debug\Exception\UndefinedFunctionException.php
+vendor\symfony\debug\Exception\UndefinedMethodException.php
+vendor\symfony\debug\FatalErrorHandler\ClassNotFoundFatalErrorHandler.php
+vendor\symfony\debug\FatalErrorHandler\FatalErrorHandlerInterface.php
+vendor\symfony\debug\FatalErrorHandler\UndefinedFunctionFatalErrorHandler.php
+vendor\symfony\debug\FatalErrorHandler\UndefinedMethodFatalErrorHandler.php
+vendor\symfony\dependency-injection\Alias.php
+vendor\symfony\dependency-injection\Argument\ArgumentInterface.php
+vendor\symfony\dependency-injection\Argument\BoundArgument.php
+vendor\symfony\dependency-injection\Argument\IteratorArgument.php
+vendor\symfony\dependency-injection\Argument\ReferenceSetArgumentTrait.php
+vendor\symfony\dependency-injection\Argument\RewindableGenerator.php
+vendor\symfony\dependency-injection\Argument\ServiceClosureArgument.php
+vendor\symfony\dependency-injection\Argument\ServiceLocator.php
+vendor\symfony\dependency-injection\Argument\ServiceLocatorArgument.php
+vendor\symfony\dependency-injection\Argument\TaggedIteratorArgument.php
+vendor\symfony\dependency-injection\ChildDefinition.php
+vendor\symfony\dependency-injection\Compiler\AbstractRecursivePass.php
+vendor\symfony\dependency-injection\Compiler\AnalyzeServiceReferencesPass.php
+vendor\symfony\dependency-injection\Compiler\AutoAliasServicePass.php
+vendor\symfony\dependency-injection\Compiler\AutowirePass.php
+vendor\symfony\dependency-injection\Compiler\AutowireRequiredMethodsPass.php
+vendor\symfony\dependency-injection\Compiler\CheckArgumentsValidityPass.php
+vendor\symfony\dependency-injection\Compiler\CheckCircularReferencesPass.php
+vendor\symfony\dependency-injection\Compiler\CheckDefinitionValidityPass.php
+vendor\symfony\dependency-injection\Compiler\CheckExceptionOnInvalidReferenceBehaviorPass.php
+vendor\symfony\dependency-injection\Compiler\CheckReferenceValidityPass.php
+vendor\symfony\dependency-injection\Compiler\Compiler.php
+vendor\symfony\dependency-injection\Compiler\CompilerPassInterface.php
+vendor\symfony\dependency-injection\Compiler\DecoratorServicePass.php
+vendor\symfony\dependency-injection\Compiler\DefinitionErrorExceptionPass.php
+vendor\symfony\dependency-injection\Compiler\ExtensionCompilerPass.php
+vendor\symfony\dependency-injection\Compiler\InlineServiceDefinitionsPass.php
+vendor\symfony\dependency-injection\Compiler\MergeExtensionConfigurationPass.php
+vendor\symfony\dependency-injection\Compiler\PassConfig.php
+vendor\symfony\dependency-injection\Compiler\PriorityTaggedServiceTrait.php
+vendor\symfony\dependency-injection\Compiler\RegisterEnvVarProcessorsPass.php
+vendor\symfony\dependency-injection\Compiler\RegisterServiceSubscribersPass.php
+vendor\symfony\dependency-injection\Compiler\RemoveAbstractDefinitionsPass.php
+vendor\symfony\dependency-injection\Compiler\RemovePrivateAliasesPass.php
+vendor\symfony\dependency-injection\Compiler\RemoveUnusedDefinitionsPass.php
+vendor\symfony\dependency-injection\Compiler\RepeatablePassInterface.php
+vendor\symfony\dependency-injection\Compiler\RepeatedPass.php
+vendor\symfony\dependency-injection\Compiler\ReplaceAliasByActualDefinitionPass.php
+vendor\symfony\dependency-injection\Compiler\ResolveBindingsPass.php
+vendor\symfony\dependency-injection\Compiler\ResolveChildDefinitionsPass.php
+vendor\symfony\dependency-injection\Compiler\ResolveClassPass.php
+vendor\symfony\dependency-injection\Compiler\ResolveEnvPlaceholdersPass.php
+vendor\symfony\dependency-injection\Compiler\ResolveFactoryClassPass.php
+vendor\symfony\dependency-injection\Compiler\ResolveHotPathPass.php
+vendor\symfony\dependency-injection\Compiler\ResolveInstanceofConditionalsPass.php
+vendor\symfony\dependency-injection\Compiler\ResolveInvalidReferencesPass.php
+vendor\symfony\dependency-injection\Compiler\ResolveNamedArgumentsPass.php
+vendor\symfony\dependency-injection\Compiler\ResolveParameterPlaceHoldersPass.php
+vendor\symfony\dependency-injection\Compiler\ResolvePrivatesPass.php
+vendor\symfony\dependency-injection\Compiler\ResolveReferencesToAliasesPass.php
+vendor\symfony\dependency-injection\Compiler\ResolveServiceSubscribersPass.php
+vendor\symfony\dependency-injection\Compiler\ResolveTaggedIteratorArgumentPass.php
+vendor\symfony\dependency-injection\Compiler\ServiceLocatorTagPass.php
+vendor\symfony\dependency-injection\Compiler\ServiceReferenceGraph.php
+vendor\symfony\dependency-injection\Compiler\ServiceReferenceGraphEdge.php
+vendor\symfony\dependency-injection\Compiler\ServiceReferenceGraphNode.php
+vendor\symfony\dependency-injection\Compiler\ValidateEnvPlaceholdersPass.php
+vendor\symfony\dependency-injection\Config\ContainerParametersResource.php
+vendor\symfony\dependency-injection\Config\ContainerParametersResourceChecker.php
+vendor\symfony\dependency-injection\Container.php
+vendor\symfony\dependency-injection\ContainerAwareInterface.php
+vendor\symfony\dependency-injection\ContainerAwareTrait.php
+vendor\symfony\dependency-injection\ContainerBuilder.php
+vendor\symfony\dependency-injection\ContainerInterface.php
+vendor\symfony\dependency-injection\Definition.php
+vendor\symfony\dependency-injection\Dumper\Dumper.php
+vendor\symfony\dependency-injection\Dumper\DumperInterface.php
+vendor\symfony\dependency-injection\Dumper\GraphvizDumper.php
+vendor\symfony\dependency-injection\Dumper\PhpDumper.php
+vendor\symfony\dependency-injection\Dumper\XmlDumper.php
+vendor\symfony\dependency-injection\Dumper\YamlDumper.php
+vendor\symfony\dependency-injection\EnvVarProcessor.php
+vendor\symfony\dependency-injection\EnvVarProcessorInterface.php
+vendor\symfony\dependency-injection\Exception\AutowiringFailedException.php
+vendor\symfony\dependency-injection\Exception\BadMethodCallException.php
+vendor\symfony\dependency-injection\Exception\EnvNotFoundException.php
+vendor\symfony\dependency-injection\Exception\EnvParameterException.php
+vendor\symfony\dependency-injection\Exception\ExceptionInterface.php
+vendor\symfony\dependency-injection\Exception\InvalidArgumentException.php
+vendor\symfony\dependency-injection\Exception\LogicException.php
+vendor\symfony\dependency-injection\Exception\OutOfBoundsException.php
+vendor\symfony\dependency-injection\Exception\ParameterCircularReferenceException.php
+vendor\symfony\dependency-injection\Exception\ParameterNotFoundException.php
+vendor\symfony\dependency-injection\Exception\RuntimeException.php
+vendor\symfony\dependency-injection\Exception\ServiceCircularReferenceException.php
+vendor\symfony\dependency-injection\Exception\ServiceNotFoundException.php
+vendor\symfony\dependency-injection\ExpressionLanguage.php
+vendor\symfony\dependency-injection\ExpressionLanguageProvider.php
+vendor\symfony\dependency-injection\Extension\ConfigurationExtensionInterface.php
+vendor\symfony\dependency-injection\Extension\Extension.php
+vendor\symfony\dependency-injection\Extension\ExtensionInterface.php
+vendor\symfony\dependency-injection\Extension\PrependExtensionInterface.php
+vendor\symfony\dependency-injection\LazyProxy\Instantiator\InstantiatorInterface.php
+vendor\symfony\dependency-injection\LazyProxy\Instantiator\RealServiceInstantiator.php
+vendor\symfony\dependency-injection\LazyProxy\PhpDumper\DumperInterface.php
+vendor\symfony\dependency-injection\LazyProxy\PhpDumper\NullDumper.php
+vendor\symfony\dependency-injection\LazyProxy\ProxyHelper.php
+vendor\symfony\dependency-injection\Loader\ClosureLoader.php
+vendor\symfony\dependency-injection\Loader\Configurator\AbstractConfigurator.php
+vendor\symfony\dependency-injection\Loader\Configurator\AbstractServiceConfigurator.php
+vendor\symfony\dependency-injection\Loader\Configurator\AliasConfigurator.php
+vendor\symfony\dependency-injection\Loader\Configurator\ContainerConfigurator.php
+vendor\symfony\dependency-injection\Loader\Configurator\DefaultsConfigurator.php
+vendor\symfony\dependency-injection\Loader\Configurator\InlineServiceConfigurator.php
+vendor\symfony\dependency-injection\Loader\Configurator\InstanceofConfigurator.php
+vendor\symfony\dependency-injection\Loader\Configurator\ParametersConfigurator.php
+vendor\symfony\dependency-injection\Loader\Configurator\PrototypeConfigurator.php
+vendor\symfony\dependency-injection\Loader\Configurator\ReferenceConfigurator.php
+vendor\symfony\dependency-injection\Loader\Configurator\ServiceConfigurator.php
+vendor\symfony\dependency-injection\Loader\Configurator\ServicesConfigurator.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\AbstractTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\ArgumentTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\AutoconfigureTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\AutowireTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\BindTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\CallTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\ClassTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\ConfiguratorTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\DecorateTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\DeprecateTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\FactoryTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\FileTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\LazyTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\ParentTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\PropertyTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\PublicTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\ShareTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\SyntheticTrait.php
+vendor\symfony\dependency-injection\Loader\Configurator\Traits\TagTrait.php
+vendor\symfony\dependency-injection\Loader\DirectoryLoader.php
+vendor\symfony\dependency-injection\Loader\FileLoader.php
+vendor\symfony\dependency-injection\Loader\GlobFileLoader.php
+vendor\symfony\dependency-injection\Loader\IniFileLoader.php
+vendor\symfony\dependency-injection\Loader\PhpFileLoader.php
+vendor\symfony\dependency-injection\Loader\XmlFileLoader.php
+vendor\symfony\dependency-injection\Loader\YamlFileLoader.php
+vendor\symfony\dependency-injection\Parameter.php
+vendor\symfony\dependency-injection\ParameterBag\ContainerBag.php
+vendor\symfony\dependency-injection\ParameterBag\ContainerBagInterface.php
+vendor\symfony\dependency-injection\ParameterBag\EnvPlaceholderParameterBag.php
+vendor\symfony\dependency-injection\ParameterBag\FrozenParameterBag.php
+vendor\symfony\dependency-injection\ParameterBag\ParameterBag.php
+vendor\symfony\dependency-injection\ParameterBag\ParameterBagInterface.php
+vendor\symfony\dependency-injection\Reference.php
+vendor\symfony\dependency-injection\ResettableContainerInterface.php
+vendor\symfony\dependency-injection\ServiceLocator.php
+vendor\symfony\dependency-injection\ServiceSubscriberInterface.php
+vendor\symfony\dependency-injection\TaggedContainerInterface.php
+vendor\symfony\dependency-injection\TypedReference.php
+vendor\symfony\dependency-injection\Variable.php
+vendor\symfony\dotenv\Dotenv.php
+vendor\symfony\dotenv\Exception\ExceptionInterface.php
+vendor\symfony\dotenv\Exception\FormatException.php
+vendor\symfony\dotenv\Exception\FormatExceptionContext.php
+vendor\symfony\dotenv\Exception\PathException.php
+vendor\symfony\event-dispatcher\Debug\TraceableEventDispatcher.php
+vendor\symfony\event-dispatcher\Debug\TraceableEventDispatcherInterface.php
+vendor\symfony\event-dispatcher\Debug\WrappedListener.php
+vendor\symfony\event-dispatcher\DependencyInjection\RegisterListenersPass.php
+vendor\symfony\event-dispatcher\Event.php
+vendor\symfony\event-dispatcher\EventDispatcher.php
+vendor\symfony\event-dispatcher\EventDispatcherInterface.php
+vendor\symfony\event-dispatcher\EventSubscriberInterface.php
+vendor\symfony\event-dispatcher\GenericEvent.php
+vendor\symfony\event-dispatcher\ImmutableEventDispatcher.php
+vendor\symfony\filesystem\Exception\ExceptionInterface.php
+vendor\symfony\filesystem\Exception\FileNotFoundException.php
+vendor\symfony\filesystem\Exception\InvalidArgumentException.php
+vendor\symfony\filesystem\Exception\IOException.php
+vendor\symfony\filesystem\Exception\IOExceptionInterface.php
+vendor\symfony\filesystem\Filesystem.php
+vendor\symfony\finder\Comparator\Comparator.php
+vendor\symfony\finder\Comparator\DateComparator.php
+vendor\symfony\finder\Comparator\NumberComparator.php
+vendor\symfony\finder\Exception\AccessDeniedException.php
+vendor\symfony\finder\Finder.php
+vendor\symfony\finder\Glob.php
+vendor\symfony\finder\Iterator\CustomFilterIterator.php
+vendor\symfony\finder\Iterator\DateRangeFilterIterator.php
+vendor\symfony\finder\Iterator\DepthRangeFilterIterator.php
+vendor\symfony\finder\Iterator\ExcludeDirectoryFilterIterator.php
+vendor\symfony\finder\Iterator\FilecontentFilterIterator.php
+vendor\symfony\finder\Iterator\FilenameFilterIterator.php
+vendor\symfony\finder\Iterator\FileTypeFilterIterator.php
+vendor\symfony\finder\Iterator\MultiplePcreFilterIterator.php
+vendor\symfony\finder\Iterator\PathFilterIterator.php
+vendor\symfony\finder\Iterator\RecursiveDirectoryIterator.php
+vendor\symfony\finder\Iterator\SizeRangeFilterIterator.php
+vendor\symfony\finder\Iterator\SortableIterator.php
+vendor\symfony\finder\SplFileInfo.php
+vendor\symfony\flex\src\Cache.php
+vendor\symfony\flex\src\Command\FixRecipesCommand.php
+vendor\symfony\flex\src\Command\GenerateIdCommand.php
+vendor\symfony\flex\src\Command\RemoveCommand.php
+vendor\symfony\flex\src\Command\RequireCommand.php
+vendor\symfony\flex\src\Command\UnpackCommand.php
+vendor\symfony\flex\src\Command\UpdateCommand.php
+vendor\symfony\flex\src\ComposerRepository.php
+vendor\symfony\flex\src\Configurator.php
+vendor\symfony\flex\src\Configurator\AbstractConfigurator.php
+vendor\symfony\flex\src\Configurator\BundlesConfigurator.php
+vendor\symfony\flex\src\Configurator\ComposerScriptsConfigurator.php
+vendor\symfony\flex\src\Configurator\ContainerConfigurator.php
+vendor\symfony\flex\src\Configurator\CopyFromPackageConfigurator.php
+vendor\symfony\flex\src\Configurator\CopyFromRecipeConfigurator.php
+vendor\symfony\flex\src\Configurator\EnvConfigurator.php
+vendor\symfony\flex\src\Configurator\GitignoreConfigurator.php
+vendor\symfony\flex\src\Configurator\MakefileConfigurator.php
+vendor\symfony\flex\src\CurlDownloader.php
+vendor\symfony\flex\src\Downloader.php
+vendor\symfony\flex\src\Flex.php
+vendor\symfony\flex\src\Lock.php
+vendor\symfony\flex\src\Options.php
+vendor\symfony\flex\src\PackageResolver.php
+vendor\symfony\flex\src\ParallelDownloader.php
+vendor\symfony\flex\src\Path.php
+vendor\symfony\flex\src\Recipe.php
+vendor\symfony\flex\src\Response.php
+vendor\symfony\flex\src\ScriptExecutor.php
+vendor\symfony\flex\src\SymfonyBundle.php
+vendor\symfony\flex\src\TruncatedComposerRepository.php
+vendor\symfony\flex\src\Unpacker.php
+vendor\symfony\flex\src\Unpack\Operation.php
+vendor\symfony\flex\src\Unpack\Result.php
+vendor\symfony\framework-bundle\CacheWarmer\AbstractPhpFileCacheWarmer.php
+vendor\symfony\framework-bundle\CacheWarmer\AnnotationsCacheWarmer.php
+vendor\symfony\framework-bundle\CacheWarmer\RouterCacheWarmer.php
+vendor\symfony\framework-bundle\CacheWarmer\SerializerCacheWarmer.php
+vendor\symfony\framework-bundle\CacheWarmer\TemplateFinder.php
+vendor\symfony\framework-bundle\CacheWarmer\TemplateFinderInterface.php
+vendor\symfony\framework-bundle\CacheWarmer\TemplatePathsCacheWarmer.php
+vendor\symfony\framework-bundle\CacheWarmer\TranslationsCacheWarmer.php
+vendor\symfony\framework-bundle\CacheWarmer\ValidatorCacheWarmer.php
+vendor\symfony\framework-bundle\Client.php
+vendor\symfony\framework-bundle\Command\AboutCommand.php
+vendor\symfony\framework-bundle\Command\AbstractConfigCommand.php
+vendor\symfony\framework-bundle\Command\AssetsInstallCommand.php
+vendor\symfony\framework-bundle\Command\CacheClearCommand.php
+vendor\symfony\framework-bundle\Command\CachePoolClearCommand.php
+vendor\symfony\framework-bundle\Command\CachePoolDeleteCommand.php
+vendor\symfony\framework-bundle\Command\CachePoolPruneCommand.php
+vendor\symfony\framework-bundle\Command\CacheWarmupCommand.php
+vendor\symfony\framework-bundle\Command\ConfigDebugCommand.php
+vendor\symfony\framework-bundle\Command\ConfigDumpReferenceCommand.php
+vendor\symfony\framework-bundle\Command\ContainerAwareCommand.php
+vendor\symfony\framework-bundle\Command\ContainerDebugCommand.php
+vendor\symfony\framework-bundle\Command\DebugAutowiringCommand.php
+vendor\symfony\framework-bundle\Command\EventDispatcherDebugCommand.php
+vendor\symfony\framework-bundle\Command\RouterDebugCommand.php
+vendor\symfony\framework-bundle\Command\RouterMatchCommand.php
+vendor\symfony\framework-bundle\Command\TranslationDebugCommand.php
+vendor\symfony\framework-bundle\Command\TranslationUpdateCommand.php
+vendor\symfony\framework-bundle\Command\WorkflowDumpCommand.php
+vendor\symfony\framework-bundle\Command\XliffLintCommand.php
+vendor\symfony\framework-bundle\Command\YamlLintCommand.php
+vendor\symfony\framework-bundle\Console\Application.php
+vendor\symfony\framework-bundle\Console\Descriptor\Descriptor.php
+vendor\symfony\framework-bundle\Console\Descriptor\JsonDescriptor.php
+vendor\symfony\framework-bundle\Console\Descriptor\MarkdownDescriptor.php
+vendor\symfony\framework-bundle\Console\Descriptor\TextDescriptor.php
+vendor\symfony\framework-bundle\Console\Descriptor\XmlDescriptor.php
+vendor\symfony\framework-bundle\Console\Helper\DescriptorHelper.php
+vendor\symfony\framework-bundle\Controller\AbstractController.php
+vendor\symfony\framework-bundle\Controller\Controller.php
+vendor\symfony\framework-bundle\Controller\ControllerNameParser.php
+vendor\symfony\framework-bundle\Controller\ControllerResolver.php
+vendor\symfony\framework-bundle\Controller\ControllerTrait.php
+vendor\symfony\framework-bundle\Controller\RedirectController.php
+vendor\symfony\framework-bundle\Controller\TemplateController.php
+vendor\symfony\framework-bundle\DataCollector\RequestDataCollector.php
+vendor\symfony\framework-bundle\DataCollector\RouterDataCollector.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\AddAnnotationsCachedReaderPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\AddDebugLogProcessorPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\AddExpressionLanguageProvidersPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\CacheCollectorPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\CachePoolClearerPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\CachePoolPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\CachePoolPrunerPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\ContainerBuilderDebugDumpPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\DataCollectorTranslatorPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\LoggingTranslatorPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\ProfilerPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\TemplatingPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\TestServiceContainerRealRefPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\TestServiceContainerWeakRefPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\UnusedTagsPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Compiler\WorkflowGuardListenerPass.php
+vendor\symfony\framework-bundle\DependencyInjection\Configuration.php
+vendor\symfony\framework-bundle\DependencyInjection\FrameworkExtension.php
+vendor\symfony\framework-bundle\EventListener\ResolveControllerNameSubscriber.php
+vendor\symfony\framework-bundle\FrameworkBundle.php
+vendor\symfony\framework-bundle\HttpCache\HttpCache.php
+vendor\symfony\framework-bundle\Kernel\MicroKernelTrait.php
+vendor\symfony\framework-bundle\Resources\views\FormTable\button_row.html.php
+vendor\symfony\framework-bundle\Resources\views\FormTable\form_row.html.php
+vendor\symfony\framework-bundle\Resources\views\FormTable\form_widget_compound.html.php
+vendor\symfony\framework-bundle\Resources\views\FormTable\hidden_row.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\attributes.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\button_attributes.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\button_label.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\button_row.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\button_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\checkbox_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\choice_attributes.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\choice_options.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\choice_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\choice_widget_collapsed.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\choice_widget_expanded.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\choice_widget_options.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\collection_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\color_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\container_attributes.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\datetime_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\date_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\email_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\form.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\form_enctype.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\form_end.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\form_errors.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\form_help.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\form_label.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\form_rest.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\form_row.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\form_rows.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\form_start.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\form_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\form_widget_compound.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\form_widget_simple.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\hidden_row.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\hidden_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\integer_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\money_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\number_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\password_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\percent_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\radio_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\range_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\repeated_row.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\reset_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\search_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\submit_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\tel_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\textarea_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\time_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\url_widget.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\widget_attributes.html.php
+vendor\symfony\framework-bundle\Resources\views\Form\widget_container_attributes.html.php
+vendor\symfony\framework-bundle\Routing\AnnotatedRouteControllerLoader.php
+vendor\symfony\framework-bundle\Routing\DelegatingLoader.php
+vendor\symfony\framework-bundle\Routing\RedirectableUrlMatcher.php
+vendor\symfony\framework-bundle\Routing\Router.php
+vendor\symfony\framework-bundle\Templating\DelegatingEngine.php
+vendor\symfony\framework-bundle\Templating\EngineInterface.php
+vendor\symfony\framework-bundle\Templating\GlobalVariables.php
+vendor\symfony\framework-bundle\Templating\Helper\ActionsHelper.php
+vendor\symfony\framework-bundle\Templating\Helper\AssetsHelper.php
+vendor\symfony\framework-bundle\Templating\Helper\CodeHelper.php
+vendor\symfony\framework-bundle\Templating\Helper\FormHelper.php
+vendor\symfony\framework-bundle\Templating\Helper\RequestHelper.php
+vendor\symfony\framework-bundle\Templating\Helper\RouterHelper.php
+vendor\symfony\framework-bundle\Templating\Helper\SessionHelper.php
+vendor\symfony\framework-bundle\Templating\Helper\StopwatchHelper.php
+vendor\symfony\framework-bundle\Templating\Helper\TranslatorHelper.php
+vendor\symfony\framework-bundle\Templating\Loader\FilesystemLoader.php
+vendor\symfony\framework-bundle\Templating\Loader\TemplateLocator.php
+vendor\symfony\framework-bundle\Templating\PhpEngine.php
+vendor\symfony\framework-bundle\Templating\TemplateFilenameParser.php
+vendor\symfony\framework-bundle\Templating\TemplateNameParser.php
+vendor\symfony\framework-bundle\Templating\TemplateReference.php
+vendor\symfony\framework-bundle\Templating\TimedPhpEngine.php
+vendor\symfony\framework-bundle\Test\KernelTestCase.php
+vendor\symfony\framework-bundle\Test\TestContainer.php
+vendor\symfony\framework-bundle\Test\WebTestCase.php
+vendor\symfony\framework-bundle\Translation\Translator.php
+vendor\symfony\http-foundation\AcceptHeader.php
+vendor\symfony\http-foundation\AcceptHeaderItem.php
+vendor\symfony\http-foundation\ApacheRequest.php
+vendor\symfony\http-foundation\BinaryFileResponse.php
+vendor\symfony\http-foundation\Cookie.php
+vendor\symfony\http-foundation\Exception\ConflictingHeadersException.php
+vendor\symfony\http-foundation\Exception\RequestExceptionInterface.php
+vendor\symfony\http-foundation\Exception\SuspiciousOperationException.php
+vendor\symfony\http-foundation\ExpressionRequestMatcher.php
+vendor\symfony\http-foundation\FileBag.php
+vendor\symfony\http-foundation\File\Exception\AccessDeniedException.php
+vendor\symfony\http-foundation\File\Exception\CannotWriteFileException.php
+vendor\symfony\http-foundation\File\Exception\ExtensionFileException.php
+vendor\symfony\http-foundation\File\Exception\FileException.php
+vendor\symfony\http-foundation\File\Exception\FileNotFoundException.php
+vendor\symfony\http-foundation\File\Exception\FormSizeFileException.php
+vendor\symfony\http-foundation\File\Exception\IniSizeFileException.php
+vendor\symfony\http-foundation\File\Exception\NoFileException.php
+vendor\symfony\http-foundation\File\Exception\NoTmpDirFileException.php
+vendor\symfony\http-foundation\File\Exception\PartialFileException.php
+vendor\symfony\http-foundation\File\Exception\UnexpectedTypeException.php
+vendor\symfony\http-foundation\File\Exception\UploadException.php
+vendor\symfony\http-foundation\File\File.php
+vendor\symfony\http-foundation\File\MimeType\ExtensionGuesser.php
+vendor\symfony\http-foundation\File\MimeType\ExtensionGuesserInterface.php
+vendor\symfony\http-foundation\File\MimeType\FileBinaryMimeTypeGuesser.php
+vendor\symfony\http-foundation\File\MimeType\FileinfoMimeTypeGuesser.php
+vendor\symfony\http-foundation\File\MimeType\MimeTypeExtensionGuesser.php
+vendor\symfony\http-foundation\File\MimeType\MimeTypeGuesser.php
+vendor\symfony\http-foundation\File\MimeType\MimeTypeGuesserInterface.php
+vendor\symfony\http-foundation\File\Stream.php
+vendor\symfony\http-foundation\File\UploadedFile.php
+vendor\symfony\http-foundation\HeaderBag.php
+vendor\symfony\http-foundation\HeaderUtils.php
+vendor\symfony\http-foundation\IpUtils.php
+vendor\symfony\http-foundation\JsonResponse.php
+vendor\symfony\http-foundation\ParameterBag.php
+vendor\symfony\http-foundation\RedirectResponse.php
+vendor\symfony\http-foundation\Request.php
+vendor\symfony\http-foundation\RequestMatcher.php
+vendor\symfony\http-foundation\RequestMatcherInterface.php
+vendor\symfony\http-foundation\RequestStack.php
+vendor\symfony\http-foundation\Response.php
+vendor\symfony\http-foundation\ResponseHeaderBag.php
+vendor\symfony\http-foundation\ServerBag.php
+vendor\symfony\http-foundation\Session\Attribute\AttributeBag.php
+vendor\symfony\http-foundation\Session\Attribute\AttributeBagInterface.php
+vendor\symfony\http-foundation\Session\Attribute\NamespacedAttributeBag.php
+vendor\symfony\http-foundation\Session\Flash\AutoExpireFlashBag.php
+vendor\symfony\http-foundation\Session\Flash\FlashBag.php
+vendor\symfony\http-foundation\Session\Flash\FlashBagInterface.php
+vendor\symfony\http-foundation\Session\Session.php
+vendor\symfony\http-foundation\Session\SessionBagInterface.php
+vendor\symfony\http-foundation\Session\SessionBagProxy.php
+vendor\symfony\http-foundation\Session\SessionInterface.php
+vendor\symfony\http-foundation\Session\SessionUtils.php
+vendor\symfony\http-foundation\Session\Storage\Handler\AbstractSessionHandler.php
+vendor\symfony\http-foundation\Session\Storage\Handler\MemcachedSessionHandler.php
+vendor\symfony\http-foundation\Session\Storage\Handler\MigratingSessionHandler.php
+vendor\symfony\http-foundation\Session\Storage\Handler\MongoDbSessionHandler.php
+vendor\symfony\http-foundation\Session\Storage\Handler\NativeFileSessionHandler.php
+vendor\symfony\http-foundation\Session\Storage\Handler\NullSessionHandler.php
+vendor\symfony\http-foundation\Session\Storage\Handler\PdoSessionHandler.php
+vendor\symfony\http-foundation\Session\Storage\Handler\RedisSessionHandler.php
+vendor\symfony\http-foundation\Session\Storage\Handler\StrictSessionHandler.php
+vendor\symfony\http-foundation\Session\Storage\MetadataBag.php
+vendor\symfony\http-foundation\Session\Storage\MockArraySessionStorage.php
+vendor\symfony\http-foundation\Session\Storage\MockFileSessionStorage.php
+vendor\symfony\http-foundation\Session\Storage\NativeSessionStorage.php
+vendor\symfony\http-foundation\Session\Storage\PhpBridgeSessionStorage.php
+vendor\symfony\http-foundation\Session\Storage\Proxy\AbstractProxy.php
+vendor\symfony\http-foundation\Session\Storage\Proxy\SessionHandlerProxy.php
+vendor\symfony\http-foundation\Session\Storage\SessionStorageInterface.php
+vendor\symfony\http-foundation\StreamedResponse.php
+vendor\symfony\http-kernel\Bundle\Bundle.php
+vendor\symfony\http-kernel\Bundle\BundleInterface.php
+vendor\symfony\http-kernel\CacheClearer\CacheClearerInterface.php
+vendor\symfony\http-kernel\CacheClearer\ChainCacheClearer.php
+vendor\symfony\http-kernel\CacheClearer\Psr6CacheClearer.php
+vendor\symfony\http-kernel\CacheWarmer\CacheWarmer.php
+vendor\symfony\http-kernel\CacheWarmer\CacheWarmerAggregate.php
+vendor\symfony\http-kernel\CacheWarmer\CacheWarmerInterface.php
+vendor\symfony\http-kernel\CacheWarmer\WarmableInterface.php
+vendor\symfony\http-kernel\Client.php
+vendor\symfony\http-kernel\Config\FileLocator.php
+vendor\symfony\http-kernel\ControllerMetadata\ArgumentMetadata.php
+vendor\symfony\http-kernel\ControllerMetadata\ArgumentMetadataFactory.php
+vendor\symfony\http-kernel\ControllerMetadata\ArgumentMetadataFactoryInterface.php
+vendor\symfony\http-kernel\Controller\ArgumentResolver.php
+vendor\symfony\http-kernel\Controller\ArgumentResolverInterface.php
+vendor\symfony\http-kernel\Controller\ArgumentResolver\DefaultValueResolver.php
+vendor\symfony\http-kernel\Controller\ArgumentResolver\RequestAttributeValueResolver.php
+vendor\symfony\http-kernel\Controller\ArgumentResolver\RequestValueResolver.php
+vendor\symfony\http-kernel\Controller\ArgumentResolver\ServiceValueResolver.php
+vendor\symfony\http-kernel\Controller\ArgumentResolver\SessionValueResolver.php
+vendor\symfony\http-kernel\Controller\ArgumentResolver\TraceableValueResolver.php
+vendor\symfony\http-kernel\Controller\ArgumentResolver\VariadicValueResolver.php
+vendor\symfony\http-kernel\Controller\ArgumentValueResolverInterface.php
+vendor\symfony\http-kernel\Controller\ContainerControllerResolver.php
+vendor\symfony\http-kernel\Controller\ControllerReference.php
+vendor\symfony\http-kernel\Controller\ControllerResolver.php
+vendor\symfony\http-kernel\Controller\ControllerResolverInterface.php
+vendor\symfony\http-kernel\Controller\TraceableArgumentResolver.php
+vendor\symfony\http-kernel\Controller\TraceableControllerResolver.php
+vendor\symfony\http-kernel\DataCollector\AjaxDataCollector.php
+vendor\symfony\http-kernel\DataCollector\ConfigDataCollector.php
+vendor\symfony\http-kernel\DataCollector\DataCollector.php
+vendor\symfony\http-kernel\DataCollector\DataCollectorInterface.php
+vendor\symfony\http-kernel\DataCollector\DumpDataCollector.php
+vendor\symfony\http-kernel\DataCollector\EventDataCollector.php
+vendor\symfony\http-kernel\DataCollector\ExceptionDataCollector.php
+vendor\symfony\http-kernel\DataCollector\LateDataCollectorInterface.php
+vendor\symfony\http-kernel\DataCollector\LoggerDataCollector.php
+vendor\symfony\http-kernel\DataCollector\MemoryDataCollector.php
+vendor\symfony\http-kernel\DataCollector\RequestDataCollector.php
+vendor\symfony\http-kernel\DataCollector\RouterDataCollector.php
+vendor\symfony\http-kernel\DataCollector\TimeDataCollector.php
+vendor\symfony\http-kernel\Debug\FileLinkFormatter.php
+vendor\symfony\http-kernel\Debug\TraceableEventDispatcher.php
+vendor\symfony\http-kernel\DependencyInjection\AddAnnotatedClassesToCachePass.php
+vendor\symfony\http-kernel\DependencyInjection\ConfigurableExtension.php
+vendor\symfony\http-kernel\DependencyInjection\ControllerArgumentValueResolverPass.php
+vendor\symfony\http-kernel\DependencyInjection\Extension.php
+vendor\symfony\http-kernel\DependencyInjection\FragmentRendererPass.php
+vendor\symfony\http-kernel\DependencyInjection\LazyLoadingFragmentHandler.php
+vendor\symfony\http-kernel\DependencyInjection\LoggerPass.php
+vendor\symfony\http-kernel\DependencyInjection\MergeExtensionConfigurationPass.php
+vendor\symfony\http-kernel\DependencyInjection\RegisterControllerArgumentLocatorsPass.php
+vendor\symfony\http-kernel\DependencyInjection\RemoveEmptyControllerArgumentLocatorsPass.php
+vendor\symfony\http-kernel\DependencyInjection\ResettableServicePass.php
+vendor\symfony\http-kernel\DependencyInjection\ServicesResetter.php
+vendor\symfony\http-kernel\EventListener\AbstractSessionListener.php
+vendor\symfony\http-kernel\EventListener\AbstractTestSessionListener.php
+vendor\symfony\http-kernel\EventListener\AddRequestFormatsListener.php
+vendor\symfony\http-kernel\EventListener\DebugHandlersListener.php
+vendor\symfony\http-kernel\EventListener\DumpListener.php
+vendor\symfony\http-kernel\EventListener\ExceptionListener.php
+vendor\symfony\http-kernel\EventListener\FragmentListener.php
+vendor\symfony\http-kernel\EventListener\LocaleListener.php
+vendor\symfony\http-kernel\EventListener\ProfilerListener.php
+vendor\symfony\http-kernel\EventListener\ResponseListener.php
+vendor\symfony\http-kernel\EventListener\RouterListener.php
+vendor\symfony\http-kernel\EventListener\SaveSessionListener.php
+vendor\symfony\http-kernel\EventListener\SessionListener.php
+vendor\symfony\http-kernel\EventListener\StreamedResponseListener.php
+vendor\symfony\http-kernel\EventListener\SurrogateListener.php
+vendor\symfony\http-kernel\EventListener\TestSessionListener.php
+vendor\symfony\http-kernel\EventListener\TranslatorListener.php
+vendor\symfony\http-kernel\EventListener\ValidateRequestListener.php
+vendor\symfony\http-kernel\Event\FilterControllerArgumentsEvent.php
+vendor\symfony\http-kernel\Event\FilterControllerEvent.php
+vendor\symfony\http-kernel\Event\FilterResponseEvent.php
+vendor\symfony\http-kernel\Event\FinishRequestEvent.php
+vendor\symfony\http-kernel\Event\GetResponseEvent.php
+vendor\symfony\http-kernel\Event\GetResponseForControllerResultEvent.php
+vendor\symfony\http-kernel\Event\GetResponseForExceptionEvent.php
+vendor\symfony\http-kernel\Event\KernelEvent.php
+vendor\symfony\http-kernel\Event\PostResponseEvent.php
+vendor\symfony\http-kernel\Exception\AccessDeniedHttpException.php
+vendor\symfony\http-kernel\Exception\BadRequestHttpException.php
+vendor\symfony\http-kernel\Exception\ConflictHttpException.php
+vendor\symfony\http-kernel\Exception\ControllerDoesNotReturnResponseException.php
+vendor\symfony\http-kernel\Exception\GoneHttpException.php
+vendor\symfony\http-kernel\Exception\HttpException.php
+vendor\symfony\http-kernel\Exception\HttpExceptionInterface.php
+vendor\symfony\http-kernel\Exception\LengthRequiredHttpException.php
+vendor\symfony\http-kernel\Exception\MethodNotAllowedHttpException.php
+vendor\symfony\http-kernel\Exception\NotAcceptableHttpException.php
+vendor\symfony\http-kernel\Exception\NotFoundHttpException.php
+vendor\symfony\http-kernel\Exception\PreconditionFailedHttpException.php
+vendor\symfony\http-kernel\Exception\PreconditionRequiredHttpException.php
+vendor\symfony\http-kernel\Exception\ServiceUnavailableHttpException.php
+vendor\symfony\http-kernel\Exception\TooManyRequestsHttpException.php
+vendor\symfony\http-kernel\Exception\UnauthorizedHttpException.php
+vendor\symfony\http-kernel\Exception\UnprocessableEntityHttpException.php
+vendor\symfony\http-kernel\Exception\UnsupportedMediaTypeHttpException.php
+vendor\symfony\http-kernel\Fragment\AbstractSurrogateFragmentRenderer.php
+vendor\symfony\http-kernel\Fragment\EsiFragmentRenderer.php
+vendor\symfony\http-kernel\Fragment\FragmentHandler.php
+vendor\symfony\http-kernel\Fragment\FragmentRendererInterface.php
+vendor\symfony\http-kernel\Fragment\HIncludeFragmentRenderer.php
+vendor\symfony\http-kernel\Fragment\InlineFragmentRenderer.php
+vendor\symfony\http-kernel\Fragment\RoutableFragmentRenderer.php
+vendor\symfony\http-kernel\Fragment\SsiFragmentRenderer.php
+vendor\symfony\http-kernel\HttpCache\AbstractSurrogate.php
+vendor\symfony\http-kernel\HttpCache\Esi.php
+vendor\symfony\http-kernel\HttpCache\HttpCache.php
+vendor\symfony\http-kernel\HttpCache\ResponseCacheStrategy.php
+vendor\symfony\http-kernel\HttpCache\ResponseCacheStrategyInterface.php
+vendor\symfony\http-kernel\HttpCache\Ssi.php
+vendor\symfony\http-kernel\HttpCache\Store.php
+vendor\symfony\http-kernel\HttpCache\StoreInterface.php
+vendor\symfony\http-kernel\HttpCache\SubRequestHandler.php
+vendor\symfony\http-kernel\HttpCache\SurrogateInterface.php
+vendor\symfony\http-kernel\HttpKernel.php
+vendor\symfony\http-kernel\HttpKernelInterface.php
+vendor\symfony\http-kernel\Kernel.php
+vendor\symfony\http-kernel\KernelEvents.php
+vendor\symfony\http-kernel\KernelInterface.php
+vendor\symfony\http-kernel\Log\DebugLoggerInterface.php
+vendor\symfony\http-kernel\Log\Logger.php
+vendor\symfony\http-kernel\Profiler\FileProfilerStorage.php
+vendor\symfony\http-kernel\Profiler\Profile.php
+vendor\symfony\http-kernel\Profiler\Profiler.php
+vendor\symfony\http-kernel\Profiler\ProfilerStorageInterface.php
+vendor\symfony\http-kernel\RebootableInterface.php
+vendor\symfony\http-kernel\Resources\welcome.html.php
+vendor\symfony\http-kernel\TerminableInterface.php
+vendor\symfony\http-kernel\UriSigner.php
+vendor\symfony\polyfill-mbstring\bootstrap.php
+vendor\symfony\polyfill-mbstring\Mbstring.php
+vendor\symfony\polyfill-mbstring\Resources\unidata\lowerCase.php
+vendor\symfony\polyfill-mbstring\Resources\unidata\titleCaseRegexp.php
+vendor\symfony\polyfill-mbstring\Resources\unidata\upperCase.php
+vendor\symfony\routing\Annotation\Route.php
+vendor\symfony\routing\CompiledRoute.php
+vendor\symfony\routing\DependencyInjection\RoutingResolverPass.php
+vendor\symfony\routing\Exception\ExceptionInterface.php
+vendor\symfony\routing\Exception\InvalidParameterException.php
+vendor\symfony\routing\Exception\MethodNotAllowedException.php
+vendor\symfony\routing\Exception\MissingMandatoryParametersException.php
+vendor\symfony\routing\Exception\NoConfigurationException.php
+vendor\symfony\routing\Exception\ResourceNotFoundException.php
+vendor\symfony\routing\Exception\RouteNotFoundException.php
+vendor\symfony\routing\Generator\ConfigurableRequirementsInterface.php
+vendor\symfony\routing\Generator\Dumper\GeneratorDumper.php
+vendor\symfony\routing\Generator\Dumper\GeneratorDumperInterface.php
+vendor\symfony\routing\Generator\Dumper\PhpGeneratorDumper.php
+vendor\symfony\routing\Generator\UrlGenerator.php
+vendor\symfony\routing\Generator\UrlGeneratorInterface.php
+vendor\symfony\routing\Loader\AnnotationClassLoader.php
+vendor\symfony\routing\Loader\AnnotationDirectoryLoader.php
+vendor\symfony\routing\Loader\AnnotationFileLoader.php
+vendor\symfony\routing\Loader\ClosureLoader.php
+vendor\symfony\routing\Loader\Configurator\CollectionConfigurator.php
+vendor\symfony\routing\Loader\Configurator\ImportConfigurator.php
+vendor\symfony\routing\Loader\Configurator\RouteConfigurator.php
+vendor\symfony\routing\Loader\Configurator\RoutingConfigurator.php
+vendor\symfony\routing\Loader\Configurator\Traits\AddTrait.php
+vendor\symfony\routing\Loader\Configurator\Traits\RouteTrait.php
+vendor\symfony\routing\Loader\DependencyInjection\ServiceRouterLoader.php
+vendor\symfony\routing\Loader\DirectoryLoader.php
+vendor\symfony\routing\Loader\GlobFileLoader.php
+vendor\symfony\routing\Loader\ObjectRouteLoader.php
+vendor\symfony\routing\Loader\PhpFileLoader.php
+vendor\symfony\routing\Loader\XmlFileLoader.php
+vendor\symfony\routing\Loader\YamlFileLoader.php
+vendor\symfony\routing\Matcher\Dumper\MatcherDumper.php
+vendor\symfony\routing\Matcher\Dumper\MatcherDumperInterface.php
+vendor\symfony\routing\Matcher\Dumper\PhpMatcherDumper.php
+vendor\symfony\routing\Matcher\Dumper\PhpMatcherTrait.php
+vendor\symfony\routing\Matcher\Dumper\StaticPrefixCollection.php
+vendor\symfony\routing\Matcher\RedirectableUrlMatcher.php
+vendor\symfony\routing\Matcher\RedirectableUrlMatcherInterface.php
+vendor\symfony\routing\Matcher\RequestMatcherInterface.php
+vendor\symfony\routing\Matcher\TraceableUrlMatcher.php
+vendor\symfony\routing\Matcher\UrlMatcher.php
+vendor\symfony\routing\Matcher\UrlMatcherInterface.php
+vendor\symfony\routing\RequestContext.php
+vendor\symfony\routing\RequestContextAwareInterface.php
+vendor\symfony\routing\Route.php
+vendor\symfony\routing\RouteCollection.php
+vendor\symfony\routing\RouteCollectionBuilder.php
+vendor\symfony\routing\RouteCompiler.php
+vendor\symfony\routing\RouteCompilerInterface.php
+vendor\symfony\routing\Router.php
+vendor\symfony\routing\RouterInterface.php
+vendor\symfony\var-exporter\Exception\ClassNotFoundException.php
+vendor\symfony\var-exporter\Exception\ExceptionInterface.php
+vendor\symfony\var-exporter\Exception\NotInstantiableTypeException.php
+vendor\symfony\var-exporter\Instantiator.php
+vendor\symfony\var-exporter\Internal\Exporter.php
+vendor\symfony\var-exporter\Internal\Hydrator.php
+vendor\symfony\var-exporter\Internal\Reference.php
+vendor\symfony\var-exporter\Internal\Registry.php
+vendor\symfony\var-exporter\Internal\Values.php
+vendor\symfony\var-exporter\VarExporter.php
+vendor\symfony\yaml\Command\LintCommand.php
+vendor\symfony\yaml\Dumper.php
+vendor\symfony\yaml\Escaper.php
+vendor\symfony\yaml\Exception\DumpException.php
+vendor\symfony\yaml\Exception\ExceptionInterface.php
+vendor\symfony\yaml\Exception\ParseException.php
+vendor\symfony\yaml\Exception\RuntimeException.php
+vendor\symfony\yaml\Inline.php
+vendor\symfony\yaml\Parser.php
+vendor\symfony\yaml\Tag\TaggedValue.php
+vendor\symfony\yaml\Unescaper.php
+vendor\symfony\yaml\Yaml.php
