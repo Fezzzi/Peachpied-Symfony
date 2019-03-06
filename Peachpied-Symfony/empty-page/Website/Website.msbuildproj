@@ -15961,5 +15961,12 @@
     <ProjectReference Include="vendor\psr\log\psr-log.msbuildproj" />
     <ProjectReference Include="vendor\psr\simple-cache\psr-simple-cache.msbuildproj" />
     <ProjectReference Include="vendor\symfony\cache\symfony-cache.msbuildproj" />
+    <ProjectReference Include="vendor\symfony\config\symfony-config.msbuildproj" />
+    <ProjectReference Include="vendor\symfony\console\symfony-console.msbuildproj" />
+    <ProjectReference Include="vendor\symfony\contracts\symfony-contracts.msbuildproj" />
+    <ProjectReference Include="vendor\symfony\debug\symfony-debug.msbuildproj" />
+    <ProjectReference Include="vendor\symfony\dependency-injection\symfony-dependency-injection.msbuildproj" />
+    <ProjectReference Include="vendor\symfony\dotenv\symfony-dotenv.msbuildproj" />
+    <ProjectReference Include="vendor\symfony\event-dispatcher\symfony-event-dispatcher.msbuildproj" />
   </ItemGroup>
 </Project>

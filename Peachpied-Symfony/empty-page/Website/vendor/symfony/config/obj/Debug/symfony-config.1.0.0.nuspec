@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>symfony-config</id>
+    <version>1.0.0</version>
+    <authors>symfony-config</authors>
+    <owners>symfony-config</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET class library in PHP</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Peachpie.App" version="0.9.35" exclude="Build,Analyzers" />
+        <dependency id="Peachpie.Compiler.Tools" version="0.9.35" include="Runtime,Build,Native,ContentFiles,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp2.0/symfony/.gitignore" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/CHANGELOG.md" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/composer.json" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/LICENSE" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/phpunit.xml.dist" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/README.md" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Again/foo.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Exclude/AnExcludedFile.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Exclude/ExcludeToo/AnotheExcludedFile.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/foo.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Resource/.hiddenFile" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Util/document_type.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Util/invalid.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Util/invalid_schema.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Util/schema.xsd" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Util/valid.xml" buildAction="Content" copyToOutput="true" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\bin\Debug\netstandard2.0\symfony-config.dll" target="lib\netstandard2.0\symfony-config.dll" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\.gitignore" target="contentFiles\any\netcoreapp2.0\symfony\.gitignore" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\CHANGELOG.md" target="contentFiles\any\netcoreapp2.0\symfony\CHANGELOG.md" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\composer.json" target="contentFiles\any\netcoreapp2.0\symfony\composer.json" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\LICENSE" target="contentFiles\any\netcoreapp2.0\symfony\LICENSE" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\phpunit.xml.dist" target="contentFiles\any\netcoreapp2.0\symfony\phpunit.xml.dist" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\README.md" target="contentFiles\any\netcoreapp2.0\symfony\README.md" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\Tests\Fixtures\Again\foo.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Again\foo.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\Tests\Fixtures\Exclude\AnExcludedFile.txt" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Exclude\AnExcludedFile.txt" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\Tests\Fixtures\Exclude\ExcludeToo\AnotheExcludedFile.txt" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Exclude\ExcludeToo\AnotheExcludedFile.txt" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\Tests\Fixtures\foo.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\foo.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\Tests\Fixtures\Resource\.hiddenFile" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Resource\.hiddenFile" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\Tests\Fixtures\Util\document_type.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Util\document_type.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\Tests\Fixtures\Util\invalid.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Util\invalid.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\Tests\Fixtures\Util\invalid_schema.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Util\invalid_schema.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\Tests\Fixtures\Util\schema.xsd" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Util\schema.xsd" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\Tests\Fixtures\Util\valid.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Util\valid.xml" />
+  </files>
+</package>

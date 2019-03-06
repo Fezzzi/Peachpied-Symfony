@@ -6488,7 +6488,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\simple-cache\\psr-simple-cache.msbuildproj",
-      "projectName": "Simple-cache",
+      "projectName": "psr-simple-cache",
       "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\simple-cache\\psr-simple-cache.msbuildproj",
       "packagesPath": "C:\\Users\\Fezzi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\simple-cache\\obj\\",

@@ -7,3 +7,4 @@ C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\em
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\composer\bin\Debug\netstandard2.0\symfony\installed.json
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\composer\bin\Debug\netstandard2.0\symfony\LICENSE
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\composer\bin\Debug\netstandard2.0\symfony\README.md
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\composer\obj\Debug\netstandard2.0\composer.msbuildprojAssemblyReference.cache

@@ -1,6 +1,6 @@
 --temp-output:obj\Debug\netstandard2.0\
---out:obj\Debug\netstandard2.0\PhpLib1.dll
---output-name:PhpLib1
+--out:obj\Debug\netstandard2.0\symfony-cache.dll
+--output-name:symfony-cache
 --optimize:false
 --debug-type:portable
 --version:1.0.0
@@ -35,6 +35,7 @@
 --reference:C:\Users\Fezzi\.nuget\packages\peachpie.microsoft.codeanalysis\0.9.2\lib\netstandard1.3\Peachpie.Microsoft.CodeAnalysis.dll
 --reference:C:\Users\Fezzi\.nuget\packages\peachpie.runtime\0.9.35\lib\netstandard2.0\Peachpie.Runtime.dll
 --reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\cache\bin\Debug\netstandard2.0\psr-cache.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\container\bin\Debug\netstandard2.0\psr-container.dll
 --reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\bin\Debug\netstandard2.0\psr-log.dll
 --reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\simple-cache\bin\Debug\netstandard2.0\psr-simple-cache.dll
 --reference:C:\Users\Fezzi\.nuget\packages\sixlabors.core\1.0.0-beta0005\lib\netstandard1.1\SixLabors.Core.dll
@@ -43,6 +44,9 @@
 --reference:C:\Users\Fezzi\.nuget\packages\sixlabors.imagesharp.drawing\1.0.0-beta0004\lib\netstandard2.0\SixLabors.ImageSharp.Drawing.dll
 --reference:C:\Users\Fezzi\.nuget\packages\sixlabors.shapes\1.0.0-beta0005\lib\netstandard2.0\SixLabors.Shapes.dll
 --reference:C:\Users\Fezzi\.nuget\packages\sixlabors.shapes.text\1.0.0-beta0005\lib\netstandard2.0\SixLabors.Shapes.Text.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\bin\Debug\netstandard2.0\symfony-config.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\contracts\bin\Debug\netstandard2.0\symfony-contracts.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\dependency-injection\bin\Debug\netstandard2.0\symfony-depenedency-injection.dll
 --reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.AppContext.dll
 --reference:C:\Users\Fezzi\.nuget\packages\system.buffers\4.4.0\ref\netstandard2.0\System.Buffers.dll
 --reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Collections.Concurrent.dll
@@ -198,7 +202,6 @@ DependencyInjection\CacheCollectorPass.php
 DependencyInjection\CachePoolClearerPass.php
 DependencyInjection\CachePoolPass.php
 DependencyInjection\CachePoolPrunerPass.php
-DoctrineProvider.php
 Exception\CacheException.php
 Exception\InvalidArgumentException.php
 Exception\LogicException.php
@@ -222,66 +225,6 @@ Simple\PhpFilesCache.php
 Simple\Psr6Cache.php
 Simple\RedisCache.php
 Simple\TraceableCache.php
-Tests\Adapter\AbstractRedisAdapterTest.php
-Tests\Adapter\AdapterTestCase.php
-Tests\Adapter\ApcuAdapterTest.php
-Tests\Adapter\ArrayAdapterTest.php
-Tests\Adapter\ChainAdapterTest.php
-Tests\Adapter\DoctrineAdapterTest.php
-Tests\Adapter\FilesystemAdapterTest.php
-Tests\Adapter\MaxIdLengthAdapterTest.php
-Tests\Adapter\MemcachedAdapterTest.php
-Tests\Adapter\NamespacedProxyAdapterTest.php
-Tests\Adapter\NullAdapterTest.php
-Tests\Adapter\PdoAdapterTest.php
-Tests\Adapter\PdoDbalAdapterTest.php
-Tests\Adapter\PhpArrayAdapterTest.php
-Tests\Adapter\PhpArrayAdapterWithFallbackTest.php
-Tests\Adapter\PhpFilesAdapterTest.php
-Tests\Adapter\PredisAdapterTest.php
-Tests\Adapter\PredisClusterAdapterTest.php
-Tests\Adapter\PredisRedisClusterAdapterTest.php
-Tests\Adapter\ProxyAdapterTest.php
-Tests\Adapter\RedisAdapterTest.php
-Tests\Adapter\RedisArrayAdapterTest.php
-Tests\Adapter\RedisClusterAdapterTest.php
-Tests\Adapter\SimpleCacheAdapterTest.php
-Tests\Adapter\TagAwareAdapterTest.php
-Tests\Adapter\TraceableAdapterTest.php
-Tests\Adapter\TraceableTagAwareAdapterTest.php
-Tests\CacheItemTest.php
-Tests\DependencyInjection\CacheCollectorPassTest.php
-Tests\DependencyInjection\CachePoolClearerPassTest.php
-Tests\DependencyInjection\CachePoolPassTest.php
-Tests\DependencyInjection\CachePoolPrunerPassTest.php
-Tests\DoctrineProviderTest.php
-Tests\Fixtures\ArrayCache.php
-Tests\Fixtures\ExternalAdapter.php
-Tests\LockRegistryTest.php
-Tests\Marshaller\DefaultMarshallerTest.php
-Tests\Simple\AbstractRedisCacheTest.php
-Tests\Simple\ApcuCacheTest.php
-Tests\Simple\ArrayCacheTest.php
-Tests\Simple\CacheTestCase.php
-Tests\Simple\ChainCacheTest.php
-Tests\Simple\DoctrineCacheTest.php
-Tests\Simple\FilesystemCacheTest.php
-Tests\Simple\MemcachedCacheTest.php
-Tests\Simple\MemcachedCacheTextModeTest.php
-Tests\Simple\NullCacheTest.php
-Tests\Simple\PdoCacheTest.php
-Tests\Simple\PdoDbalCacheTest.php
-Tests\Simple\PhpArrayCacheTest.php
-Tests\Simple\PhpArrayCacheWithFallbackTest.php
-Tests\Simple\PhpFilesCacheTest.php
-Tests\Simple\Psr6CacheTest.php
-Tests\Simple\Psr6CacheWithAdapterTest.php
-Tests\Simple\Psr6CacheWithoutAdapterTest.php
-Tests\Simple\RedisArrayCacheTest.php
-Tests\Simple\RedisCacheTest.php
-Tests\Simple\RedisClusterCacheTest.php
-Tests\Simple\TraceableCacheTest.php
-Tests\Traits\PdoPruneableTrait.php
 Traits\AbstractTrait.php
 Traits\ApcuTrait.php
 Traits\ArrayTrait.php
