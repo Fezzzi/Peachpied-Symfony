@@ -1,0 +1,2 @@
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\cache\obj\Debug\netstandard2.0\symfony-cache.msbuildprojAssemblyReference.cache
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\cache\obj\Debug\netstandard2.0\symfony-cache.msbuildproj.CoreCompileInputs.cache

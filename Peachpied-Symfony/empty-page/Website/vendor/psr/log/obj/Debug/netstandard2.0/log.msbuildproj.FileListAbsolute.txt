@@ -1,0 +1,10 @@
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\obj\Debug\netstandard2.0\log.msbuildproj.CoreCompileInputs.cache
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\bin\Debug\netstandard2.0\symfony\.gitignore
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\bin\Debug\netstandard2.0\symfony\composer.json
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\bin\Debug\netstandard2.0\symfony\LICENSE
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\bin\Debug\netstandard2.0\symfony\README.md
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\bin\Debug\netstandard2.0\Log.deps.json
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\bin\Debug\netstandard2.0\Log.dll
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\bin\Debug\netstandard2.0\Log.pdb
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\obj\Debug\netstandard2.0\Log.dll
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\obj\Debug\netstandard2.0\Log.pdb
