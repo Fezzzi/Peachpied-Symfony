@@ -286,6 +286,7 @@ abstract class AbstractAdapter implements AdapterInterface, CacheInterface, Logg
     private function generateItems($items, &$keys)
     {
         $f = $this->createCacheItem;
+		$keyArr = [];
 
         try {
             foreach ($items as $id => $value) {
@@ -294,14 +295,16 @@ abstract class AbstractAdapter implements AdapterInterface, CacheInterface, Logg
                 }
                 $key = $keys[$id];
                 unset($keys[$id]);
-                yield $key => $f($key, $value, true);
+                $keyArr[$key] = $f($key, $value, true);
             }
         } catch (\Exception $e) {
             CacheItem::log($this->logger, 'Failed to fetch requested items', ['keys' => array_values($keys), 'exception' => $e]);
         }
 
         foreach ($keys as $key) {
-            yield $key => $f($key, null, false);
+            $keyArr[$key] = $f($key, null, false);
         }
+
+		return $keyArr;
     }
 }

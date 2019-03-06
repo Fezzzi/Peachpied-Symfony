@@ -220,21 +220,22 @@ class PhpArrayCache implements CacheInterface, PruneableInterface, ResettableInt
     private function generateItems(array $keys, $default)
     {
         $fallbackKeys = [];
+		$keyArr = [];
 
         foreach ($keys as $key) {
             if (isset($this->keys[$key])) {
                 $value = $this->values[$this->keys[$key]];
 
                 if ('N;' === $value) {
-                    yield $key => null;
+                    $keyArr[$key] = null;
                 } elseif ($value instanceof \Closure) {
                     try {
-                        yield $key => $value();
+                        $keyArr[$key] = $value();
                     } catch (\Throwable $e) {
-                        yield $key => $default;
+                        $keyArr[$key] = $default;
                     }
                 } else {
-                    yield $key => $value;
+                    $keyArr[$key] = $value;
                 }
             } else {
                 $fallbackKeys[] = $key;
@@ -244,5 +245,7 @@ class PhpArrayCache implements CacheInterface, PruneableInterface, ResettableInt
         if ($fallbackKeys) {
             yield from $this->pool->getMultiple($fallbackKeys, $default);
         }
+
+		return $keyArr;
     }
 }

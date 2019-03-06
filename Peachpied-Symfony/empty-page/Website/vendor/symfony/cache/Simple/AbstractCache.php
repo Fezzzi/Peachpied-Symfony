@@ -161,6 +161,8 @@ abstract class AbstractCache implements CacheInterface, LoggerAwareInterface, Re
 
     private function generateValues($values, &$keys, $default)
     {
+		$keyArr = [];
+
         try {
             foreach ($values as $id => $value) {
                 if (!isset($keys[$id])) {
@@ -168,14 +170,16 @@ abstract class AbstractCache implements CacheInterface, LoggerAwareInterface, Re
                 }
                 $key = $keys[$id];
                 unset($keys[$id]);
-                yield $key => $value;
+                $keyArr[$key] = $value;
             }
         } catch (\Exception $e) {
             CacheItem::log($this->logger, 'Failed to fetch requested values', ['keys' => array_values($keys), 'exception' => $e]);
         }
 
         foreach ($keys as $key) {
-            yield $key => $default;
+            $keyArr[$key] = $default;
         }
+
+		return $keyArr;
     }
 }

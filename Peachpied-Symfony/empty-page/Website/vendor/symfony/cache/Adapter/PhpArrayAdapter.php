@@ -259,21 +259,22 @@ class PhpArrayAdapter implements AdapterInterface, CacheInterface, PruneableInte
     {
         $f = $this->createCacheItem;
         $fallbackKeys = [];
+		$keyArr = [];
 
         foreach ($keys as $key) {
             if (isset($this->keys[$key])) {
                 $value = $this->values[$this->keys[$key]];
 
                 if ('N;' === $value) {
-                    yield $key => $f($key, null, true);
+                    $keyArr[$key] = $f($key, null, true);
                 } elseif ($value instanceof \Closure) {
                     try {
-                        yield $key => $f($key, $value(), true);
+                        $keyArr[$key] = $f($key, $value(), true);
                     } catch (\Throwable $e) {
-                        yield $key => $f($key, null, false);
+                        $keyArr[$key] = $f($key, null, false);
                     }
                 } else {
-                    yield $key => $f($key, $value, true);
+                    $keyArr[$key] = $f($key, $value, true);
                 }
             } else {
                 $fallbackKeys[] = $key;
@@ -283,6 +284,8 @@ class PhpArrayAdapter implements AdapterInterface, CacheInterface, PruneableInte
         if ($fallbackKeys) {
             yield from $this->pool->getItems($fallbackKeys);
         }
+
+		return $keyArr;
     }
 
     /**
