@@ -50,6 +50,9 @@
 --reference:"C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\bin\Debug\netstandard2.0\symfony-config.dll"
 --reference:"C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\contracts\bin\Debug\netstandard2.0\symfony-contracts.dll"
 --reference:"C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\dependency-injection\bin\Debug\netstandard2.0\symfony-depenedency-injection.dll"
+--reference:"C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\event-dispatcher\bin\Debug\netstandard2.0\symfony-event-dispatcher.dll"
+--reference:"C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-foundation\bin\Debug\netstandard2.0\symfony-http-foundation.dll"
+--reference:"C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\bin\Debug\netstandard2.0\symfony-http-kernel.dll"
 --reference:"C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.AppContext.dll"
 --reference:C:\Users\Fezzi\.nuget\packages\system.buffers\4.4.0\ref\netstandard2.0\System.Buffers.dll
 --reference:"C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Collections.Concurrent.dll"

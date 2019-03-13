@@ -2028,6 +2028,127 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "psr-cache/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.35",
+          "Peachpie.Compiler.Tools": "0.9.35"
+        },
+        "compile": {
+          "bin/placeholder/psr-cache.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/psr-cache.dll": {}
+        }
+      },
+      "psr-container/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.35",
+          "Peachpie.Compiler.Tools": "0.9.35"
+        },
+        "compile": {
+          "bin/placeholder/psr-container.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/psr-container.dll": {}
+        }
+      },
+      "psr-log/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.35",
+          "Peachpie.Compiler.Tools": "0.9.35"
+        },
+        "compile": {
+          "bin/placeholder/psr-log.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/psr-log.dll": {}
+        }
+      },
+      "symfony-config/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.35",
+          "Peachpie.Compiler.Tools": "0.9.35"
+        },
+        "compile": {
+          "bin/placeholder/symfony-config.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/symfony-config.dll": {}
+        }
+      },
+      "symfony-console/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.35",
+          "Peachpie.Compiler.Tools": "0.9.35",
+          "psr-log": "1.0.0",
+          "symfony-depenedency-injection": "1.0.0",
+          "symfony-event-dispatcher": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/symfony-console.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/symfony-console.dll": {}
+        }
+      },
+      "symfony-contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.35",
+          "Peachpie.Compiler.Tools": "0.9.35",
+          "psr-cache": "1.0.0",
+          "psr-container": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/symfony-contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/symfony-contracts.dll": {}
+        }
+      },
+      "symfony-depenedency-injection/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.35",
+          "Peachpie.Compiler.Tools": "0.9.35",
+          "psr-container": "1.0.0",
+          "symfony-config": "1.0.0",
+          "symfony-contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/symfony-depenedency-injection.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/symfony-depenedency-injection.dll": {}
+        }
+      },
+      "symfony-event-dispatcher/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.35",
+          "Peachpie.Compiler.Tools": "0.9.35",
+          "symfony-depenedency-injection": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/symfony-event-dispatcher.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/symfony-event-dispatcher.dll": {}
+        }
       }
     }
   },
@@ -6471,13 +6592,54 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "psr-cache/1.0.0": {
+      "type": "project",
+      "path": "../../psr/cache/psr-cache.msbuildproj",
+      "msbuildProject": "../../psr/cache/psr-cache.msbuildproj"
+    },
+    "psr-container/1.0.0": {
+      "type": "project",
+      "path": "../../psr/container/psr-container.msbuildproj",
+      "msbuildProject": "../../psr/container/psr-container.msbuildproj"
+    },
+    "psr-log/1.0.0": {
+      "type": "project",
+      "path": "../../psr/log/psr-log.msbuildproj",
+      "msbuildProject": "../../psr/log/psr-log.msbuildproj"
+    },
+    "symfony-config/1.0.0": {
+      "type": "project",
+      "path": "../config/symfony-config.msbuildproj",
+      "msbuildProject": "../config/symfony-config.msbuildproj"
+    },
+    "symfony-console/1.0.0": {
+      "type": "project",
+      "path": "../console/symfony-console.msbuildproj",
+      "msbuildProject": "../console/symfony-console.msbuildproj"
+    },
+    "symfony-contracts/1.0.0": {
+      "type": "project",
+      "path": "../contracts/symfony-contracts.msbuildproj",
+      "msbuildProject": "../contracts/symfony-contracts.msbuildproj"
+    },
+    "symfony-depenedency-injection/1.0.0": {
+      "type": "project",
+      "path": "../dependency-injection/symfony-dependency-injection.msbuildproj",
+      "msbuildProject": "../dependency-injection/symfony-dependency-injection.msbuildproj"
+    },
+    "symfony-event-dispatcher/1.0.0": {
+      "type": "project",
+      "path": "../event-dispatcher/symfony-event-dispatcher.msbuildproj",
+      "msbuildProject": "../event-dispatcher/symfony-event-dispatcher.msbuildproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
       "Peachpie.App >= 0.9.35",
-      "Peachpie.Compiler.Tools >= 0.9.35"
+      "Peachpie.Compiler.Tools >= 0.9.35",
+      "symfony-console >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6488,7 +6650,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\symfony\\flex\\symfony-flex.msbuildproj",
-      "projectName": "PhpLib1",
+      "projectName": "symfony-flex",
       "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\symfony\\flex\\symfony-flex.msbuildproj",
       "packagesPath": "C:\\Users\\Fezzi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\symfony\\flex\\obj\\",
@@ -6509,7 +6671,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\symfony\\console\\symfony-console.msbuildproj": {
+              "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\symfony\\console\\symfony-console.msbuildproj"
+            }
+          }
         }
       }
     },

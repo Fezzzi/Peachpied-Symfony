@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Peachpie.AspNetCore.Web;
 
-namespace empty-page.Server
+namespace empty_page.Server
 {
     class Program
     {

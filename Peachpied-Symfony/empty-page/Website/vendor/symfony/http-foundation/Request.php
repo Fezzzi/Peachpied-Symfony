@@ -495,7 +495,8 @@ class Request
         try {
             $content = $this->getContent();
         } catch (\LogicException $e) {
-            return trigger_error($e, E_USER_ERROR);
+            trigger_error($e, E_USER_ERROR);
+			return "";
         }
 
         $cookieHeader = '';

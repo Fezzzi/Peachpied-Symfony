@@ -16,6 +16,6 @@ if (!\class_exists(srcApp_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerDlssTFi\srcApp_KernelDevDebugContainer([
     'container.build_hash' => 'DlssTFi',
-    'container.build_id' => 'a6131072',
-    'container.build_time' => 1551817506,
+    'container.build_id' => '705a30cc',
+    'container.build_time' => 1552508431,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerDlssTFi');

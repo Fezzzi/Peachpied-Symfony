@@ -11,6 +11,7 @@
       <group targetFramework=".NETStandard2.0">
         <dependency id="psr-log" version="1.0.0" exclude="Build,Analyzers" />
         <dependency id="symfony-depenedency-injection" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="symfony-event-dispatcher" version="1.0.0" exclude="Build,Analyzers" />
         <dependency id="Peachpie.App" version="0.9.35" exclude="Build,Analyzers" />
         <dependency id="Peachpie.Compiler.Tools" version="0.9.35" include="Runtime,Build,Native,ContentFiles,Analyzers" />
       </group>

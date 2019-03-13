@@ -1,4 +1,3 @@
-C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\finder\obj\Debug\netstandard2.0\symfony-finder.msbuildprojAssemblyReference.cache
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\finder\obj\Debug\netstandard2.0\symfony-finder.msbuildproj.CoreCompileInputs.cache
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\finder\bin\Debug\netstandard2.0\symfony\.gitignore
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\finder\bin\Debug\netstandard2.0\symfony\CHANGELOG.md
@@ -29,3 +28,4 @@ C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\em
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\finder\bin\Debug\netstandard2.0\symfony-finder.pdb
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\finder\obj\Debug\netstandard2.0\symfony-finder.dll
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\finder\obj\Debug\netstandard2.0\symfony-finder.pdb
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\finder\obj\Debug\netstandard2.0\symfony-finder.msbuildprojAssemblyReference.cache

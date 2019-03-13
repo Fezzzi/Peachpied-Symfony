@@ -1,0 +1,13 @@
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\var-exporter\obj\Debug\netstandard2.0\symfony-var-exporter.msbuildproj.CoreCompileInputs.cache
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\var-exporter\bin\Debug\netstandard2.0\symfony\.gitignore
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\var-exporter\bin\Debug\netstandard2.0\symfony\CHANGELOG.md
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\var-exporter\bin\Debug\netstandard2.0\symfony\composer.json
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\var-exporter\bin\Debug\netstandard2.0\symfony\LICENSE
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\var-exporter\bin\Debug\netstandard2.0\symfony\phpunit.xml.dist
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\var-exporter\bin\Debug\netstandard2.0\symfony\README.md
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\var-exporter\bin\Debug\netstandard2.0\symfony-var-exporter.deps.json
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\var-exporter\bin\Debug\netstandard2.0\symfony-var-exporter.dll
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\var-exporter\bin\Debug\netstandard2.0\symfony-var-exporter.pdb
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\var-exporter\obj\Debug\netstandard2.0\symfony-var-exporter.dll
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\var-exporter\obj\Debug\netstandard2.0\symfony-var-exporter.pdb
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\var-exporter\obj\Debug\netstandard2.0\symfony-var-exporter.msbuildprojAssemblyReference.cache

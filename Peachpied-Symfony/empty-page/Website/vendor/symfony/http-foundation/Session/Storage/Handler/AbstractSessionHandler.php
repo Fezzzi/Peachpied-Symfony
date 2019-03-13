@@ -20,7 +20,7 @@ use Symfony\Component\HttpFoundation\Session\SessionUtils;
  *
  * @author Nicolas Grekas <p@tchwork.com>
  */
-abstract class AbstractSessionHandler implements \SessionHandlerInterface, \SessionUpdateTimestampHandlerInterface
+abstract class AbstractSessionHandler implements \SessionHandlerInterface/*, \SessionUpdateTimestampHandlerInterface*/
 {
     private $sessionName;
     private $prefetchId;

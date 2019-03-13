@@ -73,8 +73,10 @@ final class ServiceValueResolver implements ArgumentValueResolverInterface
             $controller = substr($controller, 0, $i).strtolower(substr($controller, $i));
         }
 
+		$returnYield = false;
         try {
-            yield $this->container->get($controller)->get($argument->getName());
+            $yield = $this->container->get($controller)->get($argument->getName());
+			$returnYield = true;
         } catch (RuntimeException $e) {
             $what = sprintf('argument $%s of "%s()"', $argument->getName(), $controller);
             $message = preg_replace('/service "\.service_locator\.[^"]++"/', $what, $e->getMessage());
@@ -89,5 +91,8 @@ final class ServiceValueResolver implements ArgumentValueResolverInterface
 
             throw $e;
         }
+
+		if($returnYield)
+			return $yield;
     }
 }

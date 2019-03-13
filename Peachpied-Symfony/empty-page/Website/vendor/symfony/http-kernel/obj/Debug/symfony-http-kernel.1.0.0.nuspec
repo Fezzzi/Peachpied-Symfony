@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>symfony-http-kernel</id>
+    <version>1.0.0</version>
+    <authors>symfony-http-kernel</authors>
+    <owners>symfony-http-kernel</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET class library in PHP</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="psr-log" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="symfony-event-dispatcher" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="symfony-http-foundation" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Peachpie.App" version="0.9.35" exclude="Build,Analyzers" />
+        <dependency id="Peachpie.Compiler.Tools" version="0.9.35" include="Runtime,Build,Native,ContentFiles,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp2.0/symfony/.gitignore" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/CHANGELOG.md" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/composer.json" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/LICENSE" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/phpunit.xml.dist" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/README.md" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/DataCollector/Compiler.log" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/BaseBundle/Resources/foo.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/BaseBundle/Resources/hide.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Bundle1Bundle/bar.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Bundle1Bundle/foo.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Bundle1Bundle/Resources/foo.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Bundle2Bundle/foo.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/ChildBundle/Resources/foo.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/ChildBundle/Resources/hide.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Resources/BaseBundle/hide.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Resources/Bundle1Bundle/foo.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Resources/ChildBundle/foo.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/Resources/FooBundle/foo.txt" buildAction="Content" copyToOutput="true" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\bin\Debug\netstandard2.0\symfony-http-kernel.dll" target="lib\netstandard2.0\symfony-http-kernel.dll" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\.gitignore" target="contentFiles\any\netcoreapp2.0\symfony\.gitignore" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\CHANGELOG.md" target="contentFiles\any\netcoreapp2.0\symfony\CHANGELOG.md" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\composer.json" target="contentFiles\any\netcoreapp2.0\symfony\composer.json" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\LICENSE" target="contentFiles\any\netcoreapp2.0\symfony\LICENSE" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\phpunit.xml.dist" target="contentFiles\any\netcoreapp2.0\symfony\phpunit.xml.dist" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\README.md" target="contentFiles\any\netcoreapp2.0\symfony\README.md" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\Tests\DataCollector\Compiler.log" target="contentFiles\any\netcoreapp2.0\symfony\Tests\DataCollector\Compiler.log" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\Tests\Fixtures\BaseBundle\Resources\foo.txt" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\BaseBundle\Resources\foo.txt" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\Tests\Fixtures\BaseBundle\Resources\hide.txt" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\BaseBundle\Resources\hide.txt" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\Tests\Fixtures\Bundle1Bundle\bar.txt" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Bundle1Bundle\bar.txt" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\Tests\Fixtures\Bundle1Bundle\foo.txt" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Bundle1Bundle\foo.txt" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\Tests\Fixtures\Bundle1Bundle\Resources\foo.txt" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Bundle1Bundle\Resources\foo.txt" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\Tests\Fixtures\Bundle2Bundle\foo.txt" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Bundle2Bundle\foo.txt" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\Tests\Fixtures\ChildBundle\Resources\foo.txt" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\ChildBundle\Resources\foo.txt" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\Tests\Fixtures\ChildBundle\Resources\hide.txt" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\ChildBundle\Resources\hide.txt" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\Tests\Fixtures\Resources\BaseBundle\hide.txt" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Resources\BaseBundle\hide.txt" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\Tests\Fixtures\Resources\Bundle1Bundle\foo.txt" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Resources\Bundle1Bundle\foo.txt" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\Tests\Fixtures\Resources\ChildBundle\foo.txt" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Resources\ChildBundle\foo.txt" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\Tests\Fixtures\Resources\FooBundle\foo.txt" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\Resources\FooBundle\foo.txt" />
+  </files>
+</package>

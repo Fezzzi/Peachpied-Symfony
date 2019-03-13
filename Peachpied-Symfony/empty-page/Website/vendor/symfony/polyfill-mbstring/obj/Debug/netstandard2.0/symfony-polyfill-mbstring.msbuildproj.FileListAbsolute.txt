@@ -1,0 +1,10 @@
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\polyfill-mbstring\obj\Debug\netstandard2.0\symfony-polyfill-mbstring.msbuildproj.CoreCompileInputs.cache
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\polyfill-mbstring\bin\Debug\netstandard2.0\symfony\composer.json
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\polyfill-mbstring\bin\Debug\netstandard2.0\symfony\LICENSE
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\polyfill-mbstring\bin\Debug\netstandard2.0\symfony\README.md
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\polyfill-mbstring\bin\Debug\netstandard2.0\symfony-polyfill-mbstring.deps.json
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\polyfill-mbstring\bin\Debug\netstandard2.0\symfony-polyfill-mbstring.dll
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\polyfill-mbstring\bin\Debug\netstandard2.0\symfony-polyfill-mbstring.pdb
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\polyfill-mbstring\obj\Debug\netstandard2.0\symfony-polyfill-mbstring.dll
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\polyfill-mbstring\obj\Debug\netstandard2.0\symfony-polyfill-mbstring.pdb
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\polyfill-mbstring\obj\Debug\netstandard2.0\symfony-polyfill-mbstring.msbuildprojAssemblyReference.cache

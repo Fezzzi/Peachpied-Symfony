@@ -1,4 +1,3 @@
-C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\obj\Debug\netstandard2.0\symfony-config.msbuildprojAssemblyReference.cache
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\obj\Debug\netstandard2.0\symfony-config.msbuildproj.CoreCompileInputs.cache
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\bin\Debug\netstandard2.0\symfony\.gitignore
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\bin\Debug\netstandard2.0\symfony\CHANGELOG.md

@@ -4879,39 +4879,14 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "Composer/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35"
-        },
-        "compile": {
-          "bin/placeholder/Composer.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Composer.dll": {}
-        }
-      },
       "empty-page/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Composer": "1.0.0",
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35",
-          "psr-cache": "1.0.0",
-          "psr-container": "1.0.0",
-          "psr-log": "1.0.0",
-          "psr-simple-cache": "1.0.0",
-          "symfony-cache": "1.0.0",
-          "symfony-config": "1.0.0",
-          "symfony-console": "1.0.0",
-          "symfony-contracts": "1.0.0",
-          "symfony-debug": "1.0.0",
-          "symfony-depenedency-injection": "1.0.0",
-          "symfony-dotenv": "1.0.0",
-          "symfony-event-dispatcher": "1.0.0"
+          "symfony-framework-bundle": "1.0.0",
+          "symfony-routing": "1.0.0"
         },
         "compile": {
           "bin/placeholder/empty-page.dll": {}
@@ -4986,7 +4961,8 @@
           "psr-log": "1.0.0",
           "psr-simple-cache": "1.0.0",
           "symfony-contracts": "1.0.0",
-          "symfony-depenedency-injection": "1.0.0"
+          "symfony-depenedency-injection": "1.0.0",
+          "symfony-http-kernel": "1.0.0"
         },
         "compile": {
           "bin/placeholder/symfony-cache.dll": {}
@@ -5042,21 +5018,6 @@
           "bin/placeholder/symfony-contracts.dll": {}
         }
       },
-      "symfony-debug/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35",
-          "psr-log": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/symfony-debug.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/symfony-debug.dll": {}
-        }
-      },
       "symfony-depenedency-injection/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -5074,20 +5035,6 @@
           "bin/placeholder/symfony-depenedency-injection.dll": {}
         }
       },
-      "symfony-dotenv/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35"
-        },
-        "compile": {
-          "bin/placeholder/symfony-dotenv.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/symfony-dotenv.dll": {}
-        }
-      },
       "symfony-event-dispatcher/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -5101,6 +5048,85 @@
         },
         "runtime": {
           "bin/placeholder/symfony-event-dispatcher.dll": {}
+        }
+      },
+      "symfony-framework-bundle/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.35",
+          "Peachpie.Compiler.Tools": "0.9.35",
+          "symfony-cache": "1.0.0",
+          "symfony-console": "1.0.0",
+          "symfony-routing": "1.0.0",
+          "symfony-yaml": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/symfony-framework-bundle.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/symfony-framework-bundle.dll": {}
+        }
+      },
+      "symfony-http-foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.35",
+          "Peachpie.Compiler.Tools": "0.9.35"
+        },
+        "compile": {
+          "bin/placeholder/symfony-http-foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/symfony-http-foundation.dll": {}
+        }
+      },
+      "symfony-http-kernel/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.35",
+          "Peachpie.Compiler.Tools": "0.9.35",
+          "psr-log": "1.0.0",
+          "symfony-event-dispatcher": "1.0.0",
+          "symfony-http-foundation": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/symfony-http-kernel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/symfony-http-kernel.dll": {}
+        }
+      },
+      "symfony-routing/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.35",
+          "Peachpie.Compiler.Tools": "0.9.35",
+          "symfony-depenedency-injection": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/symfony-routing.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/symfony-routing.dll": {}
+        }
+      },
+      "symfony-yaml/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.35",
+          "Peachpie.Compiler.Tools": "0.9.35",
+          "symfony-console": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/symfony-yaml.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/symfony-yaml.dll": {}
         }
       }
     }
@@ -12830,11 +12856,6 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "Composer/1.0.0": {
-      "type": "project",
-      "path": "../Website/vendor/composer/composer.msbuildproj",
-      "msbuildProject": "../Website/vendor/composer/composer.msbuildproj"
-    },
     "empty-page/1.0.0": {
       "type": "project",
       "path": "../Website/Website.msbuildproj",
@@ -12880,25 +12901,40 @@
       "path": "../Website/vendor/symfony/contracts/symfony-contracts.msbuildproj",
       "msbuildProject": "../Website/vendor/symfony/contracts/symfony-contracts.msbuildproj"
     },
-    "symfony-debug/1.0.0": {
-      "type": "project",
-      "path": "../Website/vendor/symfony/debug/symfony-debug.msbuildproj",
-      "msbuildProject": "../Website/vendor/symfony/debug/symfony-debug.msbuildproj"
-    },
     "symfony-depenedency-injection/1.0.0": {
       "type": "project",
       "path": "../Website/vendor/symfony/dependency-injection/symfony-dependency-injection.msbuildproj",
       "msbuildProject": "../Website/vendor/symfony/dependency-injection/symfony-dependency-injection.msbuildproj"
     },
-    "symfony-dotenv/1.0.0": {
-      "type": "project",
-      "path": "../Website/vendor/symfony/dotenv/symfony-dotenv.msbuildproj",
-      "msbuildProject": "../Website/vendor/symfony/dotenv/symfony-dotenv.msbuildproj"
-    },
     "symfony-event-dispatcher/1.0.0": {
       "type": "project",
       "path": "../Website/vendor/symfony/event-dispatcher/symfony-event-dispatcher.msbuildproj",
       "msbuildProject": "../Website/vendor/symfony/event-dispatcher/symfony-event-dispatcher.msbuildproj"
+    },
+    "symfony-framework-bundle/1.0.0": {
+      "type": "project",
+      "path": "../Website/vendor/symfony/framework-bundle/symfony-framework-bundle.msbuildproj",
+      "msbuildProject": "../Website/vendor/symfony/framework-bundle/symfony-framework-bundle.msbuildproj"
+    },
+    "symfony-http-foundation/1.0.0": {
+      "type": "project",
+      "path": "../Website/vendor/symfony/http-foundation/symfony-http-foundation.msbuildproj",
+      "msbuildProject": "../Website/vendor/symfony/http-foundation/symfony-http-foundation.msbuildproj"
+    },
+    "symfony-http-kernel/1.0.0": {
+      "type": "project",
+      "path": "../Website/vendor/symfony/http-kernel/symfony-http-kernel.msbuildproj",
+      "msbuildProject": "../Website/vendor/symfony/http-kernel/symfony-http-kernel.msbuildproj"
+    },
+    "symfony-routing/1.0.0": {
+      "type": "project",
+      "path": "../Website/vendor/symfony/routing/symfony-routing.msbuildproj",
+      "msbuildProject": "../Website/vendor/symfony/routing/symfony-routing.msbuildproj"
+    },
+    "symfony-yaml/1.0.0": {
+      "type": "project",
+      "path": "../Website/vendor/symfony/yaml/symfony-yaml.msbuildproj",
+      "msbuildProject": "../Website/vendor/symfony/yaml/symfony-yaml.msbuildproj"
     }
   },
   "projectFileDependencyGroups": {

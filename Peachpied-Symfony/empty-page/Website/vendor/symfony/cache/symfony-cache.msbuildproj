@@ -8,7 +8,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="**/*.php" Exclude="tests/**;DoctrineProvider.php"/>
+    <Compile Include="**/*.php" Exclude="tests/**;DoctrineProvider.php" />
     <Content Include="**" Exclude="**/*.php;obj/**;bin/**;*.msbuildproj" CopyToOutputDirectory="PreserveNewest">
       <PackagePath>contentFiles/any/netcoreapp2.0/symfony/</PackagePath>
       <PackageCopyToOutput>true</PackageCopyToOutput>
@@ -21,5 +21,6 @@
     <ProjectReference Include="..\..\psr\simple-cache\psr-simple-cache.msbuildproj" />
     <ProjectReference Include="..\contracts\symfony-contracts.msbuildproj" />
     <ProjectReference Include="..\dependency-injection\symfony-dependency-injection.msbuildproj" />
+    <ProjectReference Include="..\http-kernel\symfony-http-kernel.msbuildproj" />
   </ItemGroup>
 </Project>

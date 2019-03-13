@@ -8,4 +8,3 @@ C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\em
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\cache\obj\Debug\netstandard2.0\psr-cache.msbuildproj.CoreCompileInputs.cache
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\cache\obj\Debug\netstandard2.0\psr-cache.dll
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\cache\obj\Debug\netstandard2.0\psr-cache.pdb
-C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\cache\obj\Debug\netstandard2.0\psr-cache.msbuildprojAssemblyReference.cache

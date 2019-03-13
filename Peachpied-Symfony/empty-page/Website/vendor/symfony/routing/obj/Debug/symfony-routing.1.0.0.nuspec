@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>symfony-routing</id>
+    <version>1.0.0</version>
+    <authors>symfony-routing</authors>
+    <owners>symfony-routing</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET class library in PHP</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="symfony-depenedency-injection" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Peachpie.App" version="0.9.35" exclude="Build,Analyzers" />
+        <dependency id="Peachpie.Compiler.Tools" version="0.9.35" include="Runtime,Build,Native,ContentFiles,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp2.0/symfony/.gitignore" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/CHANGELOG.md" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/composer.json" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/LICENSE" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Loader/schema/routing/routing-1.0.xsd" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/phpunit.xml.dist" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/README.md" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/bad_format.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/bar.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/controller/import_controller.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/controller/import_controller.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/controller/import_override_defaults.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/controller/import_override_defaults.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/controller/import__controller.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/controller/import__controller.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/controller/override_defaults.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/controller/override_defaults.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/controller/routing.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/controller/routing.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/directory/recurse/routes1.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/directory/recurse/routes2.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/directory/routes3.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/directory_import/import.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/empty.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/file_resource.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/foo.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/foo1.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/glob/bar.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/glob/bar.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/glob/baz.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/glob/baz.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/glob/import_multiple.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/glob/import_multiple.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/glob/import_single.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/glob/import_single.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/import_with_name_prefix/routing.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/import_with_name_prefix/routing.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/import_with_no_trailing_slash/routing.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/import_with_no_trailing_slash/routing.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/incomplete.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/list_defaults.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/list_in_list_defaults.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/list_in_map_defaults.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/list_null_values.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized/imported-with-locale-but-not-localized.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized/imported-with-locale-but-not-localized.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized/imported-with-locale.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized/imported-with-locale.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized/importer-with-controller-default.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized/importer-with-locale-imports-non-localized-route.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized/importer-with-locale-imports-non-localized-route.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized/importer-with-locale.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized/importer-with-locale.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized/importing-localized-route.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized/localized-route.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized/missing-locale-in-importer.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized/not-localized.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized/officially_formatted_locales.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/localized/route-without-path-or-locales.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/map_defaults.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/map_in_list_defaults.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/map_in_map_defaults.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/map_null_values.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/missing_id.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/missing_path.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/namespaceprefix.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/nonesense_resource_plus_path.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/nonesense_type_without_resource.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/nonvalid.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/nonvalid.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/nonvalid2.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/nonvalidkeys.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/nonvalidnode.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/nonvalidroute.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/null_values.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/requirements_without_placeholder_name.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/scalar_defaults.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/special_route_name.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/validpattern.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/validpattern.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/validresource.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/validresource.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/withdoctype.xml" buildAction="Content" copyToOutput="true" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\bin\Debug\netstandard2.0\symfony-routing.dll" target="lib\netstandard2.0\symfony-routing.dll" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\.gitignore" target="contentFiles\any\netcoreapp2.0\symfony\.gitignore" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\CHANGELOG.md" target="contentFiles\any\netcoreapp2.0\symfony\CHANGELOG.md" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\composer.json" target="contentFiles\any\netcoreapp2.0\symfony\composer.json" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\LICENSE" target="contentFiles\any\netcoreapp2.0\symfony\LICENSE" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Loader\schema\routing\routing-1.0.xsd" target="contentFiles\any\netcoreapp2.0\symfony\Loader\schema\routing\routing-1.0.xsd" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\phpunit.xml.dist" target="contentFiles\any\netcoreapp2.0\symfony\phpunit.xml.dist" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\README.md" target="contentFiles\any\netcoreapp2.0\symfony\README.md" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\bad_format.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\bad_format.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\bar.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\bar.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\controller\import_controller.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\controller\import_controller.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\controller\import_controller.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\controller\import_controller.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\controller\import_override_defaults.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\controller\import_override_defaults.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\controller\import_override_defaults.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\controller\import_override_defaults.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\controller\import__controller.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\controller\import__controller.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\controller\import__controller.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\controller\import__controller.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\controller\override_defaults.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\controller\override_defaults.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\controller\override_defaults.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\controller\override_defaults.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\controller\routing.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\controller\routing.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\controller\routing.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\controller\routing.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\directory\recurse\routes1.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\directory\recurse\routes1.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\directory\recurse\routes2.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\directory\recurse\routes2.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\directory\routes3.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\directory\routes3.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\directory_import\import.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\directory_import\import.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\empty.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\empty.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\file_resource.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\file_resource.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\foo.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\foo.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\foo1.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\foo1.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\glob\bar.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\glob\bar.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\glob\bar.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\glob\bar.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\glob\baz.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\glob\baz.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\glob\baz.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\glob\baz.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\glob\import_multiple.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\glob\import_multiple.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\glob\import_multiple.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\glob\import_multiple.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\glob\import_single.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\glob\import_single.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\glob\import_single.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\glob\import_single.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\import_with_name_prefix\routing.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\import_with_name_prefix\routing.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\import_with_name_prefix\routing.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\import_with_name_prefix\routing.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\import_with_no_trailing_slash\routing.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\import_with_no_trailing_slash\routing.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\import_with_no_trailing_slash\routing.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\import_with_no_trailing_slash\routing.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\incomplete.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\incomplete.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\list_defaults.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\list_defaults.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\list_in_list_defaults.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\list_in_list_defaults.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\list_in_map_defaults.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\list_in_map_defaults.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\list_null_values.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\list_null_values.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized\imported-with-locale-but-not-localized.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized\imported-with-locale-but-not-localized.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized\imported-with-locale-but-not-localized.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized\imported-with-locale-but-not-localized.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized\imported-with-locale.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized\imported-with-locale.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized\imported-with-locale.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized\imported-with-locale.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized\importer-with-controller-default.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized\importer-with-controller-default.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized\importer-with-locale-imports-non-localized-route.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized\importer-with-locale-imports-non-localized-route.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized\importer-with-locale-imports-non-localized-route.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized\importer-with-locale-imports-non-localized-route.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized\importer-with-locale.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized\importer-with-locale.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized\importer-with-locale.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized\importer-with-locale.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized\importing-localized-route.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized\importing-localized-route.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized\localized-route.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized\localized-route.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized\missing-locale-in-importer.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized\missing-locale-in-importer.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized\not-localized.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized\not-localized.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized\officially_formatted_locales.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized\officially_formatted_locales.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\localized\route-without-path-or-locales.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\localized\route-without-path-or-locales.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\map_defaults.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\map_defaults.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\map_in_list_defaults.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\map_in_list_defaults.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\map_in_map_defaults.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\map_in_map_defaults.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\map_null_values.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\map_null_values.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\missing_id.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\missing_id.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\missing_path.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\missing_path.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\namespaceprefix.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\namespaceprefix.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\nonesense_resource_plus_path.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\nonesense_resource_plus_path.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\nonesense_type_without_resource.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\nonesense_type_without_resource.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\nonvalid.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\nonvalid.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\nonvalid.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\nonvalid.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\nonvalid2.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\nonvalid2.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\nonvalidkeys.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\nonvalidkeys.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\nonvalidnode.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\nonvalidnode.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\nonvalidroute.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\nonvalidroute.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\null_values.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\null_values.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\requirements_without_placeholder_name.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\requirements_without_placeholder_name.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\scalar_defaults.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\scalar_defaults.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\special_route_name.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\special_route_name.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\validpattern.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\validpattern.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\validpattern.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\validpattern.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\validresource.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\validresource.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\validresource.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\validresource.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\Tests\Fixtures\withdoctype.xml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\withdoctype.xml" />
+  </files>
+</package>

@@ -13,7 +13,8 @@
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35",
           "psr-log": "1.0.0",
-          "symfony-depenedency-injection": "1.0.0"
+          "symfony-depenedency-injection": "1.0.0",
+          "symfony-event-dispatcher": "1.0.0"
         },
         "runtime": {
           "symfony-console.dll": {}
@@ -1569,6 +1570,16 @@
         "runtime": {
           "symfony-depenedency-injection.dll": {}
         }
+      },
+      "symfony-event-dispatcher/1.0.0": {
+        "dependencies": {
+          "Peachpie.App": "0.9.35",
+          "Peachpie.Compiler.Tools": "0.9.35",
+          "symfony-depenedency-injection": "1.0.0"
+        },
+        "runtime": {
+          "symfony-event-dispatcher.dll": {}
+        }
       }
     }
   },
@@ -2500,6 +2511,11 @@
       "sha512": ""
     },
     "symfony-depenedency-injection/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "symfony-event-dispatcher/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
