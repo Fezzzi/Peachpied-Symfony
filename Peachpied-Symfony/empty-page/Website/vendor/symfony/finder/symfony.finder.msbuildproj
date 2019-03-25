@@ -1,0 +1,20 @@
+﻿<Project Sdk="Peachpie.NET.Sdk/0.9.35">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>.NET class library in PHP</Description>
+    <AssemblyName>symfony.finder</AssemblyName>
+    <PackageId>symfony.finder</PackageId>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="**/*.php" Exclude="tests/**" />
+    <Content Include="**" Exclude="**/*.php;obj/**;bin/**;*.msbuildproj" CopyToOutputDirectory="PreserveNewest">
+      <PackagePath>contentFiles/any/netcoreapp2.0/symfony/</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+      <Link>symfony\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Content>
+  </ItemGroup>
+</Project>

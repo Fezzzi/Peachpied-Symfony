@@ -1,6 +1,6 @@
 --temp-output:obj\Debug\netstandard2.0\
---out:obj\Debug\netstandard2.0\psr-container.dll
---output-name:psr-container
+--out:obj\Debug\netstandard2.0\psr.container.dll
+--output-name:psr.container
 --optimize:false
 --debug-type:portable
 --version:1.0.0

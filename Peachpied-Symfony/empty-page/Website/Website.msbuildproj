@@ -15955,7 +15955,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="vendor\symfony\framework-bundle\symfony-framework-bundle.msbuildproj" />
-    <ProjectReference Include="vendor\symfony\routing\symfony-routing.msbuildproj" />
+    <ProjectReference Include="vendor\symfony\framework-bundle\symfony.framework-bundle.msbuildproj" />
+    <ProjectReference Include="vendor\symfony\routing\symfony.routing.msbuildproj" />
   </ItemGroup>
 </Project>

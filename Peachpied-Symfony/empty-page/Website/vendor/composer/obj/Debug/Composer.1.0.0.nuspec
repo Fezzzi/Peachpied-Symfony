@@ -20,9 +20,9 @@
     </contentFiles>
   </metadata>
   <files>
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\composer\bin\Debug\netstandard2.0\Composer.dll" target="lib\netstandard2.0\Composer.dll" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\composer\installed.json" target="contentFiles\any\netcoreapp2.0\symfony\installed.json" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\composer\LICENSE" target="contentFiles\any\netcoreapp2.0\symfony\LICENSE" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\composer\README.md" target="contentFiles\any\netcoreapp2.0\symfony\README.md" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\composer\bin\Debug\netstandard2.0\Composer.dll" target="lib\netstandard2.0\Composer.dll" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\composer\installed.json" target="contentFiles\any\netcoreapp2.0\symfony\installed.json" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\composer\LICENSE" target="contentFiles\any\netcoreapp2.0\symfony\LICENSE" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\composer\README.md" target="contentFiles\any\netcoreapp2.0\symfony\README.md" />
   </files>
 </package>

@@ -1,0 +1,13 @@
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\process\bin\Debug\netstandard2.0\symfony\.gitignore
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\process\bin\Debug\netstandard2.0\symfony\CHANGELOG.md
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\process\bin\Debug\netstandard2.0\symfony\composer.json
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\process\bin\Debug\netstandard2.0\symfony\LICENSE
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\process\bin\Debug\netstandard2.0\symfony\phpunit.xml.dist
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\process\bin\Debug\netstandard2.0\symfony\README.md
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\process\bin\Debug\netstandard2.0\symfony.proces.deps.json
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\process\bin\Debug\netstandard2.0\symfony.proces.dll
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\process\bin\Debug\netstandard2.0\symfony.proces.pdb
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\process\obj\Debug\netstandard2.0\symfony.process.msbuildprojAssemblyReference.cache
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\process\obj\Debug\netstandard2.0\symfony.process.msbuildproj.CoreCompileInputs.cache
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\process\obj\Debug\netstandard2.0\symfony.proces.dll
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\process\obj\Debug\netstandard2.0\symfony.proces.pdb

@@ -34,27 +34,27 @@
 --reference:C:\Users\Fezzi\.nuget\packages\peachpie.library.xmldom\0.9.35\lib\netstandard2.0\Peachpie.Library.XmlDom.dll
 --reference:C:\Users\Fezzi\.nuget\packages\peachpie.microsoft.codeanalysis\0.9.2\lib\netstandard1.3\Peachpie.Microsoft.CodeAnalysis.dll
 --reference:C:\Users\Fezzi\.nuget\packages\peachpie.runtime\0.9.35\lib\netstandard2.0\Peachpie.Runtime.dll
---reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\cache\bin\Debug\netstandard2.0\psr-cache.dll
---reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\container\bin\Debug\netstandard2.0\psr-container.dll
---reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\bin\Debug\netstandard2.0\psr-log.dll
---reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\simple-cache\bin\Debug\netstandard2.0\psr-simple-cache.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\cache\bin\Debug\netstandard2.0\psr.cache.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\container\bin\Debug\netstandard2.0\psr.container.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\bin\Debug\netstandard2.0\psr.log.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\simple-cache\bin\Debug\netstandard2.0\psr.simple-cache.dll
 --reference:C:\Users\Fezzi\.nuget\packages\sixlabors.core\1.0.0-beta0005\lib\netstandard1.1\SixLabors.Core.dll
 --reference:C:\Users\Fezzi\.nuget\packages\sixlabors.fonts\1.0.0-beta0005\lib\netstandard2.0\SixLabors.Fonts.dll
 --reference:C:\Users\Fezzi\.nuget\packages\sixlabors.imagesharp\1.0.0-beta0004\lib\netstandard2.0\SixLabors.ImageSharp.dll
 --reference:C:\Users\Fezzi\.nuget\packages\sixlabors.imagesharp.drawing\1.0.0-beta0004\lib\netstandard2.0\SixLabors.ImageSharp.Drawing.dll
 --reference:C:\Users\Fezzi\.nuget\packages\sixlabors.shapes\1.0.0-beta0005\lib\netstandard2.0\SixLabors.Shapes.dll
 --reference:C:\Users\Fezzi\.nuget\packages\sixlabors.shapes.text\1.0.0-beta0005\lib\netstandard2.0\SixLabors.Shapes.Text.dll
---reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\cache\bin\Debug\netstandard2.0\symfony-cache.dll
---reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\bin\Debug\netstandard2.0\symfony-config.dll
---reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\console\bin\Debug\netstandard2.0\symfony-console.dll
---reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\contracts\bin\Debug\netstandard2.0\symfony-contracts.dll
---reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\dependency-injection\bin\Debug\netstandard2.0\symfony-depenedency-injection.dll
---reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\event-dispatcher\bin\Debug\netstandard2.0\symfony-event-dispatcher.dll
---reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\framework-bundle\bin\Debug\netstandard2.0\symfony-framework-bundle.dll
---reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-foundation\bin\Debug\netstandard2.0\symfony-http-foundation.dll
---reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\bin\Debug\netstandard2.0\symfony-http-kernel.dll
---reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\bin\Debug\netstandard2.0\symfony-routing.dll
---reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\bin\Debug\netstandard2.0\symfony-yaml.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\cache\bin\Debug\netstandard2.0\symfony.cache.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\config\bin\Debug\netstandard2.0\symfony.config.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\console\bin\Debug\netstandard2.0\symfony.console.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\contracts\bin\Debug\netstandard2.0\symfony.contracts.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\dependency-injection\bin\Debug\netstandard2.0\symfony.depenedency-injection.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\event-dispatcher\bin\Debug\netstandard2.0\symfony.event-dispatcher.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\framework-bundle\bin\Debug\netstandard2.0\symfony.framework-bundle.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-foundation\bin\Debug\netstandard2.0\symfony.http-foundation.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\http-kernel\bin\Debug\netstandard2.0\symfony.http-kernel.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\routing\bin\Debug\netstandard2.0\symfony.routing.dll
+--reference:C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\bin\Debug\netstandard2.0\symfony.yaml.dll
 --reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.AppContext.dll
 --reference:C:\Users\Fezzi\.nuget\packages\system.buffers\4.4.0\ref\netstandard2.0\System.Buffers.dll
 --reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Collections.Concurrent.dll
@@ -230,47 +230,46 @@ var\cache\dev\ContainerDlssTFi\getWebServer_Command_ServerStatusService.php
 var\cache\dev\ContainerDlssTFi\getWebServer_Command_ServerStopService.php
 var\cache\dev\ContainerDlssTFi\removed-ids.php
 var\cache\dev\ContainerDlssTFi\srcApp_KernelDevDebugContainer.php
-var\cache\dev\ContainerXQZmsyb\getArgumentResolver_ServiceService.php
-var\cache\dev\ContainerXQZmsyb\getCacheClearerService.php
-var\cache\dev\ContainerXQZmsyb\getCacheWarmerService.php
-var\cache\dev\ContainerXQZmsyb\getCache_AppClearerService.php
-var\cache\dev\ContainerXQZmsyb\getCache_AppService.php
-var\cache\dev\ContainerXQZmsyb\getCache_GlobalClearerService.php
-var\cache\dev\ContainerXQZmsyb\getCache_SystemClearerService.php
-var\cache\dev\ContainerXQZmsyb\getCache_SystemService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_CommandLoaderService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_Command_AboutService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_Command_AssetsInstallService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_Command_CacheClearService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_Command_CachePoolClearService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_Command_CachePoolDeleteService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_Command_CachePoolPruneService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_Command_CacheWarmupService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_Command_ConfigDebugService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_Command_ConfigDumpReferenceService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_Command_ContainerDebugService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_Command_DebugAutowiringService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_Command_EventDispatcherDebugService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_Command_RouterDebugService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_Command_RouterMatchService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_Command_YamlLintService.php
-var\cache\dev\ContainerXQZmsyb\getConsole_ErrorListenerService.php
-var\cache\dev\ContainerXQZmsyb\getFilesystemService.php
-var\cache\dev\ContainerXQZmsyb\getHttpExceptionListenerService.php
-var\cache\dev\ContainerXQZmsyb\getRedirectControllerService.php
-var\cache\dev\ContainerXQZmsyb\getRouter_CacheWarmerService.php
-var\cache\dev\ContainerXQZmsyb\getRouting_LoaderService.php
-var\cache\dev\ContainerXQZmsyb\getServicesResetterService.php
-var\cache\dev\ContainerXQZmsyb\getSessionService.php
-var\cache\dev\ContainerXQZmsyb\getSession_Storage_NativeService.php
-var\cache\dev\ContainerXQZmsyb\getTemplateControllerService.php
-var\cache\dev\ContainerXQZmsyb\getWebServer_Command_ServerRunService.php
-var\cache\dev\ContainerXQZmsyb\getWebServer_Command_ServerStartService.php
-var\cache\dev\ContainerXQZmsyb\getWebServer_Command_ServerStatusService.php
-var\cache\dev\ContainerXQZmsyb\getWebServer_Command_ServerStopService.php
-var\cache\dev\ContainerXQZmsyb\removed-ids.php
-var\cache\dev\ContainerXQZmsyb\srcApp_KernelDevDebugContainer.php
+var\cache\dev\ContainerPu9upBg\getArgumentResolver_ServiceService.php
+var\cache\dev\ContainerPu9upBg\getCacheClearerService.php
+var\cache\dev\ContainerPu9upBg\getCacheWarmerService.php
+var\cache\dev\ContainerPu9upBg\getCache_AppClearerService.php
+var\cache\dev\ContainerPu9upBg\getCache_AppService.php
+var\cache\dev\ContainerPu9upBg\getCache_GlobalClearerService.php
+var\cache\dev\ContainerPu9upBg\getCache_SystemClearerService.php
+var\cache\dev\ContainerPu9upBg\getCache_SystemService.php
+var\cache\dev\ContainerPu9upBg\getConsole_CommandLoaderService.php
+var\cache\dev\ContainerPu9upBg\getConsole_Command_AboutService.php
+var\cache\dev\ContainerPu9upBg\getConsole_Command_AssetsInstallService.php
+var\cache\dev\ContainerPu9upBg\getConsole_Command_CacheClearService.php
+var\cache\dev\ContainerPu9upBg\getConsole_Command_CachePoolClearService.php
+var\cache\dev\ContainerPu9upBg\getConsole_Command_CachePoolDeleteService.php
+var\cache\dev\ContainerPu9upBg\getConsole_Command_CachePoolPruneService.php
+var\cache\dev\ContainerPu9upBg\getConsole_Command_CacheWarmupService.php
+var\cache\dev\ContainerPu9upBg\getConsole_Command_ConfigDebugService.php
+var\cache\dev\ContainerPu9upBg\getConsole_Command_ConfigDumpReferenceService.php
+var\cache\dev\ContainerPu9upBg\getConsole_Command_ContainerDebugService.php
+var\cache\dev\ContainerPu9upBg\getConsole_Command_DebugAutowiringService.php
+var\cache\dev\ContainerPu9upBg\getConsole_Command_EventDispatcherDebugService.php
+var\cache\dev\ContainerPu9upBg\getConsole_Command_RouterDebugService.php
+var\cache\dev\ContainerPu9upBg\getConsole_Command_RouterMatchService.php
+var\cache\dev\ContainerPu9upBg\getConsole_Command_YamlLintService.php
+var\cache\dev\ContainerPu9upBg\getConsole_ErrorListenerService.php
+var\cache\dev\ContainerPu9upBg\getFilesystemService.php
+var\cache\dev\ContainerPu9upBg\getHttpExceptionListenerService.php
+var\cache\dev\ContainerPu9upBg\getRedirectControllerService.php
+var\cache\dev\ContainerPu9upBg\getRouter_CacheWarmerService.php
+var\cache\dev\ContainerPu9upBg\getRouting_LoaderService.php
+var\cache\dev\ContainerPu9upBg\getServicesResetterService.php
+var\cache\dev\ContainerPu9upBg\getSessionService.php
+var\cache\dev\ContainerPu9upBg\getSession_Storage_NativeService.php
+var\cache\dev\ContainerPu9upBg\getTemplateControllerService.php
+var\cache\dev\ContainerPu9upBg\getWebServer_Command_ServerRunService.php
+var\cache\dev\ContainerPu9upBg\getWebServer_Command_ServerStartService.php
+var\cache\dev\ContainerPu9upBg\getWebServer_Command_ServerStatusService.php
+var\cache\dev\ContainerPu9upBg\getWebServer_Command_ServerStopService.php
+var\cache\dev\ContainerPu9upBg\removed-ids.php
+var\cache\dev\ContainerPu9upBg\srcApp_KernelDevDebugContainer.php
 var\cache\dev\srcApp_KernelDevDebugContainer.php
-var\cache\dev\srcApp_KernelDevDebugContainerUrlGenerator.php
 var\cache\dev\srcApp_KernelDevDebugContainerUrlMatcher.php
 vendor\autoload.php

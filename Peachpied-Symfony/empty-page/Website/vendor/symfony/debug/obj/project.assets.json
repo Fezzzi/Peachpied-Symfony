@@ -2029,14 +2029,18 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "psr-log/1.0.0": {
+      "psr.log/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.35",
+          "Peachpie.Compiler.Tools": "0.9.35"
+        },
         "compile": {
-          "bin/placeholder/psr-log.dll": {}
+          "bin/placeholder/psr.log.dll": {}
         },
         "runtime": {
-          "bin/placeholder/psr-log.dll": {}
+          "bin/placeholder/psr.log.dll": {}
         }
       }
     }
@@ -6493,10 +6497,10 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "psr-log/1.0.0": {
+    "psr.log/1.0.0": {
       "type": "project",
-      "path": "../../psr/log/psr-log.msbuildproj",
-      "msbuildProject": "../../psr/log/psr-log.msbuildproj"
+      "path": "../../psr/log/psr.log.msbuildproj",
+      "msbuildProject": "../../psr/log/psr.log.msbuildproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6504,7 +6508,7 @@
       "NETStandard.Library >= 2.0.3",
       "Peachpie.App >= 0.9.35",
       "Peachpie.Compiler.Tools >= 0.9.35",
-      "psr-log >= 1.0.0"
+      "psr.log >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6514,9 +6518,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\symfony\\debug\\symfony-debug.msbuildproj",
-      "projectName": "symfony-debug",
-      "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\symfony\\debug\\symfony-debug.msbuildproj",
+      "projectUniqueName": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\symfony\\debug\\symfony.debug.msbuildproj",
+      "projectName": "symfony.debug",
+      "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\symfony\\debug\\symfony.debug.msbuildproj",
       "packagesPath": "C:\\Users\\Fezzi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\symfony\\debug\\obj\\",
       "projectStyle": "PackageReference",
@@ -6538,8 +6542,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\log\\psr-log.msbuildproj": {
-              "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\log\\psr-log.msbuildproj"
+            "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\log\\psr.log.msbuildproj": {
+              "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\log\\psr.log.msbuildproj"
             }
           }
         }

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>symfony.yaml</id>
+    <version>1.0.0</version>
+    <authors>symfony.yaml</authors>
+    <owners>symfony.yaml</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET class library in PHP</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="symfony.console" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Peachpie.App" version="0.9.35" exclude="Build,Analyzers" />
+        <dependency id="Peachpie.Compiler.Tools" version="0.9.35" include="Runtime,Build,Native,ContentFiles,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp2.0/symfony/.gitignore" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/CHANGELOG.md" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/composer.json" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/LICENSE" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/phpunit.xml.dist" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/README.md" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/arrow.gif" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/booleanMappingKeys.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/embededPhp.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/escapedCharacters.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/index.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/multiple_lines_as_literal_block.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/multiple_lines_as_literal_block_leading_space_in_first_line.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/nonStringKeys.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/not_readable.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/nullMappingKey.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/numericMappingKeys.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/sfComments.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/sfCompact.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/sfMergeKey.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/sfObjects.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/sfQuotes.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/sfTests.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/unindentedCollections.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/YtsAnchorAlias.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/YtsBasicTests.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/YtsBlockMapping.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/YtsDocumentSeparator.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/YtsErrorTests.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/YtsFlowCollections.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/YtsFoldedScalars.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/YtsNullsAndEmpties.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/YtsSpecificationExamples.yml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Tests/Fixtures/YtsTypeTransfers.yml" buildAction="Content" copyToOutput="true" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\bin\Debug\netstandard2.0\symfony.yaml.dll" target="lib\netstandard2.0\symfony.yaml.dll" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\.gitignore" target="contentFiles\any\netcoreapp2.0\symfony\.gitignore" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\CHANGELOG.md" target="contentFiles\any\netcoreapp2.0\symfony\CHANGELOG.md" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\composer.json" target="contentFiles\any\netcoreapp2.0\symfony\composer.json" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\LICENSE" target="contentFiles\any\netcoreapp2.0\symfony\LICENSE" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\phpunit.xml.dist" target="contentFiles\any\netcoreapp2.0\symfony\phpunit.xml.dist" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\README.md" target="contentFiles\any\netcoreapp2.0\symfony\README.md" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\arrow.gif" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\arrow.gif" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\booleanMappingKeys.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\booleanMappingKeys.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\embededPhp.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\embededPhp.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\escapedCharacters.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\escapedCharacters.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\index.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\index.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\multiple_lines_as_literal_block.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\multiple_lines_as_literal_block.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\multiple_lines_as_literal_block_leading_space_in_first_line.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\multiple_lines_as_literal_block_leading_space_in_first_line.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\nonStringKeys.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\nonStringKeys.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\not_readable.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\not_readable.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\nullMappingKey.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\nullMappingKey.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\numericMappingKeys.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\numericMappingKeys.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\sfComments.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\sfComments.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\sfCompact.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\sfCompact.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\sfMergeKey.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\sfMergeKey.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\sfObjects.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\sfObjects.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\sfQuotes.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\sfQuotes.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\sfTests.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\sfTests.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\unindentedCollections.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\unindentedCollections.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\YtsAnchorAlias.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\YtsAnchorAlias.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\YtsBasicTests.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\YtsBasicTests.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\YtsBlockMapping.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\YtsBlockMapping.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\YtsDocumentSeparator.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\YtsDocumentSeparator.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\YtsErrorTests.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\YtsErrorTests.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\YtsFlowCollections.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\YtsFlowCollections.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\YtsFoldedScalars.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\YtsFoldedScalars.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\YtsNullsAndEmpties.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\YtsNullsAndEmpties.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\YtsSpecificationExamples.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\YtsSpecificationExamples.yml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\symfony\yaml\Tests\Fixtures\YtsTypeTransfers.yml" target="contentFiles\any\netcoreapp2.0\symfony\Tests\Fixtures\YtsTypeTransfers.yml" />
+  </files>
+</package>

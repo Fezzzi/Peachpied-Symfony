@@ -1,6 +1,6 @@
 --temp-output:obj\Debug\netstandard2.0\
---out:obj\Debug\netstandard2.0\symfony-http-foundation.dll
---output-name:symfony-http-foundation
+--out:obj\Debug\netstandard2.0\symfony.http-foundation.dll
+--output-name:symfony.http-foundation
 --optimize:false
 --debug-type:portable
 --version:1.0.0

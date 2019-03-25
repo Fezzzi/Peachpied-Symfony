@@ -2,8 +2,8 @@
 /target:library
 /o-
 --temp-output:obj\Debug\netstandard2.0\
---out:obj\Debug\netstandard2.0\psr-log.dll
---output-name:psr-log
+--out:obj\Debug\netstandard2.0\psr.log.dll
+--output-name:psr.log
 --optimize:false
 --debug-type:portable
 --version:1.0.0

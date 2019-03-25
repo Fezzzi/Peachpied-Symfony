@@ -6498,9 +6498,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\symfony\\process\\symfony-process.msbuildproj",
-      "projectName": "symfony-process",
-      "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\symfony\\process\\symfony-process.msbuildproj",
+      "projectUniqueName": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\symfony\\process\\symfony.process.msbuildproj",
+      "projectName": "symfony.process",
+      "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\symfony\\process\\symfony.process.msbuildproj",
       "packagesPath": "C:\\Users\\Fezzi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\symfony\\process\\obj\\",
       "projectStyle": "PackageReference",

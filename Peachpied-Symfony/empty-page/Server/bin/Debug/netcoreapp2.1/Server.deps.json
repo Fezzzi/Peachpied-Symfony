@@ -845,8 +845,8 @@
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35",
-          "symfony-framework-bundle": "1.0.0",
-          "symfony-routing": "1.0.0"
+          "symfony.framework-bundle": "1.0.0",
+          "symfony.routing": "1.0.0"
         },
         "runtime": {
           "empty-page.dll": {}
@@ -855,208 +855,208 @@
           "empty-page.dll": {}
         }
       },
-      "psr-cache/1.0.0": {
+      "psr.cache/1.0.0": {
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35"
         },
         "runtime": {
-          "psr-cache.dll": {}
+          "psr.cache.dll": {}
         },
         "compile": {
-          "psr-cache.dll": {}
+          "psr.cache.dll": {}
         }
       },
-      "psr-container/1.0.0": {
+      "psr.container/1.0.0": {
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35"
         },
         "runtime": {
-          "psr-container.dll": {}
+          "psr.container.dll": {}
         },
         "compile": {
-          "psr-container.dll": {}
+          "psr.container.dll": {}
         }
       },
-      "psr-log/1.0.0": {
+      "psr.log/1.0.0": {
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35"
         },
         "runtime": {
-          "psr-log.dll": {}
+          "psr.log.dll": {}
         },
         "compile": {
-          "psr-log.dll": {}
+          "psr.log.dll": {}
         }
       },
-      "psr-simple-cache/1.0.0": {
+      "psr.simple-cache/1.0.0": {
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35"
         },
         "runtime": {
-          "psr-simple-cache.dll": {}
+          "psr.simple-cache.dll": {}
         },
         "compile": {
-          "psr-simple-cache.dll": {}
+          "psr.simple-cache.dll": {}
         }
       },
-      "symfony-cache/1.0.0": {
+      "symfony.cache/1.0.0": {
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35",
-          "psr-cache": "1.0.0",
-          "psr-log": "1.0.0",
-          "psr-simple-cache": "1.0.0",
-          "symfony-contracts": "1.0.0",
-          "symfony-depenedency-injection": "1.0.0",
-          "symfony-http-kernel": "1.0.0"
+          "psr.cache": "1.0.0",
+          "psr.log": "1.0.0",
+          "psr.simple-cache": "1.0.0",
+          "symfony.contracts": "1.0.0",
+          "symfony.depenedency-injection": "1.0.0",
+          "symfony.http-kernel": "1.0.0"
         },
         "runtime": {
-          "symfony-cache.dll": {}
+          "symfony.cache.dll": {}
         },
         "compile": {
-          "symfony-cache.dll": {}
+          "symfony.cache.dll": {}
         }
       },
-      "symfony-config/1.0.0": {
+      "symfony.config/1.0.0": {
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35"
         },
         "runtime": {
-          "symfony-config.dll": {}
+          "symfony.config.dll": {}
         },
         "compile": {
-          "symfony-config.dll": {}
+          "symfony.config.dll": {}
         }
       },
-      "symfony-console/1.0.0": {
+      "symfony.console/1.0.0": {
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35",
-          "psr-log": "1.0.0",
-          "symfony-depenedency-injection": "1.0.0",
-          "symfony-event-dispatcher": "1.0.0"
+          "psr.log": "1.0.0",
+          "symfony.depenedency-injection": "1.0.0",
+          "symfony.event-dispatcher": "1.0.0"
         },
         "runtime": {
-          "symfony-console.dll": {}
+          "symfony.console.dll": {}
         },
         "compile": {
-          "symfony-console.dll": {}
+          "symfony.console.dll": {}
         }
       },
-      "symfony-contracts/1.0.0": {
+      "symfony.contracts/1.0.0": {
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35",
-          "psr-cache": "1.0.0",
-          "psr-container": "1.0.0"
+          "psr.cache": "1.0.0",
+          "psr.container": "1.0.0"
         },
         "runtime": {
-          "symfony-contracts.dll": {}
+          "symfony.contracts.dll": {}
         },
         "compile": {
-          "symfony-contracts.dll": {}
+          "symfony.contracts.dll": {}
         }
       },
-      "symfony-depenedency-injection/1.0.0": {
+      "symfony.depenedency-injection/1.0.0": {
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35",
-          "psr-container": "1.0.0",
-          "symfony-config": "1.0.0",
-          "symfony-contracts": "1.0.0"
+          "psr.container": "1.0.0",
+          "symfony.config": "1.0.0",
+          "symfony.contracts": "1.0.0"
         },
         "runtime": {
-          "symfony-depenedency-injection.dll": {}
+          "symfony.depenedency-injection.dll": {}
         },
         "compile": {
-          "symfony-depenedency-injection.dll": {}
+          "symfony.depenedency-injection.dll": {}
         }
       },
-      "symfony-event-dispatcher/1.0.0": {
+      "symfony.event-dispatcher/1.0.0": {
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35",
-          "symfony-depenedency-injection": "1.0.0"
+          "symfony.depenedency-injection": "1.0.0"
         },
         "runtime": {
-          "symfony-event-dispatcher.dll": {}
+          "symfony.event-dispatcher.dll": {}
         },
         "compile": {
-          "symfony-event-dispatcher.dll": {}
+          "symfony.event-dispatcher.dll": {}
         }
       },
-      "symfony-framework-bundle/1.0.0": {
+      "symfony.framework-bundle/1.0.0": {
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35",
-          "symfony-cache": "1.0.0",
-          "symfony-console": "1.0.0",
-          "symfony-routing": "1.0.0",
-          "symfony-yaml": "1.0.0"
+          "symfony.cache": "1.0.0",
+          "symfony.console": "1.0.0",
+          "symfony.routing": "1.0.0",
+          "symfony.yaml": "1.0.0"
         },
         "runtime": {
-          "symfony-framework-bundle.dll": {}
+          "symfony.framework-bundle.dll": {}
         },
         "compile": {
-          "symfony-framework-bundle.dll": {}
+          "symfony.framework-bundle.dll": {}
         }
       },
-      "symfony-http-foundation/1.0.0": {
+      "symfony.http-foundation/1.0.0": {
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35"
         },
         "runtime": {
-          "symfony-http-foundation.dll": {}
+          "symfony.http-foundation.dll": {}
         },
         "compile": {
-          "symfony-http-foundation.dll": {}
+          "symfony.http-foundation.dll": {}
         }
       },
-      "symfony-http-kernel/1.0.0": {
+      "symfony.http-kernel/1.0.0": {
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35",
-          "psr-log": "1.0.0",
-          "symfony-event-dispatcher": "1.0.0",
-          "symfony-http-foundation": "1.0.0"
+          "psr.log": "1.0.0",
+          "symfony.event-dispatcher": "1.0.0",
+          "symfony.http-foundation": "1.0.0"
         },
         "runtime": {
-          "symfony-http-kernel.dll": {}
+          "symfony.http-kernel.dll": {}
         },
         "compile": {
-          "symfony-http-kernel.dll": {}
+          "symfony.http-kernel.dll": {}
         }
       },
-      "symfony-routing/1.0.0": {
+      "symfony.routing/1.0.0": {
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35",
-          "symfony-depenedency-injection": "1.0.0"
+          "symfony.depenedency-injection": "1.0.0"
         },
         "runtime": {
-          "symfony-routing.dll": {}
+          "symfony.routing.dll": {}
         },
         "compile": {
-          "symfony-routing.dll": {}
+          "symfony.routing.dll": {}
         }
       },
-      "symfony-yaml/1.0.0": {
+      "symfony.yaml/1.0.0": {
         "dependencies": {
           "Peachpie.App": "0.9.35",
           "Peachpie.Compiler.Tools": "0.9.35",
-          "symfony-console": "1.0.0"
+          "symfony.console": "1.0.0"
         },
         "runtime": {
-          "symfony-yaml.dll": {}
+          "symfony.yaml.dll": {}
         },
         "compile": {
-          "symfony-yaml.dll": {}
+          "symfony.yaml.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -4221,14 +4221,14 @@
     "System.Composition.AttributedModel/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-S7Ybny/58VGS+5uanotm7f2k7Iv3ufdv0eDA8adZ345pE27zr+9bxhHw/rXXMVltRdoUuyB1O4YpYT1lVwkM0w==",
+      "sha512": "sha512-pB1ZkfI+kNNz2G9f4xHM0RR0NjnOAIMBAFFSxFNkCnqQ9rEqFAKAy2Uw19IvXHSGJz8hHh5+IxCN8ljM4x9yFg==",
       "path": "system.composition.attributedmodel/1.1.0",
       "hashPath": "system.composition.attributedmodel.1.1.0.nupkg.sha512"
     },
     "System.Composition.Convention/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lqiuITNCKJ/JlXzmum0mr+1HDCJ6mN/+1C4ouXpvLKpUA+zal7EsRvfHxy+kVVPrPMaFU9dLQkBxV/GFVnJoXA==",
+      "sha512": "sha512-MKi62UI3jMEi2mXuc1/0n8Wc53WgHzI/Mu+PXYAP+zvMXer+uGCPH5I+P4QP9raScuSHIibmmDtlQj1F8PFdlw==",
       "path": "system.composition.convention/1.1.0",
       "hashPath": "system.composition.convention.1.1.0.nupkg.sha512"
     },
@@ -4242,7 +4242,7 @@
     "System.Composition.Runtime/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dLbtnVmOiD4k1/YA4LfV2nEZX4jdgizvSzvVIffOp3AXU468n5IsDbwwbCHSUmnfqoJ5unYR+hEmN1U3gBmDRg==",
+      "sha512": "sha512-JDR8UCuDRi6S5ORKuaUwpIt3XQxPMXQptuK13z8Ob+e0QI1qsMZ+1kKyviuK+HRqzXcZJ0w3Q3bFXZRnLhAa+A==",
       "path": "system.composition.runtime/1.1.0",
       "hashPath": "system.composition.runtime.1.1.0.nupkg.sha512"
     },
@@ -4256,7 +4256,7 @@
     "System.Net.Http/4.3.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6ZdOhw05Y7Da+nYKz7QFtBVeRTCrHd4wBxO0g45hETj1wI2hJEcU4d0dDUxmyHO9/5KXE/qZLtCHen6gBcT2cA==",
+      "sha512": "sha512-4HYUu8WuiSCNZifYY2wDn27dESG43gGNOSv0Eg1vdu/wSsRs5Gg90IdWjA+yAaGBGBBKneziNPeVd8mhEz82vg==",
       "path": "system.net.http/4.3.2",
       "hashPath": "system.net.http.4.3.2.nupkg.sha512"
     },
@@ -4270,14 +4270,14 @@
     "System.Runtime.Loader/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-DHMaRn8D8YCK2GG2pw+UzNxn/OHVfaWx7OTLBD/hPegHZZgcZh3H6seWegrC4BYwsfuGrywIuT+MQs+rPqRLTQ==",
+      "sha512": "sha512-G6WmvAI9yOEi5GOWtZT3+pJWHXGaat59qZKQ7Z75fGpacllPmLizNFZvZXj3CysSyMkQBsm50b9xTM/x9L3yCQ==",
       "path": "system.runtime.loader/4.3.0",
       "hashPath": "system.runtime.loader.4.3.0.nupkg.sha512"
     },
     "System.Xml.XPath.XmlDocument/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-A/uxsWi/Ifzkmd4ArTLISMbfFs6XpRPsXZonrIqyTY70xi8t+mDtvSM5Os0RqyRDobjMBwIDHDL4NOIbkDwf7A==",
+      "sha512": "sha512-91tvfHWHSrYFPolCwWYqbpo1YaoBUCQ3uNZ/O/zr0ev5BnkoATJoie16ywlMVUaXZtfSfNELxhtG3aqpTfwR4w==",
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
     },
@@ -4286,77 +4286,77 @@
       "serviceable": false,
       "sha512": ""
     },
-    "psr-cache/1.0.0": {
+    "psr.cache/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "psr-container/1.0.0": {
+    "psr.container/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "psr-log/1.0.0": {
+    "psr.log/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "psr-simple-cache/1.0.0": {
+    "psr.simple-cache/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "symfony-cache/1.0.0": {
+    "symfony.cache/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "symfony-config/1.0.0": {
+    "symfony.config/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "symfony-console/1.0.0": {
+    "symfony.console/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "symfony-contracts/1.0.0": {
+    "symfony.contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "symfony-depenedency-injection/1.0.0": {
+    "symfony.depenedency-injection/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "symfony-event-dispatcher/1.0.0": {
+    "symfony.event-dispatcher/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "symfony-framework-bundle/1.0.0": {
+    "symfony.framework-bundle/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "symfony-http-foundation/1.0.0": {
+    "symfony.http-foundation/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "symfony-http-kernel/1.0.0": {
+    "symfony.http-kernel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "symfony-routing/1.0.0": {
+    "symfony.routing/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "symfony-yaml/1.0.0": {
+    "symfony.yaml/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

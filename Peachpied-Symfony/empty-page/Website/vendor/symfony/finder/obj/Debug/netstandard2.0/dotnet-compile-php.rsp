@@ -2,8 +2,8 @@
 /target:library
 /o-
 --temp-output:obj\Debug\netstandard2.0\
---out:obj\Debug\netstandard2.0\symfony-finder.dll
---output-name:symfony-finder
+--out:obj\Debug\netstandard2.0\symfony.finder.dll
+--output-name:symfony.finder
 --optimize:false
 --debug-type:portable
 --version:1.0.0

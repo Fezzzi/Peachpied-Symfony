@@ -1,6 +1,6 @@
 --temp-output:obj\Debug\netstandard2.0\
---out:obj\Debug\netstandard2.0\symfony-polyfill-mbstring.dll
---output-name:symfony-polyfill-mbstring
+--out:obj\Debug\netstandard2.0\symfony.polyfill-mbstring.dll
+--output-name:symfony.polyfill-mbstring
 --optimize:false
 --debug-type:portable
 --version:1.0.0
