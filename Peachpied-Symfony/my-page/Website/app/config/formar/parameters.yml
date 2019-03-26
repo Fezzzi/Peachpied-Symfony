@@ -1,8 +1,0 @@
-# This file is auto-generated during the composer install
-parameters:
-    database_host: localhost
-    database_port: null
-    database_name: id5542773_lovelog
-    database_user: id5542773_loveuser
-    database_password: LovePass951
-    secret: AiypwzqpKgggDkpUzumymw

@@ -1,1 +1,0 @@
-let levels = [];levels['"Bench Warmer"'] = 1;levels['"Mover"'] = 10;levels['"Occasional Gym Visitor"'] = 20;levels['"Sporty"'] = 50;levels['"The Bicep"'] = 100;levels['"The Coach"'] = 200;levels['"The Machine"'] = 300;levels['"The Strongest"'] = 600;levels['"The BEAST"'] = 1000;
