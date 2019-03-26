@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <LibraryName>$(MSBuildProjectName)</LibraryName>
+    <LibraryPath>..\Website\vendor\$([MSBuild]::EnsureTrailingSlash('$([System.String]::Copy('$(MSBuildProjectName.toLower())').Replace('.','\'))'))</LibraryPath>
+  </PropertyGroup>
+
+  <Target Name="TestMessage" AfterTargets="Build" >
+    <Message Text="------ Creating package for library: '$(LibraryName)' ------" Importance="high"/>
+    <Message Text="------ Located in path: '$(LibraryPath)' ------" Importance="high"/>
+  </Target>
+
+</Project>

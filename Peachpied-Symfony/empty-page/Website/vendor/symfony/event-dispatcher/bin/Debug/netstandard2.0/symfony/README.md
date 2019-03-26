@@ -1,13 +1,14 @@
-DependencyInjection Component
-=============================
+EventDispatcher Component
+=========================
 
-The DependencyInjection component allows you to standardize and centralize the
-way objects are constructed in your application.
+The EventDispatcher component provides tools that allow your application
+components to communicate with each other by dispatching events and listening to
+them.
 
 Resources
 ---------
 
-  * [Documentation](https://symfony.com/doc/current/components/dependency_injection/index.html)
+  * [Documentation](https://symfony.com/doc/current/components/event_dispatcher/index.html)
   * [Contributing](https://symfony.com/doc/current/contributing/index.html)
   * [Report issues](https://github.com/symfony/symfony/issues) and
     [send Pull Requests](https://github.com/symfony/symfony/pulls)

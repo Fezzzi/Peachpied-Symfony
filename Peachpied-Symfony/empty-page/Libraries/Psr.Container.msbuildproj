@@ -1,0 +1,21 @@
+﻿<Project Sdk="Peachpie.NET.Sdk">
+
+  <PropertyGroup>
+    <PeachpieToolFullPath>C:\Users\Fezzi\.nuget\packages\peachpie.compiler.tools\1.0.0-appv2306\build\../tools/dotnet-compile-php.dll</PeachpieToolFullPath>
+  </PropertyGroup>
+
+  <!-- Sets package-specific properties based on name and path -->
+  <Import Project="..\props\loadPropsConfig.props"/>
+
+  <!-- Configurates build properties such as packageId, AssemblyName -->
+  <Import Project="..\props\buildPropsConfig.props" />
+
+  <PropertyGroup>
+    <AdditionalExcludes />
+  </PropertyGroup>
+
+  <!-- Adds compile and content ItemGroup Node. 
+      Adds to Content's Exclude attr additional excludes  -->
+  <Import Project="..\props\compileContentConfig.props" />
+
+</Project>

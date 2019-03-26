@@ -13,7 +13,7 @@
     </php>
 
     <testsuites>
-        <testsuite name="Symfony Config Component Test Suite">
+        <testsuite name="Symfony DependencyInjection Component Test Suite">
             <directory>./Tests/</directory>
         </testsuite>
     </testsuites>

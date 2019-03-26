@@ -16,7 +16,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\psr\cache\psr.cache.msbuildproj" />
     <ProjectReference Include="..\..\psr\log\psr.log.msbuildproj" />
     <ProjectReference Include="..\..\psr\simple-cache\psr.simple-cache.msbuildproj" />
     <ProjectReference Include="..\contracts\symfony.contracts.msbuildproj" />

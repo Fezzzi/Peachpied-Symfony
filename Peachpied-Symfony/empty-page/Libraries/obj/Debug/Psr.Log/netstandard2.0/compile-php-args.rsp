@@ -1,0 +1,109 @@
+--temp-output:.\obj\Debug\Psr.Log\netstandard2.0\
+--out:.\obj\Debug\Psr.Log\netstandard2.0\Psr.Log.dll
+--output-name:Psr.Log
+--optimize:false
+--debug-type:portable
+--version:1.0.0
+--emit-entry-point:false
+--target-framework:netstandard2.0
+--sdk-dir:C:\Windows\Microsoft.NET\Framework\v4.0.30319
+--define:DEBUG
+--reference:C:\Users\Fezzi\.nuget\packages\devsense.php.parser\1.4.82\lib\netstandard2.0\Devsense.PHP.Parser.dll
+--reference:C:\Users\Fezzi\.nuget\packages\devsense.php.phar\1.0.15\lib\netstandard1.5\Devsense.PHP.Phar.dll
+--reference:C:\Users\Fezzi\.nuget\packages\htmlagilitypack\1.8.9\lib\netstandard2.0\HtmlAgilityPack.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.applicationinsights\2.4.0\lib\netstandard1.3\Microsoft.ApplicationInsights.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.csharp\4.0.1\ref\netstandard1.0\Microsoft.CSharp.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.dotnet.platformabstractions\2.1.0\lib\netstandard1.3\Microsoft.DotNet.PlatformAbstractions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection.abstractions\2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection\2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencymodel\2.1.0\lib\netstandard1.6\Microsoft.Extensions.DependencyModel.dll
+--reference:C:\Users\Fezzi\.nuget\packages\mysqlconnector\0.46.1\lib\netstandard2.0\MySqlConnector.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\9.0.1\lib\netstandard1.0\Newtonsoft.Json.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.codeanalysis\1.0.0-appv2306\lib\netstandard2.0\Peachpie.CodeAnalysis.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.compiler.diagnostics\1.0.1\lib\netstandard2.0\Peachpie.Compiler.Diagnostics.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library\1.0.0-appv2306\lib\netstandard2.0\Peachpie.Library.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library.graphics\1.0.0-appv2306\lib\netstandard2.0\Peachpie.Library.Graphics.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library.mssql\1.0.0-appv2306\lib\netstandard2.0\Peachpie.Library.MsSql.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library.mysql\1.0.0-appv2306\lib\netstandard2.0\Peachpie.Library.MySql.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library.network\1.0.0-appv2306\lib\netstandard2.0\Peachpie.Library.Network.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library.pdo\1.0.0-appv2306\lib\netstandard2.0\Peachpie.Library.PDO.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library.scripting\1.0.0-appv2306\lib\netstandard2.0\Peachpie.Library.Scripting.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.library.xmldom\1.0.0-appv2306\lib\netstandard2.0\Peachpie.Library.XmlDom.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.microsoft.codeanalysis\0.9.2\lib\netstandard1.3\Peachpie.Microsoft.CodeAnalysis.dll
+--reference:C:\Users\Fezzi\.nuget\packages\peachpie.runtime\1.0.0-appv2306\lib\netstandard2.0\Peachpie.Runtime.dll
+--reference:C:\Users\Fezzi\.nuget\packages\sixlabors.core\1.0.0-beta0005\lib\netstandard1.1\SixLabors.Core.dll
+--reference:C:\Users\Fezzi\.nuget\packages\sixlabors.fonts\1.0.0-beta0005\lib\netstandard2.0\SixLabors.Fonts.dll
+--reference:C:\Users\Fezzi\.nuget\packages\sixlabors.imagesharp\1.0.0-beta0004\lib\netstandard2.0\SixLabors.ImageSharp.dll
+--reference:C:\Users\Fezzi\.nuget\packages\sixlabors.imagesharp.drawing\1.0.0-beta0004\lib\netstandard2.0\SixLabors.ImageSharp.Drawing.dll
+--reference:C:\Users\Fezzi\.nuget\packages\sixlabors.shapes\1.0.0-beta0005\lib\netstandard2.0\SixLabors.Shapes.dll
+--reference:C:\Users\Fezzi\.nuget\packages\sixlabors.shapes.text\1.0.0-beta0005\lib\netstandard2.0\SixLabors.Shapes.Text.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.appcontext\4.1.0\ref\netstandard1.6\System.AppContext.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.buffers\4.4.0\ref\netstandard2.0\System.Buffers.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.collections\4.3.0\ref\netstandard1.3\System.Collections.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.collections.immutable\1.5.0\lib\netstandard2.0\System.Collections.Immutable.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.composition.attributedmodel\1.1.0\lib\netstandard2.0\System.Composition.AttributedModel.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.composition.convention\1.1.0\lib\netstandard2.0\System.Composition.Convention.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.composition.hosting\1.1.0\lib\netstandard2.0\System.Composition.Hosting.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.composition.runtime\1.1.0\lib\netstandard2.0\System.Composition.Runtime.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.composition.typedparts\1.1.0\lib\netstandard2.0\System.Composition.TypedParts.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.data.sqlclient\4.4.3\ref\netstandard2.0\System.Data.SqlClient.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.diagnostics.debug\4.3.0\ref\netstandard1.3\System.Diagnostics.Debug.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.diagnostics.diagnosticsource\4.4.1\lib\netstandard1.3\System.Diagnostics.DiagnosticSource.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.diagnostics.fileversioninfo\4.3.0\ref\netstandard1.3\System.Diagnostics.FileVersionInfo.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.diagnostics.stacktrace\4.3.0\ref\netstandard1.3\System.Diagnostics.StackTrace.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.diagnostics.tracing\4.3.0\ref\netstandard1.5\System.Diagnostics.Tracing.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.dynamic.runtime\4.0.11\ref\netstandard1.3\System.Dynamic.Runtime.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.globalization\4.3.0\ref\netstandard1.3\System.Globalization.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.io\4.3.0\ref\netstandard1.5\System.IO.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.io.filesystem\4.3.0\ref\netstandard1.3\System.IO.FileSystem.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.io.filesystem.primitives\4.3.0\ref\netstandard1.3\System.IO.FileSystem.Primitives.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.linq\4.3.0\ref\netstandard1.6\System.Linq.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.linq.expressions\4.1.0\ref\netstandard1.6\System.Linq.Expressions.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.memory\4.5.0\ref\netstandard2.0\System.Memory.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.net.http\4.3.2\ref\netstandard1.3\System.Net.Http.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.net.primitives\4.3.0\ref\netstandard1.3\System.Net.Primitives.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.numerics.vectors\4.4.0\ref\netstandard2.0\System.Numerics.Vectors.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.objectmodel\4.0.12\ref\netstandard1.3\System.ObjectModel.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.reflection\4.3.0\ref\netstandard1.5\System.Reflection.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.reflection.emit.ilgeneration\4.3.0\ref\netstandard1.0\System.Reflection.Emit.ILGeneration.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.reflection.emit.lightweight\4.3.0\ref\netstandard1.0\System.Reflection.Emit.Lightweight.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.reflection.extensions\4.0.1\ref\netstandard1.0\System.Reflection.Extensions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.reflection.metadata\1.6.0\lib\netstandard2.0\System.Reflection.Metadata.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.reflection.primitives\4.3.0\ref\netstandard1.0\System.Reflection.Primitives.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.reflection.typeextensions\4.1.0\ref\netstandard1.5\System.Reflection.TypeExtensions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.resources.resourcemanager\4.3.0\ref\netstandard1.0\System.Resources.ResourceManager.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.runtime.compilerservices.unsafe\4.5.0\ref\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.runtime\4.3.0\ref\netstandard1.5\System.Runtime.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.runtime.extensions\4.3.0\ref\netstandard1.5\System.Runtime.Extensions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.runtime.handles\4.3.0\ref\netstandard1.3\System.Runtime.Handles.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.runtime.interopservices\4.3.0\ref\netstandard1.5\System.Runtime.InteropServices.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.runtime.interopservices.runtimeinformation\4.0.0\ref\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.runtime.loader\4.3.0\ref\netstandard1.5\System.Runtime.Loader.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.runtime.serialization.primitives\4.1.1\ref\netstandard1.3\System.Runtime.Serialization.Primitives.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.security.cryptography.algorithms\4.3.0\ref\netstandard1.6\System.Security.Cryptography.Algorithms.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.security.cryptography.encoding\4.3.0\ref\netstandard1.3\System.Security.Cryptography.Encoding.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.security.cryptography.primitives\4.3.0\ref\netstandard1.3\System.Security.Cryptography.Primitives.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.security.cryptography.x509certificates\4.3.0\ref\netstandard1.4\System.Security.Cryptography.X509Certificates.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.text.encoding.codepages\4.4.0\ref\netstandard2.0\System.Text.Encoding.CodePages.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.text.encoding\4.3.0\ref\netstandard1.3\System.Text.Encoding.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.text.encoding.extensions\4.3.0\ref\netstandard1.3\System.Text.Encoding.Extensions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.text.regularexpressions\4.3.0\ref\netstandard1.6\System.Text.RegularExpressions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.threading\4.3.0\ref\netstandard1.3\System.Threading.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.threading.tasks\4.3.0\ref\netstandard1.3\System.Threading.Tasks.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.threading.tasks.extensions\4.3.0\lib\netstandard1.0\System.Threading.Tasks.Extensions.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.valuetuple\4.3.0\lib\netstandard1.0\System.ValueTuple.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.xml.readerwriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.xml.xdocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.xml.xmldocument\4.3.0\ref\netstandard1.3\System.Xml.XmlDocument.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.xml.xpath\4.3.0\ref\netstandard1.3\System.Xml.XPath.dll
+--reference:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.xml.xpath.xdocument\4.3.0\ref\netstandard1.3\System.Xml.XPath.XDocument.dll
+--reference:C:\Users\Fezzi\.nuget\packages\system.xml.xpath.xmldocument\4.3.0\ref\netstandard1.3\System.Xml.XPath.XmlDocument.dll
+..\Website\vendor\psr\log\lib.php
+..\Website\vendor\psr\log\Psr\Log\AbstractLogger.php
+..\Website\vendor\psr\log\Psr\Log\InvalidArgumentException.php
+..\Website\vendor\psr\log\Psr\Log\LoggerAwareInterface.php
+..\Website\vendor\psr\log\Psr\Log\LoggerAwareTrait.php
+..\Website\vendor\psr\log\Psr\Log\LoggerInterface.php
+..\Website\vendor\psr\log\Psr\Log\LoggerTrait.php
+..\Website\vendor\psr\log\Psr\Log\LogLevel.php
+..\Website\vendor\psr\log\Psr\Log\NullLogger.php

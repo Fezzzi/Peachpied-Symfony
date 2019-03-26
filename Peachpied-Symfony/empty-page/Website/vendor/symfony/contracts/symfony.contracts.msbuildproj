@@ -16,7 +16,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\psr\cache\psr.cache.msbuildproj" />
     <ProjectReference Include="..\..\psr\container\psr.container.msbuildproj" />
   </ItemGroup>
 </Project>

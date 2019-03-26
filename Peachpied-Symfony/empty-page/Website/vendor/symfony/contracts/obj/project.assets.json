@@ -2028,34 +2028,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
-      },
-      "psr.cache/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35"
-        },
-        "compile": {
-          "bin/placeholder/psr.cache.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/psr.cache.dll": {}
-        }
-      },
-      "psr.container/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35"
-        },
-        "compile": {
-          "bin/placeholder/psr.container.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/psr.container.dll": {}
-        }
       }
     }
   },
@@ -6510,25 +6482,14 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
-    },
-    "psr.cache/1.0.0": {
-      "type": "project",
-      "path": "../../psr/cache/psr.cache.msbuildproj",
-      "msbuildProject": "../../psr/cache/psr.cache.msbuildproj"
-    },
-    "psr.container/1.0.0": {
-      "type": "project",
-      "path": "../../psr/container/psr.container.msbuildproj",
-      "msbuildProject": "../../psr/container/psr.container.msbuildproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\container\\psr.container.msbuildproj",
       "NETStandard.Library >= 2.0.3",
       "Peachpie.App >= 0.9.35",
-      "Peachpie.Compiler.Tools >= 0.9.35",
-      "psr.cache >= 1.0.0",
-      "psr.container >= 1.0.0"
+      "Peachpie.Compiler.Tools >= 0.9.35"
     ]
   },
   "packageFolders": {
@@ -6562,9 +6523,6 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\cache\\psr.cache.msbuildproj": {
-              "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\cache\\psr.cache.msbuildproj"
-            },
             "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\container\\psr.container.msbuildproj": {
               "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\container\\psr.container.msbuildproj"
             }
@@ -6598,5 +6556,16 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\container\\psr.container.msbuildproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\container\\psr.container.msbuildproj",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }

@@ -1,3 +1,9 @@
 Peachpied-Symfony/empty-page/.vs
+Peachpied-Symfony/my-page/
+Peachpied-Symfony/my-page
+Peachpied-Symfony/_zaloha_empty-page/
+Peachpied-Symfony/_zaloha_empty-page
 .gitignore
+.gitattributes
 *.cache
+
