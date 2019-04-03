@@ -1,9 +1,0 @@
-C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Libraries\bin\Debug\Composer\symfony\installed.json
-C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Libraries\bin\Debug\Composer\symfony\LICENSE
-C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Libraries\bin\Debug\Composer\symfony\README.md
-C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Libraries\bin\Debug\Composer\Composer.deps.json
-C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Libraries\bin\Debug\Composer\Composer.dll
-C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Libraries\bin\Debug\Composer\Composer.pdb
-C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Libraries\obj\Debug\Composer\netstandard2.0\Composer.msbuildproj.CoreCompileInputs.cache
-C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Libraries\obj\Debug\Composer\netstandard2.0\Composer.dll
-C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Libraries\obj\Debug\Composer\netstandard2.0\Composer.pdb
