@@ -7,11 +7,14 @@
   <Import Project="..\props\buildPropsConfig.props" />
 
   <PropertyGroup>
-    <AdditionalExcludes/>
+    <AdditionalExcludes>
+      $(LibraryPath)Session\Storage\Handler\MigratingSessionHandler.php;
+      $(LibraryPath)Session\Storage\Proxy\SessionHandlerProxy.php
+    </AdditionalExcludes>
   </PropertyGroup>
 
   <!-- Adds compile and content ItemGroup Node. 
       Adds to Content's Exclude attr additional excludes  -->
   <Import Project="..\props\compileContentConfig.props" />
-
+  
 </Project>

@@ -1,8 +1,4 @@
-﻿<Project Sdk="Peachpie.NET.Sdk">
-  
-  <PropertyGroup>
-    <PeachpieToolFullPath>C:\Users\Fezzi\.nuget\packages\peachpie.compiler.tools\1.0.0-appv2306\build\../tools/dotnet-compile-php.dll</PeachpieToolFullPath>
-  </PropertyGroup>
+﻿<Project Sdk="Peachpie.NET.Sdk/1.0.0-appv2306">
   
   <!-- Sets package-specific properties based on name and path -->
   <Import Project="..\props\loadPropsConfig.props" />

@@ -1,4 +1,4 @@
-<Project Sdk="Peachpie.NET.Sdk/0.9.35">
+﻿<Project Sdk="Peachpie.NET.Sdk/1.0.0-appv2306">
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
@@ -15955,7 +15955,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="vendor\symfony\framework-bundle\symfony.framework-bundle.msbuildproj" />
-    <ProjectReference Include="vendor\symfony\routing\symfony.routing.msbuildproj" />
+    <ProjectReference Include="..\Libraries\Symfony.Framework-bundle.msbuildproj" />
+    <ProjectReference Include="..\Libraries\Symfony.Routing.msbuildproj" />
   </ItemGroup>
 </Project>

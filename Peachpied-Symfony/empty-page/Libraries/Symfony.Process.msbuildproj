@@ -7,11 +7,11 @@
   <Import Project="..\props\buildPropsConfig.props" />
 
   <PropertyGroup>
-    <AdditionalExcludes/>
+    <AdditionalExcludes />
   </PropertyGroup>
 
   <!-- Adds compile and content ItemGroup Node. 
       Adds to Content's Exclude attr additional excludes  -->
   <Import Project="..\props\compileContentConfig.props" />
-
+  
 </Project>

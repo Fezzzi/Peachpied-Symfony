@@ -2729,28 +2729,28 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Peachpie.App/0.9.35": {
+      "Peachpie.App/1.0.0-appv2306": {
         "type": "package",
         "dependencies": {
-          "Peachpie.Library": "0.9.35",
-          "Peachpie.Library.Graphics": "0.9.35",
-          "Peachpie.Library.MsSql": "0.9.35",
-          "Peachpie.Library.MySql": "0.9.35",
-          "Peachpie.Library.Network": "0.9.35",
-          "Peachpie.Library.PDO": "0.9.35",
-          "Peachpie.Library.Scripting": "0.9.35",
-          "Peachpie.Library.XmlDom": "0.9.35",
-          "Peachpie.Runtime": "0.9.35"
+          "Peachpie.Library": "1.0.0-appv2306",
+          "Peachpie.Library.Graphics": "1.0.0-appv2306",
+          "Peachpie.Library.MsSql": "1.0.0-appv2306",
+          "Peachpie.Library.MySql": "1.0.0-appv2306",
+          "Peachpie.Library.Network": "1.0.0-appv2306",
+          "Peachpie.Library.PDO": "1.0.0-appv2306",
+          "Peachpie.Library.Scripting": "1.0.0-appv2306",
+          "Peachpie.Library.XmlDom": "1.0.0-appv2306",
+          "Peachpie.Runtime": "1.0.0-appv2306"
         }
       },
-      "Peachpie.AspNetCore.Web/0.9.35": {
+      "Peachpie.AspNetCore.Web/1.0.0-appv2306": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.3",
           "Microsoft.AspNetCore.Http.Abstractions": "2.0.3",
           "Microsoft.AspNetCore.Session": "2.0.3",
-          "Peachpie.Library": "0.9.35",
-          "Peachpie.Runtime": "0.9.35"
+          "Peachpie.Library": "1.0.0-appv2306",
+          "Peachpie.Runtime": "1.0.0-appv2306"
         },
         "compile": {
           "lib/netstandard2.0/Peachpie.AspNetCore.Web.dll": {}
@@ -2759,7 +2759,7 @@
           "lib/netstandard2.0/Peachpie.AspNetCore.Web.dll": {}
         }
       },
-      "Peachpie.CodeAnalysis/0.9.35": {
+      "Peachpie.CodeAnalysis/1.0.0-appv2306": {
         "type": "package",
         "dependencies": {
           "Devsense.Php.Parser": "1.4.82",
@@ -2796,16 +2796,16 @@
           "lib/netstandard2.0/Peachpie.Compiler.Diagnostics.dll": {}
         }
       },
-      "Peachpie.Compiler.Tools/0.9.35": {
+      "Peachpie.Compiler.Tools/1.0.0-appv2306": {
         "type": "package",
         "build": {
           "build/Peachpie.Compiler.Tools.props": {}
         }
       },
-      "Peachpie.Library/0.9.35": {
+      "Peachpie.Library/1.0.0-appv2306": {
         "type": "package",
         "dependencies": {
-          "Peachpie.Runtime": "0.9.35"
+          "Peachpie.Runtime": "1.0.0-appv2306"
         },
         "compile": {
           "lib/netstandard2.0/Peachpie.Library.dll": {}
@@ -2814,11 +2814,11 @@
           "lib/netstandard2.0/Peachpie.Library.dll": {}
         }
       },
-      "Peachpie.Library.Graphics/0.9.35": {
+      "Peachpie.Library.Graphics/1.0.0-appv2306": {
         "type": "package",
         "dependencies": {
-          "Peachpie.Library": "0.9.35",
-          "Peachpie.Runtime": "0.9.35",
+          "Peachpie.Library": "1.0.0-appv2306",
+          "Peachpie.Runtime": "1.0.0-appv2306",
           "SixLabors.ImageSharp": "1.0.0-beta0004",
           "SixLabors.ImageSharp.Drawing": "1.0.0-beta0004"
         },
@@ -2829,11 +2829,11 @@
           "lib/netstandard2.0/Peachpie.Library.Graphics.dll": {}
         }
       },
-      "Peachpie.Library.MsSql/0.9.35": {
+      "Peachpie.Library.MsSql/1.0.0-appv2306": {
         "type": "package",
         "dependencies": {
-          "Peachpie.Library": "0.9.35",
-          "Peachpie.Runtime": "0.9.35",
+          "Peachpie.Library": "1.0.0-appv2306",
+          "Peachpie.Runtime": "1.0.0-appv2306",
           "System.Data.SqlClient": "4.4.3"
         },
         "compile": {
@@ -2843,12 +2843,12 @@
           "lib/netstandard2.0/Peachpie.Library.MsSql.dll": {}
         }
       },
-      "Peachpie.Library.MySql/0.9.35": {
+      "Peachpie.Library.MySql/1.0.0-appv2306": {
         "type": "package",
         "dependencies": {
           "MySqlConnector": "0.46.1",
-          "Peachpie.Library": "0.9.35",
-          "Peachpie.Runtime": "0.9.35"
+          "Peachpie.Library": "1.0.0-appv2306",
+          "Peachpie.Runtime": "1.0.0-appv2306"
         },
         "compile": {
           "lib/netstandard2.0/Peachpie.Library.MySql.dll": {}
@@ -2857,11 +2857,11 @@
           "lib/netstandard2.0/Peachpie.Library.MySql.dll": {}
         }
       },
-      "Peachpie.Library.Network/0.9.35": {
+      "Peachpie.Library.Network/1.0.0-appv2306": {
         "type": "package",
         "dependencies": {
-          "Peachpie.Library": "0.9.35",
-          "Peachpie.Runtime": "0.9.35"
+          "Peachpie.Library": "1.0.0-appv2306",
+          "Peachpie.Runtime": "1.0.0-appv2306"
         },
         "compile": {
           "lib/netstandard2.0/Peachpie.Library.Network.dll": {}
@@ -2870,11 +2870,11 @@
           "lib/netstandard2.0/Peachpie.Library.Network.dll": {}
         }
       },
-      "Peachpie.Library.PDO/0.9.35": {
+      "Peachpie.Library.PDO/1.0.0-appv2306": {
         "type": "package",
         "dependencies": {
-          "Peachpie.Library": "0.9.35",
-          "Peachpie.Runtime": "0.9.35"
+          "Peachpie.Library": "1.0.0-appv2306",
+          "Peachpie.Runtime": "1.0.0-appv2306"
         },
         "compile": {
           "lib/netstandard2.0/Peachpie.Library.PDO.dll": {}
@@ -2883,15 +2883,15 @@
           "lib/netstandard2.0/Peachpie.Library.PDO.dll": {}
         }
       },
-      "Peachpie.Library.Scripting/0.9.35": {
+      "Peachpie.Library.Scripting/1.0.0-appv2306": {
         "type": "package",
         "dependencies": {
           "Devsense.Php.Parser": "1.4.82",
-          "Peachpie.CodeAnalysis": "0.9.35",
-          "Peachpie.Library": "0.9.35",
-          "Peachpie.Library.XmlDom": "0.9.35",
+          "Peachpie.CodeAnalysis": "1.0.0-appv2306",
+          "Peachpie.Library": "1.0.0-appv2306",
+          "Peachpie.Library.XmlDom": "1.0.0-appv2306",
           "Peachpie.Microsoft.CodeAnalysis": "0.9.2",
-          "Peachpie.Runtime": "0.9.35",
+          "Peachpie.Runtime": "1.0.0-appv2306",
           "System.Runtime.Loader": "4.3.0"
         },
         "compile": {
@@ -2901,12 +2901,12 @@
           "lib/netstandard2.0/Peachpie.Library.Scripting.dll": {}
         }
       },
-      "Peachpie.Library.XmlDom/0.9.35": {
+      "Peachpie.Library.XmlDom/1.0.0-appv2306": {
         "type": "package",
         "dependencies": {
           "HtmlAgilityPack": "1.8.9",
-          "Peachpie.Library": "0.9.35",
-          "Peachpie.Runtime": "0.9.35",
+          "Peachpie.Library": "1.0.0-appv2306",
+          "Peachpie.Runtime": "1.0.0-appv2306",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XPath": "4.3.0",
           "System.Xml.XPath.XmlDocument": "4.3.0",
@@ -2988,7 +2988,7 @@
           }
         }
       },
-      "Peachpie.Runtime/0.9.35": {
+      "Peachpie.Runtime/1.0.0-appv2306": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
@@ -4883,10 +4883,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35",
-          "symfony.framework-bundle": "1.0.0",
-          "symfony.routing": "1.0.0"
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Symfony.Framework-bundle": "1.0.0",
+          "Symfony.Routing": "1.0.0"
         },
         "compile": {
           "bin/placeholder/empty-page.dll": {}
@@ -4895,180 +4895,238 @@
           "bin/placeholder/empty-page.dll": {}
         }
       },
-      "symfony.cache/1.0.0": {
+      "Psr.Cache/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\log\\psr.log.msbuildproj": "1.0.0",
-          "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\simple-cache\\psr.simple-cache.msbuildproj": "1.0.0",
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35",
-          "symfony.contracts": "1.0.0",
-          "symfony.depenedency-injection": "1.0.0",
-          "symfony.http-kernel": "1.0.0"
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306"
         },
         "compile": {
-          "bin/placeholder/symfony.cache.dll": {}
+          "bin/placeholder/Psr.Cache.dll": {}
         },
         "runtime": {
-          "bin/placeholder/symfony.cache.dll": {}
+          "bin/placeholder/Psr.Cache.dll": {}
         }
       },
-      "symfony.config/1.0.0": {
+      "Psr.Container/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35"
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306"
         },
         "compile": {
-          "bin/placeholder/symfony.config.dll": {}
+          "bin/placeholder/Psr.Container.dll": {}
         },
         "runtime": {
-          "bin/placeholder/symfony.config.dll": {}
+          "bin/placeholder/Psr.Container.dll": {}
         }
       },
-      "symfony.console/1.0.0": {
+      "Psr.Log/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\log\\psr.log.msbuildproj": "1.0.0",
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35",
-          "symfony.depenedency-injection": "1.0.0",
-          "symfony.event-dispatcher": "1.0.0"
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306"
         },
         "compile": {
-          "bin/placeholder/symfony.console.dll": {}
+          "bin/placeholder/Psr.Log.dll": {}
         },
         "runtime": {
-          "bin/placeholder/symfony.console.dll": {}
+          "bin/placeholder/Psr.Log.dll": {}
         }
       },
-      "symfony.contracts/1.0.0": {
+      "Psr.Simple-cache/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\container\\psr.container.msbuildproj": "1.0.0",
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35"
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306"
         },
         "compile": {
-          "bin/placeholder/symfony.contracts.dll": {}
+          "bin/placeholder/Psr.Simple-cache.dll": {}
         },
         "runtime": {
-          "bin/placeholder/symfony.contracts.dll": {}
+          "bin/placeholder/Psr.Simple-cache.dll": {}
         }
       },
-      "symfony.depenedency-injection/1.0.0": {
+      "Symfony.Cache/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\container\\psr.container.msbuildproj": "1.0.0",
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35",
-          "symfony.config": "1.0.0",
-          "symfony.contracts": "1.0.0"
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Psr.Cache": "1.0.0",
+          "Psr.Log": "1.0.0",
+          "Psr.Simple-cache": "1.0.0",
+          "Symfony.Contracts": "1.0.0",
+          "Symfony.Dependency-injection": "1.0.0",
+          "Symfony.Http-kernel": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/symfony.depenedency-injection.dll": {}
+          "bin/placeholder/Symfony.Cache.dll": {}
         },
         "runtime": {
-          "bin/placeholder/symfony.depenedency-injection.dll": {}
+          "bin/placeholder/Symfony.Cache.dll": {}
         }
       },
-      "symfony.event-dispatcher/1.0.0": {
+      "Symfony.Config/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35",
-          "symfony.depenedency-injection": "1.0.0"
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306"
         },
         "compile": {
-          "bin/placeholder/symfony.event-dispatcher.dll": {}
+          "bin/placeholder/Symfony.Config.dll": {}
         },
         "runtime": {
-          "bin/placeholder/symfony.event-dispatcher.dll": {}
+          "bin/placeholder/Symfony.Config.dll": {}
         }
       },
-      "symfony.framework-bundle/1.0.0": {
+      "Symfony.Console/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35",
-          "symfony.cache": "1.0.0",
-          "symfony.console": "1.0.0",
-          "symfony.routing": "1.0.0",
-          "symfony.yaml": "1.0.0"
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Psr.Log": "1.0.0",
+          "Symfony.Dependency-injection": "1.0.0",
+          "Symfony.Event-dispatcher": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/symfony.framework-bundle.dll": {}
+          "bin/placeholder/Symfony.Console.dll": {}
         },
         "runtime": {
-          "bin/placeholder/symfony.framework-bundle.dll": {}
+          "bin/placeholder/Symfony.Console.dll": {}
         }
       },
-      "symfony.http-foundation/1.0.0": {
+      "Symfony.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35"
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Psr.Cache": "1.0.0",
+          "Psr.Container": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/symfony.http-foundation.dll": {}
+          "bin/placeholder/Symfony.Contracts.dll": {}
         },
         "runtime": {
-          "bin/placeholder/symfony.http-foundation.dll": {}
+          "bin/placeholder/Symfony.Contracts.dll": {}
         }
       },
-      "symfony.http-kernel/1.0.0": {
+      "Symfony.Dependency-injection/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\log\\psr.log.msbuildproj": "1.0.0",
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35",
-          "symfony.event-dispatcher": "1.0.0",
-          "symfony.http-foundation": "1.0.0"
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Psr.Container": "1.0.0",
+          "Symfony.Config": "1.0.0",
+          "Symfony.Contracts": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/symfony.http-kernel.dll": {}
+          "bin/placeholder/Symfony.Dependency-injection.dll": {}
         },
         "runtime": {
-          "bin/placeholder/symfony.http-kernel.dll": {}
+          "bin/placeholder/Symfony.Dependency-injection.dll": {}
         }
       },
-      "symfony.routing/1.0.0": {
+      "Symfony.Event-dispatcher/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35",
-          "symfony.depenedency-injection": "1.0.0"
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Symfony.Dependency-injection": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/symfony.routing.dll": {}
+          "bin/placeholder/Symfony.Event-dispatcher.dll": {}
         },
         "runtime": {
-          "bin/placeholder/symfony.routing.dll": {}
+          "bin/placeholder/Symfony.Event-dispatcher.dll": {}
         }
       },
-      "symfony.yaml/1.0.0": {
+      "Symfony.Framework-bundle/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.35",
-          "Peachpie.Compiler.Tools": "0.9.35",
-          "symfony.console": "1.0.0"
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Symfony.Cache": "1.0.0",
+          "Symfony.Console": "1.0.0",
+          "Symfony.Routing": "1.0.0",
+          "Symfony.Yaml": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/symfony.yaml.dll": {}
+          "bin/placeholder/Symfony.Framework-bundle.dll": {}
         },
         "runtime": {
-          "bin/placeholder/symfony.yaml.dll": {}
+          "bin/placeholder/Symfony.Framework-bundle.dll": {}
+        }
+      },
+      "Symfony.Http-foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306"
+        },
+        "compile": {
+          "bin/placeholder/Symfony.Http-foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Symfony.Http-foundation.dll": {}
+        }
+      },
+      "Symfony.Http-kernel/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Psr.Log": "1.0.0",
+          "Symfony.Event-dispatcher": "1.0.0",
+          "Symfony.Http-foundation": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Symfony.Http-kernel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Symfony.Http-kernel.dll": {}
+        }
+      },
+      "Symfony.Routing/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Symfony.Dependency-injection": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Symfony.Routing.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Symfony.Routing.dll": {}
+        }
+      },
+      "Symfony.Yaml/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "1.0.0-appv2306",
+          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Symfony.Console": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Symfony.Yaml.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Symfony.Yaml.dll": {}
         }
       }
     }
@@ -7799,37 +7857,34 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "Peachpie.App/0.9.35": {
-      "sha512": "jO2fLArSgRBo2jktri4ZhaDKoi6SNIcL3TyMQnQDrNAOq+vehp2dGqxaOz8qyGqclJkWgZqwUJ6dpxjyiLBbew==",
+    "Peachpie.App/1.0.0-appv2306": {
+      "sha512": "FC8VP8lEYUwglLPydcuPf8yY8siEE3gluzYlqts2XJJkeZKoadZVDYRpOkjI9n6fIJCDBvctb5iwbHCKfHsxnw==",
       "type": "package",
-      "path": "peachpie.app/0.9.35",
+      "path": "peachpie.app/1.0.0-appv2306",
       "files": [
-        ".signature.p7s",
-        "peachpie.app.0.9.35.nupkg.sha512",
+        "peachpie.app.1.0.0-appv2306.nupkg.sha512",
         "peachpie.app.nuspec"
       ]
     },
-    "Peachpie.AspNetCore.Web/0.9.35": {
-      "sha512": "2LO+xTTSBc7yh9IgtHMu66f1ss7oRSndUxQzjByMQRGYA6SjsVtxJ4YuGpkveon2FGXi2SOZIVoUjyg/anjiIQ==",
+    "Peachpie.AspNetCore.Web/1.0.0-appv2306": {
+      "sha512": "S1WSDzG1q66/oDAFG+sADdqYop8G3FA3zjJy9hZUFo/CQ8kHXBGHPC+2hD8Kf6pLfrpaPt8wJJOXxkZ69zQDOg==",
       "type": "package",
-      "path": "peachpie.aspnetcore.web/0.9.35",
+      "path": "peachpie.aspnetcore.web/1.0.0-appv2306",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Peachpie.AspNetCore.Web.dll",
         "lib/netstandard2.0/Peachpie.AspNetCore.Web.xml",
-        "peachpie.aspnetcore.web.0.9.35.nupkg.sha512",
+        "peachpie.aspnetcore.web.1.0.0-appv2306.nupkg.sha512",
         "peachpie.aspnetcore.web.nuspec"
       ]
     },
-    "Peachpie.CodeAnalysis/0.9.35": {
-      "sha512": "ADEmlkIaD6eNL4Wo06EBCQJdXhHhdkPN5j2MyxeaFcxlwXk7c4lqvmBwK3S0qIC3pPHzeEBKFfA2viUGGQ6plw==",
+    "Peachpie.CodeAnalysis/1.0.0-appv2306": {
+      "sha512": "RMLk0Y+8opqVORWD4TjwUeBYuk/E/OL/tvnthpG1eIooi/m0nsbDQaTK2uM3SrUABI01OIodG8vnbyDpKzmxNA==",
       "type": "package",
-      "path": "peachpie.codeanalysis/0.9.35",
+      "path": "peachpie.codeanalysis/1.0.0-appv2306",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Peachpie.CodeAnalysis.dll",
         "lib/netstandard2.0/Peachpie.CodeAnalysis.xml",
-        "peachpie.codeanalysis.0.9.35.nupkg.sha512",
+        "peachpie.codeanalysis.1.0.0-appv2306.nupkg.sha512",
         "peachpie.codeanalysis.nuspec"
       ]
     },
@@ -7844,30 +7899,30 @@
         "peachpie.compiler.diagnostics.nuspec"
       ]
     },
-    "Peachpie.Compiler.Tools/0.9.35": {
-      "sha512": "uVGKSOYA91VHUIihgQ8br+TOUYBg0ZriAz+4pagrp5PvOuGrZa7I9ufOwZON4dRInYYSEDs2lqHFBj5YL95XLw==",
+    "Peachpie.Compiler.Tools/1.0.0-appv2306": {
+      "sha512": "j8Im6fBqKHs+sxml4q6YT8YfnqckJbr5W1snDlqFjmjiwi1BErAlFiqVCCNOsdxfSeLcMfezN4XTJ0S6ccW3tQ==",
       "type": "package",
-      "path": "peachpie.compiler.tools/0.9.35",
+      "path": "peachpie.compiler.tools/1.0.0-appv2306",
       "files": [
-        ".signature.p7s",
         "build/Peachpie.Compiler.Tools.props",
-        "peachpie.compiler.tools.0.9.35.nupkg.sha512",
+        "peachpie.compiler.tools.1.0.0-appv2306.nupkg.sha512",
         "peachpie.compiler.tools.nuspec",
         "tools/Devsense.PHP.Parser.dll",
         "tools/Devsense.PHP.Phar.dll",
         "tools/Microsoft.ApplicationInsights.dll",
+        "tools/Microsoft.Build.Framework.dll",
+        "tools/Microsoft.Build.Utilities.Core.dll",
         "tools/Peachpie.CodeAnalysis.dll",
-        "tools/Peachpie.CodeAnalysis.pdb",
         "tools/Peachpie.CodeAnalysis.xml",
         "tools/Peachpie.Compiler.Diagnostics.dll",
         "tools/Peachpie.Microsoft.CodeAnalysis.dll",
         "tools/System.Collections.Immutable.dll",
         "tools/System.Reflection.Metadata.dll",
+        "tools/System.Text.Encoding.CodePages.dll",
         "tools/cs/Peachpie.Microsoft.CodeAnalysis.resources.dll",
         "tools/de/Peachpie.Microsoft.CodeAnalysis.resources.dll",
         "tools/dotnet-compile-php.deps.json",
         "tools/dotnet-compile-php.dll",
-        "tools/dotnet-compile-php.pdb",
         "tools/dotnet-compile-php.runtimeconfig.json",
         "tools/dotnet-compile-php.xml",
         "tools/es/Peachpie.Microsoft.CodeAnalysis.resources.dll",
@@ -7878,10 +7933,9 @@
         "tools/pl/Peachpie.Microsoft.CodeAnalysis.resources.dll",
         "tools/pt-BR/Peachpie.Microsoft.CodeAnalysis.resources.dll",
         "tools/ru/Peachpie.Microsoft.CodeAnalysis.resources.dll",
-        "tools/runtimes/unix/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
         "tools/runtimes/win-x64/native/Microsoft.DiaSymReader.Native.amd64.dll",
         "tools/runtimes/win-x86/native/Microsoft.DiaSymReader.Native.x86.dll",
-        "tools/runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "tools/runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
         "tools/runtimes/win/native/Microsoft.DiaSymReader.Native.amd64.dll",
         "tools/runtimes/win/native/Microsoft.DiaSymReader.Native.arm.dll",
         "tools/runtimes/win/native/Microsoft.DiaSymReader.Native.x86.dll",
@@ -7891,101 +7945,93 @@
         "tools/zh-Hant/Peachpie.Microsoft.CodeAnalysis.resources.dll"
       ]
     },
-    "Peachpie.Library/0.9.35": {
-      "sha512": "4AYKRqT3u9+oa/8QEv4x0dm+BPpTapI6q4vqRMHYaft1v+zuHOrA32Yn6mCye4MgW2G2JJ3z7ASRoS0cGYclbA==",
+    "Peachpie.Library/1.0.0-appv2306": {
+      "sha512": "FNajYeCBi/rZ53266xIHd/hlnfyzpkH9W8Igj7mJznNHuDqo9Fwf/IcCQ10aExNivdjCRh6sjR6iftzphnxkBw==",
       "type": "package",
-      "path": "peachpie.library/0.9.35",
+      "path": "peachpie.library/1.0.0-appv2306",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Library.dll",
         "lib/netstandard2.0/Peachpie.Library.xml",
-        "peachpie.library.0.9.35.nupkg.sha512",
+        "peachpie.library.1.0.0-appv2306.nupkg.sha512",
         "peachpie.library.nuspec"
       ]
     },
-    "Peachpie.Library.Graphics/0.9.35": {
-      "sha512": "DRgDK5U7RtMpjSKlVqpmJIeiVFlY91f1I0qVJCAtN1vse6zLMaBbxEnY7O+992mHtY+I0PV/OIhkMMZ/7MehkA==",
+    "Peachpie.Library.Graphics/1.0.0-appv2306": {
+      "sha512": "e/XJl3vdWrQStyv6W/NwFrqP7wWm4veYyWTy33xI+82ZLtkYWjoRx3r+k5tBtg2J5SqeT6+ZVwED4elDlSOe8Q==",
       "type": "package",
-      "path": "peachpie.library.graphics/0.9.35",
+      "path": "peachpie.library.graphics/1.0.0-appv2306",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Library.Graphics.dll",
         "lib/netstandard2.0/Peachpie.Library.Graphics.xml",
-        "peachpie.library.graphics.0.9.35.nupkg.sha512",
+        "peachpie.library.graphics.1.0.0-appv2306.nupkg.sha512",
         "peachpie.library.graphics.nuspec"
       ]
     },
-    "Peachpie.Library.MsSql/0.9.35": {
-      "sha512": "thTYPfdcuNzakJveaW5kdNpjgLJv6O9356Zpf2y0I31Ta7o+4HHgn8VAJ2aeAoaKGBtKhjxtUJ6H2Y8JIXDyDg==",
+    "Peachpie.Library.MsSql/1.0.0-appv2306": {
+      "sha512": "4v/NXrX6bnVuY/QNvQXOa72mbAiA4nPt8m1xUqTzvEPYnLppH/yhPZF0n6APX3A3B16vOGMjzCxHFUVrj5fpVQ==",
       "type": "package",
-      "path": "peachpie.library.mssql/0.9.35",
+      "path": "peachpie.library.mssql/1.0.0-appv2306",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Library.MsSql.dll",
         "lib/netstandard2.0/Peachpie.Library.MsSql.xml",
-        "peachpie.library.mssql.0.9.35.nupkg.sha512",
+        "peachpie.library.mssql.1.0.0-appv2306.nupkg.sha512",
         "peachpie.library.mssql.nuspec"
       ]
     },
-    "Peachpie.Library.MySql/0.9.35": {
-      "sha512": "XESbrBib3SJltVNgJXmvWH+M3mrMUzm1hZHt+j/spi3YfsnDfWUCtrGxoQz1qsjDgOVitC3xfiOpVaNb497pUA==",
+    "Peachpie.Library.MySql/1.0.0-appv2306": {
+      "sha512": "5awql1+IxHbJBcL1aoV/4+RMHMoH9uCHe8GlsU398eX+kwNVOFcnrwqyv4rjztDwiHvJoIOsWVPHuV024e5kAw==",
       "type": "package",
-      "path": "peachpie.library.mysql/0.9.35",
+      "path": "peachpie.library.mysql/1.0.0-appv2306",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Library.MySql.dll",
         "lib/netstandard2.0/Peachpie.Library.MySql.xml",
-        "peachpie.library.mysql.0.9.35.nupkg.sha512",
+        "peachpie.library.mysql.1.0.0-appv2306.nupkg.sha512",
         "peachpie.library.mysql.nuspec"
       ]
     },
-    "Peachpie.Library.Network/0.9.35": {
-      "sha512": "XDfvK4zxUwT26qKjHtfeiRb+bcifohsXcljuTRIB3Pn7wJqt9pshCH+YE/FYMw76yJ2t8W3zTBw1H4UzFlbF+g==",
+    "Peachpie.Library.Network/1.0.0-appv2306": {
+      "sha512": "p4WXhHipSUTNT9LWFANN7NabVOPgpFPHU6kQggCF6pdlDyHOdiAc4AWa1DUzfggcAut+waL9qRhuIaeXq353Gw==",
       "type": "package",
-      "path": "peachpie.library.network/0.9.35",
+      "path": "peachpie.library.network/1.0.0-appv2306",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Library.Network.dll",
         "lib/netstandard2.0/Peachpie.Library.Network.xml",
-        "peachpie.library.network.0.9.35.nupkg.sha512",
+        "peachpie.library.network.1.0.0-appv2306.nupkg.sha512",
         "peachpie.library.network.nuspec"
       ]
     },
-    "Peachpie.Library.PDO/0.9.35": {
-      "sha512": "Uy8N/W8Wp151Fxqw3ZjsmGNtPEsaonPNKKwAtCXsA0J2+DjRfHZ30z0aW8p0jH0bIQq7Seqq34EdUdmfaaVkzw==",
+    "Peachpie.Library.PDO/1.0.0-appv2306": {
+      "sha512": "oHYpXSSHS/qNu/s4ZOFavXkraKjzHad1kZNoFX9U6Iw4e03GPjxaeJ7k73gAED3kYN0AG80eqsOMAbUB2Xxryg==",
       "type": "package",
-      "path": "peachpie.library.pdo/0.9.35",
+      "path": "peachpie.library.pdo/1.0.0-appv2306",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Library.PDO.dll",
         "lib/netstandard2.0/Peachpie.Library.PDO.xml",
-        "peachpie.library.pdo.0.9.35.nupkg.sha512",
+        "peachpie.library.pdo.1.0.0-appv2306.nupkg.sha512",
         "peachpie.library.pdo.nuspec"
       ]
     },
-    "Peachpie.Library.Scripting/0.9.35": {
-      "sha512": "GTI4A1jo351ZYF0zL1Q/yG5MHy6D8MhC01iXmKBCE9SKqIxXxq0gMP+6rb3PxD2T4ytKO1hEhVzpqNnrP63RDg==",
+    "Peachpie.Library.Scripting/1.0.0-appv2306": {
+      "sha512": "Nv8kd21/Q5RC1uj3pnGfRv2FPMomeTwL+kMspklCCDRgIaWEAm3ihWypSbrgXpmQGLBED3FS5BWRWSTo3lxtgg==",
       "type": "package",
-      "path": "peachpie.library.scripting/0.9.35",
+      "path": "peachpie.library.scripting/1.0.0-appv2306",
       "files": [
-        ".signature.p7s",
         "lib/net461/Peachpie.Library.Scripting.dll",
         "lib/net461/Peachpie.Library.Scripting.xml",
         "lib/netstandard2.0/Peachpie.Library.Scripting.dll",
         "lib/netstandard2.0/Peachpie.Library.Scripting.xml",
-        "peachpie.library.scripting.0.9.35.nupkg.sha512",
+        "peachpie.library.scripting.1.0.0-appv2306.nupkg.sha512",
         "peachpie.library.scripting.nuspec"
       ]
     },
-    "Peachpie.Library.XmlDom/0.9.35": {
-      "sha512": "TSuS5Hyk68kEZqM63X0oUJOgJWyNpSnEgrY4S1UXZd4G7W2V1qkZsn3jogiQOoIE8gzMwN1rN9/zfIeNSvr9og==",
+    "Peachpie.Library.XmlDom/1.0.0-appv2306": {
+      "sha512": "yHkiNu/c5pXxWV1wijSDQnP9amNwZ5D01Bu/y5nIJeDPLmmg7l3Xo+H2/GShxxBQj9i0s6BhDCeCnFt6F/FYdQ==",
       "type": "package",
-      "path": "peachpie.library.xmldom/0.9.35",
+      "path": "peachpie.library.xmldom/1.0.0-appv2306",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Library.XmlDom.dll",
         "lib/netstandard2.0/Peachpie.Library.XmlDom.xml",
-        "peachpie.library.xmldom.0.9.35.nupkg.sha512",
+        "peachpie.library.xmldom.1.0.0-appv2306.nupkg.sha512",
         "peachpie.library.xmldom.nuspec"
       ]
     },
@@ -8018,15 +8064,14 @@
         "peachpie.microsoft.codeanalysis.nuspec"
       ]
     },
-    "Peachpie.Runtime/0.9.35": {
-      "sha512": "ZqZw2B9OKC74kXPSDJvSBZnpQlzBiVpPPS/XG6ImlgxIqqqgO1kUsD6B0dYusj9jyf85aZyAePYB5PGOFF38sQ==",
+    "Peachpie.Runtime/1.0.0-appv2306": {
+      "sha512": "NdELp8fl9SAmkn5OnXm3eArP5DWMkpwg7t9PGSpLIdSHMJIW1Oj765xDRt18gNGaCStb5ISOBnhdn9KVnijFXQ==",
       "type": "package",
-      "path": "peachpie.runtime/0.9.35",
+      "path": "peachpie.runtime/1.0.0-appv2306",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Runtime.dll",
         "lib/netstandard2.0/Peachpie.Runtime.xml",
-        "peachpie.runtime.0.9.35.nupkg.sha512",
+        "peachpie.runtime.1.0.0-appv2306.nupkg.sha512",
         "peachpie.runtime.nuspec"
       ]
     },
@@ -12808,67 +12853,87 @@
       "path": "../Website/Website.msbuildproj",
       "msbuildProject": "../Website/Website.msbuildproj"
     },
-    "symfony.cache/1.0.0": {
+    "Psr.Cache/1.0.0": {
       "type": "project",
-      "path": "../Website/vendor/symfony/cache/symfony.cache.msbuildproj",
-      "msbuildProject": "../Website/vendor/symfony/cache/symfony.cache.msbuildproj"
+      "path": "../Libraries/Psr.Cache.msbuildproj",
+      "msbuildProject": "../Libraries/Psr.Cache.msbuildproj"
     },
-    "symfony.config/1.0.0": {
+    "Psr.Container/1.0.0": {
       "type": "project",
-      "path": "../Website/vendor/symfony/config/symfony.config.msbuildproj",
-      "msbuildProject": "../Website/vendor/symfony/config/symfony.config.msbuildproj"
+      "path": "../Libraries/Psr.Container.msbuildproj",
+      "msbuildProject": "../Libraries/Psr.Container.msbuildproj"
     },
-    "symfony.console/1.0.0": {
+    "Psr.Log/1.0.0": {
       "type": "project",
-      "path": "../Website/vendor/symfony/console/symfony.console.msbuildproj",
-      "msbuildProject": "../Website/vendor/symfony/console/symfony.console.msbuildproj"
+      "path": "../Libraries/Psr.Log.msbuildproj",
+      "msbuildProject": "../Libraries/Psr.Log.msbuildproj"
     },
-    "symfony.contracts/1.0.0": {
+    "Psr.Simple-cache/1.0.0": {
       "type": "project",
-      "path": "../Website/vendor/symfony/contracts/symfony.contracts.msbuildproj",
-      "msbuildProject": "../Website/vendor/symfony/contracts/symfony.contracts.msbuildproj"
+      "path": "../Libraries/Psr.Simple-cache.msbuildproj",
+      "msbuildProject": "../Libraries/Psr.Simple-cache.msbuildproj"
     },
-    "symfony.depenedency-injection/1.0.0": {
+    "Symfony.Cache/1.0.0": {
       "type": "project",
-      "path": "../Website/vendor/symfony/dependency-injection/symfony.dependency-injection.msbuildproj",
-      "msbuildProject": "../Website/vendor/symfony/dependency-injection/symfony.dependency-injection.msbuildproj"
+      "path": "../Libraries/Symfony.Cache.msbuildproj",
+      "msbuildProject": "../Libraries/Symfony.Cache.msbuildproj"
     },
-    "symfony.event-dispatcher/1.0.0": {
+    "Symfony.Config/1.0.0": {
       "type": "project",
-      "path": "../Website/vendor/symfony/event-dispatcher/symfony.event-dispatcher.msbuildproj",
-      "msbuildProject": "../Website/vendor/symfony/event-dispatcher/symfony.event-dispatcher.msbuildproj"
+      "path": "../Libraries/Symfony.Config.msbuildproj",
+      "msbuildProject": "../Libraries/Symfony.Config.msbuildproj"
     },
-    "symfony.framework-bundle/1.0.0": {
+    "Symfony.Console/1.0.0": {
       "type": "project",
-      "path": "../Website/vendor/symfony/framework-bundle/symfony.framework-bundle.msbuildproj",
-      "msbuildProject": "../Website/vendor/symfony/framework-bundle/symfony.framework-bundle.msbuildproj"
+      "path": "../Libraries/Symfony.Console.msbuildproj",
+      "msbuildProject": "../Libraries/Symfony.Console.msbuildproj"
     },
-    "symfony.http-foundation/1.0.0": {
+    "Symfony.Contracts/1.0.0": {
       "type": "project",
-      "path": "../Website/vendor/symfony/http-foundation/symfony.http-foundation.msbuildproj",
-      "msbuildProject": "../Website/vendor/symfony/http-foundation/symfony.http-foundation.msbuildproj"
+      "path": "../Libraries/Symfony.Contracts.msbuildproj",
+      "msbuildProject": "../Libraries/Symfony.Contracts.msbuildproj"
     },
-    "symfony.http-kernel/1.0.0": {
+    "Symfony.Dependency-injection/1.0.0": {
       "type": "project",
-      "path": "../Website/vendor/symfony/http-kernel/symfony.http-kernel.msbuildproj",
-      "msbuildProject": "../Website/vendor/symfony/http-kernel/symfony.http-kernel.msbuildproj"
+      "path": "../Libraries/Symfony.Dependency-injection.msbuildproj",
+      "msbuildProject": "../Libraries/Symfony.Dependency-injection.msbuildproj"
     },
-    "symfony.routing/1.0.0": {
+    "Symfony.Event-dispatcher/1.0.0": {
       "type": "project",
-      "path": "../Website/vendor/symfony/routing/symfony.routing.msbuildproj",
-      "msbuildProject": "../Website/vendor/symfony/routing/symfony.routing.msbuildproj"
+      "path": "../Libraries/Symfony.Event-dispatcher.msbuildproj",
+      "msbuildProject": "../Libraries/Symfony.Event-dispatcher.msbuildproj"
     },
-    "symfony.yaml/1.0.0": {
+    "Symfony.Framework-bundle/1.0.0": {
       "type": "project",
-      "path": "../Website/vendor/symfony/yaml/symfony.yaml.msbuildproj",
-      "msbuildProject": "../Website/vendor/symfony/yaml/symfony.yaml.msbuildproj"
+      "path": "../Libraries/Symfony.Framework-bundle.msbuildproj",
+      "msbuildProject": "../Libraries/Symfony.Framework-bundle.msbuildproj"
+    },
+    "Symfony.Http-foundation/1.0.0": {
+      "type": "project",
+      "path": "../Libraries/Symfony.Http-foundation.msbuildproj",
+      "msbuildProject": "../Libraries/Symfony.Http-foundation.msbuildproj"
+    },
+    "Symfony.Http-kernel/1.0.0": {
+      "type": "project",
+      "path": "../Libraries/Symfony.Http-kernel.msbuildproj",
+      "msbuildProject": "../Libraries/Symfony.Http-kernel.msbuildproj"
+    },
+    "Symfony.Routing/1.0.0": {
+      "type": "project",
+      "path": "../Libraries/Symfony.Routing.msbuildproj",
+      "msbuildProject": "../Libraries/Symfony.Routing.msbuildproj"
+    },
+    "Symfony.Yaml/1.0.0": {
+      "type": "project",
+      "path": "../Libraries/Symfony.Yaml.msbuildproj",
+      "msbuildProject": "../Libraries/Symfony.Yaml.msbuildproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Peachpie.AspNetCore.Web >= 0.9.35",
+      "Peachpie.AspNetCore.Web >= 1.0.0-appv2306",
       "empty-page >= 1.0.0"
     ]
   },
@@ -12931,7 +12996,7 @@
           },
           "Peachpie.AspNetCore.Web": {
             "target": "Package",
-            "version": "[0.9.35, )"
+            "version": "[1.0.0-appv2306, )"
           }
         },
         "imports": [
@@ -12941,34 +13006,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\simple-cache\\psr.simple-cache.msbuildproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\simple-cache\\psr.simple-cache.msbuildproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\log\\psr.log.msbuildproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\log\\psr.log.msbuildproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\container\\psr.container.msbuildproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\vendor\\psr\\container\\psr.container.msbuildproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    }
-  ]
+  }
 }

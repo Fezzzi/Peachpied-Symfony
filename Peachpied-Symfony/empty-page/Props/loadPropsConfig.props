@@ -3,7 +3,7 @@
 
   <PropertyGroup>
     <LibraryName>$(MSBuildProjectName)</LibraryName>
-    <LibraryPath>..\Website\vendor\$([MSBuild]::EnsureTrailingSlash('$([System.String]::Copy('$(MSBuildProjectName.toLower())').Replace('.','\'))'))</LibraryPath>
+    <LibraryPath>..\Website\vendor\$(ProjectNameLocation.toLower())</LibraryPath>
   </PropertyGroup>
 
   <Target Name="TestMessage" AfterTargets="Build" >

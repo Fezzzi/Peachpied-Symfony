@@ -8,10 +8,10 @@
     <AssemblyName>$(LibraryName)</AssemblyName>
     <PackageId>$(LibraryName)</PackageId>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<PackageOutputPath>..\Nugets\</PackageOutputPath>
-	<IntermediateOutputPath>.\obj\$(Configuration)\$(MSBuildProjectName)\</IntermediateOutputPath>
-	<OutputPath>.\bin\$(Configuration)\$(AssemblyName)\</OutputPath>
-	<OutDir>$(OutputPath)</OutDir>
+	  <PackageOutputPath>..\Nugets\</PackageOutputPath>
+	  <IntermediateOutputPath>.\obj\$(Configuration)\$(ProjectNameLocation)</IntermediateOutputPath>
+	  <OutputPath>.\bin\$(Configuration)\$([MSBuild]::EnsureTrailingSlash('$([System.String]::Copy('$(AssemblyName)').Replace('.','\'))'))</OutputPath>
+	  <OutDir>$(OutputPath)</OutDir>
   </PropertyGroup>
 
 </Project>
