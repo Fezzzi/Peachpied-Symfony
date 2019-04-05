@@ -323,12 +323,6 @@
           "lib/netstandard2.0/Peachpie.Compiler.Diagnostics.dll": {}
         }
       },
-      "Peachpie.Compiler.Tools/1.0.0-appv2306": {
-        "type": "package",
-        "build": {
-          "build/Peachpie.Compiler.Tools.props": {}
-        }
-      },
       "Peachpie.Library/0.9.38": {
         "type": "package",
         "dependencies": {
@@ -2074,8 +2068,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "1.0.0-appv2306",
-          "Peachpie.Compiler.Tools": "1.0.0-appv2306"
+          "Peachpie.App": "0.9.38"
         },
         "compile": {
           "bin/placeholder/Psr.Cache.dll": {}
@@ -2088,8 +2081,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "1.0.0-appv2306",
-          "Peachpie.Compiler.Tools": "1.0.0-appv2306"
+          "Peachpie.App": "0.9.38"
         },
         "compile": {
           "bin/placeholder/Psr.Container.dll": {}
@@ -2102,8 +2094,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "1.0.0-appv2306",
-          "Peachpie.Compiler.Tools": "1.0.0-appv2306"
+          "Peachpie.App": "0.9.38"
         },
         "compile": {
           "bin/placeholder/Psr.Log.dll": {}
@@ -2116,8 +2107,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "1.0.0-appv2306",
-          "Peachpie.Compiler.Tools": "1.0.0-appv2306"
+          "Peachpie.App": "0.9.38"
         },
         "compile": {
           "bin/placeholder/Psr.Simple-cache.dll": {}
@@ -2130,8 +2120,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "1.0.0-appv2306",
-          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Peachpie.App": "0.9.38",
           "Psr.Cache": "1.0.0",
           "Psr.Log": "1.0.0",
           "Psr.Simple-cache": "1.0.0",
@@ -2150,8 +2139,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "1.0.0-appv2306",
-          "Peachpie.Compiler.Tools": "1.0.0-appv2306"
+          "Peachpie.App": "0.9.38"
         },
         "compile": {
           "bin/placeholder/Symfony.Config.dll": {}
@@ -2164,8 +2152,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "1.0.0-appv2306",
-          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Peachpie.App": "0.9.38",
           "Psr.Log": "1.0.0",
           "Symfony.Dependency-injection": "1.0.0",
           "Symfony.Event-dispatcher": "1.0.0"
@@ -2181,8 +2168,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "1.0.0-appv2306",
-          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Peachpie.App": "0.9.38",
           "Psr.Cache": "1.0.0",
           "Psr.Container": "1.0.0"
         },
@@ -2197,8 +2183,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "1.0.0-appv2306",
-          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Peachpie.App": "0.9.38",
           "Psr.Container": "1.0.0",
           "Symfony.Config": "1.0.0",
           "Symfony.Contracts": "1.0.0"
@@ -2214,8 +2199,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "1.0.0-appv2306",
-          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Peachpie.App": "0.9.38",
           "Symfony.Dependency-injection": "1.0.0"
         },
         "compile": {
@@ -2229,8 +2213,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "1.0.0-appv2306",
-          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Peachpie.App": "0.9.38",
           "Symfony.Cache": "1.0.0",
           "Symfony.Console": "1.0.0",
           "Symfony.Routing": "1.0.0",
@@ -2247,8 +2230,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "1.0.0-appv2306",
-          "Peachpie.Compiler.Tools": "1.0.0-appv2306"
+          "Peachpie.App": "0.9.38"
         },
         "compile": {
           "bin/placeholder/Symfony.Http-foundation.dll": {}
@@ -2261,8 +2243,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "1.0.0-appv2306",
-          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Peachpie.App": "0.9.38",
           "Psr.Log": "1.0.0",
           "Symfony.Event-dispatcher": "1.0.0",
           "Symfony.Http-foundation": "1.0.0"
@@ -2278,8 +2259,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "1.0.0-appv2306",
-          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Peachpie.App": "0.9.38",
           "Symfony.Dependency-injection": "1.0.0"
         },
         "compile": {
@@ -2293,8 +2273,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "1.0.0-appv2306",
-          "Peachpie.Compiler.Tools": "1.0.0-appv2306",
+          "Peachpie.App": "0.9.38",
           "Symfony.Console": "1.0.0"
         },
         "compile": {
@@ -2796,52 +2775,6 @@
         "lib/netstandard2.0/Peachpie.Compiler.Diagnostics.dll",
         "peachpie.compiler.diagnostics.1.0.1.nupkg.sha512",
         "peachpie.compiler.diagnostics.nuspec"
-      ]
-    },
-    "Peachpie.Compiler.Tools/1.0.0-appv2306": {
-      "sha512": "j8Im6fBqKHs+sxml4q6YT8YfnqckJbr5W1snDlqFjmjiwi1BErAlFiqVCCNOsdxfSeLcMfezN4XTJ0S6ccW3tQ==",
-      "type": "package",
-      "path": "peachpie.compiler.tools/1.0.0-appv2306",
-      "files": [
-        "build/Peachpie.Compiler.Tools.props",
-        "peachpie.compiler.tools.1.0.0-appv2306.nupkg.sha512",
-        "peachpie.compiler.tools.nuspec",
-        "tools/Devsense.PHP.Parser.dll",
-        "tools/Devsense.PHP.Phar.dll",
-        "tools/Microsoft.ApplicationInsights.dll",
-        "tools/Microsoft.Build.Framework.dll",
-        "tools/Microsoft.Build.Utilities.Core.dll",
-        "tools/Peachpie.CodeAnalysis.dll",
-        "tools/Peachpie.CodeAnalysis.xml",
-        "tools/Peachpie.Compiler.Diagnostics.dll",
-        "tools/Peachpie.Microsoft.CodeAnalysis.dll",
-        "tools/System.Collections.Immutable.dll",
-        "tools/System.Reflection.Metadata.dll",
-        "tools/System.Text.Encoding.CodePages.dll",
-        "tools/cs/Peachpie.Microsoft.CodeAnalysis.resources.dll",
-        "tools/de/Peachpie.Microsoft.CodeAnalysis.resources.dll",
-        "tools/dotnet-compile-php.deps.json",
-        "tools/dotnet-compile-php.dll",
-        "tools/dotnet-compile-php.runtimeconfig.json",
-        "tools/dotnet-compile-php.xml",
-        "tools/es/Peachpie.Microsoft.CodeAnalysis.resources.dll",
-        "tools/fr/Peachpie.Microsoft.CodeAnalysis.resources.dll",
-        "tools/it/Peachpie.Microsoft.CodeAnalysis.resources.dll",
-        "tools/ja/Peachpie.Microsoft.CodeAnalysis.resources.dll",
-        "tools/ko/Peachpie.Microsoft.CodeAnalysis.resources.dll",
-        "tools/pl/Peachpie.Microsoft.CodeAnalysis.resources.dll",
-        "tools/pt-BR/Peachpie.Microsoft.CodeAnalysis.resources.dll",
-        "tools/ru/Peachpie.Microsoft.CodeAnalysis.resources.dll",
-        "tools/runtimes/win-x64/native/Microsoft.DiaSymReader.Native.amd64.dll",
-        "tools/runtimes/win-x86/native/Microsoft.DiaSymReader.Native.x86.dll",
-        "tools/runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
-        "tools/runtimes/win/native/Microsoft.DiaSymReader.Native.amd64.dll",
-        "tools/runtimes/win/native/Microsoft.DiaSymReader.Native.arm.dll",
-        "tools/runtimes/win/native/Microsoft.DiaSymReader.Native.x86.dll",
-        "tools/runtimes/win8-arm/native/Microsoft.DiaSymReader.Native.arm.dll",
-        "tools/tr/Peachpie.Microsoft.CodeAnalysis.resources.dll",
-        "tools/zh-Hans/Peachpie.Microsoft.CodeAnalysis.resources.dll",
-        "tools/zh-Hant/Peachpie.Microsoft.CodeAnalysis.resources.dll"
       ]
     },
     "Peachpie.Library/0.9.38": {
@@ -6949,27 +6882,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Peachpie.App from 1.0.0-appv2306 to 0.9.38. Reference the package directly from the project to select a different version. \r\n empty-page -> Symfony.Routing -> Peachpie.App (>= 1.0.0-appv2306) \r\n empty-page -> Peachpie.App (>= 0.9.38)",
-      "libraryId": "Peachpie.App",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Peachpie.App from 1.0.0-appv2306 to 0.9.38. Reference the package directly from the project to select a different version. \r\n empty-page -> Symfony.Framework-bundle -> Peachpie.App (>= 1.0.0-appv2306) \r\n empty-page -> Peachpie.App (>= 0.9.38)",
-      "libraryId": "Peachpie.App",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }
