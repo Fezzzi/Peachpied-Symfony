@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,6 +27,8 @@ namespace empty_page.Server
         {
             // Adds a default in-memory implementation of IDistributedCache.
             services.AddDistributedMemoryCache();
+            // Includes support for Razor Pages and controllers.
+            services.AddMvc();
 
             services.AddSession(options =>
             {
@@ -38,6 +41,7 @@ namespace empty_page.Server
         {
             app.UseSession();
 
+            app.UseMvc();
             app.UsePhp(new PhpRequestOptions(scriptAssemblyName: "empty-page"));
             app.UseDefaultFiles();
             app.UseStaticFiles();

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Peachpie.NET.Sdk/0.9.39">
+
+  <!-- Sets package-specific properties based on name and path -->
+  <Import Project="..\props\loadPropsConfig.props" />
+
+  <!-- Configurates build properties such as packageId, AssemblyName -->
+  <Import Project="..\props\buildPropsConfig.props" />
+
+  <PropertyGroup>
+    <AdditionalExcludes>
+      $(LibraryPath)Session\Storage\Handler\MigratingSessionHandler.php;
+      $(LibraryPath)Session\Storage\Proxy\SessionHandlerProxy.php
+    </AdditionalExcludes>
+  </PropertyGroup>
+
+  <!-- Adds compile and content ItemGroup Node. 
+      Adds to Content's Exclude attr additional excludes  -->
+  <Import Project="..\props\compileContentConfig.props" />
+  
+</Project>

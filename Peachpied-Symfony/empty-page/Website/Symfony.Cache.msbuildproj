@@ -1,0 +1,28 @@
+﻿<Project Sdk="Peachpie.NET.Sdk/0.9.39">
+  
+  <!-- Sets package-specific properties based on name and path -->
+  <Import Project="..\props\loadPropsConfig.props" />
+
+  <!-- Configurates build properties such as packageId, AssemblyName -->
+  <Import Project="..\props\buildPropsConfig.props" />
+
+  <PropertyGroup>
+    <AdditionalExcludes>
+      $(LibraryPath)DoctrineProvider.php
+    </AdditionalExcludes>
+  </PropertyGroup>
+
+  <!-- Adds compile and content ItemGroup Node. 
+      Adds to Content's Exclude attr additional excludes  -->
+  <Import Project="..\props\compileContentConfig.props" />
+    
+  <ItemGroup>
+    <ProjectReference Include="Psr.Log.msbuildproj" />
+    <ProjectReference Include="Psr.Simple-cache.msbuildproj" />
+    <ProjectReference Include="Psr.Cache.msbuildproj" />
+    <ProjectReference Include="Symfony.Contracts.msbuildproj" />
+    <ProjectReference Include="Symfony.Dependency-injection.msbuildproj" />
+    <ProjectReference Include="Symfony.Http-kernel.msbuildproj" />
+  </ItemGroup>
+
+</Project>

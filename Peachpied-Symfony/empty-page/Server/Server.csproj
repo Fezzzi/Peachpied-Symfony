@@ -7,11 +7,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Peachpie.AspNetCore.Web" Version="0.9.38" />
+    <PackageReference Include="Peachpie.AspNetCore.Web" Version="0.9.39" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Website\Website.msbuildproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Shared\" />
   </ItemGroup>
 
 </Project>

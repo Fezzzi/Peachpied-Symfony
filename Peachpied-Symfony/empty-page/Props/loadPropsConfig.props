@@ -3,7 +3,7 @@
 
   <PropertyGroup>
     <LibraryName>$(MSBuildProjectName)</LibraryName>
-    <LibraryPath>..\Website\vendor\$(ProjectNameLocation.toLower())</LibraryPath>
+    <LibraryPath>vendor\$(ProjectNameLocation.toLower())</LibraryPath>
   </PropertyGroup>
 
   <Target Name="TestMessage" AfterTargets="Build" >
