@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-  <PropertyGroup>
-    <ProjectNameLocation>$([MSBuild]::EnsureTrailingSlash('$([System.String]::Copy('$(MSBuildProjectName)').Replace('.','\'))'))</ProjectNameLocation>
-    <BaseOutputPath>bin\$(ProjectNameLocation)</BaseOutputPath>
-    <BaseIntermediateOutputPath>obj\$(ProjectNameLocation)</BaseIntermediateOutputPath>
-  </PropertyGroup>
+	<PropertyGroup>
+		<ProjectNameLocation>$([MSBuild]::EnsureTrailingSlash('$([System.String]::Copy('$(MSBuildProjectName)').Replace('.','\'))'))</ProjectNameLocation>
+		<BaseOutputPath>.\bin\$(Configuration)\$(ProjectNameLocation)</BaseOutputPath>
+		<BaseIntermediateOutputPath>.\obj\$(Configuration)\$(ProjectNameLocation)</BaseIntermediateOutputPath>
+	</PropertyGroup>
 
 </Project>

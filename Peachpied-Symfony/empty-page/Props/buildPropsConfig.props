@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-  <PropertyGroup>
-    <OutputType>Library</OutputType>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <Description>.NET class library in PHP</Description>
-    <AssemblyName>$(LibraryName)</AssemblyName>
-    <PackageId>$(LibraryName)</PackageId>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <PackageOutputPath>..\Nugets\</PackageOutputPath>
-	  <IntermediateOutputPath>.\obj\$(Configuration)\$(ProjectNameLocation)</IntermediateOutputPath>
-	  <OutputPath>.\bin\$(Configuration)\$([MSBuild]::EnsureTrailingSlash('$([System.String]::Copy('$(AssemblyName)').Replace('.','\'))'))</OutputPath>
-	  <OutDir>$(OutputPath)</OutDir>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Description>.NET class library in PHP</Description>
+		<AssemblyName>$(LibraryName)</AssemblyName>
+		<PackageId>$(LibraryName)</PackageId>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageOutputPath>..\Nugets\</PackageOutputPath>
+		<IntermediateOutputPath>.\obj\$(Configuration)\$(ProjectNameLocation)</IntermediateOutputPath>
+		<OutputPath>.\bin\$(Configuration)\$([MSBuild]::EnsureTrailingSlash('$([System.String]::Copy('$(AssemblyName)').Replace('.','\'))'))</OutputPath>
+		<OutDir>$(OutputPath)</OutDir>
+		<ComposerJsonPath>Ignore</ComposerJsonPath>
+	</PropertyGroup>
 
 </Project>

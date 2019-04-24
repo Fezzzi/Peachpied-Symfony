@@ -2729,28 +2729,28 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Peachpie.App/0.9.39": {
+      "Peachpie.App/0.9.40": {
         "type": "package",
         "dependencies": {
-          "Peachpie.Library": "0.9.39",
-          "Peachpie.Library.Graphics": "0.9.39",
-          "Peachpie.Library.MsSql": "0.9.39",
-          "Peachpie.Library.MySql": "0.9.39",
-          "Peachpie.Library.Network": "0.9.39",
-          "Peachpie.Library.PDO": "0.9.39",
-          "Peachpie.Library.Scripting": "0.9.39",
-          "Peachpie.Library.XmlDom": "0.9.39",
-          "Peachpie.Runtime": "0.9.39"
+          "Peachpie.Library": "0.9.40",
+          "Peachpie.Library.Graphics": "0.9.40",
+          "Peachpie.Library.MsSql": "0.9.40",
+          "Peachpie.Library.MySql": "0.9.40",
+          "Peachpie.Library.Network": "0.9.40",
+          "Peachpie.Library.PDO": "0.9.40",
+          "Peachpie.Library.Scripting": "0.9.40",
+          "Peachpie.Library.XmlDom": "0.9.40",
+          "Peachpie.Runtime": "0.9.40"
         }
       },
-      "Peachpie.AspNetCore.Web/0.9.39": {
+      "Peachpie.AspNetCore.Web/0.9.40": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.3",
           "Microsoft.AspNetCore.Http.Abstractions": "2.0.3",
           "Microsoft.AspNetCore.Session": "2.0.3",
-          "Peachpie.Library": "0.9.39",
-          "Peachpie.Runtime": "0.9.39"
+          "Peachpie.Library": "0.9.40",
+          "Peachpie.Runtime": "0.9.40"
         },
         "compile": {
           "lib/netstandard2.0/Peachpie.AspNetCore.Web.dll": {}
@@ -2759,7 +2759,7 @@
           "lib/netstandard2.0/Peachpie.AspNetCore.Web.dll": {}
         }
       },
-      "Peachpie.CodeAnalysis/0.9.39": {
+      "Peachpie.CodeAnalysis/0.9.40": {
         "type": "package",
         "dependencies": {
           "Devsense.Php.Parser": "1.4.82",
@@ -2796,11 +2796,11 @@
           "lib/netstandard2.0/Peachpie.Compiler.Diagnostics.dll": {}
         }
       },
-      "Peachpie.Library/0.9.39": {
+      "Peachpie.Library/0.9.40": {
         "type": "package",
         "dependencies": {
-          "Peachpie.Library.RegularExpressions": "1.0.2",
-          "Peachpie.Runtime": "0.9.39",
+          "Peachpie.Library.RegularExpressions": "1.0.3",
+          "Peachpie.Runtime": "0.9.40",
           "System.IO.FileSystem.DriveInfo": "4.3.1"
         },
         "compile": {
@@ -2810,11 +2810,11 @@
           "lib/netstandard2.0/Peachpie.Library.dll": {}
         }
       },
-      "Peachpie.Library.Graphics/0.9.39": {
+      "Peachpie.Library.Graphics/0.9.40": {
         "type": "package",
         "dependencies": {
-          "Peachpie.Library": "0.9.39",
-          "Peachpie.Runtime": "0.9.39",
+          "Peachpie.Library": "0.9.40",
+          "Peachpie.Runtime": "0.9.40",
           "SixLabors.ImageSharp": "1.0.0-beta0006",
           "SixLabors.ImageSharp.Drawing": "1.0.0-beta0006",
           "SixLabors.Shapes.Text": "1.0.0-beta0008"
@@ -2826,11 +2826,11 @@
           "lib/netstandard2.0/Peachpie.Library.Graphics.dll": {}
         }
       },
-      "Peachpie.Library.MsSql/0.9.39": {
+      "Peachpie.Library.MsSql/0.9.40": {
         "type": "package",
         "dependencies": {
-          "Peachpie.Library": "0.9.39",
-          "Peachpie.Runtime": "0.9.39",
+          "Peachpie.Library": "0.9.40",
+          "Peachpie.Runtime": "0.9.40",
           "System.Data.SqlClient": "4.6.0"
         },
         "compile": {
@@ -2840,12 +2840,12 @@
           "lib/netstandard2.0/Peachpie.Library.MsSql.dll": {}
         }
       },
-      "Peachpie.Library.MySql/0.9.39": {
+      "Peachpie.Library.MySql/0.9.40": {
         "type": "package",
         "dependencies": {
           "MySqlConnector": "0.51.1",
-          "Peachpie.Library": "0.9.39",
-          "Peachpie.Runtime": "0.9.39"
+          "Peachpie.Library": "0.9.40",
+          "Peachpie.Runtime": "0.9.40"
         },
         "compile": {
           "lib/netstandard2.0/Peachpie.Library.MySql.dll": {}
@@ -2854,11 +2854,11 @@
           "lib/netstandard2.0/Peachpie.Library.MySql.dll": {}
         }
       },
-      "Peachpie.Library.Network/0.9.39": {
+      "Peachpie.Library.Network/0.9.40": {
         "type": "package",
         "dependencies": {
-          "Peachpie.Library": "0.9.39",
-          "Peachpie.Runtime": "0.9.39"
+          "Peachpie.Library": "0.9.40",
+          "Peachpie.Runtime": "0.9.40"
         },
         "compile": {
           "lib/netstandard2.0/Peachpie.Library.Network.dll": {}
@@ -2867,11 +2867,11 @@
           "lib/netstandard2.0/Peachpie.Library.Network.dll": {}
         }
       },
-      "Peachpie.Library.PDO/0.9.39": {
+      "Peachpie.Library.PDO/0.9.40": {
         "type": "package",
         "dependencies": {
-          "Peachpie.Library": "0.9.39",
-          "Peachpie.Runtime": "0.9.39"
+          "Peachpie.Library": "0.9.40",
+          "Peachpie.Runtime": "0.9.40"
         },
         "compile": {
           "lib/netstandard2.0/Peachpie.Library.PDO.dll": {}
@@ -2880,7 +2880,7 @@
           "lib/netstandard2.0/Peachpie.Library.PDO.dll": {}
         }
       },
-      "Peachpie.Library.RegularExpressions/1.0.2": {
+      "Peachpie.Library.RegularExpressions/1.0.3": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Peachpie.Library.RegularExpressions.dll": {}
@@ -2889,15 +2889,15 @@
           "lib/netstandard2.0/Peachpie.Library.RegularExpressions.dll": {}
         }
       },
-      "Peachpie.Library.Scripting/0.9.39": {
+      "Peachpie.Library.Scripting/0.9.40": {
         "type": "package",
         "dependencies": {
           "Devsense.Php.Parser": "1.4.82",
-          "Peachpie.CodeAnalysis": "0.9.39",
-          "Peachpie.Library": "0.9.39",
-          "Peachpie.Library.XmlDom": "0.9.39",
+          "Peachpie.CodeAnalysis": "0.9.40",
+          "Peachpie.Library": "0.9.40",
+          "Peachpie.Library.XmlDom": "0.9.40",
           "Peachpie.Microsoft.CodeAnalysis": "0.9.2",
-          "Peachpie.Runtime": "0.9.39",
+          "Peachpie.Runtime": "0.9.40",
           "System.Runtime.Loader": "4.3.0"
         },
         "compile": {
@@ -2907,12 +2907,12 @@
           "lib/netstandard2.0/Peachpie.Library.Scripting.dll": {}
         }
       },
-      "Peachpie.Library.XmlDom/0.9.39": {
+      "Peachpie.Library.XmlDom/0.9.40": {
         "type": "package",
         "dependencies": {
           "HtmlAgilityPack": "1.8.9",
-          "Peachpie.Library": "0.9.39",
-          "Peachpie.Runtime": "0.9.39",
+          "Peachpie.Library": "0.9.40",
+          "Peachpie.Runtime": "0.9.40",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XPath": "4.3.0",
           "System.Xml.XPath.XmlDocument": "4.3.0",
@@ -2994,7 +2994,7 @@
           }
         }
       },
-      "Peachpie.Runtime/0.9.39": {
+      "Peachpie.Runtime/0.9.40": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
@@ -4917,7 +4917,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39"
+          "Peachpie.App": "0.9.40"
         },
         "compile": {
           "bin/placeholder/Composer.dll": {}
@@ -4926,27 +4926,27 @@
           "bin/placeholder/Composer.dll": {}
         }
       },
-      "empty-page/1.0.0": {
+      "PeachPied.Symfony.AspNetCore/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Composer": "1.0.0",
-          "Peachpie.App": "0.9.39",
-          "Symfony.Framework-bundle": "1.0.0",
-          "Symfony.Routing": "1.0.0"
+          "Microsoft.AspNetCore.StaticFiles": "2.1.1",
+          "Microsoft.Extensions.Configuration.Binder": "2.1.1",
+          "Microsoft.Extensions.FileProviders.Physical": "2.1.1",
+          "Peachpie.AspNetCore.Web": "0.9.40"
         },
         "compile": {
-          "bin/placeholder/empty-page.dll": {}
+          "bin/placeholder/PeachPied.Symfony.AspNetCore.dll": {}
         },
         "runtime": {
-          "bin/placeholder/empty-page.dll": {}
+          "bin/placeholder/PeachPied.Symfony.AspNetCore.dll": {}
         }
       },
       "Psr.Cache/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39"
+          "Peachpie.App": "0.9.40"
         },
         "compile": {
           "bin/placeholder/Psr.Cache.dll": {}
@@ -4959,7 +4959,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39"
+          "Peachpie.App": "0.9.40"
         },
         "compile": {
           "bin/placeholder/Psr.Container.dll": {}
@@ -4972,7 +4972,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39"
+          "Peachpie.App": "0.9.40"
         },
         "compile": {
           "bin/placeholder/Psr.Log.dll": {}
@@ -4985,7 +4985,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39"
+          "Peachpie.App": "0.9.40"
         },
         "compile": {
           "bin/placeholder/Psr.Simple-cache.dll": {}
@@ -4998,7 +4998,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39",
+          "Peachpie.App": "0.9.40",
           "Psr.Cache": "1.0.0",
           "Psr.Log": "1.0.0",
           "Psr.Simple-cache": "1.0.0",
@@ -5017,7 +5017,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39"
+          "Peachpie.App": "0.9.40"
         },
         "compile": {
           "bin/placeholder/Symfony.Config.dll": {}
@@ -5030,7 +5030,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39",
+          "Peachpie.App": "0.9.40",
           "Psr.Log": "1.0.0",
           "Symfony.Dependency-injection": "1.0.0",
           "Symfony.Event-dispatcher": "1.0.0"
@@ -5046,7 +5046,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39",
+          "Peachpie.App": "0.9.40",
           "Psr.Cache": "1.0.0",
           "Psr.Container": "1.0.0"
         },
@@ -5057,11 +5057,25 @@
           "bin/placeholder/Symfony.Contracts.dll": {}
         }
       },
+      "Symfony.Debug/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.40",
+          "Psr.Log": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Symfony.Debug.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Symfony.Debug.dll": {}
+        }
+      },
       "Symfony.Dependency-injection/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39",
+          "Peachpie.App": "0.9.40",
           "Psr.Container": "1.0.0",
           "Symfony.Config": "1.0.0",
           "Symfony.Contracts": "1.0.0"
@@ -5073,11 +5087,24 @@
           "bin/placeholder/Symfony.Dependency-injection.dll": {}
         }
       },
+      "Symfony.Dotenv/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.40"
+        },
+        "compile": {
+          "bin/placeholder/Symfony.Dotenv.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Symfony.Dotenv.dll": {}
+        }
+      },
       "Symfony.Event-dispatcher/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39",
+          "Peachpie.App": "0.9.40",
           "Symfony.Dependency-injection": "1.0.0"
         },
         "compile": {
@@ -5091,7 +5118,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39",
+          "Peachpie.App": "0.9.40",
           "Symfony.Cache": "1.0.0",
           "Symfony.Console": "1.0.0",
           "Symfony.Routing": "1.0.0",
@@ -5108,7 +5135,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39"
+          "Peachpie.App": "0.9.40"
         },
         "compile": {
           "bin/placeholder/Symfony.Http-foundation.dll": {}
@@ -5121,7 +5148,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39",
+          "Peachpie.App": "0.9.40",
           "Psr.Log": "1.0.0",
           "Symfony.Event-dispatcher": "1.0.0",
           "Symfony.Http-foundation": "1.0.0"
@@ -5133,11 +5160,24 @@
           "bin/placeholder/Symfony.Http-kernel.dll": {}
         }
       },
+      "Symfony.Polyfill-mbstring/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Peachpie.App": "0.9.40"
+        },
+        "compile": {
+          "bin/placeholder/Symfony.Polyfill-mbstring.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Symfony.Polyfill-mbstring.dll": {}
+        }
+      },
       "Symfony.Routing/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39",
+          "Peachpie.App": "0.9.40",
           "Symfony.Dependency-injection": "1.0.0"
         },
         "compile": {
@@ -5147,11 +5187,30 @@
           "bin/placeholder/Symfony.Routing.dll": {}
         }
       },
+      "Symfony.Skeleton/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Composer": "1.0.0",
+          "Peachpie.App": "0.9.40",
+          "Symfony.Debug": "1.0.0",
+          "Symfony.Dotenv": "1.0.0",
+          "Symfony.Framework-bundle": "1.0.0",
+          "Symfony.Polyfill-mbstring": "1.0.0",
+          "Symfony.Routing": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Symfony.Skeleton.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Symfony.Skeleton.dll": {}
+        }
+      },
       "Symfony.Yaml/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Peachpie.App": "0.9.39",
+          "Peachpie.App": "0.9.40",
           "Symfony.Console": "1.0.0"
         },
         "compile": {
@@ -7893,37 +7952,37 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "Peachpie.App/0.9.39": {
-      "sha512": "szy4tJVo70aelU/K6SjiPmVAEog4hAPwGRqZBHckIQuy2mz0vRZBQbiF5m7/PGT+ECmZbAlgteOPc8chH5fw3w==",
+    "Peachpie.App/0.9.40": {
+      "sha512": "DdDNwJu3oiCbxLV6EARyiYqv4tqGOcqFdEoW4m5oKbyOHlVkHatqiYMroMjzSotqHEkCzsqmKrnDB+1zJD7lrA==",
       "type": "package",
-      "path": "peachpie.app/0.9.39",
+      "path": "peachpie.app/0.9.40",
       "files": [
         ".signature.p7s",
-        "peachpie.app.0.9.39.nupkg.sha512",
+        "peachpie.app.0.9.40.nupkg.sha512",
         "peachpie.app.nuspec"
       ]
     },
-    "Peachpie.AspNetCore.Web/0.9.39": {
-      "sha512": "YtFE4yGmFWHEzUGFukxHnxH6aoeFBr9lovxCe3sM7hgRWyoSPcx6jhKUkd5EiRotBdOI8PCDh2gJUovblSX0Vw==",
+    "Peachpie.AspNetCore.Web/0.9.40": {
+      "sha512": "z7iHaSNB+z6PvlbceMEH781cWwfm9KV83IgIf1/u7qnu1Q3uVIxYlpQHqnNuqfsLa1yt1Ek890kdDvAdNLz3pA==",
       "type": "package",
-      "path": "peachpie.aspnetcore.web/0.9.39",
+      "path": "peachpie.aspnetcore.web/0.9.40",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Peachpie.AspNetCore.Web.dll",
         "lib/netstandard2.0/Peachpie.AspNetCore.Web.xml",
-        "peachpie.aspnetcore.web.0.9.39.nupkg.sha512",
+        "peachpie.aspnetcore.web.0.9.40.nupkg.sha512",
         "peachpie.aspnetcore.web.nuspec"
       ]
     },
-    "Peachpie.CodeAnalysis/0.9.39": {
-      "sha512": "oSa09j/emc6R1bsFIaRMO17S4GVXUjtQZOBNyyrrZRVHwCg5+TkkLva7l+0PhNagDPvO9GGJ7NaFgsTTF5ocGQ==",
+    "Peachpie.CodeAnalysis/0.9.40": {
+      "sha512": "a5/th+AdqkJmWyJAIGCDW16xKQsVw6cr5q2Gk8ykCHNb26NUcZF3MYV8vroLuaoc3Q46FK1lwaHqMH/KjdrVqw==",
       "type": "package",
-      "path": "peachpie.codeanalysis/0.9.39",
+      "path": "peachpie.codeanalysis/0.9.40",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Peachpie.CodeAnalysis.dll",
         "lib/netstandard2.0/Peachpie.CodeAnalysis.xml",
-        "peachpie.codeanalysis.0.9.39.nupkg.sha512",
+        "peachpie.codeanalysis.0.9.40.nupkg.sha512",
         "peachpie.codeanalysis.nuspec"
       ]
     },
@@ -7938,113 +7997,113 @@
         "peachpie.compiler.diagnostics.nuspec"
       ]
     },
-    "Peachpie.Library/0.9.39": {
-      "sha512": "MF5agv/AH4w15P7Tth/6QsxFO52lREMeOrekSuzxecC97YkXmN5JmKQWb9sjnfMNniUwFFIM/9EpJJamwha+iQ==",
+    "Peachpie.Library/0.9.40": {
+      "sha512": "ecmrcrDRpBrza6p/raa5EG1Z1v4ps5AnJD13K1I6Mmj4/719pPmWC1xLQ80dn1w06fcQTHazTshcTyAEAJm5JQ==",
       "type": "package",
-      "path": "peachpie.library/0.9.39",
+      "path": "peachpie.library/0.9.40",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Library.dll",
         "lib/netstandard2.0/Peachpie.Library.xml",
-        "peachpie.library.0.9.39.nupkg.sha512",
+        "peachpie.library.0.9.40.nupkg.sha512",
         "peachpie.library.nuspec"
       ]
     },
-    "Peachpie.Library.Graphics/0.9.39": {
-      "sha512": "mQfva0jvxXWa55y9qBHOjLuBqJT/EMJqQGxrbBMD0i9921e5/0w9aUBkthG7cMntiGAalf+061RIjLzA7PBYiw==",
+    "Peachpie.Library.Graphics/0.9.40": {
+      "sha512": "hevtUua//01GOFWf1jNsrMPs7rhdFqVRdHyBpufqMzHXxbCM4hF7j4VVhlKH0iLeiyrdVtw+RDqQOCqRNbRGww==",
       "type": "package",
-      "path": "peachpie.library.graphics/0.9.39",
+      "path": "peachpie.library.graphics/0.9.40",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Library.Graphics.dll",
         "lib/netstandard2.0/Peachpie.Library.Graphics.xml",
-        "peachpie.library.graphics.0.9.39.nupkg.sha512",
+        "peachpie.library.graphics.0.9.40.nupkg.sha512",
         "peachpie.library.graphics.nuspec"
       ]
     },
-    "Peachpie.Library.MsSql/0.9.39": {
-      "sha512": "ihzBLSufxkMM9PDC6pjO6pJsAX70baK0ZgVIwOd5Ev5+tMog3WNZL5eVzfvGeGnVtqYE+Qj8RamyJNfkNBgp6A==",
+    "Peachpie.Library.MsSql/0.9.40": {
+      "sha512": "uO3aNGovMrWCDnW9FIh/RITdB4daRu7EZqkHtpUEa8FfW7Xtlbi6VrTiGp2cCVxM8MMci6MSKRSc606vwcYgGA==",
       "type": "package",
-      "path": "peachpie.library.mssql/0.9.39",
+      "path": "peachpie.library.mssql/0.9.40",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Library.MsSql.dll",
         "lib/netstandard2.0/Peachpie.Library.MsSql.xml",
-        "peachpie.library.mssql.0.9.39.nupkg.sha512",
+        "peachpie.library.mssql.0.9.40.nupkg.sha512",
         "peachpie.library.mssql.nuspec"
       ]
     },
-    "Peachpie.Library.MySql/0.9.39": {
-      "sha512": "Iq6/KhUbuIItWF8YZvBcnKV4zLUm1lfaOnImi/wo5YTWrL4oABwVMjSgBMfw/izlpnlQBmEbqy2UM+qLtAYWQQ==",
+    "Peachpie.Library.MySql/0.9.40": {
+      "sha512": "4UAxNyiFk7x4GTJrRsvM0FlT2TXfEXqOo3/OYM+2x/a0gd8q3cROrN4J0mW+AHGy+d31jx8PZ/Fr+kvJza7aJA==",
       "type": "package",
-      "path": "peachpie.library.mysql/0.9.39",
+      "path": "peachpie.library.mysql/0.9.40",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Library.MySql.dll",
         "lib/netstandard2.0/Peachpie.Library.MySql.xml",
-        "peachpie.library.mysql.0.9.39.nupkg.sha512",
+        "peachpie.library.mysql.0.9.40.nupkg.sha512",
         "peachpie.library.mysql.nuspec"
       ]
     },
-    "Peachpie.Library.Network/0.9.39": {
-      "sha512": "CD3WG58rRBywZjmXWGJtvmiTmq31BT/+4lb2vMlYsV2Dgo5K3LP9YGqmqe7PJI4pLARgarvriMNkoQpZy/s/PQ==",
+    "Peachpie.Library.Network/0.9.40": {
+      "sha512": "eobpkCxIVbz6xe/X1V23inaNAfoGtgBxFdwIK7iXsN6ZH9mW6D10kAglxjl/wQEbzBglE/Ybdt1yI92ssNB4Zw==",
       "type": "package",
-      "path": "peachpie.library.network/0.9.39",
+      "path": "peachpie.library.network/0.9.40",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Library.Network.dll",
         "lib/netstandard2.0/Peachpie.Library.Network.xml",
-        "peachpie.library.network.0.9.39.nupkg.sha512",
+        "peachpie.library.network.0.9.40.nupkg.sha512",
         "peachpie.library.network.nuspec"
       ]
     },
-    "Peachpie.Library.PDO/0.9.39": {
-      "sha512": "+RXnwEAaN9TeLapkHYf15ku1vmrFAz02zCeOsb/GIxRj5LQUC8+OJkJMNLXw+7iFwJz+Rcbz86/cLQs+M+T+gA==",
+    "Peachpie.Library.PDO/0.9.40": {
+      "sha512": "eaKnvtzrkf/Hh+EsItoPPUBZlok+SyCXIPfDChyKO8Qqc3FHCkTPgSGBdqhT50XOrvJvBuJ++IA7dJ5B+5X6vg==",
       "type": "package",
-      "path": "peachpie.library.pdo/0.9.39",
+      "path": "peachpie.library.pdo/0.9.40",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Library.PDO.dll",
         "lib/netstandard2.0/Peachpie.Library.PDO.xml",
-        "peachpie.library.pdo.0.9.39.nupkg.sha512",
+        "peachpie.library.pdo.0.9.40.nupkg.sha512",
         "peachpie.library.pdo.nuspec"
       ]
     },
-    "Peachpie.Library.RegularExpressions/1.0.2": {
-      "sha512": "G/Y9DotKXE/139cRslCZXizsdX36iI8V+k5LR8HqJSJpCGTV1ejIn8nrRBAt5dkxKGCsf+5i2Q+Y/kxwIYdyqA==",
+    "Peachpie.Library.RegularExpressions/1.0.3": {
+      "sha512": "8jM9j0mNQ6r2YGQMECB9N7D5Ykiv5XyS4sOxZyWp0JoPqalwEkwL9zovW69I5Rv1gjlnSRdeV7DQtb6x6nrnPA==",
       "type": "package",
-      "path": "peachpie.library.regularexpressions/1.0.2",
+      "path": "peachpie.library.regularexpressions/1.0.3",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Library.RegularExpressions.dll",
         "lib/netstandard2.0/Peachpie.Library.RegularExpressions.xml",
-        "peachpie.library.regularexpressions.1.0.2.nupkg.sha512",
+        "peachpie.library.regularexpressions.1.0.3.nupkg.sha512",
         "peachpie.library.regularexpressions.nuspec"
       ]
     },
-    "Peachpie.Library.Scripting/0.9.39": {
-      "sha512": "dqfsD5nUaOtllU/TxRUHXNqZXIXRm5ZkVQJOI9MJiYLDmEumuziDNqrVlidcfRdtCB/y1yedF4UcPxxJfAKpOA==",
+    "Peachpie.Library.Scripting/0.9.40": {
+      "sha512": "t7JrSOyrBKi73jnyqZhiDV459R0q+nLq43uFWBxdhALr4M+Hs4+WFSonTZQjbs4ecXYBoWZIIvFNOd3jR5btNA==",
       "type": "package",
-      "path": "peachpie.library.scripting/0.9.39",
+      "path": "peachpie.library.scripting/0.9.40",
       "files": [
         ".signature.p7s",
         "lib/net461/Peachpie.Library.Scripting.dll",
         "lib/net461/Peachpie.Library.Scripting.xml",
         "lib/netstandard2.0/Peachpie.Library.Scripting.dll",
         "lib/netstandard2.0/Peachpie.Library.Scripting.xml",
-        "peachpie.library.scripting.0.9.39.nupkg.sha512",
+        "peachpie.library.scripting.0.9.40.nupkg.sha512",
         "peachpie.library.scripting.nuspec"
       ]
     },
-    "Peachpie.Library.XmlDom/0.9.39": {
-      "sha512": "bbYWUJf7mHeX3uJGXLxbI67r7RlE3J+6SaeI1IwFwRf5AuS3QK3q/2R0vUo+erDtL6+Fz8wn+HM0d9vr60Jj6g==",
+    "Peachpie.Library.XmlDom/0.9.40": {
+      "sha512": "N4rKNrRnyfN8PDLeYA/GLhfBPYO5vttoJcw1qUkZVWUtNA2Oip2zd1GZlPg/ACSwtmhZprLpOqYErDvEH9vhBA==",
       "type": "package",
-      "path": "peachpie.library.xmldom/0.9.39",
+      "path": "peachpie.library.xmldom/0.9.40",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Library.XmlDom.dll",
         "lib/netstandard2.0/Peachpie.Library.XmlDom.xml",
-        "peachpie.library.xmldom.0.9.39.nupkg.sha512",
+        "peachpie.library.xmldom.0.9.40.nupkg.sha512",
         "peachpie.library.xmldom.nuspec"
       ]
     },
@@ -8077,15 +8136,15 @@
         "peachpie.microsoft.codeanalysis.nuspec"
       ]
     },
-    "Peachpie.Runtime/0.9.39": {
-      "sha512": "QpsialcLNwfXP8xT58MXlPTPPhSOrxtHlTTPznYIBzGXkIfN1040tyPJevo8sDKzQl7gbd/hjNcrSzEYYq70Dg==",
+    "Peachpie.Runtime/0.9.40": {
+      "sha512": "xbA4VllpBucIsoT+iv+0sR8ZCEU54hHQJx45lEiTLUPnEA8912hRh0XZMa3/nDZVenXYrGOPS3MHlzVsXUWNSg==",
       "type": "package",
-      "path": "peachpie.runtime/0.9.39",
+      "path": "peachpie.runtime/0.9.40",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Peachpie.Runtime.dll",
         "lib/netstandard2.0/Peachpie.Runtime.xml",
-        "peachpie.runtime.0.9.39.nupkg.sha512",
+        "peachpie.runtime.0.9.40.nupkg.sha512",
         "peachpie.runtime.nuspec"
       ]
     },
@@ -12942,10 +13001,10 @@
       "path": "../Website/Composer.msbuildproj",
       "msbuildProject": "../Website/Composer.msbuildproj"
     },
-    "empty-page/1.0.0": {
+    "PeachPied.Symfony.AspNetCore/1.0.0": {
       "type": "project",
-      "path": "../Website/Website.msbuildproj",
-      "msbuildProject": "../Website/Website.msbuildproj"
+      "path": "../PeachPied.Symfony.AspNetCore/PeachPied.Symfony.AspNetCore.csproj",
+      "msbuildProject": "../PeachPied.Symfony.AspNetCore/PeachPied.Symfony.AspNetCore.csproj"
     },
     "Psr.Cache/1.0.0": {
       "type": "project",
@@ -12987,10 +13046,20 @@
       "path": "../Website/Symfony.Contracts.msbuildproj",
       "msbuildProject": "../Website/Symfony.Contracts.msbuildproj"
     },
+    "Symfony.Debug/1.0.0": {
+      "type": "project",
+      "path": "../Website/Symfony.Debug.msbuildproj",
+      "msbuildProject": "../Website/Symfony.Debug.msbuildproj"
+    },
     "Symfony.Dependency-injection/1.0.0": {
       "type": "project",
       "path": "../Website/Symfony.Dependency-injection.msbuildproj",
       "msbuildProject": "../Website/Symfony.Dependency-injection.msbuildproj"
+    },
+    "Symfony.Dotenv/1.0.0": {
+      "type": "project",
+      "path": "../Website/Symfony.Dotenv.msbuildproj",
+      "msbuildProject": "../Website/Symfony.Dotenv.msbuildproj"
     },
     "Symfony.Event-dispatcher/1.0.0": {
       "type": "project",
@@ -13012,10 +13081,20 @@
       "path": "../Website/Symfony.Http-kernel.msbuildproj",
       "msbuildProject": "../Website/Symfony.Http-kernel.msbuildproj"
     },
+    "Symfony.Polyfill-mbstring/1.0.0": {
+      "type": "project",
+      "path": "../Website/Symfony.Polyfill-mbstring.msbuildproj",
+      "msbuildProject": "../Website/Symfony.Polyfill-mbstring.msbuildproj"
+    },
     "Symfony.Routing/1.0.0": {
       "type": "project",
       "path": "../Website/Symfony.Routing.msbuildproj",
       "msbuildProject": "../Website/Symfony.Routing.msbuildproj"
+    },
+    "Symfony.Skeleton/1.0.0": {
+      "type": "project",
+      "path": "../Website/Website.msbuildproj",
+      "msbuildProject": "../Website/Website.msbuildproj"
     },
     "Symfony.Yaml/1.0.0": {
       "type": "project",
@@ -13027,8 +13106,9 @@
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Peachpie.AspNetCore.Web >= 0.9.39",
-      "empty-page >= 1.0.0"
+      "PeachPied.Symfony.AspNetCore >= 1.0.0",
+      "Peachpie.AspNetCore.Web >= 0.9.40",
+      "Symfony.Skeleton >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13062,6 +13142,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\PeachPied.Symfony.AspNetCore\\PeachPied.Symfony.AspNetCore.csproj": {
+              "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\PeachPied.Symfony.AspNetCore\\PeachPied.Symfony.AspNetCore.csproj"
+            },
             "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\Website.msbuildproj": {
               "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\Website.msbuildproj"
             }
@@ -13090,7 +13173,7 @@
           },
           "Peachpie.AspNetCore.Web": {
             "target": "Package",
-            "version": "[0.9.39, )"
+            "version": "[0.9.40, )"
           }
         },
         "imports": [

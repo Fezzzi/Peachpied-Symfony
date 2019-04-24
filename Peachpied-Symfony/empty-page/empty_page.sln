@@ -55,6 +55,10 @@ Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Var-exporter", "Web
 EndProject
 Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Yaml", "Website\Symfony.Yaml.msbuildproj", "{7B0710E3-5135-4800-B987-A37397F03A5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeachPied.Symfony.Sdk", "PeachPied.Symfony.Sdk\PeachPied.Symfony.Sdk.csproj", "{AABC2D2E-FC46-4BB2-AC81-77AC56B68E12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeachPied.Symfony.AspNetCore", "PeachPied.Symfony.AspNetCore\PeachPied.Symfony.AspNetCore.csproj", "{521CB548-EB83-4184-A031-6EB53E96CB88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -365,6 +369,30 @@ Global
 		{7B0710E3-5135-4800-B987-A37397F03A5D}.Release|x64.Build.0 = Release|Any CPU
 		{7B0710E3-5135-4800-B987-A37397F03A5D}.Release|x86.ActiveCfg = Release|Any CPU
 		{7B0710E3-5135-4800-B987-A37397F03A5D}.Release|x86.Build.0 = Release|Any CPU
+		{AABC2D2E-FC46-4BB2-AC81-77AC56B68E12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AABC2D2E-FC46-4BB2-AC81-77AC56B68E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AABC2D2E-FC46-4BB2-AC81-77AC56B68E12}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AABC2D2E-FC46-4BB2-AC81-77AC56B68E12}.Debug|x64.Build.0 = Debug|Any CPU
+		{AABC2D2E-FC46-4BB2-AC81-77AC56B68E12}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AABC2D2E-FC46-4BB2-AC81-77AC56B68E12}.Debug|x86.Build.0 = Debug|Any CPU
+		{AABC2D2E-FC46-4BB2-AC81-77AC56B68E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AABC2D2E-FC46-4BB2-AC81-77AC56B68E12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AABC2D2E-FC46-4BB2-AC81-77AC56B68E12}.Release|x64.ActiveCfg = Release|Any CPU
+		{AABC2D2E-FC46-4BB2-AC81-77AC56B68E12}.Release|x64.Build.0 = Release|Any CPU
+		{AABC2D2E-FC46-4BB2-AC81-77AC56B68E12}.Release|x86.ActiveCfg = Release|Any CPU
+		{AABC2D2E-FC46-4BB2-AC81-77AC56B68E12}.Release|x86.Build.0 = Release|Any CPU
+		{521CB548-EB83-4184-A031-6EB53E96CB88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{521CB548-EB83-4184-A031-6EB53E96CB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{521CB548-EB83-4184-A031-6EB53E96CB88}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{521CB548-EB83-4184-A031-6EB53E96CB88}.Debug|x64.Build.0 = Debug|Any CPU
+		{521CB548-EB83-4184-A031-6EB53E96CB88}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{521CB548-EB83-4184-A031-6EB53E96CB88}.Debug|x86.Build.0 = Debug|Any CPU
+		{521CB548-EB83-4184-A031-6EB53E96CB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{521CB548-EB83-4184-A031-6EB53E96CB88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{521CB548-EB83-4184-A031-6EB53E96CB88}.Release|x64.ActiveCfg = Release|Any CPU
+		{521CB548-EB83-4184-A031-6EB53E96CB88}.Release|x64.Build.0 = Release|Any CPU
+		{521CB548-EB83-4184-A031-6EB53E96CB88}.Release|x86.ActiveCfg = Release|Any CPU
+		{521CB548-EB83-4184-A031-6EB53E96CB88}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
