@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Symfony.Yaml</id>
+    <version>1.0.0</version>
+    <authors>Symfony.Yaml</authors>
+    <owners>Symfony.Yaml</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET class library in PHP</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Symfony.Console" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Peachpie.App" version="0.9.40" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp2.0/symfony/Symfony/Yaml/.gitignore" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony/Yaml/CHANGELOG.md" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony/Yaml/composer.json" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony/Yaml/LICENSE" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony/Yaml/phpunit.xml.dist" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony/Yaml/README.md" buildAction="Content" copyToOutput="true" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\bin\Debug\Symfony\Yaml\Symfony.Yaml.dll" target="lib\netstandard2.0\Symfony.Yaml.dll" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\yaml\.gitignore" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Yaml\.gitignore" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\yaml\CHANGELOG.md" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Yaml\CHANGELOG.md" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\yaml\composer.json" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Yaml\composer.json" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\yaml\LICENSE" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Yaml\LICENSE" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\yaml\phpunit.xml.dist" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Yaml\phpunit.xml.dist" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\yaml\README.md" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Yaml\README.md" />
+  </files>
+</package>

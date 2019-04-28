@@ -38,7 +38,7 @@ namespace PeachPied.Symfony.AspNetCore
         /// <param name="config">Symfony instance configuration.</param>
         /// <param name="plugins">Container describing what plugins will be loaded.</param>
         /// <param name="path">Physical location of symfony folder. Can be absolute or relative to the current directory.</param>
-        public static IApplicationBuilder UseSymfony(this IApplicationBuilder app, SymfonyConfig config = null, string path = "Website")
+        public static IApplicationBuilder UseSymfony(this IApplicationBuilder app, SymfonyConfig config = null, string path = "Symfony.Skeleton")
         {
             // symony root path:
             var root = System.IO.Path.GetFullPath(path);

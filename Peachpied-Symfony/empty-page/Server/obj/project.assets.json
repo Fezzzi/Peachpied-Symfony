@@ -12998,8 +12998,8 @@
     },
     "Composer/1.0.0": {
       "type": "project",
-      "path": "../Website/Composer.msbuildproj",
-      "msbuildProject": "../Website/Composer.msbuildproj"
+      "path": "../Symfony.Skeleton/Composer.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Composer.msbuildproj"
     },
     "PeachPied.Symfony.AspNetCore/1.0.0": {
       "type": "project",
@@ -13008,98 +13008,98 @@
     },
     "Psr.Cache/1.0.0": {
       "type": "project",
-      "path": "../Website/Psr.Cache.msbuildproj",
-      "msbuildProject": "../Website/Psr.Cache.msbuildproj"
+      "path": "../Symfony.Skeleton/Psr.Cache.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Psr.Cache.msbuildproj"
     },
     "Psr.Container/1.0.0": {
       "type": "project",
-      "path": "../Website/Psr.Container.msbuildproj",
-      "msbuildProject": "../Website/Psr.Container.msbuildproj"
+      "path": "../Symfony.Skeleton/Psr.Container.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Psr.Container.msbuildproj"
     },
     "Psr.Log/1.0.0": {
       "type": "project",
-      "path": "../Website/Psr.Log.msbuildproj",
-      "msbuildProject": "../Website/Psr.Log.msbuildproj"
+      "path": "../Symfony.Skeleton/Psr.Log.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Psr.Log.msbuildproj"
     },
     "Psr.Simple-cache/1.0.0": {
       "type": "project",
-      "path": "../Website/Psr.Simple-cache.msbuildproj",
-      "msbuildProject": "../Website/Psr.Simple-cache.msbuildproj"
+      "path": "../Symfony.Skeleton/Psr.Simple-cache.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Psr.Simple-cache.msbuildproj"
     },
     "Symfony.Cache/1.0.0": {
       "type": "project",
-      "path": "../Website/Symfony.Cache.msbuildproj",
-      "msbuildProject": "../Website/Symfony.Cache.msbuildproj"
+      "path": "../Symfony.Skeleton/Symfony.Cache.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Symfony.Cache.msbuildproj"
     },
     "Symfony.Config/1.0.0": {
       "type": "project",
-      "path": "../Website/Symfony.Config.msbuildproj",
-      "msbuildProject": "../Website/Symfony.Config.msbuildproj"
+      "path": "../Symfony.Skeleton/Symfony.Config.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Symfony.Config.msbuildproj"
     },
     "Symfony.Console/1.0.0": {
       "type": "project",
-      "path": "../Website/Symfony.Console.msbuildproj",
-      "msbuildProject": "../Website/Symfony.Console.msbuildproj"
+      "path": "../Symfony.Skeleton/Symfony.Console.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Symfony.Console.msbuildproj"
     },
     "Symfony.Contracts/1.0.0": {
       "type": "project",
-      "path": "../Website/Symfony.Contracts.msbuildproj",
-      "msbuildProject": "../Website/Symfony.Contracts.msbuildproj"
+      "path": "../Symfony.Skeleton/Symfony.Contracts.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Symfony.Contracts.msbuildproj"
     },
     "Symfony.Debug/1.0.0": {
       "type": "project",
-      "path": "../Website/Symfony.Debug.msbuildproj",
-      "msbuildProject": "../Website/Symfony.Debug.msbuildproj"
+      "path": "../Symfony.Skeleton/Symfony.Debug.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Symfony.Debug.msbuildproj"
     },
     "Symfony.Dependency-injection/1.0.0": {
       "type": "project",
-      "path": "../Website/Symfony.Dependency-injection.msbuildproj",
-      "msbuildProject": "../Website/Symfony.Dependency-injection.msbuildproj"
+      "path": "../Symfony.Skeleton/Symfony.Dependency-injection.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Symfony.Dependency-injection.msbuildproj"
     },
     "Symfony.Dotenv/1.0.0": {
       "type": "project",
-      "path": "../Website/Symfony.Dotenv.msbuildproj",
-      "msbuildProject": "../Website/Symfony.Dotenv.msbuildproj"
+      "path": "../Symfony.Skeleton/Symfony.Dotenv.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Symfony.Dotenv.msbuildproj"
     },
     "Symfony.Event-dispatcher/1.0.0": {
       "type": "project",
-      "path": "../Website/Symfony.Event-dispatcher.msbuildproj",
-      "msbuildProject": "../Website/Symfony.Event-dispatcher.msbuildproj"
+      "path": "../Symfony.Skeleton/Symfony.Event-dispatcher.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Symfony.Event-dispatcher.msbuildproj"
     },
     "Symfony.Framework-bundle/1.0.0": {
       "type": "project",
-      "path": "../Website/Symfony.Framework-bundle.msbuildproj",
-      "msbuildProject": "../Website/Symfony.Framework-bundle.msbuildproj"
+      "path": "../Symfony.Skeleton/Symfony.Framework-bundle.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Symfony.Framework-bundle.msbuildproj"
     },
     "Symfony.Http-foundation/1.0.0": {
       "type": "project",
-      "path": "../Website/Symfony.Http-foundation.msbuildproj",
-      "msbuildProject": "../Website/Symfony.Http-foundation.msbuildproj"
+      "path": "../Symfony.Skeleton/Symfony.Http-foundation.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Symfony.Http-foundation.msbuildproj"
     },
     "Symfony.Http-kernel/1.0.0": {
       "type": "project",
-      "path": "../Website/Symfony.Http-kernel.msbuildproj",
-      "msbuildProject": "../Website/Symfony.Http-kernel.msbuildproj"
+      "path": "../Symfony.Skeleton/Symfony.Http-kernel.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Symfony.Http-kernel.msbuildproj"
     },
     "Symfony.Polyfill-mbstring/1.0.0": {
       "type": "project",
-      "path": "../Website/Symfony.Polyfill-mbstring.msbuildproj",
-      "msbuildProject": "../Website/Symfony.Polyfill-mbstring.msbuildproj"
+      "path": "../Symfony.Skeleton/Symfony.Polyfill-mbstring.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Symfony.Polyfill-mbstring.msbuildproj"
     },
     "Symfony.Routing/1.0.0": {
       "type": "project",
-      "path": "../Website/Symfony.Routing.msbuildproj",
-      "msbuildProject": "../Website/Symfony.Routing.msbuildproj"
+      "path": "../Symfony.Skeleton/Symfony.Routing.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Symfony.Routing.msbuildproj"
     },
     "Symfony.Skeleton/1.0.0": {
       "type": "project",
-      "path": "../Website/Website.msbuildproj",
-      "msbuildProject": "../Website/Website.msbuildproj"
+      "path": "../Symfony.Skeleton/Symfony.Skeleton.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Symfony.Skeleton.msbuildproj"
     },
     "Symfony.Yaml/1.0.0": {
       "type": "project",
-      "path": "../Website/Symfony.Yaml.msbuildproj",
-      "msbuildProject": "../Website/Symfony.Yaml.msbuildproj"
+      "path": "../Symfony.Skeleton/Symfony.Yaml.msbuildproj",
+      "msbuildProject": "../Symfony.Skeleton/Symfony.Yaml.msbuildproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -13145,8 +13145,8 @@
             "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\PeachPied.Symfony.AspNetCore\\PeachPied.Symfony.AspNetCore.csproj": {
               "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\PeachPied.Symfony.AspNetCore\\PeachPied.Symfony.AspNetCore.csproj"
             },
-            "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\Website.msbuildproj": {
-              "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Website\\Website.msbuildproj"
+            "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Symfony.Skeleton\\Symfony.Skeleton.msbuildproj": {
+              "projectPath": "C:\\Users\\Fezzi\\Documents\\MATFYZ\\BAKALARKA\\Peachpied_Symfony\\Peachpied-Symfony\\empty-page\\Symfony.Skeleton\\Symfony.Skeleton.msbuildproj"
             }
           }
         }

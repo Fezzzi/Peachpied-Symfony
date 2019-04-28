@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PeachPied.Symfony.AspNetCore\PeachPied.Symfony.AspNetCore.csproj" />
-    <ProjectReference Include="..\Website\Website.msbuildproj" />
+    <ProjectReference Include="..\Symfony.Skeleton\Symfony.Skeleton.msbuildproj" />
   </ItemGroup>
 
   <ItemGroup>

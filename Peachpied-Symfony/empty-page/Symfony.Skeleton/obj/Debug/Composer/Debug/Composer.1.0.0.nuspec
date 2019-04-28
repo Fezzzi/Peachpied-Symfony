@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Composer</id>
+    <version>1.0.0</version>
+    <authors>Composer</authors>
+    <owners>Composer</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET class library in PHP</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Peachpie.App" version="0.9.40" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp2.0/symfony/Composer/installed.json" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Composer/LICENSE" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Composer/README.md" buildAction="Content" copyToOutput="true" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\bin\Debug\Composer\Composer.dll" target="lib\netstandard2.0\Composer.dll" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\composer\installed.json" target="contentFiles\any\netcoreapp2.0\symfony\Composer\installed.json" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\composer\LICENSE" target="contentFiles\any\netcoreapp2.0\symfony\Composer\LICENSE" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\composer\README.md" target="contentFiles\any\netcoreapp2.0\symfony\Composer\README.md" />
+  </files>
+</package>

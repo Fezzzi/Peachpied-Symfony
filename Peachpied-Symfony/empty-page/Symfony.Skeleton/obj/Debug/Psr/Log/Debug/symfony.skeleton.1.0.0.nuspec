@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>symfony.skeleton</id>
+    <version>1.0.0</version>
+    <authors>Psr.Log</authors>
+    <owners>Psr.Log</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A minimal Symfony project recommended to create bare bones applications</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Peachpie.App" version="0.9.39" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp2.0/symfony/Psr/Log/.gitignore" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Psr/Log/composer.json" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Psr/Log/LICENSE" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Psr/Log/README.md" buildAction="Content" copyToOutput="true" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\bin\Debug\Psr\Log\Psr.Log.dll" target="lib\netstandard2.0\Psr.Log.dll" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\.gitignore" target="contentFiles\any\netcoreapp2.0\symfony\Psr\Log\.gitignore" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\composer.json" target="contentFiles\any\netcoreapp2.0\symfony\Psr\Log\composer.json" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\LICENSE" target="contentFiles\any\netcoreapp2.0\symfony\Psr\Log\LICENSE" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Website\vendor\psr\log\README.md" target="contentFiles\any\netcoreapp2.0\symfony\Psr\Log\README.md" />
+  </files>
+</package>

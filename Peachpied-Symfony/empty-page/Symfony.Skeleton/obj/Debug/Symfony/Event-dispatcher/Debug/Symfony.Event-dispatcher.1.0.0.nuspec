@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Symfony.Event-dispatcher</id>
+    <version>1.0.0</version>
+    <authors>Symfony.Event-dispatcher</authors>
+    <owners>Symfony.Event-dispatcher</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET class library in PHP</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Symfony.Dependency-injection" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Peachpie.App" version="0.9.40" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp2.0/symfony/Symfony/Event-dispatcher/.gitignore" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony/Event-dispatcher/CHANGELOG.md" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony/Event-dispatcher/composer.json" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony/Event-dispatcher/LICENSE" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony/Event-dispatcher/phpunit.xml.dist" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony/Event-dispatcher/README.md" buildAction="Content" copyToOutput="true" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\bin\Debug\Symfony\Event-dispatcher\Symfony.Event-dispatcher.dll" target="lib\netstandard2.0\Symfony.Event-dispatcher.dll" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\event-dispatcher\.gitignore" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Event-dispatcher\.gitignore" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\event-dispatcher\CHANGELOG.md" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Event-dispatcher\CHANGELOG.md" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\event-dispatcher\composer.json" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Event-dispatcher\composer.json" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\event-dispatcher\LICENSE" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Event-dispatcher\LICENSE" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\event-dispatcher\phpunit.xml.dist" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Event-dispatcher\phpunit.xml.dist" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\event-dispatcher\README.md" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Event-dispatcher\README.md" />
+  </files>
+</package>

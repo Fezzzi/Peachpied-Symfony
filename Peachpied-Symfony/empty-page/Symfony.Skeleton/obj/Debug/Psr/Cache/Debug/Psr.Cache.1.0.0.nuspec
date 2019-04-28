@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Psr.Cache</id>
+    <version>1.0.0</version>
+    <authors>Psr.Cache</authors>
+    <owners>Psr.Cache</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET class library in PHP</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Peachpie.App" version="0.9.40" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp2.0/symfony/Psr/Cache/CHANGELOG.md" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Psr/Cache/composer.json" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Psr/Cache/LICENSE.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Psr/Cache/README.md" buildAction="Content" copyToOutput="true" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\bin\Debug\Psr\Cache\Psr.Cache.dll" target="lib\netstandard2.0\Psr.Cache.dll" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\psr\cache\CHANGELOG.md" target="contentFiles\any\netcoreapp2.0\symfony\Psr\Cache\CHANGELOG.md" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\psr\cache\composer.json" target="contentFiles\any\netcoreapp2.0\symfony\Psr\Cache\composer.json" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\psr\cache\LICENSE.txt" target="contentFiles\any\netcoreapp2.0\symfony\Psr\Cache\LICENSE.txt" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\psr\cache\README.md" target="contentFiles\any\netcoreapp2.0\symfony\Psr\Cache\README.md" />
+  </files>
+</package>

@@ -1,7 +1,6 @@
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.Sdk\bin\Debug\netstandard2.0\PeachPied.Symfony.Sdk.deps.json
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.Sdk\bin\Debug\netstandard2.0\PeachPied.Symfony.Sdk.dll
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.Sdk\bin\Debug\netstandard2.0\PeachPied.Symfony.Sdk.pdb
-C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.Sdk\obj\Debug\netstandard2.0\PeachPied.Symfony.Sdk.csprojAssemblyReference.cache
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.Sdk\obj\Debug\netstandard2.0\PeachPied.Symfony.Sdk.csproj.CoreCompileInputs.cache
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.Sdk\obj\Debug\netstandard2.0\PeachPied.Symfony.Sdk.AssemblyInfoInputs.cache
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.Sdk\obj\Debug\netstandard2.0\PeachPied.Symfony.Sdk.AssemblyInfo.cs

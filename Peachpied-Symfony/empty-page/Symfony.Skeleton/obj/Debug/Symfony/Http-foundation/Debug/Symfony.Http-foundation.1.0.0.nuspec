@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Symfony.Http-foundation</id>
+    <version>1.0.0</version>
+    <authors>Symfony.Http-foundation</authors>
+    <owners>Symfony.Http-foundation</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET class library in PHP</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Peachpie.App" version="0.9.40" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp2.0/symfony/Symfony/Http-foundation/.gitignore" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony/Http-foundation/CHANGELOG.md" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony/Http-foundation/composer.json" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony/Http-foundation/LICENSE" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony/Http-foundation/phpunit.xml.dist" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony/Http-foundation/README.md" buildAction="Content" copyToOutput="true" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\bin\Debug\Symfony\Http-foundation\Symfony.Http-foundation.dll" target="lib\netstandard2.0\Symfony.Http-foundation.dll" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\http-foundation\.gitignore" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Http-foundation\.gitignore" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\http-foundation\CHANGELOG.md" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Http-foundation\CHANGELOG.md" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\http-foundation\composer.json" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Http-foundation\composer.json" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\http-foundation\LICENSE" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Http-foundation\LICENSE" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\http-foundation\phpunit.xml.dist" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Http-foundation\phpunit.xml.dist" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\vendor\symfony\http-foundation\README.md" target="contentFiles\any\netcoreapp2.0\symfony\Symfony\Http-foundation\README.md" />
+  </files>
+</package>
