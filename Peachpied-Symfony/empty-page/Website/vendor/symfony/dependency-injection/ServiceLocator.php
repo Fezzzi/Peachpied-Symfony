@@ -29,6 +29,9 @@ class ServiceLocator implements PsrContainerInterface
     /*use ServiceLocatorTrait {
         get as private doGet;
     }*/
+	
+	// ServiceLocatorTrait - START
+	
 	private $factories;
     private $loading = array();
 
@@ -54,7 +57,7 @@ class ServiceLocator implements PsrContainerInterface
     private function doGet($id)
     {
         if (!isset($this->factories[$id])) {
-            throw $this->createNotFoundException($id);
+            throw $this->doGetCreateNotFoundException($id);
         }
 
         if (isset($this->loading[$id])) {
@@ -62,7 +65,7 @@ class ServiceLocator implements PsrContainerInterface
             $ids = \array_slice($this->loading, array_search($id, $ids));
             $ids[] = $id;
 
-            throw $this->createCircularReferenceException($id, $ids);
+            throw $this->doGetCreateCircularReferenceException($id, $ids);
         }
 
         $this->loading[$id] = $id;
@@ -73,7 +76,7 @@ class ServiceLocator implements PsrContainerInterface
         }
     }
 
-    private function createNotFoundException(string $id): NotFoundExceptionInterface
+    private function doGetCreateNotFoundException(string $id): NotFoundExceptionInterface
     {
         if (!$alternatives = array_keys($this->factories)) {
             $message = 'is empty...';
@@ -96,13 +99,13 @@ class ServiceLocator implements PsrContainerInterface
         };
     }
 
-    private function createCircularReferenceException(string $id, array $path): ContainerExceptionInterface
+    private function doGetCreateCircularReferenceException(string $id, array $path): ContainerExceptionInterface
     {
         return new class(sprintf('Circular reference detected for service "%s", path: "%s".', $id, implode(' -> ', $path))) extends \RuntimeException implements ContainerExceptionInterface {
         };
     }
-
-
+	
+	// ServiceLocatorTrait - END
 
     private $externalId;
     private $container;

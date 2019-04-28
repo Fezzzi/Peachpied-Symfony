@@ -7,8 +7,8 @@
 	  <PackageId>Symfony.Skeleton</PackageId>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <PackageOutputPath>..\Nugets\</PackageOutputPath>
-	  <IntermediateOutputPath>.\obj\$(Configuration)\Skeleton\</IntermediateOutputPath>
-	  <OutputPath>.\bin\$(Configuration)\Skeleton\</OutputPath>
+	  <IntermediateOutputPath>.\obj\$(Configuration)\$(AssemblyName)\</IntermediateOutputPath>
+	  <OutputPath>.\bin\$(Configuration)\$(AssemblyName)\</OutputPath>
 	  <OutDir>$(OutputPath)</OutDir>
   </PropertyGroup>
 

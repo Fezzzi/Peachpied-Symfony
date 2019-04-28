@@ -1,0 +1,9 @@
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.AspNetCore\bin\Debug\netstandard2.0\PeachPied.Symfony.AspNetCore.deps.json
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.AspNetCore\bin\Debug\netstandard2.0\PeachPied.Symfony.AspNetCore.dll
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.AspNetCore\obj\Debug\netstandard2.0\PeachPied.Symfony.AspNetCore.csprojAssemblyReference.cache
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.AspNetCore\obj\Debug\netstandard2.0\PeachPied.Symfony.AspNetCore.csproj.CoreCompileInputs.cache
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.AspNetCore\obj\Debug\netstandard2.0\PeachPied.Symfony.AspNetCore.AssemblyInfoInputs.cache
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.AspNetCore\obj\Debug\netstandard2.0\PeachPied.Symfony.AspNetCore.AssemblyInfo.cs
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.AspNetCore\bin\Debug\netstandard2.0\PeachPied.Symfony.AspNetCore.pdb
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.AspNetCore\obj\Debug\netstandard2.0\PeachPied.Symfony.AspNetCore.dll
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\PeachPied.Symfony.AspNetCore\obj\Debug\netstandard2.0\PeachPied.Symfony.AspNetCore.pdb
