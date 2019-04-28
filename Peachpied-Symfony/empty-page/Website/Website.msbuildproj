@@ -1,13 +1,25 @@
-<Project Sdk="Peachpie.NET.Sdk/0.9.35">
+﻿<Project Sdk="Peachpie.NET.Sdk/0.9.40">
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>empty-page</AssemblyName>
+    <AssemblyName>Symfony.Skeleton</AssemblyName>
+	  <PackageId>Symfony.Skeleton</PackageId>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <PackageOutputPath>..\Nugets\</PackageOutputPath>
+	  <IntermediateOutputPath>.\obj\$(Configuration)\$(AssemblyName)\</IntermediateOutputPath>
+	  <OutputPath>.\bin\$(Configuration)\$(AssemblyName)\</OutputPath>
+	  <OutDir>$(OutputPath)</OutDir>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="**/*.php" />
+    <Compile Include="**\*.php" />
+    <Content Include=".\**" Exclude=" **\*.php;&#xD;&#xA;                      **\*.msbuildproj;&#xD;&#xA;                      **\*.csbuildproj;&#xD;&#xA;                      .\obj\**;&#xD;&#xA;                      .\bin\**;&#xD;&#xA;                      .\vendor\**" CopyToOutputDirectory="PreserveNewest">
+
+      <PackagePath>contentFiles\any\netcoreapp2.0\symfony\Skeleton\</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+      <Link>symfony\Skeleton\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -15955,7 +15967,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="vendor\symfony\framework-bundle\symfony-framework-bundle.msbuildproj" />
-    <ProjectReference Include="vendor\symfony\routing\symfony-routing.msbuildproj" />
+    <ProjectReference Include="Composer.msbuildproj" />
+    <ProjectReference Include="Symfony.Debug.msbuildproj" />
+    <ProjectReference Include="Symfony.Dotenv.msbuildproj" />
+    <ProjectReference Include="Symfony.Framework-bundle.msbuildproj" />
+    <ProjectReference Include="Symfony.Polyfill-mbstring.msbuildproj" />
+    <ProjectReference Include="Symfony.Routing.msbuildproj" />
   </ItemGroup>
 </Project>

@@ -26,9 +26,86 @@ use Symfony\Contracts\Service\ServiceSubscriberInterface;
  */
 class ServiceLocator implements PsrContainerInterface
 {
-    use ServiceLocatorTrait {
+    /*use ServiceLocatorTrait {
         get as private doGet;
+    }*/
+	
+	// ServiceLocatorTrait - START
+	
+	private $factories;
+    private $loading = array();
+
+    /**
+     * @param callable[] $factories
+     */
+    public function __construct(array $factories)
+    {
+        $this->factories = $factories;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function has($id)
+    {
+        return isset($this->factories[$id]);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    private function doGet($id)
+    {
+        if (!isset($this->factories[$id])) {
+            throw $this->doGetCreateNotFoundException($id);
+        }
+
+        if (isset($this->loading[$id])) {
+            $ids = array_values($this->loading);
+            $ids = \array_slice($this->loading, array_search($id, $ids));
+            $ids[] = $id;
+
+            throw $this->doGetCreateCircularReferenceException($id, $ids);
+        }
+
+        $this->loading[$id] = $id;
+        try {
+            return $this->factories[$id]($this);
+        } finally {
+            unset($this->loading[$id]);
+        }
+    }
+
+    private function doGetCreateNotFoundException(string $id): NotFoundExceptionInterface
+    {
+        if (!$alternatives = array_keys($this->factories)) {
+            $message = 'is empty...';
+        } else {
+            $last = array_pop($alternatives);
+            if ($alternatives) {
+                $message = sprintf('only knows about the "%s" and "%s" services.', implode('", "', $alternatives), $last);
+            } else {
+                $message = sprintf('only knows about the "%s" service.', $last);
+            }
+        }
+
+        if ($this->loading) {
+            $message = sprintf('The service "%s" has a dependency on a non-existent service "%s". This locator %s', end($this->loading), $id, $message);
+        } else {
+            $message = sprintf('Service "%s" not found: the current service locator %s', $id, $message);
+        }
+
+        return new class($message) extends \InvalidArgumentException implements NotFoundExceptionInterface {
+        };
+    }
+
+    private function doGetCreateCircularReferenceException(string $id, array $path): ContainerExceptionInterface
+    {
+        return new class(sprintf('Circular reference detected for service "%s", path: "%s".', $id, implode(' -> ', $path))) extends \RuntimeException implements ContainerExceptionInterface {
+        };
+    }
+	
+	// ServiceLocatorTrait - END
 
     private $externalId;
     private $container;

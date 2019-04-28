@@ -1,3 +1,4 @@
 <?php
 
-echo "empty-page says \"Hello World!\"";
+echo "Redirecting to symfony's index.php...";
+include('public/index.php');
