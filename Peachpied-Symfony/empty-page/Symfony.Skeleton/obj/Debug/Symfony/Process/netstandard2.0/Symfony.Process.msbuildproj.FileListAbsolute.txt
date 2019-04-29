@@ -22,3 +22,4 @@ C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\em
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\obj\Debug\Symfony\Process\netstandard2.0\Symfony.Process.msbuildproj.CoreCompileInputs.cache
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\obj\Debug\Symfony\Process\netstandard2.0\Symfony.Process.dll
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\obj\Debug\Symfony\Process\netstandard2.0\Symfony.Process.pdb
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\obj\Debug\Symfony\Process\netstandard2.0\Symfony.Process.msbuildprojAssemblyReference.cache

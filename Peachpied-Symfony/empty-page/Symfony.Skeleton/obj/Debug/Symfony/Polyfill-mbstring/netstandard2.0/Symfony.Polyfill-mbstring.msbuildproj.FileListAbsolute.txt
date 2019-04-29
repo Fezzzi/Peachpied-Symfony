@@ -16,3 +16,4 @@ C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\em
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\obj\Debug\Symfony\Polyfill-mbstring\netstandard2.0\Symfony.Polyfill-mbstring.msbuildproj.CoreCompileInputs.cache
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\obj\Debug\Symfony\Polyfill-mbstring\netstandard2.0\Symfony.Polyfill-mbstring.dll
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\obj\Debug\Symfony\Polyfill-mbstring\netstandard2.0\Symfony.Polyfill-mbstring.pdb
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\obj\Debug\Symfony\Polyfill-mbstring\netstandard2.0\Symfony.Polyfill-mbstring.msbuildprojAssemblyReference.cache

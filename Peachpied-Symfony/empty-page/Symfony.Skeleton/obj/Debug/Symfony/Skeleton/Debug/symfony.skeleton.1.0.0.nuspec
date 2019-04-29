@@ -19,59 +19,59 @@
       </group>
     </dependencies>
     <contentFiles>
-      <files include="any/netcoreapp2.0/symfony/Skeleton/.env" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/composer.json" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/composer.lock" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/config/packages/cache.yaml" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/config/packages/dev/routing.yaml" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/config/packages/framework.yaml" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/config/packages/routing.yaml" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/config/packages/test/framework.yaml" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/config/packages/test/routing.yaml" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/config/routes.yaml" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/config/services.yaml" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/Directory.Build.props" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/public/apple-touch-icon.png" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/public/favicon.ico" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/public/robots.txt" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/src/Controller/.gitignore" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/symfony.lock" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/var/cache/dev/annotations.map" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/var/cache/dev/ContainerDlssTFi.legacy" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/var/cache/dev/srcApp_KernelDevDebugContainer.php.meta" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/var/cache/dev/srcApp_KernelDevDebugContainer.xml" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/var/cache/dev/srcApp_KernelDevDebugContainer.xml.meta" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/var/cache/dev/srcApp_KernelDevDebugContainerCompiler.log" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/var/cache/dev/srcApp_KernelDevDebugContainerDeprecations.log" buildAction="Content" copyToOutput="true" />
-      <files include="any/netcoreapp2.0/symfony/Skeleton/var/cache/dev/srcApp_KernelDevDebugContainerUrlMatcher.php.meta" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/.env" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/composer.json" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/composer.lock" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/config/packages/cache.yaml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/config/packages/dev/routing.yaml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/config/packages/framework.yaml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/config/packages/routing.yaml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/config/packages/test/framework.yaml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/config/packages/test/routing.yaml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/config/routes.yaml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/config/services.yaml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/Directory.Build.props" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/public/apple-touch-icon.png" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/public/favicon.ico" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/public/robots.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/src/Controller/.gitignore" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/symfony.lock" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/var/cache/dev/annotations.map" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/var/cache/dev/ContainerDlssTFi.legacy" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/var/cache/dev/srcApp_KernelDevDebugContainer.php.meta" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/var/cache/dev/srcApp_KernelDevDebugContainer.xml" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/var/cache/dev/srcApp_KernelDevDebugContainer.xml.meta" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/var/cache/dev/srcApp_KernelDevDebugContainerCompiler.log" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/var/cache/dev/srcApp_KernelDevDebugContainerDeprecations.log" buildAction="Content" copyToOutput="true" />
+      <files include="any/netcoreapp2.0/symfony/Symfony.Skeleton/var/cache/dev/srcApp_KernelDevDebugContainerUrlMatcher.php.meta" buildAction="Content" copyToOutput="true" />
     </contentFiles>
   </metadata>
   <files>
     <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\bin\Debug\Symfony.Skeleton\Symfony.Skeleton.dll" target="lib\netstandard2.0\Symfony.Skeleton.dll" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\.env" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\.env" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\composer.json" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\composer.json" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\composer.lock" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\composer.lock" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\packages\cache.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\config\packages\cache.yaml" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\packages\dev\routing.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\config\packages\dev\routing.yaml" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\packages\framework.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\config\packages\framework.yaml" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\packages\routing.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\config\packages\routing.yaml" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\packages\test\framework.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\config\packages\test\framework.yaml" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\packages\test\routing.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\config\packages\test\routing.yaml" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\routes.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\config\routes.yaml" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\services.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\config\services.yaml" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\Directory.Build.props" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\Directory.Build.props" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\public\apple-touch-icon.png" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\public\apple-touch-icon.png" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\public\favicon.ico" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\public\favicon.ico" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\public\robots.txt" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\public\robots.txt" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\src\Controller\.gitignore" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\src\Controller\.gitignore" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\symfony.lock" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\symfony.lock" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\annotations.map" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\var\cache\dev\annotations.map" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\ContainerDlssTFi.legacy" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\var\cache\dev\ContainerDlssTFi.legacy" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainer.php.meta" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\var\cache\dev\srcApp_KernelDevDebugContainer.php.meta" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainer.xml" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\var\cache\dev\srcApp_KernelDevDebugContainer.xml" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainer.xml.meta" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\var\cache\dev\srcApp_KernelDevDebugContainer.xml.meta" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainerCompiler.log" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\var\cache\dev\srcApp_KernelDevDebugContainerCompiler.log" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainerDeprecations.log" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\var\cache\dev\srcApp_KernelDevDebugContainerDeprecations.log" />
-    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainerUrlMatcher.php.meta" target="contentFiles\any\netcoreapp2.0\symfony\Skeleton\var\cache\dev\srcApp_KernelDevDebugContainerUrlMatcher.php.meta" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\.env" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\.env" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\composer.json" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\composer.json" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\composer.lock" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\composer.lock" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\packages\cache.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\config\packages\cache.yaml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\packages\dev\routing.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\config\packages\dev\routing.yaml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\packages\framework.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\config\packages\framework.yaml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\packages\routing.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\config\packages\routing.yaml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\packages\test\framework.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\config\packages\test\framework.yaml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\packages\test\routing.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\config\packages\test\routing.yaml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\routes.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\config\routes.yaml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\config\services.yaml" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\config\services.yaml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\Directory.Build.props" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\Directory.Build.props" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\public\apple-touch-icon.png" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\public\apple-touch-icon.png" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\public\favicon.ico" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\public\favicon.ico" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\public\robots.txt" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\public\robots.txt" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\src\Controller\.gitignore" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\src\Controller\.gitignore" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\symfony.lock" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\symfony.lock" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\annotations.map" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\var\cache\dev\annotations.map" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\ContainerDlssTFi.legacy" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\var\cache\dev\ContainerDlssTFi.legacy" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainer.php.meta" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainer.php.meta" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainer.xml" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainer.xml" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainer.xml.meta" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainer.xml.meta" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainerCompiler.log" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainerCompiler.log" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainerDeprecations.log" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainerDeprecations.log" />
+    <file src="C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainerUrlMatcher.php.meta" target="contentFiles\any\netcoreapp2.0\symfony\Symfony.Skeleton\var\cache\dev\srcApp_KernelDevDebugContainerUrlMatcher.php.meta" />
   </files>
 </package>

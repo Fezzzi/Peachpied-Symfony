@@ -19,3 +19,4 @@ C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\em
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\obj\Debug\Psr\Container\netstandard2.0\Psr.Container.msbuildproj.CoreCompileInputs.cache
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\obj\Debug\Psr\Container\netstandard2.0\Psr.Container.dll
 C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\obj\Debug\Psr\Container\netstandard2.0\Psr.Container.pdb
+C:\Users\Fezzi\Documents\MATFYZ\BAKALARKA\Peachpied_Symfony\Peachpied-Symfony\empty-page\Symfony.Skeleton\obj\Debug\Psr\Container\netstandard2.0\Psr.Container.msbuildprojAssemblyReference.cache

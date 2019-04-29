@@ -1419,67 +1419,6 @@
         ]
     },
     {
-        "name": "symfony/web-server-bundle",
-        "version": "v4.2.4",
-        "version_normalized": "4.2.4.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/web-server-bundle.git",
-            "reference": "d189cb4349d807df4c4fab932e2764d1fbe65c4f"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/web-server-bundle/zipball/d189cb4349d807df4c4fab932e2764d1fbe65c4f",
-            "reference": "d189cb4349d807df4c4fab932e2764d1fbe65c4f",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^7.1.3",
-            "symfony/config": "~3.4|~4.0",
-            "symfony/console": "~3.4|~4.0",
-            "symfony/dependency-injection": "~3.4|~4.0",
-            "symfony/http-kernel": "~3.4|~4.0",
-            "symfony/polyfill-ctype": "~1.8",
-            "symfony/process": "^3.4.2|^4.0.2"
-        },
-        "suggest": {
-            "symfony/expression-language": "For using the filter option of the log server.",
-            "symfony/monolog-bridge": "For using the log server."
-        },
-        "time": "2019-02-23T15:17:42+00:00",
-        "type": "symfony-bundle",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "4.2-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Bundle\\WebServerBundle\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony WebServerBundle",
-        "homepage": "https://symfony.com"
-    },
-    {
         "name": "symfony/yaml",
         "version": "v4.2.3",
         "version_normalized": "4.2.3.0",

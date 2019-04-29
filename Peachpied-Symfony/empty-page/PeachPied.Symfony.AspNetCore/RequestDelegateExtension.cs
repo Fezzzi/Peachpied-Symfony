@@ -53,14 +53,11 @@ namespace PeachPied.Symfony.AspNetCore
             }
 
             // bootstrap.php env loading overriding
-            string bootstrapPath = "/config/bootstrap.php";
+            string bootstrapPath = "config/bootstrap.php";
 
-            var infos = System.Linq.Enumerable.Empty<Pchp.Core.Context.ScriptInfo>();
-            Context.TryGetScriptsInDirectory(root, bootstrapPath, out infos);
-            Pchp.Core.Context.ScriptInfo info = Context.TryGetDeclaredScript(bootstrapPath);
+            // Pchp.Core.Context.ScriptInfo info = Context.TryGetDeclaredScript(bootstrapPath);
             Context.MainDelegate md = new Context.MainDelegate(BootstrapMain);
             Context.DeclareScript(bootstrapPath, md);
-            Pchp.Core.Context.ScriptInfo info2 = Context.TryGetDeclaredScript(bootstrapPath);
 
             // handling php files:
             app.UsePhp(new PhpRequestOptions(scriptAssemblyName: "Symfony.Skeleton")
