@@ -106,6 +106,7 @@ abstract class FileLoader extends Loader
             $pattern = substr($pattern, \strlen($prefix));
         }
 
+		$ret = false;
         try {
             $prefix = $this->locator->locate($prefix, $this->currentDir, true);
         } catch (FileLocatorFileNotFoundException $e) {
@@ -118,8 +119,12 @@ abstract class FileLoader extends Loader
                 $resource[] = new FileExistenceResource($path);
             }
 
-            return;
+            $ret = true;
         }
+
+		if ($ret)
+			return;
+
         $resource = new GlobResource($prefix, $pattern, $recursive, $forExclusion, $excluded);
 
         yield from $resource;

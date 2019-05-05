@@ -135,7 +135,6 @@ Global
 		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Release|x86.ActiveCfg = Release|Any CPU
 		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Release|x86.Build.0 = Release|Any CPU
 		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -153,7 +152,6 @@ Global
 		{136D7A6E-CD9C-43D5-932B-382EED078EDA}.Release|x86.ActiveCfg = Release|Any CPU
 		{136D7A6E-CD9C-43D5-932B-382EED078EDA}.Release|x86.Build.0 = Release|Any CPU
 		{136D7A6E-CD9C-43D5-932B-382EED078EDA}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{136D7A6E-CD9C-43D5-932B-382EED078EDA}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{136D7A6E-CD9C-43D5-932B-382EED078EDA}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{136D7A6E-CD9C-43D5-932B-382EED078EDA}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{136D7A6E-CD9C-43D5-932B-382EED078EDA}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -171,7 +169,6 @@ Global
 		{4143F19F-D5D2-4D84-8B51-FA7308B86DA9}.Release|x86.ActiveCfg = Release|Any CPU
 		{4143F19F-D5D2-4D84-8B51-FA7308B86DA9}.Release|x86.Build.0 = Release|Any CPU
 		{4143F19F-D5D2-4D84-8B51-FA7308B86DA9}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{4143F19F-D5D2-4D84-8B51-FA7308B86DA9}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{4143F19F-D5D2-4D84-8B51-FA7308B86DA9}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{4143F19F-D5D2-4D84-8B51-FA7308B86DA9}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{4143F19F-D5D2-4D84-8B51-FA7308B86DA9}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -189,7 +186,6 @@ Global
 		{63D29633-A537-460C-8AB7-14096155D015}.Release|x86.ActiveCfg = Release|Any CPU
 		{63D29633-A537-460C-8AB7-14096155D015}.Release|x86.Build.0 = Release|Any CPU
 		{63D29633-A537-460C-8AB7-14096155D015}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{63D29633-A537-460C-8AB7-14096155D015}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{63D29633-A537-460C-8AB7-14096155D015}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{63D29633-A537-460C-8AB7-14096155D015}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{63D29633-A537-460C-8AB7-14096155D015}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -207,7 +203,6 @@ Global
 		{81F17553-5141-4F2F-A73D-4CA4B971947E}.Release|x86.ActiveCfg = Release|Any CPU
 		{81F17553-5141-4F2F-A73D-4CA4B971947E}.Release|x86.Build.0 = Release|Any CPU
 		{81F17553-5141-4F2F-A73D-4CA4B971947E}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{81F17553-5141-4F2F-A73D-4CA4B971947E}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{81F17553-5141-4F2F-A73D-4CA4B971947E}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{81F17553-5141-4F2F-A73D-4CA4B971947E}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{81F17553-5141-4F2F-A73D-4CA4B971947E}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -225,7 +220,6 @@ Global
 		{23D181D8-5341-4997-AFED-7084B51E0DB4}.Release|x86.ActiveCfg = Release|Any CPU
 		{23D181D8-5341-4997-AFED-7084B51E0DB4}.Release|x86.Build.0 = Release|Any CPU
 		{23D181D8-5341-4997-AFED-7084B51E0DB4}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{23D181D8-5341-4997-AFED-7084B51E0DB4}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{23D181D8-5341-4997-AFED-7084B51E0DB4}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{23D181D8-5341-4997-AFED-7084B51E0DB4}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{23D181D8-5341-4997-AFED-7084B51E0DB4}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -243,7 +237,6 @@ Global
 		{1D9C1D52-BC3E-410E-AD4F-36B43E4F0B01}.Release|x86.ActiveCfg = Release|Any CPU
 		{1D9C1D52-BC3E-410E-AD4F-36B43E4F0B01}.Release|x86.Build.0 = Release|Any CPU
 		{1D9C1D52-BC3E-410E-AD4F-36B43E4F0B01}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D9C1D52-BC3E-410E-AD4F-36B43E4F0B01}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{1D9C1D52-BC3E-410E-AD4F-36B43E4F0B01}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{1D9C1D52-BC3E-410E-AD4F-36B43E4F0B01}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{1D9C1D52-BC3E-410E-AD4F-36B43E4F0B01}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -261,7 +254,6 @@ Global
 		{03DE7089-5D1A-42B4-8FBE-0A6382978913}.Release|x86.ActiveCfg = Release|Any CPU
 		{03DE7089-5D1A-42B4-8FBE-0A6382978913}.Release|x86.Build.0 = Release|Any CPU
 		{03DE7089-5D1A-42B4-8FBE-0A6382978913}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{03DE7089-5D1A-42B4-8FBE-0A6382978913}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{03DE7089-5D1A-42B4-8FBE-0A6382978913}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{03DE7089-5D1A-42B4-8FBE-0A6382978913}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{03DE7089-5D1A-42B4-8FBE-0A6382978913}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -279,7 +271,6 @@ Global
 		{F4CBB6D9-96DA-4895-A0B3-E7369E290727}.Release|x86.ActiveCfg = Release|Any CPU
 		{F4CBB6D9-96DA-4895-A0B3-E7369E290727}.Release|x86.Build.0 = Release|Any CPU
 		{F4CBB6D9-96DA-4895-A0B3-E7369E290727}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4CBB6D9-96DA-4895-A0B3-E7369E290727}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{F4CBB6D9-96DA-4895-A0B3-E7369E290727}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{F4CBB6D9-96DA-4895-A0B3-E7369E290727}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{F4CBB6D9-96DA-4895-A0B3-E7369E290727}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -297,7 +288,6 @@ Global
 		{49C51AED-C763-4B0F-8173-6FA8F890F656}.Release|x86.ActiveCfg = Release|Any CPU
 		{49C51AED-C763-4B0F-8173-6FA8F890F656}.Release|x86.Build.0 = Release|Any CPU
 		{49C51AED-C763-4B0F-8173-6FA8F890F656}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{49C51AED-C763-4B0F-8173-6FA8F890F656}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{49C51AED-C763-4B0F-8173-6FA8F890F656}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{49C51AED-C763-4B0F-8173-6FA8F890F656}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{49C51AED-C763-4B0F-8173-6FA8F890F656}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -315,7 +305,6 @@ Global
 		{FCDFE909-386E-44AF-B95B-7BFD0532518A}.Release|x86.ActiveCfg = Release|Any CPU
 		{FCDFE909-386E-44AF-B95B-7BFD0532518A}.Release|x86.Build.0 = Release|Any CPU
 		{FCDFE909-386E-44AF-B95B-7BFD0532518A}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCDFE909-386E-44AF-B95B-7BFD0532518A}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{FCDFE909-386E-44AF-B95B-7BFD0532518A}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{FCDFE909-386E-44AF-B95B-7BFD0532518A}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{FCDFE909-386E-44AF-B95B-7BFD0532518A}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -333,7 +322,6 @@ Global
 		{86F5EE30-4BB8-4113-830D-553E529B1D11}.Release|x86.ActiveCfg = Release|Any CPU
 		{86F5EE30-4BB8-4113-830D-553E529B1D11}.Release|x86.Build.0 = Release|Any CPU
 		{86F5EE30-4BB8-4113-830D-553E529B1D11}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{86F5EE30-4BB8-4113-830D-553E529B1D11}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{86F5EE30-4BB8-4113-830D-553E529B1D11}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{86F5EE30-4BB8-4113-830D-553E529B1D11}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{86F5EE30-4BB8-4113-830D-553E529B1D11}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -351,7 +339,6 @@ Global
 		{70F82C20-E233-4424-B0BC-D9321C6DC2BA}.Release|x86.ActiveCfg = Release|Any CPU
 		{70F82C20-E233-4424-B0BC-D9321C6DC2BA}.Release|x86.Build.0 = Release|Any CPU
 		{70F82C20-E233-4424-B0BC-D9321C6DC2BA}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{70F82C20-E233-4424-B0BC-D9321C6DC2BA}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{70F82C20-E233-4424-B0BC-D9321C6DC2BA}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{70F82C20-E233-4424-B0BC-D9321C6DC2BA}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{70F82C20-E233-4424-B0BC-D9321C6DC2BA}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -369,7 +356,6 @@ Global
 		{6379EEEE-3E94-4A54-A70D-8837FE2424F2}.Release|x86.ActiveCfg = Release|Any CPU
 		{6379EEEE-3E94-4A54-A70D-8837FE2424F2}.Release|x86.Build.0 = Release|Any CPU
 		{6379EEEE-3E94-4A54-A70D-8837FE2424F2}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{6379EEEE-3E94-4A54-A70D-8837FE2424F2}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{6379EEEE-3E94-4A54-A70D-8837FE2424F2}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{6379EEEE-3E94-4A54-A70D-8837FE2424F2}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{6379EEEE-3E94-4A54-A70D-8837FE2424F2}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -387,7 +373,6 @@ Global
 		{3B3676A7-BC14-4F69-9541-9D85F4DDF560}.Release|x86.ActiveCfg = Release|Any CPU
 		{3B3676A7-BC14-4F69-9541-9D85F4DDF560}.Release|x86.Build.0 = Release|Any CPU
 		{3B3676A7-BC14-4F69-9541-9D85F4DDF560}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B3676A7-BC14-4F69-9541-9D85F4DDF560}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{3B3676A7-BC14-4F69-9541-9D85F4DDF560}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{3B3676A7-BC14-4F69-9541-9D85F4DDF560}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{3B3676A7-BC14-4F69-9541-9D85F4DDF560}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -405,7 +390,6 @@ Global
 		{A7F0E92A-48A5-462F-8B52-17E3FE4BC394}.Release|x86.ActiveCfg = Release|Any CPU
 		{A7F0E92A-48A5-462F-8B52-17E3FE4BC394}.Release|x86.Build.0 = Release|Any CPU
 		{A7F0E92A-48A5-462F-8B52-17E3FE4BC394}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7F0E92A-48A5-462F-8B52-17E3FE4BC394}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{A7F0E92A-48A5-462F-8B52-17E3FE4BC394}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{A7F0E92A-48A5-462F-8B52-17E3FE4BC394}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{A7F0E92A-48A5-462F-8B52-17E3FE4BC394}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -423,7 +407,6 @@ Global
 		{9810759B-FC8B-4825-AB34-40D56FBA6875}.Release|x86.ActiveCfg = Release|Any CPU
 		{9810759B-FC8B-4825-AB34-40D56FBA6875}.Release|x86.Build.0 = Release|Any CPU
 		{9810759B-FC8B-4825-AB34-40D56FBA6875}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{9810759B-FC8B-4825-AB34-40D56FBA6875}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{9810759B-FC8B-4825-AB34-40D56FBA6875}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{9810759B-FC8B-4825-AB34-40D56FBA6875}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{9810759B-FC8B-4825-AB34-40D56FBA6875}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -441,7 +424,6 @@ Global
 		{7E016618-B569-409F-B213-FAB94E1EB898}.Release|x86.ActiveCfg = Release|Any CPU
 		{7E016618-B569-409F-B213-FAB94E1EB898}.Release|x86.Build.0 = Release|Any CPU
 		{7E016618-B569-409F-B213-FAB94E1EB898}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E016618-B569-409F-B213-FAB94E1EB898}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{7E016618-B569-409F-B213-FAB94E1EB898}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{7E016618-B569-409F-B213-FAB94E1EB898}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{7E016618-B569-409F-B213-FAB94E1EB898}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -459,7 +441,6 @@ Global
 		{D69FF6C0-B460-4C46-B946-21796D1F21CF}.Release|x86.ActiveCfg = Release|Any CPU
 		{D69FF6C0-B460-4C46-B946-21796D1F21CF}.Release|x86.Build.0 = Release|Any CPU
 		{D69FF6C0-B460-4C46-B946-21796D1F21CF}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{D69FF6C0-B460-4C46-B946-21796D1F21CF}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{D69FF6C0-B460-4C46-B946-21796D1F21CF}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{D69FF6C0-B460-4C46-B946-21796D1F21CF}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{D69FF6C0-B460-4C46-B946-21796D1F21CF}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -477,7 +458,6 @@ Global
 		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Release|x86.ActiveCfg = Release|Any CPU
 		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Release|x86.Build.0 = Release|Any CPU
 		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -495,7 +475,6 @@ Global
 		{17588B97-1A5B-4F17-ABFB-D2FCE7A73D87}.Release|x86.ActiveCfg = Release|Any CPU
 		{17588B97-1A5B-4F17-ABFB-D2FCE7A73D87}.Release|x86.Build.0 = Release|Any CPU
 		{17588B97-1A5B-4F17-ABFB-D2FCE7A73D87}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{17588B97-1A5B-4F17-ABFB-D2FCE7A73D87}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{17588B97-1A5B-4F17-ABFB-D2FCE7A73D87}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{17588B97-1A5B-4F17-ABFB-D2FCE7A73D87}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{17588B97-1A5B-4F17-ABFB-D2FCE7A73D87}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -513,7 +492,6 @@ Global
 		{686BAE0B-7B39-4F62-96DB-37AB0760130E}.Release|x86.ActiveCfg = Release|Any CPU
 		{686BAE0B-7B39-4F62-96DB-37AB0760130E}.Release|x86.Build.0 = Release|Any CPU
 		{686BAE0B-7B39-4F62-96DB-37AB0760130E}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{686BAE0B-7B39-4F62-96DB-37AB0760130E}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{686BAE0B-7B39-4F62-96DB-37AB0760130E}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{686BAE0B-7B39-4F62-96DB-37AB0760130E}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{686BAE0B-7B39-4F62-96DB-37AB0760130E}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -531,7 +509,6 @@ Global
 		{C1C38A35-012E-405F-A340-737A8E1E0FC3}.Release|x86.ActiveCfg = Release|Any CPU
 		{C1C38A35-012E-405F-A340-737A8E1E0FC3}.Release|x86.Build.0 = Release|Any CPU
 		{C1C38A35-012E-405F-A340-737A8E1E0FC3}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{C1C38A35-012E-405F-A340-737A8E1E0FC3}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{C1C38A35-012E-405F-A340-737A8E1E0FC3}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{C1C38A35-012E-405F-A340-737A8E1E0FC3}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{C1C38A35-012E-405F-A340-737A8E1E0FC3}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
@@ -549,7 +526,6 @@ Global
 		{111B0E3C-434A-442C-B62A-690EB5D2BF1A}.Release|x86.ActiveCfg = Release|Any CPU
 		{111B0E3C-434A-442C-B62A-690EB5D2BF1A}.Release|x86.Build.0 = Release|Any CPU
 		{111B0E3C-434A-442C-B62A-690EB5D2BF1A}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{111B0E3C-434A-442C-B62A-690EB5D2BF1A}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
 		{111B0E3C-434A-442C-B62A-690EB5D2BF1A}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
 		{111B0E3C-434A-442C-B62A-690EB5D2BF1A}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
 		{111B0E3C-434A-442C-B62A-690EB5D2BF1A}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU

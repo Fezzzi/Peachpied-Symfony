@@ -16,6 +16,7 @@ namespace PeachPied.Symfony.AspNetCore
 
         static PhpValue BootstrapMain(Context ctx, PhpArray locals, object @this, RuntimeTypeHandle self)
         {
+            ctx.Include("vendor", "autoload.php", true);
             Apply(ctx, bootstrapConfig);
             return 0;
         }
@@ -26,9 +27,9 @@ namespace PeachPied.Symfony.AspNetCore
         static void Apply(Context ctx, SymfonyConfig config)
         {
             // see .env
-            ctx.Server["APP_ENV"] = (PhpValue)config.AppEnv; // APP_ENV=dev;
+            ctx.Server["APP_ENV"] = ctx.Env["APP__ENV"] = (PhpValue)config.AppEnv; // APP_ENV=dev;
             ctx.Server["APP_SECRET"] = (PhpValue)config.AppSecret; // APP_SECRET=ThisIsNotASecret;
-            ctx.Server["APP_DEBUG"] = (PhpValue)config.AppDebug; //APP_DEBUG=0;
+            ctx.Server["APP_DEBUG"] = ctx.Env["APP_DEBUG"] = (PhpValue)config.AppDebug; //APP_DEBUG=0;
         }
 
         /// <summary>
@@ -52,13 +53,6 @@ namespace PeachPied.Symfony.AspNetCore
                 bootstrapConfig = config;
             }
 
-            // bootstrap.php env loading overriding
-            string bootstrapPath = "config/bootstrap.php";
-
-            // Pchp.Core.Context.ScriptInfo info = Context.TryGetDeclaredScript(bootstrapPath);
-            Context.MainDelegate md = new Context.MainDelegate(BootstrapMain);
-            Context.DeclareScript(bootstrapPath, md);
-
             // handling php files:
             app.UsePhp(new PhpRequestOptions(scriptAssemblyName: "Symfony.Skeleton")
             {
@@ -67,6 +61,11 @@ namespace PeachPied.Symfony.AspNetCore
 
             // static files
             app.UseStaticFiles(new StaticFileOptions() { FileProvider = fprovider });
+
+            // bootstrap.php env loading overriding
+            string bootstrapPath = "config\\bootstrap.php";
+            Context.MainDelegate md = new Context.MainDelegate(BootstrapMain);
+            Context.DeclareScript(bootstrapPath, md);
 
             return app;
         }
