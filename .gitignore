@@ -1,5 +1,8 @@
 Peachpied-Symfony/empty-page/.vs
-Peachpied-Symfony/empty-page/Symfony.Skeleton/obj/**
+Peachpied-Symfony/empty-page/Symfony.Skeleton/obj/
+Peachpied-Symfony/empty-page/Symfony.Skeleton/obj
+Peachpied-Symfony/empty-page/PeachPied.Symfony.AspNetCore/obj/
+Peachpied-Symfony/empty-page/PeachPied.Symfony.AspNetCore/obj
 Peachpied-Symfony/empty-page/Symfony.Skeleton/obj
 Peachpied-Symfony/empty-page/Server/obj/
 Peachpied-Symfony/empty-page/Server/obj
@@ -9,6 +12,8 @@ Peachpied-Symfony/empty-page/Libraries/bin/
 Peachpied-Symfony/empty-page/Libraries/bin
 Peachpied-Symfony/empty-page/Symfony.Skeleton/bin/
 Peachpied-Symfony/empty-page/Symfony.Skeleton/bin
+Peachpied-Symfony/empty-page/PeachPied.Symfony.AspNetCore/bin/
+Peachpied-Symfony/empty-page/PeachPied.Symfony.AspNetCore/bin
 Peachpied-Symfony/empty-page/Server/bin/
 Peachpied-Symfony/empty-page/Server/bin
 Peachpied-Symfony/my-page/
