@@ -89,7 +89,7 @@ class ErrorHandler
     private $tracedErrors = 0x77FB; // E_ALL - E_STRICT - E_PARSE
     private $screamedErrors = 0x55; // E_ERROR + E_CORE_ERROR + E_COMPILE_ERROR + E_PARSE
     private $loggedErrors = 0;
-    private $traceReflector;
+    // private $traceReflector;
 
     private $isRecursive = 0;
     private $isRoot = false;
@@ -163,8 +163,10 @@ class ErrorHandler
             $this->bootstrappingLogger = $bootstrappingLogger;
             $this->setDefaultLogger($bootstrappingLogger);
         }
+		/*
         $this->traceReflector = new \ReflectionProperty('Exception', 'trace');
         $this->traceReflector->setAccessible(true);
+		*/
     }
 
     /**
@@ -439,6 +441,7 @@ class ErrorHandler
                 return;
             }
         } else {
+		/*
             $errorAsException = new \ErrorException($logMessage, 0, $type, $file, $line);
 
             if ($throw || $this->tracedErrors & $type) {
@@ -449,6 +452,7 @@ class ErrorHandler
                 $this->traceReflector->setValue($errorAsException, []);
                 $backtrace = [];
             }
+			*/
         }
 
         if ($throw) {
