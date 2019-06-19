@@ -1,7 +1,5 @@
 <?php
 
-echo " ...Redirected to symfony's index.php";
-
 use App\Kernel;
 use Symfony\Component\Debug\Debug;
 use Symfony\Component\HttpFoundation\Request;
