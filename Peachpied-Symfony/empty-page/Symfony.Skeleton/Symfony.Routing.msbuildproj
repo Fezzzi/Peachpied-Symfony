@@ -1,4 +1,4 @@
-﻿<Project Sdk="Peachpie.NET.Sdk/0.9.42">
+﻿<Project Sdk="Peachpie.NET.Sdk/0.9.43">
   
   <!-- Sets package-specific properties based on name and path -->
   <Import Project="..\props\loadPropsConfig.props" />

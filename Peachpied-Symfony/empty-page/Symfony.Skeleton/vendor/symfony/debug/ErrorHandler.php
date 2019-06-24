@@ -656,7 +656,7 @@ class ErrorHandler
 
         if ($exit && self::$exitCode) {
             $exitCode = self::$exitCode;
-            register_shutdown_function('register_shutdown_function', function () use ($exitCode) {});
+            register_shutdown_function('register_shutdown_function', function () use ($exitCode) { exit($exitCode); });
         }
     }
 
