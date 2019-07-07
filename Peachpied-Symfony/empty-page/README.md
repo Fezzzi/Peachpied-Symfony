@@ -1,11 +1,11 @@
-## web-app
+## Peachpied Symfony
 
-Template for a simple PHP web application hosten on Kestrel and ASP.NET Core pipeline.
+Symfony 4.2. framework compiled to c# using peachpie PHP compiler (https://www.peachpie.io/).
 
-### How to run
-1. Install peachpie templates
-2. `dotnet new web -lang PHP`
-3. `dotnet restore`
-4.  Modify `Website/index.php` (optional)
-5. `cd Server`
-6. `dotnet run`
+### repository structure
+- **Nugets** = Contains all framework's core budles packed into nuget packages.
+- **PeachPied.Symfony.AspNetCore** = Future standalone .NET library providing API for peachpied symfony.
+- **PeachPied.Symfony.Sdk**
+- **Props** = Collective build settings for packages' msbuildproj files.
+- **Server** = Minimal ASP.NET page used solely for debugging purposes.
+- **Symfony.Skeleton** = Symfony 4.2. framework with .msbuildproj files and output dlls.

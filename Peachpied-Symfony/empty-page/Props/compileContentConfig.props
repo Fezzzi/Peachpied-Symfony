@@ -12,8 +12,9 @@
 			Exclude="	$(LibraryPath)**\*.php;
 						**\*.msbuildproj;
 						**\*.csbuildproj;
+						**\*.props;
 						$(LibraryPath)obj\**;
-						$(LibraryPath)bin\**;
+						$(LibraryPath)bin\Debug\**;
 						$(LibraryPath)tests\**;
 						$(LibraryPath)Tests\**;
 						$(LibraryPath)**\test\**;

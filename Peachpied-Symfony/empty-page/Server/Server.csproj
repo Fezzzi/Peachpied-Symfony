@@ -7,12 +7,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Peachpie.AspNetCore.Web" Version="0.9.40" />
+    <PackageReference Include="Peachpie.AspNetCore.Web" Version="1.0.0-appv2527" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\PeachPied.Symfony.AspNetCore\PeachPied.Symfony.AspNetCore.csproj" />
-    <ProjectReference Include="..\Website\Website.msbuildproj" />
+    <ProjectReference Include="..\Symfony.Skeleton\Symfony.Skeleton.msbuildproj" />
   </ItemGroup>
 
   <ItemGroup>

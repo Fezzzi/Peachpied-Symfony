@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using PeachPied.Symfony.AspNetCore;
+using Peachpie.AspNetCore.Web;
 
 namespace empty_page.Server
 {

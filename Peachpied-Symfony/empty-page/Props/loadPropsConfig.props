@@ -6,9 +6,4 @@
 		<LibraryPath>vendor\$(ProjectNameLocation.toLower())</LibraryPath>
 	</PropertyGroup>
 
-	<Target Name="TestMessage" AfterTargets="Build" >
-		<Message Text="------ Creating package for library: '$(LibraryName)' ------" Importance="high"/>
-		<Message Text="------ Located in path: '$(LibraryPath)' ------" Importance="high"/>
-	</Target>
-
 </Project>
