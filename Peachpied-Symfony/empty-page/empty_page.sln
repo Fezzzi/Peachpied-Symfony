@@ -56,8 +56,6 @@ Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Psr.Log", "Symfony.Skeleton
 EndProject
 Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Psr.Simple-cache", "Symfony.Skeleton\Psr.Simple-cache.msbuildproj", "{111B0E3C-434A-442C-B62A-690EB5D2BF1A}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Testing", "Testing\Testing\Testing.msbuildproj", "{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -809,36 +807,6 @@ Global
 		{111B0E3C-434A-442C-B62A-690EB5D2BF1A}.Testing|x64.Build.0 = Release|Any CPU
 		{111B0E3C-434A-442C-B62A-690EB5D2BF1A}.Testing|x86.ActiveCfg = Release|Any CPU
 		{111B0E3C-434A-442C-B62A-690EB5D2BF1A}.Testing|x86.Build.0 = Release|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Debug|x64.Build.0 = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Debug|x86.Build.0 = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Finder ONLY|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Finder ONLY|Any CPU.Build.0 = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Finder ONLY|x64.ActiveCfg = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Finder ONLY|x64.Build.0 = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Finder ONLY|x86.ActiveCfg = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Finder ONLY|x86.Build.0 = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Release|x64.ActiveCfg = Release|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Release|x64.Build.0 = Release|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Release|x86.ActiveCfg = Release|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Release|x86.Build.0 = Release|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Symfony.AspNetCore Only|x86.Build.0 = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Testing|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Testing|Any CPU.Build.0 = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Testing|x64.ActiveCfg = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Testing|x64.Build.0 = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Testing|x86.ActiveCfg = Debug|Any CPU
-		{1B91A5B6-0D6C-4337-BEC7-F6645593B5E7}.Testing|x86.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

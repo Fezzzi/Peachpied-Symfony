@@ -11,6 +11,10 @@ class ComposerStaticInit816458ca5c51d5c51e38b5dc3664f7f8
     );
 
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'Twig\\' => 5,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -32,7 +36,9 @@ class ComposerStaticInit816458ca5c51d5c51e38b5dc3664f7f8
             'Symfony\\Component\\Config\\' => 25,
             'Symfony\\Component\\Cache\\' => 24,
             'Symfony\\Bundle\\WebServerBundle\\' => 31,
+            'Symfony\\Bundle\\TwigBundle\\' => 26,
             'Symfony\\Bundle\\FrameworkBundle\\' => 31,
+            'Symfony\\Bridge\\Twig\\' => 20,
         ),
         'P' => 
         array (
@@ -49,6 +55,10 @@ class ComposerStaticInit816458ca5c51d5c51e38b5dc3664f7f8
     );
 
     public static $prefixDirsPsr4 = array (
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
@@ -125,9 +135,17 @@ class ComposerStaticInit816458ca5c51d5c51e38b5dc3664f7f8
         array (
             0 => __DIR__ . '/..' . '/symfony/web-server-bundle',
         ),
+        'Symfony\\Bundle\\TwigBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/twig-bundle',
+        ),
         'Symfony\\Bundle\\FrameworkBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/framework-bundle',
+        ),
+        'Symfony\\Bridge\\Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/twig-bridge',
         ),
         'Psr\\SimpleCache\\' => 
         array (
@@ -155,11 +173,22 @@ class ComposerStaticInit816458ca5c51d5c51e38b5dc3664f7f8
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'T' => 
+        array (
+            'Twig_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/twig/lib',
+            ),
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit816458ca5c51d5c51e38b5dc3664f7f8::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit816458ca5c51d5c51e38b5dc3664f7f8::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit816458ca5c51d5c51e38b5dc3664f7f8::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

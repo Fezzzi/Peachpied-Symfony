@@ -11,6 +11,7 @@
         "symfony/dotenv": "*",
         "symfony/flex": "^1.1",
         "symfony/framework-bundle": "*",
+        "symfony/twig-bundle": "4.2.*",
         "symfony/yaml": "*"
     },
     "config": {

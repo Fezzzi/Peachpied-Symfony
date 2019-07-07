@@ -60,16 +60,6 @@ namespace empty_page.Server
             app.UseSymfony();
 
             app.UseDefaultFiles();
-
-
-            /*
-            app.UseSession();
-
-            app.UseMvc();
-            app.UsePhp(new PhpRequestOptions(scriptAssemblyName: "symfony.skeleton"));
-            app.UseDefaultFiles();
-            app.UseStaticFiles();
-            */
         }
     }
 }
