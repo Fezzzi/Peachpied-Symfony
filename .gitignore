@@ -12,8 +12,11 @@ Peachpied-Symfony/empty-page/Server/bin/
 Peachpied-Symfony/empty-page/Testing/
 Peachpied-Symfony/empty-page-php/
 Peachpied-Symfony/empty-page-clean/
+Peachpied-Symfony/empty-page-Robert/
+Peachpied-Symfony/empty-page-Robert2/
 Peachpied-Symfony/my-page/
 Peachpied-Symfony-sdk-dev-version-update
 .gitattributes
 *.cache
+*.nupkg
 

@@ -1,11 +1,11 @@
 ﻿using System;
 using Pchp.Core;
-using Microsoft.AspNetCore.Builder;
+using PeachPied.Symfony.AspNetCore;
 using PeachPied.Symfony.AspNetCore.Internal;
 using Microsoft.Extensions.FileProviders;
 using Peachpie.AspNetCore.Web;
 
-namespace PeachPied.Symfony.AspNetCore
+namespace Microsoft.AspNetCore.Builder
 {
     /// <summary>
     /// <see cref="IApplicationBuilder"/> extension for enabling Symfony.
