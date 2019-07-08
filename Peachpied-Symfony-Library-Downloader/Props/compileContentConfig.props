@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<ItemGroup>
+		<Compile Include="$(LibraryPath)**\*.php" 
+			Exclude="	$(LibraryPath)**\test\**;
+						$(LibraryPath)**\Test\**;
+						$(LibraryPath)**\tests\**;
+						$(LibraryPath)**\Tests\**;
+						$(AdditionalExcludes)" />
+		<Content Include="$(LibraryPath)**" 
+			Exclude="	$(LibraryPath)**\*.php;
+						**\*.msbuildproj;
+						**\*.csbuildproj;
+						**\*.props;
+						$(LibraryPath)obj\**;
+						$(LibraryPath)bin\Debug\**;
+						$(LibraryPath)tests\**;
+						$(LibraryPath)Tests\**;
+						$(LibraryPath)**\test\**;
+						$(LibraryPath)**\Test\**;" 
+			CopyToOutputDirectory="PreserveNewest">
+			
+			<PackagePath>contentFiles\any\netcoreapp2.0\symfony\$(ProjectNameLocation)</PackagePath>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<Link>symfony\$(ProjectNameLocation)%(RecursiveDir)%(Filename)%(Extension)</Link>
+		</Content>
+	</ItemGroup>
+ 
+</Project>

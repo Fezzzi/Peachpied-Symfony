@@ -15,7 +15,7 @@
   <Import Project="..\props\compileContentConfig.props" />
   
   <ItemGroup>
-    <ProjectReference Include="Psr.Log.msbuildproj" />
+    <PackageReference Include="Psr.Log" Version="1.0.0" />
   </ItemGroup>
   
 </Project>

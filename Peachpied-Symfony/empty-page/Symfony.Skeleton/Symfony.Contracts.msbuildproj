@@ -15,8 +15,8 @@
   <Import Project="..\props\compileContentConfig.props" />
   
   <ItemGroup>
-    <ProjectReference Include="Psr.Container.msbuildproj" />
-    <ProjectReference Include="Psr.Cache.msbuildproj" />
+    <PackageReference Include="Psr.Container" Version="1.0.0" />
+    <PackageReference Include="Psr.Cache" Version="1.0.0" />
   </ItemGroup>
   
 </Project>

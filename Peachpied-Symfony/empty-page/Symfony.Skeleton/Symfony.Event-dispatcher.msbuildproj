@@ -15,7 +15,7 @@
   <Import Project="..\props\compileContentConfig.props" />
   
   <ItemGroup>
-    <ProjectReference Include="Symfony.Dependency-injection.msbuildproj" />
+    <PackageReference Include="Symfony.Dependency-injection" Version="1.0.0" />
   </ItemGroup>
   
 </Project>
