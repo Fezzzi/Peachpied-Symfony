@@ -15,8 +15,8 @@
 						**\*.props;
 						$(LibraryPath)obj\**;
 						$(LibraryPath)bin\Debug\**;
-						$(LibraryPath)tests\**;
-						$(LibraryPath)Tests\**;
+						$(LibraryPath)**\tests\**;
+						$(LibraryPath)**\Tests\**;
 						$(LibraryPath)**\test\**;
 						$(LibraryPath)**\Test\**;" 
 			CopyToOutputDirectory="PreserveNewest">

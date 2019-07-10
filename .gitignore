@@ -10,6 +10,7 @@ Peachpied-Symfony/empty-page/Server/bin/
 Peachpied-Symfony/empty-page-php/
 Peachpied-Symfony/empty-page-php-new/
 Peachpied-Symfony/empty-page-php-new-new/
+Peachpied-Symfony/empty-page-project-refs/
 .gitattributes
 *.cache
 *.nupkg

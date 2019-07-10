@@ -10,7 +10,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageOutputPath>..\..\..\Peachpied-Symfony-Nuget-Repository\</PackageOutputPath>
 		<IntermediateOutputPath>.\obj\$(Configuration)\$(ProjectNameLocation)</IntermediateOutputPath>
-		<OutputPath>.\bin\$(Configuration)\$([MSBuild]::EnsureTrailingSlash('$([System.String]::Copy('$(AssemblyName)').Replace('.','\'))'))</OutputPath>
+		<OutputPath>.\bin\$(Configuration)\$(ProjectNameLocation)</OutputPath>
 		<OutDir>$(OutputPath)</OutDir>
 		<ComposerJsonPath>Ignore</ComposerJsonPath>
 	</PropertyGroup>
