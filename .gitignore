@@ -1,7 +1,7 @@
 **/.vs
 **/obj/
 **/bin/Debug
-Peachpied-Symfony/empty-page/Symfony.Skeleton/var/
+**/var/
 Peachpied-Symfony/empty-page-php-latest/
 Peachpied-Symfony/empty-page-project-refs/
 Peachpied-Symfony-Nuget-Repository-BackUp
