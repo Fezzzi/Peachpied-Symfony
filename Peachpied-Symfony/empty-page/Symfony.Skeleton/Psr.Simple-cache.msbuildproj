@@ -3,7 +3,7 @@
   <!-- Sets package-specific properties based on name and path -->
   <Import Project="..\props\loadPropsConfig.props" />
 
-  <!-- Configurates build properties such as packageId, AssemblyName -->
+  <!--  Configurates build properties packageId and AssemblyName -->
   <Import Project="..\props\buildPropsConfig.props" />
 
   <PropertyGroup>

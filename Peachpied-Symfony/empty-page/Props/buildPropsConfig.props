@@ -7,6 +7,7 @@
 		<Description>.NET class library in PHP</Description>
 		<AssemblyName>$(LibraryName)</AssemblyName>
 		<PackageId>$(LibraryName)</PackageId>
+		<PackageVersion>1.0.0</PackageVersion>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageOutputPath>..\..\..\Peachpied-Symfony-Nuget-Repository\</PackageOutputPath>
 		<IntermediateOutputPath>.\obj\$(Configuration)\$(ProjectNameLocation)</IntermediateOutputPath>

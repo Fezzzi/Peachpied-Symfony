@@ -1,0 +1,34 @@
+﻿<Project Sdk="Peachpie.NET.Sdk/1.0.0-appv2527">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>twig-razor-page</AssemblyName>
+    <IntermediateOutputPath>.\obj\$(Configuration)\$(AssemblyName)\</IntermediateOutputPath>
+    <OutputPath>.\bin\$(Configuration)\$(AssemblyName)\</OutputPath>
+    <OutDir>$(OutputPath)</OutDir>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Include="**\*.php" 
+             Exclude=".\vendor\twig\**;.\vendor\symfony\;.\vendor\psr\;.\vendor\composer\" />
+    <Content Include=".\**" 
+             Exclude=" **\*.php;**\*.msbuildproj;**\*.csbuildproj;.\obj\**;.\bin\**;.\vendor\**" 
+             CopyToOutputDirectory="PreserveNewest">
+      
+      <PackagePath>contentFiles\any\netcoreapp2.0\symfony\$(AssemblyName)\</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+      <Link>symfony\$(AssemblyName)\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Composer" Version="1.0.0" />
+    <PackageReference Include="Symfony.Framework-bundle" Version="1.0.0" />
+    <PackageReference Include="Symfony.Debug" Version="1.0.0" />
+    <PackageReference Include="Symfony.Dotenv" Version="1.0.0" />
+    <PackageReference Include="Symfony.Polyfill-mbstring" Version="1.0.0" />
+    <PackageReference Include="Symfony.Routing" Version="1.0.0" />
+    <PackageReference Include="Symfony.Twig-bundle" Version="1.0.0" />
+  </ItemGroup>
+  
+</Project>
