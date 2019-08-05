@@ -1,4 +1,4 @@
-﻿<Project Sdk="Peachpie.NET.Sdk/1.0.0-appv2527">
+﻿<Project Sdk="Peachpie.NET.Sdk">
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -10,7 +10,8 @@
   
   <ItemGroup>
     <Compile Include="**\*.php" 
-             Exclude=".\vendor\twig\**;.\vendor\symfony\;.\vendor\psr\;.\vendor\composer\" />
+             Exclude=".\vendor\twig\**;.\vendor\symfony\;.\vendor\psr\;.\vendor\composer\" 
+			 Remove=".\vendor\twig\**;.\vendor\symfony\**;.\vendor\psr\**;.\vendor\composer\**"/>
     <Content Include=".\**" 
              Exclude=" **\*.php;**\*.msbuildproj;**\*.csbuildproj;.\obj\**;.\bin\**;.\vendor\**" 
              CopyToOutputDirectory="PreserveNewest">
@@ -30,5 +31,4 @@
     <PackageReference Include="Symfony.Routing" Version="1.0.0" />
     <PackageReference Include="Symfony.Twig-bundle" Version="1.0.0" />
   </ItemGroup>
-  
 </Project>

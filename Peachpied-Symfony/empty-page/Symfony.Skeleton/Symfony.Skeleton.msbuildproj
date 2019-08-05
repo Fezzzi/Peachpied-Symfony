@@ -1,4 +1,4 @@
-﻿<Project Sdk="Peachpie.NET.Sdk/1.0.0-appv2527">
+﻿<Project Sdk="Peachpie.NET.Sdk">
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -7,14 +7,20 @@
     <OutputPath>.\bin\$(Configuration)\$(AssemblyName)\</OutputPath>
     <OutDir>$(OutputPath)</OutDir>
   </PropertyGroup>
+  
   <ItemGroup>
-    <Compile Include="**\*.php" Exclude=".\vendor\twig\**;.\vendor\symfony\;.\vendor\psr\;.\vendor\composer\" />
-    <Content Include=".\**" Exclude=" **\*.php;**\*.msbuildproj;**\*.csbuildproj;.\obj\**;.\bin\**;.\vendor\**" CopyToOutputDirectory="PreserveNewest">
+    <Compile Include="**\*.php" 
+			 Exclude=".\vendor\twig\**;.\vendor\symfony\**;.\vendor\psr\**;.\vendor\composer\**"/>
+    <Content Include=".\**" 
+			 Exclude=" **\*.php;**\*.msbuildproj;**\*.csbuildproj;.\obj\**;.\bin\**;.\vendor\**" 
+			 CopyToOutputDirectory="PreserveNewest">
+
       <PackagePath>contentFiles\any\netcoreapp2.0\symfony\$(AssemblyName)\</PackagePath>
       <PackageCopyToOutput>true</PackageCopyToOutput>
       <Link>symfony\$(AssemblyName)\%(RecursiveDir)%(Filename)%(Extension)</Link>
     </Content>
   </ItemGroup>
+  
   <ItemGroup>
     <Compile Remove="vendor\composer\**" />
     <Compile Remove="vendor\psr\**" />
@@ -29,9 +35,11 @@
     <None Remove="vendor\symfony\**" />
     <None Remove="vendor\twig\**" />
   </ItemGroup>
+  
   <ItemGroup>
     <Compile Remove="config\bootstrap.php" />
   </ItemGroup>
+  
   <ItemGroup>
     <PackageReference Include="Composer" Version="1.0.0" />
     <PackageReference Include="Symfony.Framework-bundle" Version="1.0.0" />

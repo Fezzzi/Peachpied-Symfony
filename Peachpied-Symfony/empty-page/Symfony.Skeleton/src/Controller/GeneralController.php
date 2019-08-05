@@ -10,13 +10,7 @@ class GeneralController
 {
     public function indexAction()
     {
-	$loader = new FilesystemLoader("templates/");
-        $twig = new Environment($loader);
-
-        $str = $twig->render('base.html.twig', ['the' => 'variables', 'go' => 'here']);
-        return new Response($str);
-
-        return new Response(
+	    return new Response(
             '<html>
                 <head>
                     <link rel="stylesheet" href="GeneralStyles.css" type="text/css">
