@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -10,6 +11,12 @@ namespace Peachpied.Symfony.Twig.Razor.Server
     {
         static void Main(string[] args)
         {
+            // make sure cwd is not app\ but its parent:
+            if (Path.GetFileName(Directory.GetCurrentDirectory()) == "Server")
+            {
+                Directory.SetCurrentDirectory(Path.GetDirectoryName(Directory.GetCurrentDirectory()));
+            }
+
             var host = WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
                 .UseUrls("http://*:5004/")
@@ -25,7 +32,8 @@ namespace Peachpied.Symfony.Twig.Razor.Server
         {
             // Adds a default in-memory implementation of IDistributedCache.
             services.AddDistributedMemoryCache();
-
+			// Includes support for Razor Pages and controllers.
+			services.AddMvc();
             services.AddSession(options =>
             {
                 options.IdleTimeout = TimeSpan.FromMinutes(30);
@@ -36,6 +44,7 @@ namespace Peachpied.Symfony.Twig.Razor.Server
         public void Configure(IApplicationBuilder app)
         {
             app.UseSession();
+			app.UseMvc();
             app.UseSymfony(null, "twig-razor-page");
             app.UseDefaultFiles();
         }
