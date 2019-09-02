@@ -46,7 +46,7 @@ function getLibrariesToPack() : array {
     foreach ($dirs as $dirkey => $dirname) {
         if ($dirname !== "composer") {
             $libs = array_diff(scandir("." . DIRECTORY_SEPARATOR . "vendor" . DIRECTORY_SEPARATOR . $dirname),
-                array('..', '.'));
+                array('..', '.', '.gitignore'));
 
             foreach ($libs as $libKey => $libname) {
                 $libraries[] = $dirname . DIRECTORY_SEPARATOR . $libname;

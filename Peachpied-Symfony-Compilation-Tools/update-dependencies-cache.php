@@ -9,7 +9,7 @@ define("DEPENDENCIES_FILE", NUGET_REPO . DIRECTORY_SEPARATOR . "dependencies.jso
 define("DEBUG", false);
 
 $nugets = array();
-foreach(array_diff(scandir(NUGET_REPO), [".", "..", "dependencies.json"]) as $key => $nuget) {
+foreach(array_diff(scandir(NUGET_REPO), [".", "..", "dependencies.json", ".gitignore"]) as $key => $nuget) {
     $libName = array_filter(preg_split("/\./", $nuget), function($el){
         return $el !== "nupkg" && !preg_match("/^\d+$/", $el);
     });

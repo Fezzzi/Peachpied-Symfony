@@ -69,7 +69,7 @@ class ComposerGenerator {
         if ($dirs) {
             echo("Composer directory generated.\n");
 
-            $dirs = array_diff($dirs, [".", "..", "composer", "autoload.php"]);
+            $dirs = array_diff($dirs, [".", "..", "composer", "autoload.php", ".gitignore"]);
             if (!DEBUG) {
 				foreach ($dirs as $key => $dir) {
 					$this->removeDir($this->vendorDir . DIRECTORY_SEPARATOR . $dir);
