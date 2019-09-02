@@ -1,11 +1,11 @@
 **/.vs
 **/obj/
-**/bin/Debug
+**/bin/Debug/
 **/var/
+**/vendor/
 Peachpied-Symfony/empty-page-php-latest/
 Peachpied-Symfony/empty-page-project-refs/
-Peachpied-Symfony-Nuget-Repository-BackUp
-Peachpied-Symfony-Nuget-Repository
+Peachpied-Symfony-Nuget-Repository/
 .gitattributes
 *.cache
 .idea/

@@ -10,9 +10,9 @@
   
   <ItemGroup>
     <Compile Include="**\*.php" 
-			 Exclude=".\vendor\twig\**;.\vendor\symfony\**;.\vendor\psr\**;.\vendor\composer\**"/>
+			 Exclude=".\vendor\twig\**;.\vendor\symfony\**;.\vendor\psr\**"/>
     <Content Include=".\**" 
-			 Exclude=" **\*.php;**\*.msbuildproj;**\*.csbuildproj;.\obj\**;.\bin\**;.\vendor\**" 
+			 Exclude=" **\*.php;**\*.msbuildproj;**\*.csbuildproj;.\obj\**;.\bin\**;.\vendor\twig\**;.\vendor\symfony\**;.\vendor\psr\**" 
 			 CopyToOutputDirectory="PreserveNewest">
 
       <PackagePath>contentFiles\any\netcoreapp2.0\symfony\$(AssemblyName)\</PackagePath>
@@ -22,15 +22,12 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Compile Remove="vendor\composer\**" />
     <Compile Remove="vendor\psr\**" />
     <Compile Remove="vendor\symfony\**" />
     <Compile Remove="vendor\twig\**" />
-    <EmbeddedResource Remove="vendor\composer\**" />
     <EmbeddedResource Remove="vendor\psr\**" />
     <EmbeddedResource Remove="vendor\symfony\**" />
     <EmbeddedResource Remove="vendor\twig\**" />
-    <None Remove="vendor\composer\**" />
     <None Remove="vendor\psr\**" />
     <None Remove="vendor\symfony\**" />
     <None Remove="vendor\twig\**" />
@@ -41,7 +38,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Composer" Version="1.0.0" />
     <PackageReference Include="Symfony.Framework-bundle" Version="1.0.0" />
     <PackageReference Include="Symfony.Debug" Version="1.0.0" />
     <PackageReference Include="Symfony.Dotenv" Version="1.0.0" />
