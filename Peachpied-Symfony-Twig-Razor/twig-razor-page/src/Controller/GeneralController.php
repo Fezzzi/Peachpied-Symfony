@@ -5,15 +5,13 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
 use \Twig\Loader\FilesystemLoader;
-use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 class GeneralController
 {
     public function indexAction()
     {
-		$file = 'index.html';
-		$response = new BinaryFileResponse($file);
-		return $response;
+		$html = file_get_contents('index.html');
+		return new Response($html);
     }
 	
 	public function twigPageAction()

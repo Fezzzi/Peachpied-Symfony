@@ -1,3 +1,5 @@
+{% extends "base.html.twig" %}
+
 {#
     time can be any string acceptable by http://www.php.net/strtotime, the
     template will output that time's month.
@@ -19,86 +21,68 @@
 {% set dateStringToday = time|date('Y-m-d') %}
 {% set disableNavigation = disableNavigation|default(false) %}
 
-{% set prevText %}<i class="cal-icon-prev">&laquo;</i>{% endset %}
-{% set nextText %}<i class="cal-icon-next">&raquo;</i>{% endset %}
+{% set prevText %}&laquo;{% endset %}
+{% set nextText %}&raquo;{% endset %}
 
 {% set daynames = daynames|default({
-    0: { short: 'calendar_short_day_sunday'    | translate, full: 'calendar_full_day_sunday'    | translate },
-    1: { short: 'calendar_short_day_monday'    | translate, full: 'calendar_full_day_monday'    | translate },
-    2: { short: 'calendar_short_day_tuesday'   | translate, full: 'calendar_full_day_tuesday'   | translate },
-    3: { short: 'calendar_short_day_wednesday' | translate, full: 'calendar_full_day_wednesday' | translate },
-    4: { short: 'calendar_short_day_thursday'  | translate, full: 'calendar_full_day_thursday'  | translate },
-    5: { short: 'calendar_short_day_friday'    | translate, full: 'calendar_full_day_friday'    | translate },
-    6: { short: 'calendar_short_day_saturday'  | translate, full: 'calendar_full_day_saturday'  | translate }
+    0: { short: 'sun', full: 'sunday'},
+    1: { short: 'mon', full: 'monday'},
+    2: { short: 'tue', full: 'tuesday'},
+    3: { short: 'wed', full: 'wednesday'},
+    4: { short: 'thu', full: 'thursday'},
+    5: { short: 'fri', full: 'friday'},
+    6: { short: 'sat', full: 'saturday'}
 }) %}
 
 {% set monthnames = monthnames|default({
-    1:  { short: 'january'   | translate, full: 'january' | translate},
-    2:  { short: 'february'  | translate, full: 'february' | translate},
-    3:  { short: 'march'     | translate, full: 'march' | translate},
-    4:  { short: 'april'     | translate, full: 'april' | translate},
-    5:  { short: 'may'       | translate, full: 'may' | translate},
-    6:  { short: 'june'      | translate, full: 'june' | translate},
-    7:  { short: 'july'      | translate, full: 'july' | translate},
-    8:  { short: 'august'    | translate, full: 'august' | translate},
-    9:  { short: 'september' | translate, full: 'september' | translate},
-    10: { short: 'october'   | translate, full: 'october' | translate},
-    11: { short: 'november'  | translate, full: 'november' | translate},
-    12: { short: 'december'  | translate, full: 'december' | translate}
+    1:  { short: 'jan', full: 'january'},
+    2:  { short: 'feb', full: 'february'},
+    3:  { short: 'mar', full: 'march'},
+    4:  { short: 'apr', full: 'april'},
+    5:  { short: 'may', full: 'may'},
+    6:  { short: 'jun', full: 'june'},
+    7:  { short: 'jul', full: 'july'},
+    8:  { short: 'aug', full: 'august'},
+    9:  { short: 'sep', full: 'september'},
+    10: { short: 'oct', full: 'october'},
+    11: { short: 'nov', full: 'november'},
+    12: { short: 'dec', full: 'december'}
 }) %}
 
-{% if app.debug %}
-<!-- // DEBUG
+{% block title %}Twig Page{% endblock %}
+{% block subtitle %}twig page{% endblock %}
+{% block body %}
 
-    data:               {{ data|json_encode }}
-    today:              {{ today.format('Y-m-d H:i:s') }}
-    time:               {{ time.format('Y-m-d H:i:s') }}
-    numberOfMonth:      {{ numberOfMonth }}
-    spanOtherMonth:     {{ spanOtherMonth }}
-    firstDay:           {{ firstDay }}
-    disableNavigation:  {{ disableNavigation }}
-
--->
-{% endif %}
-
-<div class="cal-calendar{% if numberOfMonth > 1 %} cal-group{% endif %}">
+<div class="calendar">
     {% if not disableNavigation -%}
-        <div class="cal-btn">
-            <a class="cal-prev" title="">
-                <span class="cal-prev-btn">{{ prevText | raw }}</span>
+        <div class="button left">
+            <a title="">
+                <span>{{ prevText | raw }}</span>
             </a>
         </div>
     {%- endif %}
-
+	
+	<div class="content">
     {% for i in range(0, numberOfMonth-1) -%}
         {% if not loop.first %}
             {% set time = time|date_modify('+1 month') %}
         {% endif %}
 
         {% set year = time.format('Y') %}
-        {% set month = time.format('m') %}
+        {% set month = time.format('n') %}
 
-{% if app.debug %}
-    <!-- // DEBUG
-        loop.index:         {{ loop.index }}
-        time:               {{ time.format('Y-m-d H:i:s') }}
-        year:               {{ year }}
-        month:              {{ month }}
-    -->
-{% endif %}
-
-        <div class="cal-month{% if loop.first %} cal-group-first{% endif %}{% if loop.last %} cal-group-last{% endif %}" data-year="{{ year }}" data-month="{{ month }}">
+        <div class="col-4 {% if loop.index is odd %}odd{% else %}even{% endif %}" data-year="{{ year }}" data-month="{{ month }}">
             <table>
                 <thead>
                     <tr>
-                        <th colspan="7" class="center cal-month-title">
+                        <th colspan="7" class="month">
                             {{ monthnames[month].full }}
                         </th>
                     </tr>
                     <tr>
                         {% for dow in range(0, 6) %}
                             {% set day = (dow + firstDay) % 7 %}
-                            <th><span title="{{ daynames[day].full }}">{{ daynames[day].short }}</span></th>
+                            <th {% if (day == 6 or day == 0) %}class="weekend"{% endif %}><span title="{{ daynames[day].full }}">{{ daynames[day].short }}</span></th>
                         {% endfor %}
                     </tr>
                 </thead>
@@ -107,31 +91,24 @@
                     {% set startDow = (time.format('F 1\\s\\t Y')|date('w')) %}
                     {% set dow = startDow %}
                     {% set pos = (7 + (startDow - firstDay)) % 7 %}
-                    <tr class="cal-week">
+                    <tr>
                         {% for dom in range(1,daysInMonth) -%}
-                            {#
-                                TODO
-                                 - disable days before today in calendar
-                                 -
-                            #}
                             {% set dom_date_s = "%d-%02d-%02d"|format(year, month, dom) %}
                             {% set dom_date = date(dom_date_s) %}
                             {% set dom_id = "cal_" ~ ("%d%02d%02d"|format(year, month, dom)) %}
 
                             {% set cal_day_classes = (
-                                'cal-day'
-                                ~ (dom_date < today ? ' cal-unselectable' : '')
-                                ~ ((pos + firstDay + 6) % 7 >= 5 ? ' cal-weekend' : '')
+                                ((pos + firstDay + 6) % 7 >= 5 ? 'weekend' : '')
                                 ~ (data[dom_date_s] is defined ? ' cal-day-data' : '')
                             ) %}
 
                             {% if loop.first and pos > 0 -%}
                                 {% if not spanOtherMonth %}
                                     {% for _dom in range(1, pos) -%}
-                                        <td class="cal-day"><span>&nbsp;</span></td>
+                                        <td class="empty"><span>&nbsp;</span></td>
                                     {%- endfor %}
                                 {% else %}
-                                    <td colspan="{{ pos }}"><span>&nbsp;</span></td>
+                                    <td class="class="empty" colspan="{{ pos }}"><span>&nbsp;</span></td>
                                 {% endif %}
                             {%- endif %}
 
@@ -144,18 +121,18 @@
                             {% if loop.last and pos != 6 -%}
                                 {% if not spanOtherMonth %}
                                     {% for _dom in range(1, 6 - pos) -%}
-                                        <td class="cal-day"><span>&nbsp;</span></td>
+                                        <td class="empty"><span>&nbsp;</span></td>
                                     {%- endfor %}
                                 {% else %}
-                                    <td colspan="{{ 6 - pos }}"><span>&nbsp;</span></td>
+                                    <td class="class="empty"" colspan="{{ 6 - pos }}"><span>&nbsp;</span></td>
                                 {% endif %}
                             {%- endif %}
 
                             {% if pos == 6 and not loop.last %}
                                 {% set pos = 0 %}
                                 {% set dow = firstDay %}
-                    </tr>
-                    <tr class="cal-week">
+							</tr>
+							<tr>
                             {% else %}
                                 {% set dow = (dow + 1) % 7 %}
                                 {% set pos = pos + 1 %}
@@ -166,11 +143,14 @@
             </table>
         </div>
     {%- endfor %}
+	</div>
+	
     {% if not disableNavigation -%}
-        <div class="cal-btn">
-            <a class="cal-next" title="">
-                <span class="cal-next-btn">{{ nextText | raw }}</span>
+        <div class="button right">
+            <a title="">
+                <span>{{ nextText | raw }}</span>
             </a>
         </div>
     {%- endif %}
 </div>
+{% endblock %}

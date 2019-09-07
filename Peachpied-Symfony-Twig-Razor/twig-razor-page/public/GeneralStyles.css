@@ -78,7 +78,6 @@ a:active {
 
 .tile.t1 {
     background-color: #A30000;
-    /*background-color: #3D314A;*/
 }
 
 .tile.t2 {
@@ -88,10 +87,142 @@ a:active {
 
 .tile.t3 {
     background-color: #d9bf80;
-    /*background-color: #96705B;*/
 }
 
 .tile.t4 {
     background-color: #00AFB5;
-    /*background-color: #AB8476;*/
+}
+
+@media only screen and (max-width: 600px) {
+	.tile-row {
+		width: auto;
+	}
+	.tile {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.calendar {
+	padding-top: 25px;
+	min-width: 400px;
+    width: 100%;
+    position: absolute;
+}
+
+
+.calendar .content {
+	display: inline-block;
+	width: 90%;
+	min-width: 300px;
+	position: absolute;
+	text-align: center;
+}
+
+.calendar .col-4 {
+	display: inline-block;
+	vertical-align: text-top;
+	width: 33%;
+}
+
+.calendar .button {
+	width: 5%;
+	min-width: 45px;
+	display: inline-block;
+	padding-top: 90px;
+}
+
+.calendar .button a:hover {
+	cursor: pointer;
+	border: 2px solid #007bff;
+}
+
+.calendar .button a {
+	border: 2px solid transparent;
+	height: 45px;
+    width: 45px;
+	display: block;
+    text-align: center;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+	user-select: none;
+}
+
+.calendar .button span {
+	font-weight: 500;
+    font-size: 1.85rem;
+	line-height: 1.1;
+    color: black;
+}
+
+.left {
+	float: left;
+	text-align: -webkit-left;
+}
+
+.right {
+	float: right;
+	text-align: -webkit-right;
+}
+
+.calendar table {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+}
+
+.calendar th {
+	width: 35px;
+}
+
+.calendar td {
+	box-sizing: border-box;
+    border: 2px solid transparent;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+	user-select: none;
+}
+
+.calendar td:not(.empty) {
+	cursor: pointer;
+}
+
+.calendar td:not(.empty):hover {
+	border: 2px solid #007bff;
+}
+
+.calendar a {
+	color: black;
+}
+
+.calendar .weekend * {
+	color: #f00909db;
+}
+
+.calendar a:hover {
+	border: none;
+}
+
+.calendar .month {
+	background-color: #f00909db;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.calendar tbody {
+	background-color: #a9a9a93d;
+}
+
+@media only screen and (max-width: 1100px) {
+	.col-4 {
+		width: 100% !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.calendar .content{
+		width: calc(100% - 100px) !important;
+	}
 }
