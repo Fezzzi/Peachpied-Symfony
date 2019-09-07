@@ -3,7 +3,7 @@ using Pchp.Core;
 using PeachPied.Symfony.AspNetCore;
 using PeachPied.Symfony.AspNetCore.Internal;
 using Microsoft.Extensions.FileProviders;
-using Peachpie.AspNetCore.Web;
+using Microsoft.AspNetCore.Rewrite;
 
 namespace Microsoft.AspNetCore.Builder
 {
@@ -41,6 +41,12 @@ namespace Microsoft.AspNetCore.Builder
         /// <param name="path">Physical location of symfony folder. Can be absolute or relative to the current directory.</param>
         public static IApplicationBuilder UseSymfony(this IApplicationBuilder app, SymfonyConfig config = null, string path = "Symfony.Skeleton")
         {
+            // setup URL rewriting as Symfony projects' servers operate from /public folder
+            var options = new RewriteOptions()
+                .AddRewrite(@"^(?!public\/)(.*)$", "public/$1", skipRemainingRules: true);
+
+            app.UseRewriter(options);
+
             // symony root path:
             var root = System.IO.Path.GetFullPath(path);
             var fprovider = new PhysicalFileProvider(root);
