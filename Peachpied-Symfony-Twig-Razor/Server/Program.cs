@@ -4,6 +4,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 
 namespace Peachpied.Symfony.Twig.Razor.Server
 {
@@ -11,13 +12,18 @@ namespace Peachpied.Symfony.Twig.Razor.Server
     {
         static void Main(string[] args)
         {
-            // make sure cwd is not app\ but its parent:
+            // make sure cwd is not server\ but its parent:
             if (Path.GetFileName(Directory.GetCurrentDirectory()) == "Server")
             {
                 Directory.SetCurrentDirectory(Path.GetDirectoryName(Directory.GetCurrentDirectory()));
             }
 
             var host = WebHost.CreateDefaultBuilder(args)
+                .ConfigureAppConfiguration((hostingContext, config) =>
+                {
+                    config.AddJsonFile("Server/appsettings.json", optional: false, reloadOnChange: false);
+                    config.AddJsonFile("Server/appsettings.Development.json", optional: false, reloadOnChange: false); 
+                })
                 .UseStartup<Startup>()
                 .UseUrls("http://*:5004/")
                 .Build();

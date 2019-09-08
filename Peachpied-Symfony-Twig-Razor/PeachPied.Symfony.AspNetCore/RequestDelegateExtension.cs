@@ -27,9 +27,9 @@ namespace Microsoft.AspNetCore.Builder
         static void Apply(Context ctx, SymfonyConfig config)
         {
             // see .env
-            ctx.Server["APP_ENV"] = ctx.Env["APP__ENV"] = (PhpValue)config.AppEnv; // APP_ENV=dev;
-            ctx.Server["APP_SECRET"] = (PhpValue)config.AppSecret; // APP_SECRET=ThisIsNotASecret;
-            ctx.Server["APP_DEBUG"] = ctx.Env["APP_DEBUG"] = (PhpValue)config.AppDebug; //APP_DEBUG=0;
+            ctx.Server["APP_ENV"] = ctx.Env["APP__ENV"] = (PhpValue)config.AppEnv; 
+            ctx.Server["APP_SECRET"] = (PhpValue)config.AppSecret;
+            ctx.Server["APP_DEBUG"] = ctx.Env["APP_DEBUG"] = (PhpValue)config.AppDebug;
         }
 
         /// <summary>
@@ -39,14 +39,9 @@ namespace Microsoft.AspNetCore.Builder
         /// <param name="config">Symfony instance configuration.</param>
         /// <param name="plugins">Container describing what plugins will be loaded.</param>
         /// <param name="path">Physical location of symfony folder. Can be absolute or relative to the current directory.</param>
-        public static IApplicationBuilder UseSymfony(this IApplicationBuilder app, SymfonyConfig config = null, string path = "Symfony.Skeleton")
+        public static IApplicationBuilder UseSymfony
+            (this IApplicationBuilder app, SymfonyConfig config = null, string path = "Symfony.Skeleton")
         {
-            // setup URL rewriting as Symfony projects' servers operate from /public folder
-            var options = new RewriteOptions()
-                .AddRewrite(@"^(?!public\/)(.*)$", "public/$1", skipRemainingRules: true);
-
-            app.UseRewriter(options);
-
             // symony root path:
             var root = System.IO.Path.GetFullPath(path);
             var fprovider = new PhysicalFileProvider(root);
@@ -54,13 +49,23 @@ namespace Microsoft.AspNetCore.Builder
             if (config == null) {
                 bootstrapConfig = SfConfigurationLoader
                     .CreateDefault()
-                    .LoadFromSettings(app.ApplicationServices);
+                    .LoadFromSettings(app.ApplicationServices, path);
             } else {
                 bootstrapConfig = config;
             }
 
+            // setup URL rewriting as Symfony projects' servers operate from /public folder
+            var options = new RewriteOptions()
+                .AddRewrite(
+                    @"^(?!"+ bootstrapConfig.PublicDir + "/)(.*)$", 
+                    bootstrapConfig.PublicDir + "/$1", 
+                    skipRemainingRules: true
+                );
+
+            app.UseRewriter(options);
+
             // handling php files:
-            app.UsePhp(new PhpRequestOptions(scriptAssemblyName: "twig-razor-page")
+            app.UsePhp(new PhpRequestOptions(scriptAssemblyName: path)
             {
                 RootPath = root,
             });
