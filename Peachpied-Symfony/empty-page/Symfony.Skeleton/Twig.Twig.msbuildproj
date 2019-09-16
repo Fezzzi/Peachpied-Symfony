@@ -76,6 +76,10 @@
       $(ExcludeRoot)TokenParser.php;
       $(ExcludeRoot)Node\Expression\Binary.php
     </AdditionalExcludes> 
+	<AdditionalIncludes>
+      $(LibraryPath)lib\Twig\Node\Expression\Test\*.php;
+      $(LibraryPath)src\Node\Expression\Test\*.php
+	</AdditionalIncludes>
   </PropertyGroup>
 
   <!-- Adds compile and content ItemGroup Node. 
