@@ -19,11 +19,6 @@ namespace Peachpied.Symfony.Twig.Razor.Server
             }
 
             var host = WebHost.CreateDefaultBuilder(args)
-                .ConfigureAppConfiguration((hostingContext, config) =>
-                {
-                    config.AddJsonFile("Server/appsettings.json", optional: false, reloadOnChange: false);
-                    config.AddJsonFile("Server/appsettings.Development.json", optional: false, reloadOnChange: false); 
-                })
                 .UseStartup<Startup>()
                 .UseUrls("http://*:5004/")
                 .Build();
@@ -50,7 +45,7 @@ namespace Peachpied.Symfony.Twig.Razor.Server
         public void Configure(IApplicationBuilder app)
         {
             app.UseSession();
-			app.UseMvc();
+            app.UseMvc();
             app.UseSymfony(null, "twig-razor-page");
             app.UseDefaultFiles();
         }
