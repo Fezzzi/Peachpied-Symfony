@@ -1,51 +1,41 @@
-{#
-	Based on calendar created by Aknosis, https://gist.github.com/aknosis/3932192
-#}
-<table>
-		<thead>
-			<tr>
-				<th colspan="7" class="center">
-					{{ time|date('F') }}
-				</th>
-			</tr>
-			<tr>
-				<th width="14%">Monday</th>
-				<th width="15%">Tuesday</th>
-				<th width="15%">Wednesday</th>
-				<th width="14%">Thursday</th>
-				<th width="14%">Friday</th>
-				<th width="14%">Saturday</th>
-				<th width="14%">Sunday</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			{% set daysInMonth = time|date('t') %}
-			{% set startDow = time|date('F 1\\s\\t Y')|date('w') %}
-			{% set dow = startDow %}
-			{% for day in range(1,daysInMonth) %}
-				{% if loop.first and startDow != 0 %}
-					<td colspan="{{ startDow }}"></td>
-				{% endif %}
-				<td>
-					<div>
-						<div>{{ day }}</div>
-						<div>
-						 {# day content here #}
-						</div>
-					</div>
-				</td>
-				{% if loop.last and dow != 6 %}
-					<td colspan="{{ 6 - dow }}">&nbsp;</td>
-				{% endif %}
-				{% if dow == 6 %}
-					{% set dow = 0 %}
-				</tr>
-				<tr>
-				{% else %}
-					{% set dow = dow + 1 %}
-				{% endif %}
-			{% endfor %}
-			</tr>
-		</tbody>
-	</table>
+{% extends "base.html.twig" %}
+
+{% set rooms = rooms|default([]) %}
+
+{% block title %}Razor In Twig Page{% endblock %}
+{% block subtitle %}razor in twig page{% endblock %}
+{% block body %}
+    {% for room in rooms %}
+		<div class="row">
+			<div class="image-container">
+				<img width="300" height="200" src="{{ room.img }}">
+			</div>
+			<div class="description-container">
+				<h2>{{ room.name }}</h2>
+				<hr>
+				<p>
+					<span><b>PRICE: </b>{{ room.price }} / Night</span>
+					<span class="right"><b>BEDS: </b>{{ room.name|first }}</span>
+				</p>
+				<p class="note">
+					"{{ room.desc }}"
+				</p>
+				<hr class="mobile-only">
+			</div>
+			<div class="calendar-container">
+				<p class="note small"><span style="color: red">*</span> Please use the calendar below to check the availability.</p>
+				<div class="calendar-content">
+                    {# Here we include razor template #}
+				</div>
+			</div>
+			<div class="services-container">
+				<h4>SERVICES</h4>
+				<div class="service-icons">
+                    {% for service in room.services %}
+						<span class="service-icon service-{{ service }}"></span>
+                    {% endfor %}
+				</div>
+			</div>
+		</div>
+    {% endfor %}
+{% endblock %}

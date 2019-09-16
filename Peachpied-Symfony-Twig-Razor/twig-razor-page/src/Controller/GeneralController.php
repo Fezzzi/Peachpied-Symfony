@@ -5,6 +5,7 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
 use \Twig\Loader\FilesystemLoader;
+use App\DBEmulator;
 
 class GeneralController
 {
@@ -19,7 +20,8 @@ class GeneralController
         $loader = new FilesystemLoader("../templates/");
         $twig = new Environment($loader);
 
-        $str = $twig->render('twig-page.html.twig', ['the' => 'variables', 'go' => 'here']);
+        $rooms = DBEmulator::getRooms();
+        $str = $twig->render('twig-page.html.twig', ['rooms' => $rooms]);
         return new Response($str);
 	}
 	
@@ -28,7 +30,8 @@ class GeneralController
 		$loader = new FilesystemLoader("../templates/");
         $twig = new Environment($loader);
 
-        $str = $twig->render('razor-in-twig-page.html.twig', ['the' => 'variables', 'go' => 'here']);
+        $rooms = DBEmulator::getRooms();
+        $str = $twig->render('razor-in-twig-page.html.twig', ['rooms' => $rooms]);
         return new Response($str);
 	}
 }

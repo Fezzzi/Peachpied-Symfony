@@ -47,6 +47,16 @@ a:active {
     border: 2px solid #007bff;
 }
 
+.left {
+	float: left;
+	text-align: -webkit-left;
+}
+
+.right {
+	float: right;
+	text-align: -webkit-right;
+}
+
 .tile div {
     display: inline-block;
     vertical-align: middle;
@@ -82,7 +92,6 @@ a:active {
 
 .tile.t2 {
     background-color: #FF7700;
-    /*background-color: #684756;*/
 }
 
 .tile.t3 {
@@ -104,125 +113,103 @@ a:active {
 	}
 }
 
-.calendar {
-	padding-top: 25px;
-	min-width: 400px;
-    width: 100%;
-    position: absolute;
+.row {
+	display: block;
+	margin: 5px 25px;
+	padding: 10px;
+	background-color: #f4f8f4;
+	border-radius: 5px;
+	min-width: 300px;
 }
 
-
-.calendar .content {
+.image-container,
+.description-container,
+.calendar-container,
+.services-container {
 	display: inline-block;
-	width: 90%;
-	min-width: 300px;
-	position: absolute;
+	position: relative;
+	vertical-align: top;
+}
+
+.image-container img {
+	vertical-align: middle;
+	border-radius: 5px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.description-container {
+	padding: 5px 15px;
+}
+
+.description-container {
+	width: 270px;
+}
+
+.description-container h2 {
+	text-transform: capitalize;
+}
+
+.description-container p {
+	margin: 10px 5px;
+}
+
+.calendar-container {
+	padding: 0 15px;
+}
+
+.services-container {
+	color: #a3a3a3;
+}
+
+.services-container h4 {
+	margin: 10px 0;
+}
+
+.service-icons {
+	padding: 0 10px;
+}
+
+.service-icon {
+	width: 40px;
+	display: inline-block;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.service-wifi { background-image: url("imgs/wifi-icon.png"); }
+.service-hottub { background-image: url("imgs/hottub-icon.png"); }
+.service-parking { background-image: url("imgs/parking-icon.png"); }
+.service-minibar { background-image: url("imgs/minibar-icon.png"); }
+.service-pool { background-image: url("imgs/pool-icon.png"); }
+
+p.note {
+	font-style: italic;
+	font-size: 0.8rem;
+}
+
+p.note.small {
+	margin: 5px 0;
+}
+
+.calendar-container {
 	text-align: center;
 }
 
-.calendar .col-4 {
-	display: inline-block;
-	vertical-align: text-top;
-	width: 33%;
+.mobile-only {
+	display: none;
 }
 
-.calendar .button {
-	width: 5%;
-	min-width: 45px;
-	display: inline-block;
-	padding-top: 90px;
-}
-
-.calendar .button a:hover {
-	cursor: pointer;
-	border: 2px solid #007bff;
-}
-
-.calendar .button a {
-	border: 2px solid transparent;
-	height: 45px;
-    width: 45px;
-	display: block;
-    text-align: center;
-	box-sizing: border-box;
-	-webkit-user-select: none;
-    -moz-user-select: none;
-	user-select: none;
-}
-
-.calendar .button span {
-	font-weight: 500;
-    font-size: 1.85rem;
-	line-height: 1.1;
-    color: black;
-}
-
-.left {
-	float: left;
-	text-align: -webkit-left;
-}
-
-.right {
-	float: right;
-	text-align: -webkit-right;
-}
-
-.calendar table {
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 10px;
-}
-
-.calendar th {
-	width: 35px;
-}
-
-.calendar td {
-	box-sizing: border-box;
-    border: 2px solid transparent;
-	-webkit-user-select: none;
-    -moz-user-select: none;
-	user-select: none;
-}
-
-.calendar td:not(.empty) {
-	cursor: pointer;
-}
-
-.calendar td:not(.empty):hover {
-	border: 2px solid #007bff;
-}
-
-.calendar a {
-	color: black;
-}
-
-.calendar .weekend * {
-	color: #f00909db;
-}
-
-.calendar a:hover {
-	border: none;
-}
-
-.calendar .month {
-	background-color: #f00909db;
-    color: white;
-    border-radius: 5px 5px 0 0;
-}
-
-.calendar tbody {
-	background-color: #a9a9a93d;
-}
-
-@media only screen and (max-width: 1100px) {
-	.col-4 {
-		width: 100% !important;
+@media only screen and (max-width: 700px) {
+	.mobile-only {
+		display: block;
 	}
-}
-
-@media only screen and (max-width: 600px) {
-	.calendar .content{
-		width: calc(100% - 100px) !important;
+	.description-container {
+		width: calc(100% - 30px);
+	}
+	.image-container {
+		width: 100%;
 	}
 }
