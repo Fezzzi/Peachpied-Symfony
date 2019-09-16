@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>@RenderSection("Title", true) | RAZOR and TWIG interoperability</title>
+    <link rel="stylesheet" href="~/Content/GeneralStyles.css" type="text/css">
+    <link rel="stylesheet" href="~/Content/CalendarStyles.css" type="text/css">
+    @RenderSection("Stylesheets", false)
+</head>
+    <body>
+		<h1>RAZOR and TWIG interoperability</h1>
+		<h3>minimal example - @RenderSection("Subtitle", true) </h3>
+        @RenderSection("Body", true)
+        @RenderSection("Javascripts", false)
+    </body>
+</html>

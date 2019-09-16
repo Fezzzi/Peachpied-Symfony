@@ -1,0 +1,98 @@
+@functions{
+    public class MyDay
+    {
+        //Bare information for a 'day' in the calendar.
+        public DateTime aptDay { get; set; }
+        public bool isOccupied { get; set; }
+
+        public string GetNumber()
+        {
+            string ret = string.Empty;
+
+            if (aptDay == null || aptDay == DateTime.MinValue)
+                ret = string.Empty;
+            else
+                ret = aptDay.Day.ToString();
+
+            return ret;
+        }
+    };
+}
+
+@{
+    DateTime current = DateTime.Now;
+    string currentMonth = current.ToString("MMMM", System.Globalization.CultureInfo.InvariantCulture);
+    int startingDay = (int)new DateTime(current.Year, current.Month, 1).DayOfWeek;
+    int daysInMonth = DateTime.DaysInMonth(current.Year, current.Month);
+
+    List<string> dayNames = new List<string>() { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+
+    int lCurrentDay = 0;
+    bool end = false;
+    MyDay[,] dayCollection = new MyDay[6, 7];
+
+    for (int i = 0; i < 6 && !end; i++) {
+        for (int z = 0; z < 7; z++) {
+            if (lCurrentDay > 0 || z == startingDay) {
+                lCurrentDay += 1;
+
+                if (lCurrentDay > daysInMonth) {
+                    end = true;
+                    break;
+                }
+                dayCollection[i, z] = new MyDay() {
+                    aptDay = new DateTime(current.Year, current.Month, lCurrentDay),
+                    isOccupied = ViewBag.data != null
+                            && ViewBag.data[current.Year + "-" + current.Month + "-" + lCurrentDay] != null
+                };
+            }
+        }
+    }
+}
+
+<div class="calendar">
+    <div class="buttons">
+        <button asp-page-handler="NextMonth" asp-route-direction="0" asp-route-curr="@current"><</button>
+        <button asp-page-handler="NextMonth" asp-route-direction="1" asp-route-curr="@current">></button>
+    </div>
+    <p class="month">@currentMonth - @current.Year</p>
+    @for (int i = 0; i < 7; i++) {
+        if (i == 0 || i == 6) {
+            @:<div class="box_short weekend">
+        } else {
+            @:<div class="box_short">
+        }
+        @:@dayNames[i]</div>
+    }
+
+    @{
+        int b = 0;
+        bool end2 = false;
+    }
+
+    @for (int i = 0; i < 6; i++) {
+        <br />
+        for (int z = 0; z < 7 && !end2; z++) {
+            string classes = "box boxborder";
+            if (z == 0 || z == 6) {
+                classes += " weekend";
+            } 
+            @:<div class="@classes">
+
+            if (b > 0 || z == startingDay) {
+                b += 1;
+            }
+            if (b > daysInMonth) {
+                end2 = true;
+
+                @:</div>
+                break;
+            }
+            if (b > 0) {
+                @:<span>@b</span>
+            }
+            
+            @:</div>
+        }
+    }
+</div>

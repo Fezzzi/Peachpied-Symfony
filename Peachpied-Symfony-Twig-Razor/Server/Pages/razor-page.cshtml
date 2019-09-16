@@ -1,4 +1,15 @@
 @page
+@model RazorModel
 
-<h1>This is to be a Razor page!</h1>
-<h2>The time on the server is @DateTime.Now</h2>
+@{
+    Layout = "_Layout.cshtml";
+}
+
+@section Title{Razor Page}
+@section Subtitle{razor page}
+@section Body{
+    <h1>This is to be a Razor page!</h1>
+    <h2>The time on the server is @DateTime.Now</h2>
+    @{ ViewBag.data = "data"; }
+    @Html.Partial("razor-embedded-content")
+}

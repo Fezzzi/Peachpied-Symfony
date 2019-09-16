@@ -1,4 +1,20 @@
 @page
+@using static PeachPied.Symfony.AspNetCore.TwigRenderer
+@model TwigRazorModel
+@{
 
-<h1>This is to be a Razor page with embedded twig template!</h1>
-<h2>The time on the server is @DateTime.Now</h2>
+    Layout = "_Layout";
+}
+
+@section Title{Twig In Razor Page}
+@section Subtitle{twig in razor page}
+@section Body{
+    <h1>This is to be a Razor page with embedded twig template!</h1>
+    <h2>The time on the server is @DateTime.Now</h2>
+
+    @Html.Raw(RenderTwig(
+        "twig-razor-page/templates/",
+        "twig-embedded-content.html.twig",
+        DataToPhp("data", TwigRazorModel.data)));
+}
+<a href="~/Pages/_Layout.cshtml">~/Pages/_Layout.cshtml</a>
