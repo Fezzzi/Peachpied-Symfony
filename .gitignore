@@ -9,3 +9,4 @@ Peachpied-Symfony-Nuget-Repository/
 .gitattributes
 *.cache
 .idea/
+Compiler Tests/
