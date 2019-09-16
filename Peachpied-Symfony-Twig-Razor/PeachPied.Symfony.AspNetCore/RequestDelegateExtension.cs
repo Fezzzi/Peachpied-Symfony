@@ -42,9 +42,16 @@ namespace Microsoft.AspNetCore.Builder
         public static IApplicationBuilder UseSymfony
             (this IApplicationBuilder app, SymfonyConfig config = null, string path = "Symfony.Skeleton")
         {
+            // c-sharp root path:
+            var csharpRoot = System.IO.Path.GetFullPath("Server");
+            var fproviderA = new PhysicalFileProvider(csharpRoot);
+
+            // c-sharp's static files
+            app.UseStaticFiles(new StaticFileOptions() { FileProvider = fproviderA });
+
             // symony root path:
-            var root = System.IO.Path.GetFullPath(path);
-            var fprovider = new PhysicalFileProvider(root);
+            var symfonyRoot = System.IO.Path.GetFullPath(path);
+            var fproviderB = new PhysicalFileProvider(symfonyRoot);
 
             if (config == null) {
                 bootstrapConfig = SfConfigurationLoader
@@ -57,8 +64,13 @@ namespace Microsoft.AspNetCore.Builder
             // setup URL rewriting as Symfony projects' servers operate from /public folder
             var options = new RewriteOptions()
                 .AddRewrite(
+                    @"((.*\/)*([^\/\?&]*\.[^\/\?&]*))",
+                    bootstrapConfig.PublicDir + "/$1",
+                    skipRemainingRules: true
+                )
+                .AddRewrite(
                     @"^(?!"+ bootstrapConfig.PublicDir + "/)(.*)$", 
-                    bootstrapConfig.PublicDir + "/$1", 
+                    bootstrapConfig.PublicDir, 
                     skipRemainingRules: true
                 );
 
@@ -67,11 +79,11 @@ namespace Microsoft.AspNetCore.Builder
             // handling php files:
             app.UsePhp(new PhpRequestOptions(scriptAssemblyName: path)
             {
-                RootPath = root,
+                RootPath = symfonyRoot,
             });
 
-            // static files
-            app.UseStaticFiles(new StaticFileOptions() { FileProvider = fprovider });
+            // symfony's static files
+            app.UseStaticFiles(new StaticFileOptions() { FileProvider = fproviderB });
 
             
             // bootstrap.php env loading overriding
