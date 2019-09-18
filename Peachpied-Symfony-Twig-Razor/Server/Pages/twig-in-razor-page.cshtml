@@ -1,4 +1,5 @@
 @page
+@using System.Linq
 @using static PeachPied.Symfony.AspNetCore.TwigRenderer
 @model TwigRazorModel
 @{
@@ -9,12 +10,30 @@
 @section Title{Twig In Razor Page}
 @section Subtitle{twig in razor page}
 @section Body{
-    <h1>This is to be a Razor page with embedded twig template!</h1>
-    <h2>The time on the server is @DateTime.Now</h2>
-
-    @Html.Raw(RenderTwig(
-        "twig-razor-page/templates/",
-        "twig-embedded-content.html.twig",
-        DataToPhp("data", TwigRazorModel.data)));
-}
-<a href="~/Pages/_Layout.cshtml">~/Pages/_Layout.cshtml</a>
+    <div class="bands-wrapper">
+        @foreach (var band in RazorModel.bands)
+        {
+            <div class="band-wrapper">
+                <img src="@band.Image" rel="Band Image" width="300" />
+                <h3>@band.Name</h3>
+                <div class="band-content">
+                    <p>
+                        <b>From:</b> @band.Origin<br />
+                        <b>Members:</b> @band.Members<br />
+                        <b>Avarage Tickets:</b> @band.Price Eur<br />
+                        <hr />
+                        <span class="band-desc">"@band.Bio"</span>
+                    </p>
+                    <div class="calendar-wrapper">
+                        <h4>Upcoming events</h4>
+                        @{ KeyValuePair<string, int>[] data = band.Occupancy.ToArray(); }
+                        @Html.Raw(RenderTwig(
+                            "twig-razor-page/templates/",
+                            "twig-embedded-content.html.twig",
+                            DataToPhp("data", data)))
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    }

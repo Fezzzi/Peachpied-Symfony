@@ -4,11 +4,11 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+	background-color: #EFEFEF;
 }
 
 h1 {
     font-size: 2.5rem;
-    color: red;
 }
 
 h2 {
@@ -56,4 +56,39 @@ a:active {
 .right {
 	float: right;
 	text-align: -webkit-right;
+}
+
+.bands-wrapper {
+	padding: 10px 20px;
+}
+
+.band-wrapper {
+	display: inline-block;
+	width: 300px;
+	margin: 5px;
+	background-color: #fff;
+	vertical-align: top;
+}
+
+.band-wrapper h3 {
+	font-size: 1.5rem;
+	color: #352510;
+	margin: 10px 0 0 0;
+}
+
+.band-content {
+	padding: 0 10px 10px 10px;
+}
+
+.band-desc {
+	font-style: italic;
+	font-size: 0.8rem;
+}
+
+.calendar-wrapper {
+	display: flow-root;
+}
+
+.calendar-wrapper h4 {
+	margin: 0 0 10px 0;
 }

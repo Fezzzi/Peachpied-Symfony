@@ -1,19 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Collections.Generic;
-using System.Linq;
+using Pages.Data;
 
 public class TwigRazorModel : PageModel
 {
-    public static KeyValuePair<string, int>[] data;
+    public static BandInfo[] bands = getDummyData(10);
 
-    public TwigRazorModel()
+    /// <summary>
+    /// Creates dummy data of given number of bands
+    /// </summary>
+    /// <returns>BandInfo[]</returns>
+    private static BandInfo[] getDummyData(int count)
     {
-        Dictionary<string, int> dict = new Dictionary<string, int>();
-        dict.Add("2019-09-14", 1);
-        dict.Add("2019-09-18", 1);
-        dict.Add("2019-09-20", 1);
-        dict.Add("2019-09-24", 1);
+        BandInfo[] b = new BandInfo[count];
 
-        data = dict.ToArray();
+        for (int i = 0; i < count; ++i){
+            b[i] = new BandInfo(i);
+        }
+
+        return b;
     }
 }

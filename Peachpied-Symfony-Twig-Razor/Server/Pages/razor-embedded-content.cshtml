@@ -40,10 +40,11 @@
                     end = true;
                     break;
                 }
+
                 dayCollection[i, z] = new MyDay() {
                     aptDay = new DateTime(current.Year, current.Month, lCurrentDay),
                     isOccupied = ViewBag.data != null
-                            && ViewBag.data[current.Year + "-" + current.Month + "-" + lCurrentDay] != null
+                        && ViewBag.data.ContainsKey(current.Year + "-" + current.Month.ToString("00") + "-" + lCurrentDay)
                 };
             }
         }
@@ -76,7 +77,10 @@
             string classes = "box boxborder";
             if (z == 0 || z == 6) {
                 classes += " weekend";
-            } 
+            }
+            if (dayCollection[i, z] != null && dayCollection[i, z].isOccupied) {
+                classes += " concert";
+            }
             @:<div class="@classes">
 
             if (b > 0 || z == startingDay) {
