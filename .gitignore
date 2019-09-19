@@ -8,5 +8,6 @@ Peachpied-Symfony/empty-page-project-refs/
 Peachpied-Symfony-Nuget-Repository/
 .gitattributes
 *.cache
+*.nupkg
 .idea/
 Compiler Tests/
