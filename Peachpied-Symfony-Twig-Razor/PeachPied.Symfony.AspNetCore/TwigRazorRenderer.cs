@@ -1,4 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Web;
+using System.IO;
+using System.Text;
 using Pchp.Core;
 
 namespace PeachPied.Symfony.AspNetCore
@@ -14,6 +17,7 @@ namespace PeachPied.Symfony.AspNetCore
         {
             using (var ctx = Context.CreateEmpty())
             {
+                ctx.RootPath = System.IO.Path.GetFullPath("twig-razor-page");
                 var loader = new Twig.Loader.FilesystemLoader(ctx, path);
                 var twig = new Twig.Environment(ctx, loader);
 
@@ -89,22 +93,59 @@ namespace PeachPied.Symfony.AspNetCore
     }
 }
 
-namespace App.twig
+namespace Twig
 {
-    class RazorRenderer : Twig.Extension.AbstractExtension
+    /// <summary>
+    /// Razor Supporting Environment
+    /// </summary>
+    public class RSEnvironment : Environment
     {
-        public RazorRenderer(Context ctx) : base(ctx) { }
-
-        public Twig.TwigFunction[] getFunctions(Context ctx)
-        {
-            return new Twig.TwigFunction[1] {
-                new Twig.TwigFunction(ctx, "renderRazor", PhpValue.Null),
-            };
+        public RSEnvironment(Context ctx, Loader.LoaderInterface loader) : base(ctx, loader) {
+            base.addExtension(new RazorRenderer(ctx));
         }
 
-        public string renderRazor(string path, string name)
+        public RSEnvironment(Context ctx, Loader.LoaderInterface loader, PhpValue options) : base(ctx, loader, options) {
+            base.addExtension(new RazorRenderer(ctx));
+        }
+    }
+
+    public class RazorRenderer : Extension.AbstractExtension
+    {
+        Context ctx;
+
+        public RazorRenderer(Context ctx) : base(ctx) {
+            this.ctx = ctx;
+        }
+
+        public override PhpValue getFunctions()
         {
-            return "Razor template";
+            PhpValue[] obj = new PhpValue[2] {PhpValue.Create("render_razor"), default(PhpValue)};
+            PhpArray val2 = new PhpArray(2) { PhpValue.FromClass((object)this), PhpValue.Create("renderRazor")};
+            obj[1] = PhpValue.Create(val2);
+
+            PhpArray funcs = new PhpArray(1);
+            funcs.Add(PhpValue.FromClass((object)ctx.Create<TwigFunction>(typeof(RazorRenderer).TypeHandle, obj)));
+            return PhpValue.Create(funcs);
+        }
+
+        public PhpValue renderRazor(PhpValue name, PhpArray data)
+        {
+            /*ViewPage viewPage = new ViewPage() { ViewContext = new ViewContext() };
+
+            viewPage.ViewData = new ViewDataDictionary(viewData);
+            viewPage.Controls.Add(viewPage.LoadControl(name));
+
+            StringBuilder sb = new StringBuilder();
+            using (StringWriter sw = new StringWriter(sb))
+            {
+                using (HtmlTextWriter tw = new HtmlTextWriter(sw))
+                {
+                    viewPage.RenderControl(tw);
+                }
+            }
+
+            return sb.ToString();*/
+            return "test is working";
         }
     }
 }

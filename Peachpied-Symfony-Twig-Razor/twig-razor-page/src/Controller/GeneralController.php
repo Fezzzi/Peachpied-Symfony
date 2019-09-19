@@ -28,7 +28,7 @@ class GeneralController
 	public function razorInTwigPageAction()
 	{
 		$loader = new FilesystemLoader("../templates/");
-        $twig = new Environment($loader);
+        $twig = new \Twig\RSEnvironment($loader);
 
         $rooms = DBEmulator::getRooms();
         $str = $twig->render('razor-in-twig-page.html.twig', ['rooms' => $rooms]);
