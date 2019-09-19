@@ -184,8 +184,7 @@ final class EscaperNodeVisitor extends AbstractNodeVisitor
     private function needEscaping(Environment $env)
     {
         if (\count($this->statusStack)) {
-            $temp = $this->statusStack[\count($this->statusStack) - 1];
-			return $temp ?? $this->defaultStrategy;
+			return $this->statusStack[\count($this->statusStack) - 1];
         }
 
         return $this->defaultStrategy ? $this->defaultStrategy : false;
