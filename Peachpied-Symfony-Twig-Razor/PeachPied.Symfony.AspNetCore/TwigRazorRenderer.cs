@@ -3,7 +3,6 @@ using System.Web;
 using System.IO;
 using System.Text;
 using Pchp.Core;
-using System;
 
 namespace PeachPied.Symfony.AspNetCore
 {
@@ -102,27 +101,34 @@ namespace Twig
     public class RSEnvironment : Environment
     {
         public RSEnvironment(Context ctx, Loader.LoaderInterface loader) : base(ctx, loader) {
-            base.addFunction(new RazorRenderer(ctx));
+            base.addExtension(new RazorRenderer(ctx));
         }
 
         public RSEnvironment(Context ctx, Loader.LoaderInterface loader, PhpValue options) : base(ctx, loader, options) {
-            base.addFunction(new RazorRenderer(ctx));
+            base.addExtension(new RazorRenderer(ctx));
         }
     }
 
-    public class RazorRenderer : TwigFunction
+    public class RazorRenderer : Extension.AbstractExtension
     {
-        public RazorRenderer(Context ctx) : base(ctx, "render_razor", getCallable(ctx)) {}
+        Context ctx;
 
-        private static PhpValue getCallable(Context ctx)
-        {
-            return PhpValue.Create(new PhpArray(2) {
-                PhpValue.FromClass("RazorRenderer"),
-                PhpValue.Create("renderRazor")
-            });
+        public RazorRenderer(Context ctx) : base(ctx) {
+            this.ctx = ctx;
         }
 
-        public static PhpValue renderRazor(PhpValue name, PhpArray data)
+        public override PhpValue getFunctions()
+        {
+            PhpValue[] obj = new PhpValue[2] {PhpValue.Create("render_razor"), default(PhpValue)};
+            PhpArray val2 = new PhpArray(2) { PhpValue.FromClass((object)this), PhpValue.Create("renderRazor")};
+            obj[1] = PhpValue.Create(val2);
+
+            PhpArray funcs = new PhpArray(1);
+            funcs.Add(PhpValue.FromClass((object)ctx.Create<TwigFunction>(typeof(RazorRenderer).TypeHandle, obj)));
+            return PhpValue.Create(funcs);
+        }
+
+        public PhpValue renderRazor(PhpValue name, PhpArray data)
         {
             /*ViewPage viewPage = new ViewPage() { ViewContext = new ViewContext() };
 

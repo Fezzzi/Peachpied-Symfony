@@ -27,8 +27,7 @@
 				<div class="calendar-content">
                     {# Here we include razor template #}
 					{% set data = room.occupancy %}
-					{% set output = "output is " ~ render_razor("../Server/Pages/razor-embedded-content.cshtml", data) ~ " sad." %}
-					{{ output }}
+					{{ render_razor("../Server/Pages/razor-embedded-content.cshtml", data) }}
 				</div>
 			</div>
 			<div class="services-container">
