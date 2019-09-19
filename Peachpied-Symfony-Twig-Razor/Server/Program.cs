@@ -4,6 +4,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 
 namespace Peachpied.Symfony.Twig.Razor.Server
 {
@@ -45,6 +46,12 @@ namespace Peachpied.Symfony.Twig.Razor.Server
         {
             app.UseSession();
             app.UseMvc();
+
+            // c-sharp root path and static files
+            var root = Path.GetFullPath("Server");
+            var fprovider = new PhysicalFileProvider(root);
+            app.UseStaticFiles(new StaticFileOptions() { FileProvider = fprovider });
+
             app.UseSymfony(null, "twig-razor-page");
             app.UseDefaultFiles();
         }

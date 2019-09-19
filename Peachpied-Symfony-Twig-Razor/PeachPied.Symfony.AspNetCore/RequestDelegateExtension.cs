@@ -42,13 +42,6 @@ namespace Microsoft.AspNetCore.Builder
         public static IApplicationBuilder UseSymfony
             (this IApplicationBuilder app, SymfonyConfig config = null, string path = "Symfony.Skeleton")
         {
-            // c-sharp root path:
-            var csharpRoot = System.IO.Path.GetFullPath("Server");
-            var fproviderA = new PhysicalFileProvider(csharpRoot);
-
-            // c-sharp's static files
-            app.UseStaticFiles(new StaticFileOptions() { FileProvider = fproviderA });
-
             // symony root path:
             var symfonyRoot = System.IO.Path.GetFullPath(path);
             var fproviderB = new PhysicalFileProvider(symfonyRoot);
