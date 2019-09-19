@@ -3,7 +3,8 @@
 define("NUGET_REPO", "..". DIRECTORY_SEPARATOR ."Peachpied-Symfony-Nuget-Repository");
 define("OUT_DIR", ".". DIRECTORY_SEPARATOR ."Autocompiled-Nuget-Repository");
 define("PROJ_TYPE", "msbuildproj");
-define("DEBUG", true);
+define("DEBUG", false);
+error_reporting(0);
 
 $libraries = getLibrariesToPack();
 foreach ($libraries as $key => $library) {
@@ -93,17 +94,20 @@ function resolveDependencies(string $library) : ?array {
         return [];
     } else {
         $content = json_decode(file_get_contents($library . DIRECTORY_SEPARATOR . "composer.json"));
-        $dependencies = $content->require;
+        $dependencies = array_merge((array)$content->{'require'}, (array)$content->{'require-dev'});
+		var_dump((array)$content->{'require'});
+		var_dump((array)$content->{'require-dev'});
+		var_dump($dependencies);
         $packageReferences = [];
 
         // We will deliberately skip version as composer installs latest version available
         foreach ($dependencies as $dependency => $version) {
             // By enforcing [prefix].[library] names, we skip PHP requirements and other non-symfony components
             if (preg_match("/.+\/.+/", $dependency)) {
-                if (!packDependency($dependency)) {
-                    return null;
-                } else {
+                if (packDependency($dependency)) {
                     $packageReferences[] = $dependency;
+                } else {
+                    echo ("No existing Nuget pakage or folder to compile for dependency " . $dependeny . " found. Proceeding without it....");
                 }
             }
         }
@@ -156,27 +160,27 @@ function createNuget(string $nugetname, array $dependencies) : bool {
     $extension = PROJ_TYPE;
     $msbuild = "<Project Sdk=\"Peachpie.NET.Sdk/\">
 
-            <!-- Sets package-specific properties based on name and path -->
-            <Import Project=\"..\Props\loadPropsConfig.props\" />
+	<!-- Sets package-specific properties based on name and path -->
+	<Import Project=\"..\Props\loadPropsConfig.props\" />
 
-            <!-- Configurates build properties such as packageId, AssemblyName -->
-            <Import Project=\"..\Props\buildPropsConfig.props\" />
+	<!-- Configurates build properties such as packageId, AssemblyName -->
+	<Import Project=\"..\Props\buildPropsConfig.props\" />
 
-            <PropertyGroup>
-                <PackageOutputPath>.\Auto-Generated-Nuget-Repository\</PackageOutputPath>
-                <AdditionalExcludes />
-            </PropertyGroup>
+	<PropertyGroup>
+		<PackageOutputPath>". OUT_DIR . DIRECTORY_SEPARATOR . "</PackageOutputPath>
+		<AdditionalExcludes />
+	</PropertyGroup>
 
-            <!-- Adds compile and content ItemGroup Node.
-                 Adds to Content's Exclude attr additional excludes  -->
-            <Import Project=\"..\Props\compileContentConfig.props\" />\n";
+	<!-- Adds compile and content ItemGroup Node.
+		 Adds to Content's Exclude attr additional excludes  -->
+	<Import Project=\"..\Props\compileContentConfig.props\" />\n";
 
-    $msbuild .= "\n\t\t<ItemGroup>";
+    $msbuild .= "\n\t<ItemGroup>";
     foreach($dependencies as $key => $dependency) {
         $name = getNugetName($dependency, "/");
-        $msbuild .= "\n\t\t\t<PackageReference Include=\"". $name ."\" Version=\"1.0.0\" />\n";
+        $msbuild .= "\n\t\t<PackageReference Include=\"". $name ."\" Version=\"1.0.0\" />\n";
     }
-    $msbuild .= "\n\t\t</ItemGroup>";
+    $msbuild .= "\n\t</ItemGroup>";
     $msbuild .="\n</Project>";
 
     file_put_contents ($nugetname . "." . $extension, $msbuild);
