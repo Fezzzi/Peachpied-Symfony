@@ -1,0 +1,50 @@
+.calendar {
+	margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.buttons {
+	text-align: center !important;
+}
+
+.month {
+	font-size: 1.2rem;
+	margin: 5px 0 0 0;
+    font-weight: bold;
+	text-align: center;
+}
+
+.box {
+	height: 30px;
+	width: 30px;
+	float: left;
+	user-select: none;
+}
+
+.box span {
+	padding-left: 4px;
+	top: -2px;
+    position: relative;
+	font-size: 0.9rem;
+}
+
+.boxborder {
+	border: 1px solid black;
+}
+
+.box_short {
+	width: 32px;
+	float: left;
+	font-size: 0.8rem;	
+	font-weight: bold;
+	text-align: center;
+}
+
+.weekend {
+	color: red;
+}
+
+.concert {
+	background-color: lightgreen;
+}
