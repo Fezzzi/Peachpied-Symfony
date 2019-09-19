@@ -59,15 +59,17 @@ a:active {
 }
 
 .bands-wrapper {
-	padding: 10px 20px;
+    padding: 10px 20px;
+    text-align: center;
 }
 
 .band-wrapper {
-	display: inline-block;
-	width: 300px;
-	margin: 5px;
-	background-color: #fff;
-	vertical-align: top;
+    display: inline-block;
+    width: 300px;
+    margin: 5px;
+    background-color: #fff;
+    vertical-align: top;
+    text-align: left;
 }
 
 .band-wrapper h3 {
