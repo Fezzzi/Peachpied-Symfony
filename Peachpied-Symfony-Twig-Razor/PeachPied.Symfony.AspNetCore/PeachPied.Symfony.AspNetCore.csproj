@@ -1,7 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk" Version="2.1.0">
 
   <PropertyGroup>
+	<OutputType>Library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
+	<Description>.NET class library in PHP</Description>
+	<AssemblyName>PeachPied.Symfony.AspNetCore</AssemblyName>
+	<PackageId>PeachPied.Symfony.AspNetCore</PackageId>
+	<PackageVersion>1.0.0</PackageVersion>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<PackageOutputPath>.nuget\</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
