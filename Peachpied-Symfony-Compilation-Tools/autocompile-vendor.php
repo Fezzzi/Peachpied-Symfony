@@ -95,9 +95,6 @@ function resolveDependencies(string $library) : ?array {
     } else {
         $content = json_decode(file_get_contents($library . DIRECTORY_SEPARATOR . "composer.json"));
         $dependencies = array_merge((array)$content->{'require'}, (array)$content->{'require-dev'});
-		var_dump((array)$content->{'require'});
-		var_dump((array)$content->{'require-dev'});
-		var_dump($dependencies);
         $packageReferences = [];
 
         // We will deliberately skip version as composer installs latest version available
