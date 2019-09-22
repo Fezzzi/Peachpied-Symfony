@@ -2,6 +2,12 @@
 
 {% set rooms = rooms|default([]) %}
 
+{# we have to include razor embedded content's css manualy as it is not possible from partial views and pages #}
+{% block stylesheets %}
+	{{ parent() }}
+	<link rel="stylesheet" href="/Content/CalendarStyles.css" type="text/css">
+{% endblock %}
+
 {% block title %}Razor In Twig Page{% endblock %}
 {% block subtitle %}razor in twig page{% endblock %}
 {% block body %}
@@ -25,10 +31,8 @@
 			<div class="calendar-container">
 				<p class="note small"><span style="color: red">*</span> Please use the calendar below to check the availability.</p>
 				<div class="calendar-content">
-                    {# Here we include razor template #}
-					{% set data = room.occupancy %}
-					{% set output = "output is " ~ render_razor("../Server/Pages/razor-embedded-content.cshtml", data) ~ " sad." %}
-					{{ output }}
+					{% set data = { occupancy: room.occupancy} %}
+					{{ render_razor("../Server/Pages/razor-embedded-content.cshtml", data) | raw }}
 				</div>
 			</div>
 			<div class="services-container">

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
+using PeachPied.Symfony.AspNetCore.Templating;
 
 namespace Peachpied.Symfony.Twig.Razor.Server
 {
@@ -31,6 +32,10 @@ namespace Peachpied.Symfony.Twig.Razor.Server
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            // Add the ViewRenderService
+            services.AddHttpContextAccessor();
+            services.AddTransient<IRazorRenderService, RazorRenderService>();
+
             // Adds a default in-memory implementation of IDistributedCache.
             services.AddDistributedMemoryCache();
 			// Includes support for Razor Pages and controllers.
