@@ -14,6 +14,14 @@ namespace Microsoft.AspNetCore.Builder
     {
         static SymfonyConfig bootstrapConfig;
 
+        /// <summary>
+        /// Function overwritting functionality in bootstrap.php
+        /// </summary>
+        /// <param name="ctx">Context</param>
+        /// <param name="locals">PhpArray</param>
+        /// <param name="this">object</param>
+        /// <param name="self">RuntimeTypeHandle</param>
+        /// <returns></returns>
         static PhpValue BootstrapMain(Context ctx, PhpArray locals, object @this, RuntimeTypeHandle self)
         {
             ctx.Include("vendor", "autoload.php", true);
@@ -24,6 +32,8 @@ namespace Microsoft.AspNetCore.Builder
         /// <summary>
         /// Defines Symfony configuration constants and initializes runtime before proceeding to <c>index.php</c>.
         /// </summary>
+        /// <param name="ctx">Context</param>
+        /// <param name="config">SymfonyConfig</param>
         static void Apply(Context ctx, SymfonyConfig config)
         {
             // see .env
@@ -37,8 +47,8 @@ namespace Microsoft.AspNetCore.Builder
         /// </summary>
         /// <param name="app">The application builder.</param>
         /// <param name="config">Symfony instance configuration.</param>
-        /// <param name="plugins">Container describing what plugins will be loaded.</param>
         /// <param name="path">Physical location of symfony folder. Can be absolute or relative to the current directory.</param>
+        /// <returns>IApplicationBuilder</returns>
         public static IApplicationBuilder UseSymfony
             (this IApplicationBuilder app, SymfonyConfig config = null, string path = "Symfony.Skeleton")
         {

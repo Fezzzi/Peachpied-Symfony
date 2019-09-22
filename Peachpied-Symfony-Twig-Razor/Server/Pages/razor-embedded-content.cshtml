@@ -41,10 +41,11 @@
                     break;
                 }
 
+                var d = ViewBag.occupancy;
                 dayCollection[i, z] = new MyDay() {
                     aptDay = new DateTime(current.Year, current.Month, lCurrentDay),
-                    isOccupied = ViewBag.data != null
-                        && ViewBag.data.ContainsKey(current.Year + "-" + current.Month.ToString("00") + "-" + lCurrentDay)
+                    isOccupied = ViewBag.occupancy != null
+                        && ViewBag.occupancy.ContainsKey(current.Year + "-" + current.Month.ToString("00") + "-" + lCurrentDay)
                 };
             }
         }

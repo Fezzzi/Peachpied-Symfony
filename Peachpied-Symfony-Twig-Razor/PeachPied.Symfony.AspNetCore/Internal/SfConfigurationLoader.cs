@@ -22,6 +22,10 @@ namespace PeachPied.Symfony.AspNetCore.Internal
         /// <summary>
         /// Loads configuration from appsettings file (<see cref="IConfiguration"/>).
         /// </summary>
+        /// <param name="config">SymfonyConfig</param>
+        /// <param name="services">IServiceProvider</param>
+        /// <param name="path">string</param>
+        /// <returns></returns>
         public static SymfonyConfig LoadFromSettings
             (this SymfonyConfig config, IServiceProvider services, string path)
         {

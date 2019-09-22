@@ -31,12 +31,6 @@ namespace PeachPied.Symfony.AspNetCore
         /// <summary>Path to pubic directory</summary>
         public string PublicDir { get; set; } = "public";
 
-        /// <summary>Paht to templates directory</summary>
-        public string TemplatesDir { get; set; } = "templates";
-
-        /// <summary>Paht to translations directory</summary>
-        public string TranslationsDir { get; set; } = "translations";
-
         public Tuple<string, string>[] SymfonyEnvVarsMap { get; } = {
             new Tuple<string, string>("AppEnv","APP_ENV"),
             new Tuple<string, string>("AppSecret","APP_SECRET"),
