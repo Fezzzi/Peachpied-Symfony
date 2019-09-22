@@ -1,0 +1,34 @@
+@page
+@model RazorModel
+
+@{
+    Layout = "_Layout.cshtml";
+}
+
+@section Title{Razor Page}
+@section Subtitle{razor page}
+@section Body{
+    <div class="bands-wrapper">
+        @foreach (var band in RazorModel.bands)
+        {
+            <div class="band-wrapper">
+                <img src="@band.Image" rel="Band Image" width="300" />
+                <h3>@band.Name</h3>
+                <div class="band-content">
+                    <p>
+                        <b>From:</b> @band.Origin<br />
+                        <b>Members:</b> @band.Members<br />
+                        <b>Avarage Tickets:</b> @band.Price Eur<br />
+                        <hr />
+                        <span class="band-desc">"@band.Bio"</span>
+                    </p>
+                    <div class="calendar-wrapper">
+                        <h4>Upcoming events</h4>
+                        @{ ViewBag.data = band.Occupancy; }
+                        @Html.Partial("razor-embedded-content")
+                    </div>
+                </div>  
+            </div>
+        }
+    </div>
+}

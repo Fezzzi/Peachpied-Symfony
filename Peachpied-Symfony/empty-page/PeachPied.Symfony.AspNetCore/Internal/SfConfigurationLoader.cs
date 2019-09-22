@@ -34,27 +34,5 @@ namespace PeachPied.Symfony.AspNetCore.Internal
 
             return config;
         }
-
-        static bool HandleEnvironmentVar(string value, Func<string, string, bool> keyValueFunc)
-        {
-            // parses the environment variable separated with semicolon
-            // Template: NAME=VALUE;NAME=VALUE;...
-            // not expecting ';' or quotes in the value
-
-            bool gotvalue = false;
-
-            if (!string.IsNullOrEmpty(value))
-            {
-                foreach (var pair in value.Split(';'))
-                {
-                    var eq = pair.IndexOf('=');
-                    if (eq < 0 || eq == pair.Length - 1) continue;
-
-                    gotvalue |= keyValueFunc(pair.Remove(eq).Trim(), pair.Substring(eq + 1).Trim());
-                }
-            }
-
-            return gotvalue;
-        }
     }
 }

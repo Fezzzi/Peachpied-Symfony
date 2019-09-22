@@ -1,0 +1,153 @@
+{% block stylesheets %}
+    <link rel="stylesheet" href="CalendarStyles.css" type="text/css">
+{% endblock %}
+
+{#
+    time can be any string acceptable by http://www.php.net/strtotime, the
+    template will output that time's month.
+
+    If you don't want to pass in a date you can set time like this:
+    {% set time = "now"|date("U") %}
+    {% set time = "December 2012"|date("U") %}
+
+    How ever you want to output items onto the calendar is a different issue,
+    but I'd assume pushing everything into an array numerically indexed by that day:
+    $days = array(1=>array('Something on the first'),31=>array('Halloween'));
+#}
+{% set data = data|default([]) %}
+{% set today = date("today") %}
+{% set time = date(time|default(today)) %}
+{% set numberOfMonth = 2 %}
+{% set spanOtherMonth = false %}
+{% set firstDay = 1 %}
+{% set dateStringToday = time|date('Y-m-d') %}
+{% set disableNavigation = false %}
+
+{% set prevText %}&laquo;{% endset %}
+{% set nextText %}&raquo;{% endset %}
+
+{% set daynames = daynames|default({
+    0: { short: 'sun', full: 'sunday'},
+    1: { short: 'mon', full: 'monday'},
+    2: { short: 'tue', full: 'tuesday'},
+    3: { short: 'wed', full: 'wednesday'},
+    4: { short: 'thu', full: 'thursday'},
+    5: { short: 'fri', full: 'friday'},
+    6: { short: 'sat', full: 'saturday'}
+}) %}
+
+{% set monthnames = monthnames|default({
+    1:  { short: 'jan', full: 'january'},
+    2:  { short: 'feb', full: 'february'},
+    3:  { short: 'mar', full: 'march'},
+    4:  { short: 'apr', full: 'april'},
+    5:  { short: 'may', full: 'may'},
+    6:  { short: 'jun', full: 'june'},
+    7:  { short: 'jul', full: 'july'},
+    8:  { short: 'aug', full: 'august'},
+    9:  { short: 'sep', full: 'september'},
+    10: { short: 'oct', full: 'october'},
+    11: { short: 'nov', full: 'november'},
+    12: { short: 'dec', full: 'december'}
+}) %}
+
+<div class="calendar">
+    {% if not disableNavigation -%}
+        <div class="button left">
+            <a title="">
+                <span>{{ prevText | raw }}</span>
+            </a>
+        </div>
+    {%- endif %}
+	
+	<div class="content">
+    {% for i in range(0, numberOfMonth-1) -%}
+        {% if not loop.first %}
+            {% set time = time|date_modify('+1 month') %}
+        {% endif %}
+
+        {% set year = time.format('Y') %}
+        {% set month = time.format('n') %}
+
+        <div class="col-6 {% if loop.index is odd %}odd{% else %}even{% endif %}" data-year="{{ year }}" data-month="{{ month }}">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="7" class="month">
+                            {{ monthnames[month].full }}
+                        </th>
+                    </tr>
+                    <tr>
+                        {% for dow in range(0, 6) %}
+                            {% set day = (dow + firstDay) % 7 %}
+                            <th class="day {% if (day == 6 or day == 0) %} weekend{% endif %}"><span title="{{ daynames[day].full }}">{{ daynames[day].short }}</span></th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% set daysInMonth = time.format('t') %}
+                    {% set startDow = (time.format('F 1\\s\\t Y')|date('w')) %}
+                    {% set dow = startDow %}
+                    {% set pos = (7 + (startDow - firstDay)) % 7 %}
+                    <tr>
+                        {% for dom in range(1,daysInMonth) -%}
+                            {% set dom_date_s = "%d-%02d-%d"|format(year, month, dom) %}
+                            {% set dom_date = date(dom_date_s) %}
+                            {% set dom_id = "cal_" ~ ("%d%02d%02d"|format(year, month, dom)) %}
+
+                            {% set cal_day_classes = (
+                                ((pos + firstDay + 6) % 7 >= 5 ? 'weekend' : '')
+                                ~ (data[dom_date_s] is defined ? ' cal-day-data' : '')
+                            ) %}
+
+                            {% if loop.first and pos > 0 -%}
+                                {% if not spanOtherMonth %}
+                                    {% for _dom in range(1, pos) -%}
+                                        <td class="empty"><span>&nbsp;</span></td>
+                                    {%- endfor %}
+                                {% else %}
+                                    <td class="empty" colspan="{{ pos }}"><span>&nbsp;</span></td>
+                                {% endif %}
+                            {%- endif %}
+
+                            <td id="{{ dom_id }}" class="{{ cal_day_classes }}" data-date="{{ dom_date_s }}" data-handler="selectDay" data-event="click">
+                                <a{% if data[dom_date_s] is defined %} title="{{ data[dom_date_s] }}"{% endif %}>
+                                    {{- dom -}}
+                                </a>
+                            </td>
+
+                            {% if loop.last and pos != 6 -%}
+                                {% if not spanOtherMonth %}
+                                    {% for _dom in range(1, 6 - pos) -%}
+                                        <td class="empty"><span>&nbsp;</span></td>
+                                    {%- endfor %}
+                                {% else %}
+                                    <td class="empty" colspan="{{ 6 - pos }}"><span>&nbsp;</span></td>
+                                {% endif %}
+                            {%- endif %}
+
+                            {% if pos == 6 and not loop.last %}
+                                {% set pos = 0 %}
+                                {% set dow = firstDay %}
+							</tr>
+							<tr>
+                            {% else %}
+                                {% set dow = (dow + 1) % 7 %}
+                                {% set pos = pos + 1 %}
+                            {% endif %}
+                        {%- endfor %}
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    {%- endfor %}
+	</div>
+	
+    {% if not disableNavigation -%}
+        <div class="button right">
+            <a title="">
+                <span>{{ nextText | raw }}</span>
+            </a>
+        </div>
+    {%- endif %}
+</div>

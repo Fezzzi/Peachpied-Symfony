@@ -1,0 +1,25 @@
+﻿<Project Sdk="Peachpie.NET.Sdk/">
+
+  <!-- Sets package-specific properties based on name and path -->
+  <Import Project="..\..\..\Props\loadPropsConfig.props" />
+  
+  <!--  Configurates build properties packageId and AssemblyName -->
+  <Import Project="..\..\..\Props\buildPropsConfig.props" />
+  
+  <PropertyGroup>
+    <AdditionalExcludes />
+  </PropertyGroup>
+  
+  <!-- Adds compile and content ItemGroup Node. 
+      Adds to Content's Exclude attr additional excludes  -->
+  <Import Project="..\..\..\Props\compileContentConfig.props" />
+  
+  <ItemGroup>
+    <PackageReference Include="Symfony.Console" Version="1.0.0" />
+    <PackageReference Include="Symfony.Http-kernel" Version="1.0.0" />
+    <PackageReference Include="Symfony.Options-resolver" Version="1.0.0" />
+    <PackageReference Include="Symfony.Property-access" Version="1.0.0" />
+    <PackageReference Include="Symfony.Validator" Version="1.0.0" />
+  </ItemGroup>
+  
+</Project>

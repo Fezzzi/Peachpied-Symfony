@@ -1,10 +1,10 @@
-﻿<Project Sdk="Peachpie.NET.Sdk/1.0.0-appv2527">
+﻿<Project Sdk="Peachpie.NET.Sdk/">
 
   <!-- Sets package-specific properties based on name and path -->
-  <Import Project="..\props\loadPropsConfig.props" />
+  <Import Project="..\..\..\Props\loadPropsConfig.props" />
 
-  <!-- Configurates build properties such as packageId, AssemblyName -->
-  <Import Project="..\props\buildPropsConfig.props" />
+  <!--  Configurates build properties packageId and AssemblyName -->
+  <Import Project="..\..\..\Props\buildPropsConfig.props" />
 
   <PropertyGroup>
     <AdditionalExcludes />
@@ -12,12 +12,12 @@
 
   <!-- Adds compile and content ItemGroup Node. 
       Adds to Content's Exclude attr additional excludes  -->
-  <Import Project="..\props\compileContentConfig.props" />
+  <Import Project="..\..\..\Props\compileContentConfig.props" />
   
   <ItemGroup>
-    <ProjectReference Include="Psr.Log.msbuildproj" />
-    <ProjectReference Include="Symfony.Dependency-injection.msbuildproj" />
-    <ProjectReference Include="Symfony.Event-dispatcher.msbuildproj" />
+    <PackageReference Include="Psr.Log" Version="1.0.0" />
+    <PackageReference Include="Symfony.Dependency-injection" Version="1.0.0" />
+    <PackageReference Include="Symfony.Event-dispatcher" Version="1.0.0" />
   </ItemGroup>
   
 </Project>

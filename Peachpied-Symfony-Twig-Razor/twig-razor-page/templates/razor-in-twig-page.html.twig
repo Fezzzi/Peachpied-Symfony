@@ -1,0 +1,48 @@
+{% extends "base.html.twig" %}
+
+{% set rooms = rooms|default([]) %}
+
+{# we have to include razor embedded content's css manualy as it is not possible from partial views and pages #}
+{% block stylesheets %}
+	{{ parent() }}
+	<link rel="stylesheet" href="/Content/CalendarStyles.css" type="text/css">
+{% endblock %}
+
+{% block title %}Razor In Twig Page{% endblock %}
+{% block subtitle %}razor in twig page{% endblock %}
+{% block body %}
+    {% for room in rooms %}
+		<div class="row">
+			<div class="image-container">
+				<img width="300" height="200" src="{{ room.img }}">
+			</div>
+			<div class="description-container">
+				<h2>{{ room.name }}</h2>
+				<hr>
+				<p>
+					<span><b>PRICE: </b>{{ room.price }} / Night</span>
+					<span class="right"><b>BEDS: </b>{{ room.name|first }}</span>
+				</p>
+				<p class="note">
+					"{{ room.desc }}"
+				</p>
+				<hr class="mobile-only">
+			</div>
+			<div class="calendar-container">
+				<p class="note small"><span style="color: red">*</span> Please use the calendar below to check the availability.</p>
+				<div class="calendar-content">
+					{% set data = { occupancy: room.occupancy} %}
+					{{ render_razor("../Server/Pages/razor-embedded-content.cshtml", data) | raw }}
+				</div>
+			</div>
+			<div class="services-container">
+				<h4>SERVICES</h4>
+				<div class="service-icons">
+                    {% for service in room.services %}
+						<span class="service-icon service-{{ service }}"></span>
+                    {% endfor %}
+				</div>
+			</div>
+		</div>
+    {% endfor %}
+{% endblock %}

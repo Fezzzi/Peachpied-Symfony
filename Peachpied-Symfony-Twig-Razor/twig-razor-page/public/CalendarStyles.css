@@ -1,0 +1,118 @@
+.calendar {
+    width: 100%;
+}
+
+.calendar .content {
+    display: inline-block;
+    width: calc(100% - 60px);
+    text-align: center;
+}
+
+.calendar .col-6 {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.calendar .button {
+    width: 3%;
+    min-width: 30px;
+    display: inline-block;
+    padding-top: 60px;
+}
+
+.calendar .button a:hover {
+    cursor: pointer;
+    border: 2px solid #007bff;
+}
+
+.calendar .button a {
+    border: 2px solid transparent;
+    height: 30px;
+    width: 30px;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.calendar .button span {
+    font-weight: 500;
+    font-size: 1.70rem;
+    line-height: 0.75;
+    color: black;
+}
+
+.calendar table {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+.calendar th {
+    width: 20px;
+}
+
+.calendar th.month {
+    font-size: 0.9rem;
+}
+
+.calendar th.day {
+    font-size: 0.7rem;
+}
+
+.calendar td {
+    font-size: 0.6rem;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.calendar td:not(.empty):not(.cal-day-data) {
+    cursor: pointer;
+}
+
+.calendar td:not(.empty):not(.cal-day-data):hover {
+    border: 2px solid #007bff;
+}
+
+.cal-day-data {
+    background-color: #00000052;
+}
+
+.calendar a {
+    color: black;
+}
+
+.calendar .weekend * {
+    color: #f00909db;
+}
+
+.calendar a:hover {
+    border: none;
+}
+
+.calendar .month {
+    background-color: #f00909db;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.calendar tbody {
+    background-color: #a9a9a93d;
+}
+
+@media only screen and (max-width: 1100px) {
+    .col-4 {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .calendar .content{
+        width: calc(100% - 100px) !important;
+    }
+}

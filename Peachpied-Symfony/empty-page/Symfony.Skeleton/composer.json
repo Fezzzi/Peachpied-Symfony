@@ -10,7 +10,12 @@
         "symfony/console": "*",
         "symfony/dotenv": "*",
         "symfony/flex": "^1.1",
+        "symfony/form": "4.2.*",
         "symfony/framework-bundle": "*",
+        "symfony/templating": "4.2.*",
+        "symfony/translation": "4.2.*",
+        "symfony/twig-bundle": "4.2.*",
+        "symfony/validator": "4.2.*",
         "symfony/yaml": "*"
     },
     "config": {

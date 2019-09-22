@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using PeachPied.Symfony.AspNetCore;
 using Peachpie.AspNetCore.Web;
+using Microsoft.AspNetCore.Rewrite;
 
 namespace empty_page.Server
 {
@@ -22,7 +23,7 @@ namespace empty_page.Server
 
             var host = WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .UseUrls("http://*:5004/")
+                .UseUrls("http://*:5004")
                 .Build();
 
             host.Run();
@@ -60,16 +61,6 @@ namespace empty_page.Server
             app.UseSymfony();
 
             app.UseDefaultFiles();
-
-
-            /*
-            app.UseSession();
-
-            app.UseMvc();
-            app.UsePhp(new PhpRequestOptions(scriptAssemblyName: "symfony.skeleton"));
-            app.UseDefaultFiles();
-            app.UseStaticFiles();
-            */
         }
     }
 }

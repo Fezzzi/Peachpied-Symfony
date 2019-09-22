@@ -1,29 +1,30 @@
-﻿<Project Sdk="Peachpie.NET.Sdk/1.0.0-appv2527">
+﻿<Project Sdk="Peachpie.NET.Sdk/">
 
   <!-- Sets package-specific properties based on name and path -->
-  <Import Project="..\props\loadPropsConfig.props" />
-
-  <!-- Configurates build properties such as packageId, AssemblyName -->
-  <Import Project="..\props\buildPropsConfig.props" />
-
+  <Import Project="..\..\..\Props\loadPropsConfig.props" />
+  
+  <!--  Configurates build properties packageId and AssemblyName -->
+  <Import Project="..\..\..\Props\buildPropsConfig.props" />
+  
   <PropertyGroup>
     <AdditionalExcludes>
-      $(LibraryPath)templating\**;
       $(LibraryPath)Client.php;
-      $(LibraryPath)translation\Translator.php;
       $(LibraryPath)command\XliffLintCommand.php;
     </AdditionalExcludes>
   </PropertyGroup>
-
-  <!-- Adds compile and content ItemGroup Node. 
-      Adds to Content's Exclude attr additional excludes  -->
-  <Import Project="..\props\compileContentConfig.props" />
+  
+  <!-- Adds compile and content items node. 
+      Adds additional excludes to content.  -->
+  <Import Project="..\..\..\Props\compileContentConfig.props" />
   
   <ItemGroup>
-    <ProjectReference Include="Symfony.Cache.msbuildproj" />
-    <ProjectReference Include="Symfony.Console.msbuildproj" />
-    <ProjectReference Include="Symfony.Routing.msbuildproj" />
-    <ProjectReference Include="Symfony.Yaml.msbuildproj" />
+    <PackageReference Include="Symfony.Cache" Version="1.0.0" />
+    <PackageReference Include="Symfony.Console" Version="1.0.0" />
+    <PackageReference Include="Symfony.Routing" Version="1.0.0" />
+    <PackageReference Include="Symfony.Templating" Version="1.0.0" />
+    <PackageReference Include="Symfony.Translation" Version="1.0.0" />
+    <PackageReference Include="Symfony.Yaml" Version="1.0.0" />
+    <PackageReference Include="Symfony.Polyfill-intl-icu" Version="1.0.0" />
   </ItemGroup>
   
 </Project>
