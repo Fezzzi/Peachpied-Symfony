@@ -30,13 +30,8 @@
     <None Remove="vendor\twig\**" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Symfony.Framework-bundle" Version="1.0.0" />
-    <PackageReference Include="Symfony.Debug" Version="1.0.0" />
-    <PackageReference Include="Symfony.Dotenv" Version="1.0.0" />
-    <PackageReference Include="Symfony.Polyfill-mbstring" Version="1.0.0" />
-    <PackageReference Include="Symfony.Routing" Version="1.0.0" />
+    <PackageReference Include="PeachPied.Symfony.Skeleton" Version="1.0.0" />
     <PackageReference Include="Symfony.Twig-bundle" Version="1.0.0" />
-    <PackageReference Include="Symfony.Filesystem" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PeachPied.Symfony.AspNetCore\PeachPied.Symfony.AspNetCore.csproj" />
