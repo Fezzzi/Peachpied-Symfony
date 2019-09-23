@@ -27,7 +27,7 @@ namespace Twig
         {
             return PhpValue.Create(new PhpArray(2) {
                 PhpValue.FromClass(new RazorRendererBridge(ctx)),
-                PhpValue.Create("renderRazor")
+                PhpValue.Create("RenderRazor")
             });
         }
     }

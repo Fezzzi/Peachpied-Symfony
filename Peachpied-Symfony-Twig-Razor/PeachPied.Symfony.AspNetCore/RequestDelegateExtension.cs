@@ -80,14 +80,12 @@ namespace Microsoft.AspNetCore.Builder
             app.UseRewriter(options);
 
             // handling php files:
-            app.UsePhp(new PhpRequestOptions(scriptAssemblyName: path)
-            {
+            app.UsePhp(new PhpRequestOptions(scriptAssemblyName: path) {
                 RootPath = symfonyRoot,
             });
 
             // symfony's static files
             app.UseStaticFiles(new StaticFileOptions() { FileProvider = fproviderB });
-
             
             // bootstrap.php env loading overriding
             string bootstrapPath = "config\\bootstrap.php";

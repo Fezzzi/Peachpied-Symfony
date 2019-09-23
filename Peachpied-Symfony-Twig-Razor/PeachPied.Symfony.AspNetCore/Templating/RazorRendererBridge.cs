@@ -24,14 +24,14 @@ namespace PeachPied.Symfony.AspNetCore.Templating
         /// <param name="name">PhpValue</param>
         /// <param name="data">PhpArray</param>
         /// <returns>PhpValue</returns>
-        public PhpValue renderRazor(PhpValue name, PhpArray data)
+        public PhpValue RenderRazor(PhpValue name, PhpArray data)
         {
             object httpCtx = ctx.GetType().GetProperty("HttpContext").GetValue(ctx, null);
 
             if (httpCtx is HttpContext) {
                 HttpContext httpContext = (HttpContext)httpCtx;
                 object viewRenderSvc = httpContext.RequestServices.GetService(typeof(IRazorRenderService));
-                ViewDataDictionary viewDataDictionary = getData(data);
+                ViewDataDictionary viewDataDictionary = GetData(data);
                 string partialName;
 
                 if (name.GetValue().IsString(out partialName)) {
@@ -51,7 +51,7 @@ namespace PeachPied.Symfony.AspNetCore.Templating
         /// </summary>
         /// <param name="data">PhpArray</param>
         /// <returns>ViewDataDictionary</returns>
-        private static ViewDataDictionary getData(PhpArray data)
+        private static ViewDataDictionary GetData(PhpArray data)
         {
             var viewDataDictionary = new ViewDataDictionary(
                 new EmptyModelMetadataProvider(),
@@ -64,7 +64,7 @@ namespace PeachPied.Symfony.AspNetCore.Templating
                 if (!el.Value.IsArray) {
                     viewDataDictionary.Add(key, el.Value);
                 } else {
-                    viewDataDictionary.Add(key, resolveDataReccursive(el.Value.AsArray()));
+                    viewDataDictionary.Add(key, ResolveDataReccursive(el.Value.AsArray()));
                 }
             }
 
@@ -76,7 +76,7 @@ namespace PeachPied.Symfony.AspNetCore.Templating
         /// </summary>
         /// <param name="data">PhpArray</param>
         /// <returns>Dictionary</returns>
-        private static Dictionary<string, object> resolveDataReccursive(PhpArray data)
+        private static Dictionary<string, object> ResolveDataReccursive(PhpArray data)
         {
             Dictionary<string, object> output = new Dictionary<string, object>();
             foreach (var el in data) {
@@ -85,7 +85,7 @@ namespace PeachPied.Symfony.AspNetCore.Templating
                 if (!el.Value.IsArray) {
                     output.Add(key, el.Value);
                 } else {
-                    output.Add(key, resolveDataReccursive(el.Value.AsArray()));
+                    output.Add(key, ResolveDataReccursive(el.Value.AsArray()));
                 }
             }
 
