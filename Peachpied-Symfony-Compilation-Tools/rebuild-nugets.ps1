@@ -53,4 +53,4 @@ echo "Building finished!"
 
 Remove-Item ../Peachpied-Symfony-Nuget-Repository/dependencies.json
 echo "Updating dependencies cache..."
-PHP .\update-dependencies-cache.php
+PHP .\Dependencies-Cache-Tool.php

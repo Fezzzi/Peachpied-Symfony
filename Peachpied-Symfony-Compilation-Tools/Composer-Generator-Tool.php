@@ -119,7 +119,6 @@ class ComposerGenerator {
             return sizeof($el) === 3 ? $el[1] : false;
         }, $matches);
 
-        // todo: Implement an ability to fetch this file from repository on server
         $dependencyCache = file_get_contents("../Peachpied-Symfony-Nuget-Repository/dependencies.json");
         if ($dependencyCache !== false) {
             $dependencyCache = json_decode($dependencyCache);
