@@ -1,6 +1,14 @@
 <?php
 
-define("DEBUG", true);
+define("DEBUG", false);
+
+$longopts  = array("vendor:", "build:", "lock:");
+$options = getopt("", $longopts);
+
+if (isset($options['vendor']) && (isset($options['lock']) || isset($options['build']))) {
+    $cg = new ComposerGenerator($options['vendor'], $options['build'], $options['lock']);
+    $cg->generateFromLock();
+}
 
 /**
  * Handles generating of content of vendor/composer folder.
@@ -49,6 +57,9 @@ class ComposerGenerator {
 
         $this->projectLock = $projectLock;
         if ($projectLock != null) {
+            if (!is_dir($vendorDir)){
+                mkdir($vendorDir);
+            }
             $dir = dirname($this->projectLock);
             if (!is_dir($dir)) {
                 throw new \UnexpectedValueException($dir . ' does not exist.');
@@ -68,6 +79,9 @@ class ComposerGenerator {
         $dirs = scandir($this->vendorDir);
         if ($dirs) {
             echo("Composer directory generated.\n");
+
+            require_once ("Cache-Generator-Tool.php");
+            generateCache(dirname($this->projectLock));
 
             $dirs = array_diff($dirs, [".", "..", "composer", "autoload.php", ".gitignore"]);
             if (!DEBUG) {
@@ -91,9 +105,9 @@ class ComposerGenerator {
         foreach($files as $file) {
             if ($file !== ".." && $file !== ".") {
                 if ($file->isDir()) {
-                    rmdir($file->getRealPath());
+                    @rmdir($file->getRealPath());
                 } else {
-                    unlink($file->getRealPath());
+                    @unlink($file->getRealPath());
                 }
             }
         }
