@@ -2,7 +2,7 @@ Remove-Item -r ~/.nuget/packages/symfony.*
 Remove-Item -r ~/.nuget/packages/psr.*
 Remove-Item -r ~/.nuget/packages/twig.twig
 
-cd ../Peachpied-Symfony/empty-page/Symfony.Skeleton
+cd ../Peachpied-Symfony/empty-page/Symfony.Empty-Page
 
 $libraries = 
 	"Symfony.Process.msbuildproj",
