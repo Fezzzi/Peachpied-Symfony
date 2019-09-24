@@ -7,13 +7,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="PeachPied.Symfony.AspNetCore" Version="1.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
     <PackageReference Include="Peachpie.AspNetCore.Web" Version="1.0.0-appv2847" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\twig-razor-page\twig-razor-page.msbuildproj" />
-    <ProjectReference Include="..\PeachPied.Symfony.AspNetCore\PeachPied.Symfony.AspNetCore.csproj" />
   </ItemGroup>
 
 </Project>
