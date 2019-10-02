@@ -58,7 +58,7 @@ namespace empty_page.Server
             // add symfony into the pipeline
             // using default configuration from appsettings.json (IConfiguration), section Symfony
             // using empty set of .NET plugins
-            app.UseSymfony();
+            app.UseSymfony(null, "Symfony.Empty-Page");
 
             app.UseDefaultFiles();
         }

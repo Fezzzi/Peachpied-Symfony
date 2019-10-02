@@ -4,77 +4,73 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{AF5D53C1-32B5-473F-9229-817608068701}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeachPied.Symfony.AspNetCore", "PeachPied.Symfony.AspNetCore\PeachPied.Symfony.AspNetCore.csproj", "{521CB548-EB83-4184-A031-6EB53E96CB88}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Empty-Page", "Symfony.Empty-Page\Symfony.Empty-Page.msbuildproj", "{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Skeleton", "Symfony.Skeleton\Symfony.Skeleton.msbuildproj", "{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Yaml", "Symfony.Empty-Page\Symfony.Yaml.msbuildproj", "{136D7A6E-CD9C-43D5-932B-382EED078EDA}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Yaml", "Symfony.Skeleton\Symfony.Yaml.msbuildproj", "{136D7A6E-CD9C-43D5-932B-382EED078EDA}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Var-exporter", "Symfony.Empty-Page\Symfony.Var-exporter.msbuildproj", "{4143F19F-D5D2-4D84-8B51-FA7308B86DA9}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Var-exporter", "Symfony.Skeleton\Symfony.Var-exporter.msbuildproj", "{4143F19F-D5D2-4D84-8B51-FA7308B86DA9}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Routing", "Symfony.Empty-Page\Symfony.Routing.msbuildproj", "{63D29633-A537-460C-8AB7-14096155D015}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Routing", "Symfony.Skeleton\Symfony.Routing.msbuildproj", "{63D29633-A537-460C-8AB7-14096155D015}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Process", "Symfony.Empty-Page\Symfony.Process.msbuildproj", "{81F17553-5141-4F2F-A73D-4CA4B971947E}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Process", "Symfony.Skeleton\Symfony.Process.msbuildproj", "{81F17553-5141-4F2F-A73D-4CA4B971947E}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Polyfill-mbstring", "Symfony.Empty-Page\Symfony.Polyfill-mbstring.msbuildproj", "{23D181D8-5341-4997-AFED-7084B51E0DB4}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Polyfill-mbstring", "Symfony.Skeleton\Symfony.Polyfill-mbstring.msbuildproj", "{23D181D8-5341-4997-AFED-7084B51E0DB4}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Http-kernel", "Symfony.Empty-Page\Symfony.Http-kernel.msbuildproj", "{1D9C1D52-BC3E-410E-AD4F-36B43E4F0B01}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Http-kernel", "Symfony.Skeleton\Symfony.Http-kernel.msbuildproj", "{1D9C1D52-BC3E-410E-AD4F-36B43E4F0B01}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Http-foundation", "Symfony.Empty-Page\Symfony.Http-foundation.msbuildproj", "{03DE7089-5D1A-42B4-8FBE-0A6382978913}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Http-foundation", "Symfony.Skeleton\Symfony.Http-foundation.msbuildproj", "{03DE7089-5D1A-42B4-8FBE-0A6382978913}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Framework-bundle", "Symfony.Empty-Page\Symfony.Framework-bundle.msbuildproj", "{F4CBB6D9-96DA-4895-A0B3-E7369E290727}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Framework-bundle", "Symfony.Skeleton\Symfony.Framework-bundle.msbuildproj", "{F4CBB6D9-96DA-4895-A0B3-E7369E290727}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Finder", "Symfony.Empty-Page\Symfony.Finder.msbuildproj", "{49C51AED-C763-4B0F-8173-6FA8F890F656}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Finder", "Symfony.Skeleton\Symfony.Finder.msbuildproj", "{49C51AED-C763-4B0F-8173-6FA8F890F656}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Filesystem", "Symfony.Empty-Page\Symfony.Filesystem.msbuildproj", "{FCDFE909-386E-44AF-B95B-7BFD0532518A}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Filesystem", "Symfony.Skeleton\Symfony.Filesystem.msbuildproj", "{FCDFE909-386E-44AF-B95B-7BFD0532518A}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Event-dispatcher", "Symfony.Empty-Page\Symfony.Event-dispatcher.msbuildproj", "{86F5EE30-4BB8-4113-830D-553E529B1D11}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Event-dispatcher", "Symfony.Skeleton\Symfony.Event-dispatcher.msbuildproj", "{86F5EE30-4BB8-4113-830D-553E529B1D11}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Dotenv", "Symfony.Empty-Page\Symfony.Dotenv.msbuildproj", "{70F82C20-E233-4424-B0BC-D9321C6DC2BA}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Dotenv", "Symfony.Skeleton\Symfony.Dotenv.msbuildproj", "{70F82C20-E233-4424-B0BC-D9321C6DC2BA}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Dependency-injection", "Symfony.Empty-Page\Symfony.Dependency-injection.msbuildproj", "{6379EEEE-3E94-4A54-A70D-8837FE2424F2}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Dependency-injection", "Symfony.Skeleton\Symfony.Dependency-injection.msbuildproj", "{6379EEEE-3E94-4A54-A70D-8837FE2424F2}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Debug", "Symfony.Empty-Page\Symfony.Debug.msbuildproj", "{3B3676A7-BC14-4F69-9541-9D85F4DDF560}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Debug", "Symfony.Skeleton\Symfony.Debug.msbuildproj", "{3B3676A7-BC14-4F69-9541-9D85F4DDF560}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Contracts", "Symfony.Empty-Page\Symfony.Contracts.msbuildproj", "{A7F0E92A-48A5-462F-8B52-17E3FE4BC394}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Contracts", "Symfony.Skeleton\Symfony.Contracts.msbuildproj", "{A7F0E92A-48A5-462F-8B52-17E3FE4BC394}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Console", "Symfony.Empty-Page\Symfony.Console.msbuildproj", "{9810759B-FC8B-4825-AB34-40D56FBA6875}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Console", "Symfony.Skeleton\Symfony.Console.msbuildproj", "{9810759B-FC8B-4825-AB34-40D56FBA6875}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Config", "Symfony.Empty-Page\Symfony.Config.msbuildproj", "{7E016618-B569-409F-B213-FAB94E1EB898}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Config", "Symfony.Skeleton\Symfony.Config.msbuildproj", "{7E016618-B569-409F-B213-FAB94E1EB898}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Cache", "Symfony.Empty-Page\Symfony.Cache.msbuildproj", "{D69FF6C0-B460-4C46-B946-21796D1F21CF}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Cache", "Symfony.Skeleton\Symfony.Cache.msbuildproj", "{D69FF6C0-B460-4C46-B946-21796D1F21CF}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Psr.Cache", "Symfony.Empty-Page\Psr.Cache.msbuildproj", "{17588B97-1A5B-4F17-ABFB-D2FCE7A73D87}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Composer", "Symfony.Skeleton\Composer.msbuildproj", "{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Psr.Container", "Symfony.Empty-Page\Psr.Container.msbuildproj", "{686BAE0B-7B39-4F62-96DB-37AB0760130E}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Psr.Cache", "Symfony.Skeleton\Psr.Cache.msbuildproj", "{17588B97-1A5B-4F17-ABFB-D2FCE7A73D87}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Psr.Log", "Symfony.Empty-Page\Psr.Log.msbuildproj", "{C1C38A35-012E-405F-A340-737A8E1E0FC3}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Psr.Container", "Symfony.Skeleton\Psr.Container.msbuildproj", "{686BAE0B-7B39-4F62-96DB-37AB0760130E}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Psr.Simple-cache", "Symfony.Empty-Page\Psr.Simple-cache.msbuildproj", "{111B0E3C-434A-442C-B62A-690EB5D2BF1A}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Psr.Log", "Symfony.Skeleton\Psr.Log.msbuildproj", "{C1C38A35-012E-405F-A340-737A8E1E0FC3}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Twig.Twig", "Symfony.Empty-Page\Twig.Twig.msbuildproj", "{9B4BF2BD-0F02-4D97-B203-1D5C6CC82778}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Psr.Simple-cache", "Symfony.Skeleton\Psr.Simple-cache.msbuildproj", "{111B0E3C-434A-442C-B62A-690EB5D2BF1A}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Twig-bundle", "Symfony.Empty-Page\Symfony.Twig-bundle.msbuildproj", "{FFFA6DF6-7C90-4ECF-94F0-11E2D4EB401D}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Twig.Twig", "Symfony.Skeleton\Twig.Twig.msbuildproj", "{9B4BF2BD-0F02-4D97-B203-1D5C6CC82778}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Twig-bridge", "Symfony.Empty-Page\Symfony.Twig-bridge.msbuildproj", "{BA4D402E-CFC2-41F2-B267-FB3AFEBCB61F}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Twig-bundle", "Symfony.Skeleton\Symfony.Twig-bundle.msbuildproj", "{FFFA6DF6-7C90-4ECF-94F0-11E2D4EB401D}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Templating", "Symfony.Empty-Page\Symfony.Templating.msbuildproj", "{08D16685-D932-4478-99A4-D4400F8C0E46}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Twig-bridge", "Symfony.Skeleton\Symfony.Twig-bridge.msbuildproj", "{BA4D402E-CFC2-41F2-B267-FB3AFEBCB61F}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Translation", "Symfony.Empty-Page\Symfony.Translation.msbuildproj", "{549E8A95-1AF1-4781-9FBC-AC9F063CBC98}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Templating", "Symfony.Skeleton\Symfony.Templating.msbuildproj", "{08D16685-D932-4478-99A4-D4400F8C0E46}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Form", "Symfony.Empty-Page\Symfony.Form.msbuildproj", "{F29BCC73-FA2A-4614-B71D-3157EE085525}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Translation", "Symfony.Skeleton\Symfony.Translation.msbuildproj", "{549E8A95-1AF1-4781-9FBC-AC9F063CBC98}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Options-resolver", "Symfony.Empty-Page\Symfony.Options-resolver.msbuildproj", "{324B0936-7727-4D35-8915-77B85A3F6C0B}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Form", "Symfony.Skeleton\Symfony.Form.msbuildproj", "{F29BCC73-FA2A-4614-B71D-3157EE085525}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Inflector", "Symfony.Empty-Page\Symfony.Inflector.msbuildproj", "{EF19F5C6-E44C-4420-AA60-2E12841FDCC1}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Options-resolver", "Symfony.Skeleton\Symfony.Options-resolver.msbuildproj", "{324B0936-7727-4D35-8915-77B85A3F6C0B}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Property-access", "Symfony.Empty-Page\Symfony.Property-access.msbuildproj", "{8A817A12-7D2C-44BE-BF43-0F7A7BD81033}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Inflector", "Symfony.Skeleton\Symfony.Inflector.msbuildproj", "{EF19F5C6-E44C-4420-AA60-2E12841FDCC1}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Validator", "Symfony.Empty-Page\Symfony.Validator.msbuildproj", "{E6AD78DB-1E93-4FD5-9773-44726E511EBB}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Property-access", "Symfony.Skeleton\Symfony.Property-access.msbuildproj", "{8A817A12-7D2C-44BE-BF43-0F7A7BD81033}"
-EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Validator", "Symfony.Skeleton\Symfony.Validator.msbuildproj", "{E6AD78DB-1E93-4FD5-9773-44726E511EBB}"
-EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Polyfill-intl-icu", "Symfony.Skeleton\Symfony.Polyfill-intl-icu.msbuildproj", "{C92BA3F5-02F6-4E5F-AB4F-55CD26CE56BC}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Polyfill-intl-icu", "Symfony.Empty-Page\Symfony.Polyfill-intl-icu.msbuildproj", "{C92BA3F5-02F6-4E5F-AB4F-55CD26CE56BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,34 +119,6 @@ Global
 		{AF5D53C1-32B5-473F-9229-817608068701}.Testing|x64.Build.0 = Release|Any CPU
 		{AF5D53C1-32B5-473F-9229-817608068701}.Testing|x86.ActiveCfg = Release|Any CPU
 		{AF5D53C1-32B5-473F-9229-817608068701}.Testing|x86.Build.0 = Release|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Debug|x64.Build.0 = Debug|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Debug|x86.Build.0 = Debug|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Finder ONLY|Any CPU.ActiveCfg = Release|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Finder ONLY|x64.ActiveCfg = Release|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Finder ONLY|x64.Build.0 = Release|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Finder ONLY|x86.ActiveCfg = Release|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Finder ONLY|x86.Build.0 = Release|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Release|Any CPU.Build.0 = Release|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Release|x64.ActiveCfg = Release|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Release|x64.Build.0 = Release|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Release|x86.ActiveCfg = Release|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Release|x86.Build.0 = Release|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Symfony.AspNetCore Only|x86.Build.0 = Debug|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Testing|Any CPU.ActiveCfg = Debug|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Testing|x64.ActiveCfg = Release|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Testing|x64.Build.0 = Release|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Testing|x86.ActiveCfg = Release|Any CPU
-		{521CB548-EB83-4184-A031-6EB53E96CB88}.Testing|x86.Build.0 = Release|Any CPU
 		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -665,33 +633,6 @@ Global
 		{D69FF6C0-B460-4C46-B946-21796D1F21CF}.Testing|x64.Build.0 = Release|Any CPU
 		{D69FF6C0-B460-4C46-B946-21796D1F21CF}.Testing|x86.ActiveCfg = Release|Any CPU
 		{D69FF6C0-B460-4C46-B946-21796D1F21CF}.Testing|x86.Build.0 = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Debug|x64.Build.0 = Debug|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Debug|x86.Build.0 = Debug|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Finder ONLY|Any CPU.ActiveCfg = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Finder ONLY|x64.ActiveCfg = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Finder ONLY|x64.Build.0 = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Finder ONLY|x86.ActiveCfg = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Finder ONLY|x86.Build.0 = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Release|x64.ActiveCfg = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Release|x64.Build.0 = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Release|x86.ActiveCfg = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Release|x86.Build.0 = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Symfony.AspNetCore Only|x86.Build.0 = Debug|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Testing|Any CPU.ActiveCfg = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Testing|x64.ActiveCfg = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Testing|x64.Build.0 = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Testing|x86.ActiveCfg = Release|Any CPU
-		{494EEF39-68F2-41B3-AA7B-5D09D1EE2EC7}.Testing|x86.Build.0 = Release|Any CPU
 		{17588B97-1A5B-4F17-ABFB-D2FCE7A73D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{17588B97-1A5B-4F17-ABFB-D2FCE7A73D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17588B97-1A5B-4F17-ABFB-D2FCE7A73D87}.Debug|x64.ActiveCfg = Debug|Any CPU

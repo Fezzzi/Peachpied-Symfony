@@ -2,22 +2,25 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>twig-razor-page</AssemblyName>
+    <AssemblyName>Symfony.Empty-Page</AssemblyName>
     <IntermediateOutputPath>.\obj\$(Configuration)\$(AssemblyName)\</IntermediateOutputPath>
     <OutputPath>.\bin\$(Configuration)\$(AssemblyName)\</OutputPath>
     <OutDir>$(OutputPath)</OutDir>
   </PropertyGroup>
+  
   <ItemGroup>
-    <Compile Include="**\*.php" Exclude=".\vendor\twig\**;.\vendor\symfony\;.\vendor\psr\;" />
-    <Content Include=".\**" Exclude=" **\*.php;**\*.msbuildproj;**\*.csbuildproj;.\obj\**;.\bin\**;.\vendor\symfony\**;.\vendor\psr\**;.\vendor\twig\**" CopyToOutputDirectory="PreserveNewest">
+    <Compile Include="**\*.php" 
+			 Exclude=".\vendor\twig\**;.\vendor\symfony\**;.\vendor\psr\**"/>
+    <Content Include=".\**" 
+			 Exclude=" **\*.php;**\*.msbuildproj;**\*.csbuildproj;.\obj\**;.\bin\**;.\vendor\twig\**;.\vendor\symfony\**;.\vendor\psr\**" 
+			 CopyToOutputDirectory="PreserveNewest">
+
       <PackagePath>contentFiles\any\netcoreapp2.0\symfony\$(AssemblyName)\</PackagePath>
       <PackageCopyToOutput>true</PackageCopyToOutput>
       <Link>symfony\$(AssemblyName)\%(RecursiveDir)%(Filename)%(Extension)</Link>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="config\bootstrap.php" />
-  </ItemGroup>
+  
   <ItemGroup>
     <Compile Remove="vendor\psr\**" />
     <Compile Remove="vendor\symfony\**" />
@@ -29,9 +32,13 @@
     <None Remove="vendor\symfony\**" />
     <None Remove="vendor\twig\**" />
   </ItemGroup>
+  
   <ItemGroup>
-    <PackageReference Include="PeachPied.Symfony.AspNetCore" Version="1.0.0" />
+    <Compile Remove="config\bootstrap.php" />
+  </ItemGroup>
+  
+  <ItemGroup>
     <PackageReference Include="PeachPied.Symfony.Skeleton" Version="1.0.0" />
-    <PackageReference Include="Symfony.Twig-bundle" Version="1.0.0" />
+	  <PackageReference Include="Symfony.Twig-bundle" Version="1.0.0" />
   </ItemGroup>
 </Project>
