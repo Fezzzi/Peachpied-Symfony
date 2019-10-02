@@ -38,7 +38,7 @@ $libraries =
 	"Symfony.Framework-bundle.msbuildproj",
 	"Symfony.Twig-bridge.msbuildproj",
 	"Symfony.Twig-bundle.msbuildproj",
-	"Symfony.Skeleton.msbuildproj";
+	"Symfony.Empty-page.msbuildproj";
 
 echo "Building Nuget packages...";
 $counter = 0;
@@ -48,7 +48,7 @@ foreach ($library in $libraries) {
 	echo "Done building $counter of $($libraries.count) libraries..."
 }
 
-cd ../../../Peachpied-Symfony-Compilation-Tools
+cd ../../../Additional-Tools
 echo "Building finished!"
 
 #Remove-Item ../PS-Nuget-Repository/dependencies.json

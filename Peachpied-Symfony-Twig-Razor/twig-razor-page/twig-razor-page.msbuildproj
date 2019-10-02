@@ -9,7 +9,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <Compile Include="**\*.php" Exclude="vendor\**; config\bootstrap.php"/>
+    <Compile Include="**\*.php" Exclude="vendor\**; config\bootstrap.php" />
     <Content Include=".\**" 
 			 Exclude="**\*.php; **\*.msbuildproj; **\*.csbuildproj; .\obj\**; .\bin\**; vendor\**" 
 			 CopyToOutputDirectory="PreserveNewest" />
