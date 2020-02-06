@@ -4,7 +4,7 @@
  * This script refreshes dependency cache file in Nuget repository
  */
 
-define("NUGET_REPO", "..". DIRECTORY_SEPARATOR ."Peachpied-Symfony-Nuget-Repository");
+define("NUGET_REPO", "..". DIRECTORY_SEPARATOR ."PS-Nuget-Repository");
 define("DEPENDENCIES_FILE", NUGET_REPO . DIRECTORY_SEPARATOR . "dependencies.json");
 define("DEBUG", false);
 

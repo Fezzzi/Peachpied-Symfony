@@ -5,7 +5,6 @@
 **/vendor/
 Peachpied-Symfony/empty-page-php-latest/
 Peachpied-Symfony/empty-page-project-refs/
-Peachpied-Symfony-Nuget-Repository/
 Tasks/temp/
 .gitattributes
 *.cache

@@ -1,6 +1,6 @@
 <?php
 
-define("NUGET_REPO", "..". DIRECTORY_SEPARATOR ."Peachpied-Symfony-Nuget-Repository");
+define("NUGET_REPO", "..". DIRECTORY_SEPARATOR ."PS-Nuget-Repository");
 define("OUT_DIR", ".". DIRECTORY_SEPARATOR ."Autocompiled-Nuget-Repository");
 define("PROJ_TYPE", "msbuildproj");
 define("DEBUG", false);

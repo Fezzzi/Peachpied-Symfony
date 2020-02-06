@@ -8,7 +8,7 @@
 	<PackageId>PeachPied.Symfony.AspNetCore</PackageId>
 	<PackageVersion>1.0.0</PackageVersion>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<PackageOutputPath>..\..\Peachpied-Symfony-Nuget-Repository\</PackageOutputPath>
+	<PackageOutputPath>..\..\PS-Nuget-Repository\</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
