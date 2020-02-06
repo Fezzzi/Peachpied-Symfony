@@ -5,6 +5,8 @@
 		<OutputType>Library</OutputType>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<Description>.NET class library in PHP</Description>
+		<LibraryName>$(MSBuildProjectName)</LibraryName>
+		<LibraryPath>vendor\$(ProjectNameLocation.toLower())</LibraryPath>
 		<AssemblyName>$(LibraryName)</AssemblyName>
 		<PackageId>$(LibraryName)</PackageId>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>

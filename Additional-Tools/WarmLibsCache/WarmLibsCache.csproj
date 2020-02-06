@@ -6,7 +6,9 @@
 	<RootNamespace>WarmLibsCache</RootNamespace>
     <AssemblyName>WarmLibsCache</AssemblyName>
 	<PackageId>Peachpied.Symfony.Tools.$(AssemblyName)</PackageId>
+	<Description>Task for symfony libraries' dependency cache generation</Description>
 	<Version>1.0.0</Version>
+	<Authors>Filip Horký</Authors>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<PackageOutputPath>../../PS-Tools-Nuget-Repository/</PackageOutputPath>
   </PropertyGroup>

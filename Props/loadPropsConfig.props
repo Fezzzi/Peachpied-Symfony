@@ -19,7 +19,7 @@
 	<UsingTask TaskName="GetLibVersion" AssemblyFile="$(NuGetPackageRoot)peachpied.symfony.tools.getlibversion\1.0.0\lib\netstandard2.0\GetLibVersion.dll" />
 	<UsingTask TaskName="GetLibReferences" AssemblyFile='$(NuGetPackageRoot)peachpied.symfony.tools.getlibreferences\1.0.0\lib\netstandard2.0\GetLibReferences.dll' />
 	
-	<Target Name="GLV" AfterTargets="Restore">
+	<Target Name="VersionTasks" BeforeTargets="Build">
 		<Message Text="Running custom prebuild tasks..." Importance="high" />
 		<WarmLibsCache ProjPath="$(MSBuildProjectDirectory)" TempPath="$(TempPath)" />
 		<GetLibVersion TempPath="$(TempPath)" LibName="$(MSBuildProjectName)" Condition="$(ManualVersion)!=true">

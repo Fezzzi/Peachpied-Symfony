@@ -6,7 +6,9 @@
 	<RootNamespace>GetLibReferences</RootNamespace>
     <AssemblyName>GetLibReferences</AssemblyName>
 	<PackageId>Peachpied.Symfony.Tools.$(AssemblyName)</PackageId>
+	<Description>Task for automated symfony library dependencies retrieval</Description>
 	<Version>1.0.0</Version>
+	<Authors>Filip Horký</Authors>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<PackageOutputPath>../../PS-Tools-Nuget-Repository/</PackageOutputPath>
   </PropertyGroup>
