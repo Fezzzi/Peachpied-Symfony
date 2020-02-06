@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="UnzipWLC; UnzipGLV; WLC ; GLV ; GLR">
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
 	<PropertyGroup>
 		<LibraryName>$(MSBuildProjectName)</LibraryName>
@@ -11,32 +11,23 @@
 		<ManualReferences>true</ManualReferences>
 	</PropertyGroup>
 	
-	<UsingTask TaskName="WarmLibsCache" AssemblyFile="$(TempPath)\WarmLibsCache\WarmLibsCache.dll" /> 
-	<UsingTask TaskName="GetLibVersion" AssemblyFile="$(TempPath)\GetLibVersion\GetLibVersion.dll" />
-	<UsingTask TaskName="GetLibReferences" AssemblyFile='C:\Users\Fezzi\Documents\MATFYZ\Bc\BAKALARKA\Peachpied_Symfony\Additional-Tools\GetLibReferences\bin\Release\GetLibReferences.dll' />
+	<ItemGroup>
+		<PackageReference Include="Peachpied.Symfony.Tools.WarmLibsCache" Version="1.*"/>
+		<PackageReference Include="Peachpied.Symfony.Tools.GetLibVersion" Version="1.*"/>
+		<PackageReference Include="Peachpied.Symfony.Tools.GetLibReferences" Version="1.*"/>
+	</ItemGroup>
 	
-	<Target Name="UnzipWLC" Condition="!Exists(@($(TempPath)\WarmLibsCache))">
-		<MakeDir Directories="$(TempPath)\WarmLibsCache"/>
-		<Unzip SourceFiles="$(PropsPath)..\Tasks\warmlibscache.zip" DestinationFolder="$(TempPath)\WarmLibsCache\" OverwriteReadOnlyFiles="true" />
-	</Target>
+	<UsingTask TaskName="WarmLibsCache" AssemblyFile="$(NuGetPackageRoot)peachpied.symfony.tools.warmlibscache\1.0.0\lib\netstandard2.0\WarmLibsCache.dll" /> 
+	<UsingTask TaskName="GetLibVersion" AssemblyFile="$(NuGetPackageRoot)peachpied.symfony.tools.getlibversion\1.0.0\lib\netstandard2.0\GetLibVersion.dll" />
+	<UsingTask TaskName="GetLibReferences" AssemblyFile='$(NuGetPackageRoot)peachpied.symfony.tools.getlibreferences\1.0.0\lib\netstandard2.0\GetLibReferences.dll' />
 	
-	<Target Name="WLC">  
-        <WarmLibsCache ProjPath="$(MSBuildProjectDirectory)" TempPath="$(TempPath)" />
-    </Target>
-	
-	<Target Name="UnzipGLV" Condition="!Exists(@($(TempPath)\GetLibVersion))">
-		<MakeDir Directories="$(TempPath)\GetLibVersion"/>
-		<Unzip SourceFiles="$(PropsPath)..\Tasks\getlibversion.zip" DestinationFolder="$(TempPath)\GetLibVersion\" OverwriteReadOnlyFiles="true" />
-	</Target>
-	
-	<Target Name="GLV" Condition="$(ManualVersion)!=true">  
-        <GetLibVersion TempPath="$(TempPath)" LibName="$(MSBuildProjectName)">
+	<Target Name="GLV" AfterTargets="Restore">
+		<Message Text="Running custom prebuild tasks..." Importance="high" />
+		<WarmLibsCache ProjPath="$(MSBuildProjectDirectory)" TempPath="$(TempPath)" />
+		<GetLibVersion TempPath="$(TempPath)" LibName="$(MSBuildProjectName)" Condition="$(ManualVersion)!=true">
 			<Output TaskParameter="Version" PropertyName="PackageVersion" />
 		</GetLibVersion>
-    </Target> 
-
-	<Target Name="GLR" Condition="$(ManualReferences)!=true">
-		<GetLibReferences TempPath="$(TempPath)" RepoPath="$(RepoPath)" LibName="$(MSBuildProjectName)">
+		<GetLibReferences TempPath="$(TempPath)" RepoPath="$(RepoPath)" LibName="$(MSBuildProjectName)" Condition="$(ManualReferences)!=true">
 			<Output TaskParameter="References" ItemName="PackageReference" />
 		</GetLibReferences>
 	</Target>

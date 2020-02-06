@@ -7,47 +7,21 @@ using Microsoft.Build.Utilities;
 namespace Microsoft.Build.Tasks {
     public sealed class GetLibVersion : Task {
         [Required]
-        public ITaskItem TempPath {
-            get {
-                return tempPath;
-            }
-
-            set {
-                tempPath = value;
-            }
-        }
-
+        public ITaskItem TempPath { get; set; }
         [Required]
-        public ITaskItem LibName {
-            get {
-                return libName;
-            }
-
-            set {
-                libName = value;
-            }
-        }
-
+        public ITaskItem LibName { get; set; }
         [Output]
-        public ITaskItem Version {
-            get {
-                return version;
-            }
-        }
-
-        private ITaskItem tempPath;
-        private ITaskItem libName;
-        private ITaskItem version;
+        public ITaskItem Version { get; private set; }
 
         public override bool Execute() {
-            string name = libName.ItemSpec.Replace('.', '/').ToLower();
-            JsonObject package = getPackage(name, tempPath.ItemSpec);
+            string name = LibName.ItemSpec.Replace('.', '/').ToLower();
+            JsonObject package = getPackage(name, TempPath.ItemSpec);
             if (package == null) {
                 return false;
             }
 
-            this.version = new TaskItem(package["version"].ToString().Trim('"'));
-            Console.WriteLine("Building " + name + " with version " + this.version);
+            Version = new TaskItem(package["version"].ToString().Trim('"'));
+            Console.WriteLine("Building " + name + " with version " + Version);
             return true;
         }
 

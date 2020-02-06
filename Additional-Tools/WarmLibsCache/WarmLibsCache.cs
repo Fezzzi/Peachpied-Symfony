@@ -3,39 +3,19 @@ using System.IO;
 using System.Json;
 using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
-using prettyPrinter = JsonPrettyPrinterPlus.PrettyPrinterExtensions;
+using formater = JsonFormatterPlus.JsonFormatter;
 
 namespace Microsoft.Build.Tasks {
     public sealed class WarmLibsCache : Task {
         [Required]
-        public ITaskItem ProjPath {
-            get {
-                return projPath;
-            }
-
-            set {
-                projPath = value;
-            }
-        }
-
+        public ITaskItem ProjPath { get; set; }
         [Required]
-        public ITaskItem TempPath {
-            get {
-                return tempPath;
-            }
-
-            set {
-                tempPath = value;
-            }
-        }
-
-        private ITaskItem projPath;
-        private ITaskItem tempPath;
+        public ITaskItem TempPath { get; set; }
 
         public override bool Execute() {
-            string lockPath = getLockPath(projPath.ItemSpec);
+            string lockPath = getLockPath(ProjPath.ItemSpec);
             return !lockPath.Equals(String.Empty)
-                && warmCache(lockPath, tempPath.ItemSpec);
+                && warmCache(lockPath, TempPath.ItemSpec);
         }
 
         private static bool warmCache(string lockPath, string tempPath) {
@@ -54,7 +34,7 @@ namespace Microsoft.Build.Tasks {
 
             using (StreamWriter sw = new StreamWriter(Path.Combine(tempPath, "libsCache.json"))) {
                 string jsonString = packages.ToString();
-                jsonString = prettyPrinter.PrettyPrintJson(jsonString);
+                jsonString = formater.Format(jsonString);
                 sw.Write(jsonString);
             }
             return true;

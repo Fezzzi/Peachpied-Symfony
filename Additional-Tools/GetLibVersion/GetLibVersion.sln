@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetLibVersion", "GetLibVersion.csproj", "{73433CEF-4E1F-49BA-996E-26C81F5C6D1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetLibVersion", "GetLibVersion.csproj", "{73433CEF-4E1F-49BA-996E-26C81F5C6D1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarmLibsCache", "..\WarmLibsCache\WarmLibsCache.csproj", "{E68C3311-3FAB-438A-8EAC-EF544CFCB11D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarmLibsCache", "..\WarmLibsCache\WarmLibsCache.csproj", "{E68C3311-3FAB-438A-8EAC-EF544CFCB11D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetLibReferences", "..\GetLibReferences\GetLibReferences.csproj", "{B47CA01A-E7BD-4A46-9284-CD862DD31560}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetLibReferences", "..\GetLibReferences\GetLibReferences.csproj", "{B47CA01A-E7BD-4A46-9284-CD862DD31560}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "..\Test\Test.csproj", "{FBFB2CAC-59A0-4DA4-963C-47F692E58630}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{B47CA01A-E7BD-4A46-9284-CD862DD31560}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B47CA01A-E7BD-4A46-9284-CD862DD31560}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B47CA01A-E7BD-4A46-9284-CD862DD31560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBFB2CAC-59A0-4DA4-963C-47F692E58630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBFB2CAC-59A0-4DA4-963C-47F692E58630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBFB2CAC-59A0-4DA4-963C-47F692E58630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBFB2CAC-59A0-4DA4-963C-47F692E58630}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
