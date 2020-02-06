@@ -15,7 +15,7 @@
   <Import Project="..\..\..\Props\compileContentConfig.props" />
   
   <ItemGroup>
-    <PackageReference Include="Symfony.Translation" Version="1.0.0" />
+    <PackageReference Include="Symfony.Translation" Version="4.2.8" />
   </ItemGroup>
   
 </Project>

@@ -87,7 +87,7 @@
   <Import Project="..\..\..\Props\compileContentConfig.props" />
   
   <ItemGroup>
-    <PackageReference Include="Symfony.Polyfill-mbstring" Version="1.0.0" />
+    <PackageReference Include="Symfony.Polyfill-mbstring" Version="1.10.0" />
   </ItemGroup>
 
 </Project>

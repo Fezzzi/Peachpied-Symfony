@@ -18,9 +18,9 @@
   <Import Project="..\..\..\Props\compileContentConfig.props" />
   
   <ItemGroup>
-    <PackageReference Include="Psr.Log" Version="1.0.0" />
-    <PackageReference Include="Symfony.Event-dispatcher" Version="1.0.0" />
-    <PackageReference Include="Symfony.Http-foundation" Version="1.0.0" />
+    <PackageReference Include="Psr.Log" Version="1.1.0" />
+    <PackageReference Include="Symfony.Event-dispatcher" Version="4.2.3" />
+    <PackageReference Include="Symfony.Http-foundation" Version="4.2.3" />
   </ItemGroup>
   
 </Project>

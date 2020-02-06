@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="UnzipWLC; UnzipGLV; WLC ; GLV ; GLR">
 
 	<PropertyGroup>
 		<LibraryName>$(MSBuildProjectName)</LibraryName>
 		<LibraryPath>vendor\$(ProjectNameLocation.toLower())</LibraryPath>
+		<PropsPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</PropsPath>
+		<TempPath>$(PropsPath)..\Tasks\temp</TempPath>
+		<RepoPath>$(PropsPath)..\Peachpied-Symfony-Nuget-Repository\</RepoPath>
+		<ManualVersion>false</ManualVersion>
+		<ManualReferences>true</ManualReferences>
 	</PropertyGroup>
+	
+	<UsingTask TaskName="WarmLibsCache" AssemblyFile="$(TempPath)\WarmLibsCache\WarmLibsCache.dll" /> 
+	<UsingTask TaskName="GetLibVersion" AssemblyFile="$(TempPath)\GetLibVersion\GetLibVersion.dll" />
+	<UsingTask TaskName="GetLibReferences" AssemblyFile='C:\Users\Fezzi\Documents\MATFYZ\Bc\BAKALARKA\Peachpied_Symfony\Additional-Tools\GetLibReferences\bin\Release\GetLibReferences.dll' />
+	
+	<Target Name="UnzipWLC" Condition="!Exists(@($(TempPath)\WarmLibsCache))">
+		<MakeDir Directories="$(TempPath)\WarmLibsCache"/>
+		<Unzip SourceFiles="$(PropsPath)..\Tasks\warmlibscache.zip" DestinationFolder="$(TempPath)\WarmLibsCache\" OverwriteReadOnlyFiles="true" />
+	</Target>
+	
+	<Target Name="WLC">  
+        <WarmLibsCache ProjPath="$(MSBuildProjectDirectory)" TempPath="$(TempPath)" />
+    </Target>
+	
+	<Target Name="UnzipGLV" Condition="!Exists(@($(TempPath)\GetLibVersion))">
+		<MakeDir Directories="$(TempPath)\GetLibVersion"/>
+		<Unzip SourceFiles="$(PropsPath)..\Tasks\getlibversion.zip" DestinationFolder="$(TempPath)\GetLibVersion\" OverwriteReadOnlyFiles="true" />
+	</Target>
+	
+	<Target Name="GLV" Condition="$(ManualVersion)!=true">  
+        <GetLibVersion TempPath="$(TempPath)" LibName="$(MSBuildProjectName)">
+			<Output TaskParameter="Version" PropertyName="PackageVersion" />
+		</GetLibVersion>
+    </Target> 
 
+	<Target Name="GLR" Condition="$(ManualReferences)!=true">
+		<GetLibReferences TempPath="$(TempPath)" RepoPath="$(RepoPath)" LibName="$(MSBuildProjectName)">
+			<Output TaskParameter="References" ItemName="PackageReference" />
+		</GetLibReferences>
+	</Target>
 </Project>

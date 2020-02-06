@@ -15,6 +15,6 @@
   <Import Project="..\..\..\Props\compileContentConfig.props" />
   
   <ItemGroup>
-    <PackageReference Include="Symfony.Inflector" Version="1.0.0" />
+    <PackageReference Include="Symfony.Inflector" Version="4.2.10" />
   </ItemGroup>
 </Project>

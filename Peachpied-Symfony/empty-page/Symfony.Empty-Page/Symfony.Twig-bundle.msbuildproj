@@ -10,7 +10,7 @@
       Adds to Content's Exclude attr additional excludes  -->
   <Import Project="..\..\..\Props\compileContentConfig.props" />
   <ItemGroup>
-    <PackageReference Include="Symfony.Framework-bundle" Version="1.0.0" />
-    <PackageReference Include="Symfony.Twig-bridge" Version="1.0.0" />
+    <PackageReference Include="Symfony.Framework-bundle" Version="4.2.3" />
+    <PackageReference Include="Symfony.Twig-bridge" Version="4.2.10" />
   </ItemGroup>
 </Project>

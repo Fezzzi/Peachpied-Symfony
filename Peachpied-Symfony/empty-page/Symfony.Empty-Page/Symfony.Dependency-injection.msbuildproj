@@ -19,9 +19,9 @@
   
   <ItemGroup>
     <PackageReference Include="Psr.Container" Version="1.0.0" />
-    <PackageReference Include="Symfony.Config" Version="1.0.0" />
-    <PackageReference Include="Symfony.Contracts" Version="1.0.0" />
-    <PackageReference Include="Symfony.Finder" Version="1.0.0" />
+    <PackageReference Include="Symfony.Config" Version="4.2.3" />
+    <PackageReference Include="Symfony.Contracts" Version="1.0.2" />
+    <PackageReference Include="Symfony.Finder" Version="4.2.3" />
   </ItemGroup>
   
 </Project>

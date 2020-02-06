@@ -15,7 +15,7 @@
   <Import Project="..\..\..\Props\compileContentConfig.props" />
   
   <ItemGroup>
-    <PackageReference Include="Psr.Log" Version="1.0.0" />
+    <PackageReference Include="Psr.Log" Version="1.1.0" />
   </ItemGroup>
   
 </Project>

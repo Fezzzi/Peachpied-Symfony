@@ -18,13 +18,13 @@
   <Import Project="..\..\..\Props\compileContentConfig.props" />
   
   <ItemGroup>
-    <PackageReference Include="Symfony.Cache" Version="1.0.0" />
-    <PackageReference Include="Symfony.Console" Version="1.0.0" />
-    <PackageReference Include="Symfony.Routing" Version="1.0.0" />
-    <PackageReference Include="Symfony.Templating" Version="1.0.0" />
-    <PackageReference Include="Symfony.Translation" Version="1.0.0" />
-    <PackageReference Include="Symfony.Yaml" Version="1.0.0" />
-    <PackageReference Include="Symfony.Polyfill-intl-icu" Version="1.0.0" />
+    <PackageReference Include="Symfony.Cache" Version="4.2.3" />
+    <PackageReference Include="Symfony.Console" Version="4.2.3" />
+    <PackageReference Include="Symfony.Routing" Version="4.2.3" />
+    <PackageReference Include="Symfony.Templating" Version="4.2.10" />
+    <PackageReference Include="Symfony.Translation" Version="4.2.8" />
+    <PackageReference Include="Symfony.Yaml" Version="4.2.3" />
+    <PackageReference Include="Symfony.Polyfill-intl-icu" Version="1.11.0" />
   </ItemGroup>
   
 </Project>

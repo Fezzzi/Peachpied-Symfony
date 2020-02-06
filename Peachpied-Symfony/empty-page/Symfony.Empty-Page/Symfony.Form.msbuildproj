@@ -15,11 +15,11 @@
   <Import Project="..\..\..\Props\compileContentConfig.props" />
   
   <ItemGroup>
-    <PackageReference Include="Symfony.Console" Version="1.0.0" />
-    <PackageReference Include="Symfony.Http-kernel" Version="1.0.0" />
-    <PackageReference Include="Symfony.Options-resolver" Version="1.0.0" />
-    <PackageReference Include="Symfony.Property-access" Version="1.0.0" />
-    <PackageReference Include="Symfony.Validator" Version="1.0.0" />
+    <PackageReference Include="Symfony.Console" Version="4.2.3" />
+    <PackageReference Include="Symfony.Http-kernel" Version="4.2.3" />
+    <PackageReference Include="Symfony.Options-resolver" Version="4.2.10" />
+    <PackageReference Include="Symfony.Property-access" Version="4.2.10" />
+    <PackageReference Include="Symfony.Validator" Version="4.2.10" />
   </ItemGroup>
   
 </Project>
