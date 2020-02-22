@@ -6,6 +6,10 @@ using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
 
 namespace Microsoft.Build.Tasks {
+
+    /// <summary>
+    /// Task that automatizes compiled Symfony component's references retrieval.
+    /// </summary>
     public sealed class GetLibReferences : Task {
         [Required]
         public ITaskItem TempPath { get; set; }
@@ -18,31 +22,36 @@ namespace Microsoft.Build.Tasks {
 
         public override bool Execute() {
             string name = LibName.ItemSpec.Replace('.', '/').ToLower();
-            Tuple<JsonObject, JsonObject> jsonData = getPackage(name, TempPath.ItemSpec);
-            if (jsonData.Item1 == null || jsonData.Item2 == null) {
+            JsonObject cache = parseCache(TempPath.ItemSpec);       
+            if (cache == null || cache[name] == null) {
                 return false;
             }
 
-            References = resolveReferences(jsonData.Item1, jsonData.Item2, RepoPath.ItemSpec);
+            References = resolveReferences(name, cache, RepoPath.ItemSpec);
             return true;
         }
 
-        private static ITaskItem[] resolveReferences(JsonObject package, JsonObject packages, string repoPath) {
+        /// <summary>
+        /// Resolves references for given package.
+        /// </summary>
+        private static ITaskItem[] resolveReferences(string packageName, JsonObject cache, string repoPath) {
+            JsonObject package = cache[packageName] as JsonObject;
             JsonObject dependencies = package["dependencies"] as JsonObject;
             List<Tuple<string, string>> references = new List<Tuple<string, string>>();
+
             foreach (string dependency in dependencies.Keys) {
-                if (packages.ContainsKey(dependency)) {
-                    string version = (packages[dependency] as JsonObject)["version"];
+                if (cache.ContainsKey(dependency)) {
+                    JsonObject dependencyPart = cache[dependency] as JsonObject;
+                    string version = dependencyPart["version"];
                     string name = getReferenceName(dependency);
-                    // We don't want to include dev dependencies as those can result in cycles
-                    if (isNugetAvailable(name, version, repoPath) && !dependencies[dependency]) {
+
+                    if (isNugetAvailable(name, version, repoPath)) {
                         references.Add(new Tuple<string, string>(name, version));
-                    // If not dev dependency display warning
-                    } else if (!dependencies[dependency] && !(packages[dependency] as JsonObject)["dev"]) {
-                        Console.WriteLine("Non-dev dependency " + name + " " + version + " nuget missing!");
+                    } else if (!dependencies[dependency] && !dependencyPart["dev"]) {
+                        Console.WriteLine($"Non-dev dependency {name} {version} nuget missing!");
                     }
                 } else if (!dependencies[dependency]) {
-                    Console.WriteLine("Non-dev dependency " + dependency + " package not installed!");
+                    Console.WriteLine($"Non-dev dependency {dependency} package not installed!");
                 }
             }
             TaskItem[] tasks = new TaskItem[references.Count];
@@ -51,32 +60,41 @@ namespace Microsoft.Build.Tasks {
                 tasks[i].SetMetadata("Include", references[i].Item1);
                 tasks[i].SetMetadata("Version", references[i].Item2);
             }
+
             return tasks;
         }
 
+        /// <summary>
+        /// Converts Symfony component name to nuget name.
+        /// </summary>
         private static string getReferenceName(string name) {
             string[] parts = name.Split('/');
+
             for (int i = 0; i < parts.Length; ++i) {
                 parts[i] = Char.ToUpper(parts[i][0]) + parts[i].Substring(1);
             }
             return String.Join(".", parts);
         }
 
+        /// <summary>
+        /// Tests nuget's presence in repository.
+        /// </summary>
         private static bool isNugetAvailable(string name, string version, string repoPath) {
             string nuget = Path.Combine(repoPath, name + "." + version + ".nupkg");
             return File.Exists(nuget);
         }
 
-        private static Tuple<JsonObject, JsonObject> getPackage(string libName, string tempPath) {
-            string cache = Path.Combine(tempPath, "libsCache.json");
-            if (!File.Exists(cache)) {
+        /// <summary>
+        /// Finds and parses json cache file.
+        /// </summary>
+        private static JsonObject parseCache(string tempPath) {
+            string cacheFile = Path.Combine(tempPath, "libsCache.json");
+
+            if (!File.Exists(cacheFile)) {
                 Console.WriteLine("Cache file not found! Ensure cache are warmed prior running GetLibReference!");
                 return null;
             }
-
-            string cacheText = File.ReadAllText(cache);
-            JsonObject result = JsonValue.Parse(cacheText) as JsonObject;
-            return new Tuple<JsonObject, JsonObject> (result[libName] as JsonObject, result);
+            return JsonValue.Parse(File.ReadAllText(cacheFile)) as JsonObject;
         }
     }
 }

@@ -11,5 +11,4 @@ Tasks/temp/
 *.nupkg
 .idea/
 Compiler Tests/
-**/Additional-Tools/**/packages
 Additional-Tools/Test

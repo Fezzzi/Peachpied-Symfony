@@ -5,6 +5,10 @@ using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
 
 namespace Microsoft.Build.Tasks {
+
+    /// <summary>
+    /// Task that automatizes compiled Symfony component's version retrieval.
+    /// </summary>
     public sealed class GetLibVersion : Task {
         [Required]
         public ITaskItem TempPath { get; set; }
@@ -16,24 +20,29 @@ namespace Microsoft.Build.Tasks {
         public override bool Execute() {
             string name = LibName.ItemSpec.Replace('.', '/').ToLower();
             JsonObject package = getPackage(name, TempPath.ItemSpec);
+
             if (package == null) {
                 return false;
             }
-
             Version = new TaskItem(package["version"].ToString().Trim('"'));
-            Console.WriteLine("Building " + name + " with version " + Version);
+            Console.WriteLine($"Building {name} with version {Version}");
+
             return true;
         }
 
+        /// <summary>
+        /// Gets the package part from cache json.
+        /// </summary>
         private static JsonObject getPackage(string libName, string tempPath) {
             string cache = Path.Combine(tempPath, "libsCache.json");
+
             if (!File.Exists(cache)) {
                 Console.WriteLine("Cache file not found! Ensure cache are warmed prior running GetLibVersion!");
                 return null;
             }
-
             string cacheText = File.ReadAllText(cache);
             JsonObject result = JsonValue.Parse(cacheText) as JsonObject;
+
             return result[libName] as JsonObject;
         }
     }
