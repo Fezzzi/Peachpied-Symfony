@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Peachpie.NET.Sdk/">
   
-  <!-- Sets package-specific properties based on name and path -->
-  <Import Project="..\..\..\Props\loadPropsConfig.props" />
+  <!-- Configurates automatization targets -->
+  <Import Project="..\..\..\Props\automatizationConfig.targets" />
 
-  <!--  Configurates build properties packageId and AssemblyName -->
-  <Import Project="..\..\..\Props\buildPropsConfig.props" />
+  <!-- Configurates build properties -->
+  <Import Project="..\..\..\Props\propertiesConfig.props" />
 
   <PropertyGroup>
     <ExcludeRoot>$(LibraryPath)lib\Twig\</ExcludeRoot>
@@ -82,12 +82,7 @@
 	</AdditionalIncludes>
   </PropertyGroup>
 
-  <!-- Adds compile and content ItemGroup Node. 
-      Adds to Content's Exclude attr additional excludes  -->
-  <Import Project="..\..\..\Props\compileContentConfig.props" />
-  
-  <ItemGroup>
-    <PackageReference Include="Symfony.Polyfill-mbstring" Version="1.10.0" />
-  </ItemGroup>
+  <!-- Fills compile and content items -->
+  <Import Project="..\..\..\Props\compilationConfig.props" />
 
 </Project>

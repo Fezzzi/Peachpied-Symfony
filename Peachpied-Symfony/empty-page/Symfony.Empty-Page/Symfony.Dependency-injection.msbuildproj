@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Peachpie.NET.Sdk/">
 
-  <!-- Sets package-specific properties based on name and path -->
-  <Import Project="..\..\..\Props\loadPropsConfig.props" />
+  <!-- Configurates automatization targets -->
+  <Import Project="..\..\..\Props\automatizationConfig.targets" />
   
-  <!--  Configurates build properties packageId and AssemblyName -->
-  <Import Project="..\..\..\Props\buildPropsConfig.props" />
+  <!-- Configurates build properties -->
+  <Import Project="..\..\..\Props\propertiesConfig.props" />
   
   <PropertyGroup>
     <AdditionalExcludes>
@@ -13,15 +13,7 @@
     </AdditionalExcludes>
   </PropertyGroup>
   
-  <!-- Adds compile and content ItemGroup Node. 
-      Adds to Content's Exclude attr additional excludes  -->
-  <Import Project="..\..\..\Props\compileContentConfig.props" />
-  
-  <ItemGroup>
-    <PackageReference Include="Psr.Container" Version="1.0.0" />
-    <PackageReference Include="Symfony.Config" Version="4.2.3" />
-    <PackageReference Include="Symfony.Contracts" Version="1.0.2" />
-    <PackageReference Include="Symfony.Finder" Version="4.2.3" />
-  </ItemGroup>
+  <!-- Fills compile and content items -->
+  <Import Project="..\..\..\Props\compilationConfig.props" />
   
 </Project>
