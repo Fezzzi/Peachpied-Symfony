@@ -12,3 +12,4 @@ Tasks/temp/
 .idea/
 Compiler Tests/
 Additional-Tools/Test
+Libs/buildScript.ps1
