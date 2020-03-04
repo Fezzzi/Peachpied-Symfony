@@ -20,18 +20,26 @@
 	<UsingTask TaskName="FilterLibExcludes" AssemblyFile="$(LibsAssebly)" />
 	
 	<!-- To keep symfony components' cache up to date. -->
-	<Target Name="WarmCache" Inputs="$(MSBuildProjectDirectory)\composer.lock" Outputs="$(CacheDir)\libsCache.json">
+	<Target Name="WarmSymfonyCache" Inputs="$(MSBuildProjectDirectory)\composer.lock" Outputs="$(CacheDir)\libsCache.json">
 		<Delete Files="$(CacheDir)\libsCache.json" Condition="Exists('$(CacheDir)\libsCache.json')" />
 		<WarmLibsCache ProjPath="$(ProjPath)" ConfigPath="$(ConfigPath)" />
 	</Target>
 	
 	<!-- To ensure libsCache are removed on clear request. -->
-	<Target Name="ClearCache" AfterTargets="Clean">
+	<Target Name="ClearSymfonyCache" AfterTargets="Clean">
 		<Delete Files="$(CacheDir)\libsCache.json" Condition="Exists('$(CacheDir)\libsCache.json')" />
 	</Target>
 	
-	<!-- Tasks to atuomatize process such as library's version retrieval, dependencies retrieval, ... -->
-	<Target Name="AutomatizationTasks" BeforeTargets="BeforeBuild" DependsOnTargets="WarmCache">
+	<!-- To simulate component's dependencies with package references -->
+	<!-- We hook the target on CollectPackageDownloads instead of CollectPackageReferences as the later one is executed twice during build -->
+	<Target Name="AddSymfonyPackageReferences" BeforeTargets="CollectPackageReferences" DependsOnTargets="WarmSymfonyCache">
+		<GetLibReferences CachePath="$(CacheDir)" RepoPath="$(RepoPath)" LibName="$(MSBuildProjectName)" Condition="$(ManualReferences)!=true">
+			<Output TaskParameter="References" ItemName="PackageReference" />
+		</GetLibReferences>
+	</Target>
+	
+	<!-- Tasks to retrieve library's version and compilation blocking files exclusion -->
+	<Target Name="SymfonyAutomatizationTasks" BeforeTargets="BeforeBuild" DependsOnTargets="WarmSymfonyCache">
 		<GetLibVersion CachePath="$(CacheDir)" LibName="$(MSBuildProjectName)" Condition="$(ManualVersion)!=true">
 			<Output TaskParameter="Version" PropertyName="PackageVersion" />
 		</GetLibVersion>
@@ -44,10 +52,6 @@
 		  <Compile Remove="@(Compile)" />
 		  <Compile Include="@(NewCompile)" />
 		</ItemGroup>
-		
-		<GetLibReferences CachePath="$(CacheDir)" RepoPath="$(RepoPath)" LibName="$(MSBuildProjectName)" Condition="$(ManualReferences)!=true">
-			<Output TaskParameter="References" ItemName="PackageReference" />
-		</GetLibReferences>
 	</Target>
 	
 </Project>

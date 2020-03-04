@@ -29,7 +29,9 @@
 	},
 	"symfony/cache": {
 		"4.2.3": {
-			"excludes": [],
+			"excludes": [
+				"DoctrineProvider.php"
+			],
 			"includes": [],
 			"ignoredDependencies": []
 		}
