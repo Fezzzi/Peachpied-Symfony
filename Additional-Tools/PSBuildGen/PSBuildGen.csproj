@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Description>Simple generator of build files for Symfony components</Description>
+    <Version>1.0.0</Version>
+    <Authors>Filip Horký</Authors>
+    <LibsDir>$(MSBuildThisFileDirectory)..\..\Libs</LibsDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Jokedst.GetOpt" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PSTools\PSTools.csproj" />
+  </ItemGroup>
+
+  <Target Name="ForcePublish" AfterTargets="Publish">
+    <ItemGroup>
+      <Files Include="$(MSBuildThisFileDirectory)$(OutputPath)*.*" Exclude="$(MSBuildThisFileDirectory)$(OutputPath)publish\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(Files)" DestinationFolder="$(LibsDir)" />
+  </Target>
+</Project>
