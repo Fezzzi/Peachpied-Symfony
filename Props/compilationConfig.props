@@ -6,9 +6,7 @@
 			Exclude="	$(LibraryPath)**\test\**;
 						$(LibraryPath)**\Test\**;
 						$(LibraryPath)**\tests\**;
-						$(LibraryPath)**\Tests\**;
-						$(AdditionalExcludes)"/>
-		<Compile Include="$(AdditionalIncludes)" />
+						$(LibraryPath)**\Tests\**;"/>
 		<Content Include="$(LibraryPath)**" 
 			Exclude="	$(LibraryPath)**\*.php;
 						**\*.msbuildproj;

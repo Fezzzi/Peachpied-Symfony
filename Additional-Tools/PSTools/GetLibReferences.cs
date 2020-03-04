@@ -12,7 +12,7 @@ namespace Microsoft.Build.Tasks {
     /// </summary>
     public sealed class GetLibReferences : Task {
         [Required]
-        public ITaskItem TempPath { get; set; }
+        public ITaskItem CachePath { get; set; }
         [Required]
         public ITaskItem RepoPath { get; set; }
         [Required]
@@ -22,7 +22,7 @@ namespace Microsoft.Build.Tasks {
 
         public override bool Execute() {
             string name = LibName.ItemSpec.Replace('.', '/').ToLower();
-            JsonObject cache = parseCache(TempPath.ItemSpec);       
+            JsonObject cache = parseCache(CachePath.ItemSpec);       
             if (cache == null || cache[name] == null) {
                 return false;
             }
@@ -87,8 +87,8 @@ namespace Microsoft.Build.Tasks {
         /// <summary>
         /// Finds and parses json cache file.
         /// </summary>
-        private static JsonObject parseCache(string tempPath) {
-            string cacheFile = Path.Combine(tempPath, "libsCache.json");
+        private static JsonObject parseCache(string cachePath) {
+            string cacheFile = Path.Combine(cachePath, "libsCache.json");
 
             if (!File.Exists(cacheFile)) {
                 Console.WriteLine("Cache file not found! Ensure cache are warmed prior running GetLibReference!");

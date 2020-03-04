@@ -4,12 +4,10 @@
 	  <TargetFramework>netstandard2.0</TargetFramework>
 	  <OutputType>library</OutputType>
 	  <RootNamespace>PSTools</RootNamespace>
-	  <PackageId>Peachpied.Symfony.Tools</PackageId>
 	  <Description>Set of tasks for symfony library build process automatization</Description>
 	  <Version>1.0.0</Version>
 	  <Authors>Filip Horký</Authors>
-	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	  <PackageOutputPath>../../PS-Tools-Nuget-Repository/</PackageOutputPath>
+    <LibsDir>$(MSBuildThisFileDirectory)..\..\Libs</LibsDir>
   </PropertyGroup>
   
   <ItemGroup>
@@ -35,6 +33,11 @@
   </ItemGroup>
   
   <Target Name="ForcePublish" AfterTargets="Build">
-	  <MSBuild Projects="PSTools.csproj" Properties="Configuration=Debug" Targets="Publish" />
+	  <MSBuild Projects="PSTools.csproj" Properties="Configuration=$(Configuration)" Targets="Publish" />
+	  <ItemGroup>
+		<Files Include="$(MSBuildThisFileDirectory)$(OutputPath)publish\*.*"
+           Exclude="$(MSBuildThisFileDirectory)$(OutputPath)publish\runtimes\*.*" />
+	  </ItemGroup>
+	  <Copy SourceFiles="@(Files)" DestinationFolder="$(LibsDir)" />
   </Target>
 </Project>

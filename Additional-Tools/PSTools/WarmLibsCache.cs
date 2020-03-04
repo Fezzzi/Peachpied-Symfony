@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Json;
+using System.Linq;
 using System.Text;
 using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
@@ -16,30 +17,36 @@ namespace Microsoft.Build.Tasks {
         [Required]
         public ITaskItem ProjPath { get; set; }
         [Required]
-        public ITaskItem TempPath { get; set; }
+        public ITaskItem ConfigPath { get; set; }
+
+        public List<string> OrderedComponents { get; private set; }
 
         public override bool Execute() {
             string lockPath = getLockPath(ProjPath.ItemSpec);
-
-            return !lockPath.Equals(String.Empty) && warmCache(lockPath, TempPath.ItemSpec);
+            string tempPath = Path.Combine(ProjPath.ItemSpec, "obj");
+            return !lockPath.Equals(String.Empty) && warmCache(lockPath, tempPath, ConfigPath.ItemSpec);
         }
 
         /// <summary>
         /// Generates libsCache.json caches.
         /// </summary>
-        private static bool warmCache(string lockPath, string tempPath) {
+        private bool warmCache(string lockPath, string tempPath, string configPath) {
+            JsonObject config = getConfig(configPath);
             (JsonArray lockPackages, JsonArray lockPackagesDev) = getPackageParts(lockPath);
             JsonObject packages = new JsonObject();
 
             foreach (JsonObject package in lockPackages) {
-                packages.Add(package["name"], getPackageRecord(package, false));
+                packages.Add(package["name"], getPackageRecord(package, config, false));
             }
             foreach (JsonObject package in lockPackagesDev) {
-                packages.Add(package["name"], getPackageRecord(package, true));
+                packages.Add(package["name"], getPackageRecord(package, config, true));
             }
             DependencyGraph graph = DependencyGraph.BuildFromCache(packages);
             graph.FilterCycles();
-            string jsonString = formater.Format(graph.ToJsonString());
+            List<Tuple<bool, Node>> orderedComponents = graph.SortPackages();
+            OrderedComponents = new List<string>(orderedComponents.Select(el => el.Item2.name));
+            string jsonString = formater.Format(toJsonOrdered(orderedComponents));
+            Directory.CreateDirectory(tempPath);
             using (StreamWriter sw = new StreamWriter(Path.Combine(tempPath, "libsCache.json"))) {
                 sw.Write(jsonString);
             }
@@ -63,28 +70,39 @@ namespace Microsoft.Build.Tasks {
         /// <summary>
         /// Creates package record for the further processing.
         /// </summary>
-        private static JsonObject getPackageRecord(JsonObject data, bool isDev) {
+        private static JsonObject getPackageRecord(JsonObject data, JsonObject config, bool isDev) {
+            string version = ((string)data["version"]).Replace("v", "");
             return new JsonObject {
-                { "version", ((string)data["version"]).Replace("v", "") },
+                { "version", version },
                 { "dev", isDev },
-                { "dependencies", getPackageDependencies(data) }
+                { "dependencies", getPackageDependencies(data, config, data["name"], version) }
             };
         }
 
         /// <summary>
         /// Groups together package dependencies and filters out dependency on PHP version.
         /// </summary>
-        private static JsonObject getPackageDependencies(JsonObject data) {
+        private static JsonObject getPackageDependencies(
+            JsonObject data, 
+            JsonObject config, 
+            string name, 
+            string version
+        ) {
+            JsonArray ignores = ((config[name] as JsonObject)?[version] as JsonObject)
+                ?["ignoredDependencies"] as JsonArray;
+            HashSet<string> ignoresMap = ignores != null 
+                ? new HashSet<string>(ignores.Select(e => e.ToString().Replace("\"", ""))) 
+                : null;
             JsonObject dependencies = new JsonObject();
 
             foreach (string package in (data["require"] as JsonObject).Keys) {
-                if (!package.Equals("php")) {
+                if (!package.Equals("php") && ignoresMap != null && !ignoresMap.Contains(package)) {
                     dependencies.Add(package, false);
                 }
             }
             if (data.ContainsKey("require-dev")) {
                 foreach (string package in (data["require-dev"] as JsonObject).Keys) {
-                    if (!package.Equals("php")) {
+                    if (!package.Equals("php") && ignoresMap != null && !ignoresMap.Contains(package)) {
                         dependencies.Add(package, true);
                     }
                 }
@@ -96,7 +114,7 @@ namespace Microsoft.Build.Tasks {
         /// Searches provided path and all parent directories for composer.lock.
         /// </summary>
         private static string getLockPath(string path) {
-            DirectoryInfo di = new DirectoryInfo(path);
+            DirectoryInfo di = path != String.Empty ? new DirectoryInfo(path) : null;
 
             while (di != null && !File.Exists(Path.Combine(di.FullName, "composer.lock"))) {
                 di = di.Parent;
@@ -107,6 +125,78 @@ namespace Microsoft.Build.Tasks {
             }
 
             return Path.Combine(di.FullName, "composer.lock");
+        }
+
+        /// <summary>
+        /// Loads config file
+        /// </summary>
+        private static JsonObject getConfig(string configPath) {
+            string config = Path.Combine(configPath, "libsConfig.json");
+
+            if (!File.Exists(config)) {
+                Console.WriteLine("Config file not found! Proceeding without it...");
+                return null;
+            }
+            string configText = File.ReadAllText(config);
+            return JsonValue.Parse(configText) as JsonObject;
+        }
+
+        /// <summary>
+        /// Serialize the list of packages to json.
+        /// </summary>
+        private static JsonObject toJson(List<Tuple<bool, Node>> packages) {
+            JsonObject obj = new JsonObject();
+
+            foreach (var (isPackageDev, packageNode) in packages) {
+                JsonObject packageDeps = new JsonObject();
+
+                foreach (var dep in packageNode.children) {
+                    packageDeps.Add(dep.Value.Item2.name, dep.Value.Item1);
+                }
+                obj.Add(packageNode.name, new JsonObject {
+                    { "version", packageNode.version },
+                    { "dev", isPackageDev },
+                    { "dependencies", packageDeps }
+                });
+            }
+            return obj;
+        }
+
+        /// <summary>
+        /// Manually serialize the list of pakages to json string.
+        /// We can't use default ToString of JsonObject as it would result in alphabetical reordering.
+        /// </summary>
+        private static string toJsonOrdered(List<Tuple<bool, Node>> packages) {
+            bool firstPackage = true;
+            StringBuilder str = new StringBuilder("{");
+
+            foreach (var (isPackageDev, packageNode) in packages) {
+                bool firstDependency = true;
+                StringBuilder dependenciesStr = new StringBuilder("\"dependencies\": {");
+
+                foreach (var dep in packageNode.children) {
+                    if (!firstDependency) {
+                        dependenciesStr.Append(",");
+                    } else {
+                        firstDependency = false;
+                    }
+                    dependenciesStr.Append($"\"{dep.Value.Item2.name}\": {dep.Value.Item1.ToString().ToLower()}");
+                }
+                dependenciesStr.Append("}");
+
+                if (!firstPackage) {
+                    str.Append(",");
+                } else {
+                    firstPackage = false;
+                }
+                str.Append($"\"{packageNode.name}\": {{");
+                str.Append($"\"version\": \"{packageNode.version}\",");
+                str.Append($"\"dev\": {isPackageDev.ToString().ToLower()},");
+                str.Append(dependenciesStr.ToString());
+                str.Append("}");
+            }
+            str.Append("}");
+            return str.ToString();
         }
     }
 
@@ -141,68 +231,10 @@ namespace Microsoft.Build.Tasks {
         }
 
         /// <summary>
-        /// Serialize graph to json.
-        /// </summary>
-        public JsonObject ToJson() {
-            JsonObject obj = new JsonObject();
-
-            foreach (var (isPackageDev, packageNode) in sortPackages(root.children)) {
-                JsonObject packageDeps = new JsonObject();
-
-                foreach (var dep in packageNode.children) {
-                    packageDeps.Add(dep.Value.Item2.name, dep.Value.Item1);
-                }
-                obj.Add(packageNode.name, new JsonObject {
-                    { "version", packageNode.version },
-                    { "dev", isPackageDev },
-                    { "dependencies", packageDeps }
-                });
-            }
-            return obj;
-        }
-
-        /// <summary>
-        /// Manually serialize the graph to json string with keys sorted by dependencies.
-        /// We can't use default ToString of JsonObject as it would result in alphabetical reordering.
-        /// </summary>
-        public string ToJsonString() {
-            bool firstPackage = true;
-            StringBuilder str = new StringBuilder("{");
-
-            foreach (var (isPackageDev, packageNode) in sortPackages(root.children)) {
-                bool firstDependency = true;
-                StringBuilder dependenciesStr = new StringBuilder("\"dependencies\": {");
-
-                foreach (var dep in packageNode.children) {
-                    if (!firstDependency) {
-                        dependenciesStr.Append(",");
-                    } else {
-                        firstDependency = false;
-                    }
-                    dependenciesStr.Append($"\"{dep.Value.Item2.name}\": {dep.Value.Item1.ToString().ToLower()}");
-                }
-                dependenciesStr.Append("}");
-
-                if (!firstPackage) {
-                    str.Append(",");
-                } else {
-                    firstPackage = false;
-                }
-                str.Append($"\"{packageNode.name}\": {{");
-                str.Append($"\"version\": \"{packageNode.version}\",");
-                str.Append($"\"dev\": {isPackageDev.ToString().ToLower()},");
-                str.Append(dependenciesStr.ToString());
-                str.Append("}");
-            }
-            str.Append("}");
-            return str.ToString();
-        }
-
-        /// <summary>
         /// Sorts packages into list by their dependencies.
         /// </summary>
-        private List<Tuple<bool, Node>> sortPackages(Dictionary<string, Tuple<bool, Node>> packages) {
-            List<Tuple<bool, Node>> sortedPackages = new List<Tuple<bool, Node>>(packages.Values);
+        public List<Tuple<bool, Node>> SortPackages() {
+            List<Tuple<bool, Node>> sortedPackages = new List<Tuple<bool, Node>>(root.children.Values);
 
             if (sortedPackages.Count > 1) {
                 for (int index = 0; index < sortedPackages.Count; ++index) {

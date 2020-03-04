@@ -5,7 +5,12 @@ VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSTools", "PSTools.csproj", "{C55AEDCB-76DA-460D-A50E-38361F241F0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "..\Test\Test.csproj", "{1BD89A03-9228-48A5-8773-2C403DB4181D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "..\Test\Test.csproj", "{1BD89A03-9228-48A5-8773-2C403DB4181D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSBuildGen", "..\PSBuildGen\PSBuildGen.csproj", "{69697FE4-4FE2-4926-A698-8953E7A0A44C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C55AEDCB-76DA-460D-A50E-38361F241F0A} = {C55AEDCB-76DA-460D-A50E-38361F241F0A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{1BD89A03-9228-48A5-8773-2C403DB4181D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BD89A03-9228-48A5-8773-2C403DB4181D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BD89A03-9228-48A5-8773-2C403DB4181D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69697FE4-4FE2-4926-A698-8953E7A0A44C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69697FE4-4FE2-4926-A698-8953E7A0A44C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69697FE4-4FE2-4926-A698-8953E7A0A44C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69697FE4-4FE2-4926-A698-8953E7A0A44C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
