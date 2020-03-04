@@ -1,13 +1,15 @@
 **/.vs
 **/obj/
-**/bin/Debug/
+**/bin/
 **/var/
 **/vendor/
 Peachpied-Symfony/empty-page-php-latest/
 Peachpied-Symfony/empty-page-project-refs/
-Peachpied-Symfony-Nuget-Repository/
+Tasks/temp/
 .gitattributes
 *.cache
 *.nupkg
 .idea/
 Compiler Tests/
+Additional-Tools/Test
+Libs/buildScript.ps1

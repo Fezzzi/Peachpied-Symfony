@@ -8,7 +8,7 @@ The aplication has selected structure:
    - Contains a set of tools and script that make process of Nuget recompilation or application start-up easier.
    - These will be further integrated into build and start-up processes.
 
- - **Peachpied-Symfony-Nuget-Repository/**
+ - **PS-Nuget-Repository/**
    - Contains generated Nuget packages that correspond to Symfony components.
 
  - **Peachpied-Symfony-Twig-Razor/**

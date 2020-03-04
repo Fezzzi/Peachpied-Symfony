@@ -72,6 +72,8 @@ Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Validator", "Symfon
 EndProject
 Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Polyfill-intl-icu", "Symfony.Empty-Page\Symfony.Polyfill-intl-icu.msbuildproj", "{C92BA3F5-02F6-4E5F-AB4F-55CD26CE56BC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E60340EC-507B-4DB4-89E0-A63DDF38D485}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

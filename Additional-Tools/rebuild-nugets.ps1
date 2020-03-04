@@ -51,6 +51,6 @@ foreach ($library in $libraries) {
 cd ../../../Peachpied-Symfony-Compilation-Tools
 echo "Building finished!"
 
-Remove-Item ../Peachpied-Symfony-Nuget-Repository/dependencies.json
-echo "Updating dependencies cache..."
-PHP .\Dependencies-Cache-Tool.php
+#Remove-Item ../PS-Nuget-Repository/dependencies.json
+#echo "Updating dependencies cache..."
+#PHP .\Dependencies-Cache-Tool.php

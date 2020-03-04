@@ -1,0 +1,339 @@
+{
+	"psr/cache": {
+		"1.0.1": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"psr/container": {
+		"1.0.0":  {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"psr/log": {
+		"1.1.0": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"psr/simple-cache": {
+		"1.0.1": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/cache": {
+		"4.2.3": {
+			"excludes": [
+				"DoctrineProvider.php"
+			],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/config": {
+		"4.2.3": {
+			"excludes": [
+				"DoctrineProvider.php"
+			],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/console": {
+		"4.2.3": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/contracts": {
+		"1.0.2": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/debug": {
+		"4.2.3": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/dependency-injection": {
+		"4.2.3": {
+			"excludes": [
+				"ExpressionLanguage.php",
+				"ExpressionLanguageProvider.php"
+			],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/dotenv": {
+		"4.2.3": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/event-dispatcher": {
+		"4.2.3": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/filesystem": {
+		"4.2.3": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/finder": {
+		"4.2.3": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/flex": {
+		"1.2.0": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/form": {
+		"4.2.10": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/framework-bundle": {
+		"4.2.3": {
+			"excludes": [
+				"Client.php",
+				"command/XliffLintCommand.php"
+			],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/http-foundation": {
+		"4.2.3": {
+			"excludes": [
+				"Session/Storage/Handler/MigratingSessionHandler.php",
+				"Session/Storage/Proxy/SessionHandlerProxy.php"
+			],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/http-kernel": {
+		"4.2.3": {
+			"excludes": [
+				"DataCollector/DumpDataCollector.php",
+				"Client.php"
+			],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/inflector": {
+		"4.2.10": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/intl": {
+		"4.2.10": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/options-resolver": {
+		"4.2.10": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/polyfill-intl-icu": {
+		"1.11.0": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": [
+				"symfony/intl"
+			]
+		}
+	},
+	"symfony/polyfill-mbstring": {
+		"1.10.0": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/property-access": {
+		"4.2.10": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/routing": {
+		"4.2.3": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/templating": {
+		"4.2.10": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/translation": {
+		"4.2.8": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/twig-bridge": {
+		"4.2.10": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/twig-bundle": {
+		"4.2.10": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/validator": {
+		"4.2.10": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/var-exporter": {
+		"4.2.3": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/yaml": {
+		"4.2.3": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"twig/twig": {
+		"2.11.3" : {
+			"excludes": [
+				"lib/Twig/TokenParserInterface.php",
+				"lib/Twig/SourceContextLoaderInterface.php",
+				"lib/Twig/Sandbox/SecurityPolicyInterace.php",
+				"lib/Twig/Sandbox/SecurityPolicy.php",
+				"lib/Twig/RuntimeLoaderInterface.php",
+				"lib/Twig/NodeVisitorInterface.php",
+				"lib/Twig/NodeOutputInterface.php",
+				"lib/Twig/NodeCaptureInterface.php",
+				"lib/Twig/LoaderInterface.php",
+				"lib/Twig/Extension/InitRuntimeInterface.php",
+				"lib/Twig/Extension/GlobalsInterface.php",
+				"lib/Twig/ExtensionInterface.php",
+				"lib/Twig/ExistsLoaderInterface.php",
+				"lib/Twig/CacheInterface.php",
+				"lib/Twig/Util/DeprecationCollector.php",
+				"lib/Twig/TokenStream.php",
+				"lib/Twig/Cache/Null.php",
+				"lib/Twig/ExtensionSet.php",
+				"lib/Twig/Extension/Core.php",
+				"lib/Twig/Extension/Debug.php",
+				"lib/Twig/Extension/Escaper.php",
+				"lib/Twig/Extension/Optimizer.php",
+				"lib/Twig/Extension/Sandbox.php",
+				"lib/Twig/Extension/Staging.php",
+				"lib/Twig/Extension/StringLoader.php",
+				"lib/Twig/Loader/Array.php",
+				"lib/Twig/Loader/Chain.php",
+				"lib/Twig/NodeTraverser.php",
+				"lib/Twig/NodeVisitor/Escaper.php",
+				"lib/Twig/NodeVisitor/Optimizer.php",
+				"lib/Twig/NodeVisitor/SafeAnalysis.php",
+				"lib/Twig/NodeVisitor/Sandbox.php",
+				"lib/Twig/Profiler/Dumper/Blackfire.php",
+				"lib/Twig/Profiler/Dumper/Html.php",
+				"lib/Twig/Profiler/Dumper/Text.php",
+				"lib/Twig/Profiler/NodeVisitor/Profiler.php",
+				"lib/Twig/Sandbox/SecurityPolicyInterface.php",
+				"lib/Twig/Source.php",
+				"lib/Twig/TemplateWrapper.php",
+				"lib/Twig/Token.php",
+				"lib/Twig/TokenParser/AutoEscape.php",
+				"lib/Twig/TokenParser/Block.php",
+				"lib/Twig/TokenParser/Do.php",
+				"lib/Twig/TokenParser/Embed.php",
+				"lib/Twig/TokenParser/Extends.php",
+				"lib/Twig/TokenParser/Filter.php",
+				"lib/Twig/TokenParser/Flush.php",
+				"lib/Twig/TokenParser/For.php",
+				"lib/Twig/TokenParser/From.php",
+				"lib/Twig/TokenParser/If.php",
+				"lib/Twig/TokenParser/Import.php",
+				"lib/Twig/TokenParser/Macro.php",
+				"lib/Twig/TokenParser/Sandbox.php",
+				"lib/Twig/TokenParser/Set.php",
+				"lib/Twig/TokenParser/Spaceless.php",
+				"lib/Twig/TokenParser/Use.php",
+				"lib/Twig/TokenParser/With.php",
+				"lib/Twig/BaseNodeVisitor.php",
+				"lib/Twig/Node/Expression/Unary.php",
+				"lib/Twig/Profiler/Dumper/Base.php",
+				"lib/Twig/Template.php",
+				"lib/Twig/TokenParser.php",
+				"lib/Twig/Node/Expression/Binary.php"
+			],
+			"includes": [
+				"lib/Twig/Node/Expression/Test/*.php",
+				"src/Node/Expression/Test/*.php"
+			],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/process": {
+		"4.2.4": {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	},
+	"symfony/web-server-bundle": {
+		"4.2.10" : {
+			"excludes": [],
+			"includes": [],
+			"ignoredDependencies": []
+		}
+	}
+}

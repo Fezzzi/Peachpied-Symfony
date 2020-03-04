@@ -32,6 +32,6 @@
   <ItemGroup>
     <PackageReference Include="PeachPied.Symfony.AspNetCore" Version="1.0.0" />
     <PackageReference Include="PeachPied.Symfony.Skeleton" Version="1.0.0" />
-    <PackageReference Include="Symfony.Twig-bundle" Version="1.0.0" />
+    <PackageReference Include="Symfony.Twig-bundle" Version="4.2.10" />
   </ItemGroup>
 </Project>

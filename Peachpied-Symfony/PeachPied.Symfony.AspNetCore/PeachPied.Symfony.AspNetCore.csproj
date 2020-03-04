@@ -8,7 +8,7 @@
 	<PackageId>PeachPied.Symfony.AspNetCore</PackageId>
 	<PackageVersion>1.0.0</PackageVersion>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<PackageOutputPath>..\..\Peachpied-Symfony-Nuget-Repository\</PackageOutputPath>
+	<PackageOutputPath>..\..\PS-Nuget-Repository\</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,7 +18,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.1.1" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="2.1.1" />
     <PackageReference Include="Peachpie.AspNetCore.Web" Version="1.0.0-appv2847" />
-    <PackageReference Include="Twig.Twig" Version="1.0.0" />
+    <PackageReference Include="Twig.Twig" Version="2.11.3" />
   </ItemGroup>
 
 </Project>

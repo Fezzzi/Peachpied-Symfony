@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<PropertyGroup>
+		<PropsPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</PropsPath>
+		<ConfigPath>$(PropsPath)..\</ConfigPath>
+		<RepoPath>$(PropsPath)..\PS-Nuget-Repository\</RepoPath>
+		<LibsAssebly>$(PropsPath)..\Libs\PSTools.dll</LibsAssebly>
+		<ProjPath>$(MSBuildProjectDirectory)</ProjPath>
+		<CacheDir>$(ProjDir)obj</CacheDir>
+		
+		<ManualVersion>false</ManualVersion>
+		<ManualExcludes>false</ManualExcludes>
+		<ManualReferences>false</ManualReferences>
+	</PropertyGroup>
+	
+	<UsingTask TaskName="WarmLibsCache" AssemblyFile="$(LibsAssebly)" />
+	<UsingTask TaskName="GetLibVersion" AssemblyFile="$(LibsAssebly)" />
+	<UsingTask TaskName="GetLibReferences" AssemblyFile="$(LibsAssebly)" />
+	<UsingTask TaskName="FilterLibExcludes" AssemblyFile="$(LibsAssebly)" />
+	
+	<!-- To keep symfony components' cache up to date. -->
+	<Target Name="WarmSymfonyCache" Inputs="$(MSBuildProjectDirectory)\composer.lock" Outputs="$(CacheDir)\libsCache.json">
+		<Delete Files="$(CacheDir)\libsCache.json" Condition="Exists('$(CacheDir)\libsCache.json')" />
+		<WarmLibsCache ProjPath="$(ProjPath)" ConfigPath="$(ConfigPath)" />
+	</Target>
+	
+	<!-- To ensure libsCache are removed on clear request. -->
+	<Target Name="ClearSymfonyCache" AfterTargets="Clean">
+		<Delete Files="$(CacheDir)\libsCache.json" Condition="Exists('$(CacheDir)\libsCache.json')" />
+	</Target>
+	
+	<!-- To simulate component's dependencies with package references -->
+	<!-- We hook the target on CollectPackageDownloads instead of CollectPackageReferences as the later one is executed twice during build -->
+	<Target Name="AddSymfonyPackageReferences" BeforeTargets="CollectPackageReferences" DependsOnTargets="WarmSymfonyCache">
+		<GetLibReferences CachePath="$(CacheDir)" RepoPath="$(RepoPath)" LibName="$(MSBuildProjectName)" Condition="$(ManualReferences)!=true">
+			<Output TaskParameter="References" ItemName="PackageReference" />
+		</GetLibReferences>
+	</Target>
+	
+	<!-- Tasks to retrieve library's version and compilation blocking files exclusion -->
+	<Target Name="SymfonyAutomatizationTasks" BeforeTargets="BeforeBuild" DependsOnTargets="WarmSymfonyCache">
+		<GetLibVersion CachePath="$(CacheDir)" LibName="$(MSBuildProjectName)" Condition="$(ManualVersion)!=true">
+			<Output TaskParameter="Version" PropertyName="PackageVersion" />
+		</GetLibVersion>
+
+		<FilterLibExcludes ConfigPath="$(ConfigPath)" LibPath="$(LibraryPath)" LibName="$(MSBuildProjectName)" LibVersion="$(PackageVersion)" 
+			Compile="@(Compile)" Condition="$(ManualExcludes)!=true">
+			<Output TaskParameter="NewCompile" ItemName="NewCompile" />
+		</FilterLibExcludes>
+		<ItemGroup>
+		  <Compile Remove="@(Compile)" />
+		  <Compile Include="@(NewCompile)" />
+		</ItemGroup>
+	</Target>
+	
+</Project>

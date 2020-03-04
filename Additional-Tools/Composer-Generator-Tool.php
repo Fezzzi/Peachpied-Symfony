@@ -133,7 +133,7 @@ class ComposerGenerator {
             return sizeof($el) === 3 ? $el[1] : false;
         }, $matches);
 
-        $dependencyCache = file_get_contents("../Peachpied-Symfony-Nuget-Repository/dependencies.json");
+        $dependencyCache = file_get_contents("../PS-Nuget-Repository/dependencies.json");
         if ($dependencyCache !== false) {
             $dependencyCache = json_decode($dependencyCache);
             foreach ($basePackages as $key => $package) {
