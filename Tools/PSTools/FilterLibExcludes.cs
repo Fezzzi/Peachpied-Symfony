@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Json;
 using System.Linq;
-using System.Text;
 using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
 
@@ -58,8 +57,9 @@ namespace Microsoft.Build.Tasks {
                 }
             }
             foreach (JsonValue include in includes) {
-                ITaskItem item = new TaskItem(include);
-                item.SetMetadata("Includes", include);
+                string includeFile = $"{libPath}{include.ToString().Replace("\"", "").Replace('/', '\\')}";
+                ITaskItem item = new TaskItem(includeFile);
+                item.SetMetadata("Includes", includeFile);
                 newCompile.Add(item);
             }
             return newCompile.ToArray();

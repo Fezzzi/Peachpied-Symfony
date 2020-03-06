@@ -47,6 +47,7 @@ namespace PSBuildGen {
                 ));
 
                 Console.WriteLine("Generating build files...");
+                generateDirectoryBuildProps();
                 foreach (string component in components) {
                     generateBuildFile(component);
                 }
@@ -127,6 +128,29 @@ $@"<?xml version=""1.0"" encoding=""utf-8""?>
 </Project>";
 
             string fileName = Path.Combine(projectOpt, component + ".msbuildproj");
+            StreamWriter file = new StreamWriter(fileName, false);
+            file.Write(fileContent);
+            file.Flush();
+            file.Close();
+        }
+
+        /// <summary>
+        /// Generate file that defines properties in an early stage of compilation
+        /// </summary>
+        private static void generateDirectoryBuildProps() {
+            string fileContent =
+$@"<?xml version=""1.0"" encoding=""utf-8""?>
+<Project xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">
+   
+    <PropertyGroup>
+        <ProjectNameLocation>$([MSBuild]::EnsureTrailingSlash('$([System.String]::Copy('$(MSBuildProjectName)').Replace('.','\'))'))</ProjectNameLocation>
+        <BaseOutputPath>.\bin\$(Configuration)\$(ProjectNameLocation)</BaseOutputPath>
+        <BaseIntermediateOutputPath>.\obj\$(Configuration)\$(ProjectNameLocation)</BaseIntermediateOutputPath>
+    </PropertyGroup>      
+
+</Project>";
+
+            string fileName = Path.Combine(projectOpt, "Directory.Build.props");
             StreamWriter file = new StreamWriter(fileName, false);
             file.Write(fileContent);
             file.Flush();

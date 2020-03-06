@@ -12,6 +12,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSBuildGen", "..\PSBuildGen
 		{C55AEDCB-76DA-460D-A50E-38361F241F0A} = {C55AEDCB-76DA-460D-A50E-38361F241F0A}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSProjectTools", "..\PSProjectTools\PSProjectTools.csproj", "{F38EB926-0E27-49EC-9E6E-AA5A4E8A8869}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{69697FE4-4FE2-4926-A698-8953E7A0A44C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69697FE4-4FE2-4926-A698-8953E7A0A44C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69697FE4-4FE2-4926-A698-8953E7A0A44C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F38EB926-0E27-49EC-9E6E-AA5A4E8A8869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F38EB926-0E27-49EC-9E6E-AA5A4E8A8869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F38EB926-0E27-49EC-9E6E-AA5A4E8A8869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F38EB926-0E27-49EC-9E6E-AA5A4E8A8869}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

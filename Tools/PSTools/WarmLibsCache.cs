@@ -88,12 +88,17 @@ namespace Microsoft.Build.Tasks {
             string name, 
             string version
         ) {
-            JsonArray ignores = ((config[name] as JsonObject)?[version] as JsonObject)
-                ?["ignoredDependencies"] as JsonArray;
-            HashSet<string> ignoresMap = ignores != null 
-                ? new HashSet<string>(ignores.Select(e => e.ToString().Replace("\"", ""))) 
-                : null;
             JsonObject dependencies = new JsonObject();
+            JsonObject ignores = config.ContainsKey(name) ? (config[name] as JsonObject) : null;
+            ignores = ignores != null && ignores.ContainsKey(version) 
+                ? (ignores[version] as JsonObject) 
+                : ignores.ContainsKey("default") 
+                    ? (ignores["default"] as JsonObject) 
+                    : null;
+            HashSet<string> ignoresMap = ignores != null && ignores.ContainsKey("ignoredDependencies") 
+                ? new HashSet<string>((ignores["ignoredDependencies"] as JsonArray).Select(
+                    e => e.ToString().Replace("\"", "")
+                )) : null;
 
             foreach (string package in (data["require"] as JsonObject).Keys) {
                 if (!package.Equals("php") && ignoresMap != null && !ignoresMap.Contains(package)) {
