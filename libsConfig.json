@@ -316,8 +316,20 @@
 				"lib/Twig/Node/Expression/Binary.php"
 			],
 			"includes": [
-				"lib/Twig/Node/Expression/Test/*.php",
-				"src/Node/Expression/Test/*.php"
+				"lib/Twig/Node/Expression/Test/Constant.php",
+				"lib/Twig/Node/Expression/Test/Defined.php",
+				"lib/Twig/Node/Expression/Test/Divisibleby.php",
+				"lib/Twig/Node/Expression/Test/Even.php",
+				"lib/Twig/Node/Expression/Test/Null.php",
+				"lib/Twig/Node/Expression/Test/Odd.php",
+				"lib/Twig/Node/Expression/Test/Sameas.php",
+				"src/Node/Expression/Test/ConstantTest.php",
+				"src/Node/Expression/Test/DefinedTest.php",
+				"src/Node/Expression/Test/DivisiblebyTest.php",
+				"src/Node/Expression/Test/EvenTest.php",
+				"src/Node/Expression/Test/NullTest.php",
+				"src/Node/Expression/Test/OddTest.php",
+				"src/Node/Expression/Test/SameasTest.php"
 			],
 			"ignoredDependencies": []
 		}
