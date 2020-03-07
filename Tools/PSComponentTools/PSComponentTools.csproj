@@ -3,7 +3,7 @@
   <PropertyGroup>
 	  <TargetFramework>netstandard2.0</TargetFramework>
 	  <OutputType>library</OutputType>
-	  <RootNamespace>PSTools</RootNamespace>
+	  <RootNamespace>PSComponentTools</RootNamespace>
 	  <Description>Set of tasks for symfony library build process automatization</Description>
 	  <Version>1.0.0</Version>
 	  <Authors>Filip Horký</Authors>
@@ -11,13 +11,12 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <Compile Remove=".\**"/>
+    <Compile Remove=".\**" />
     <Compile Include="*.cs" />
     <EmbeddedResource Remove=".\**" />
     <None Remove=".\**" />
-	<None Include=".\Peachpied.Symfony.Tools.props" Pack="true" PackagePath="build" />
 	<None Include="$(OutputPath)\publish\*dll" Pack="true" PackagePath="lib\netstandard2.0" />
-    <None Remove="$(OutputPath)\publish\PSTools.dll" />
+    <None Remove="$(OutputPath)\publish\PSComponentTools.dll" />
   </ItemGroup>
   
   <ItemGroup>
@@ -32,11 +31,14 @@
     <PackageReference Include="System.Threading.Thread" Version="4.0.0" />
   </ItemGroup>
   
+  <ItemGroup>
+    <Folder Include=".\" />
+  </ItemGroup>
+  
   <Target Name="ForcePublish" AfterTargets="Build">
-	  <MSBuild Projects="PSTools.csproj" Properties="Configuration=$(Configuration)" Targets="Publish" />
+	  <MSBuild Projects="PSComponentTools.csproj" Properties="Configuration=$(Configuration)" Targets="Publish" />
 	  <ItemGroup>
-		<Files Include="$(MSBuildThisFileDirectory)$(OutputPath)publish\*.*"
-           Exclude="$(MSBuildThisFileDirectory)$(OutputPath)publish\runtimes\*.*" />
+		<Files Include="$(MSBuildThisFileDirectory)$(OutputPath)publish\*.*" Exclude="$(MSBuildThisFileDirectory)$(OutputPath)publish\runtimes\*.*" />
 	  </ItemGroup>
 	  <Copy SourceFiles="@(Files)" DestinationFolder="$(LibsDir)" />
   </Target>

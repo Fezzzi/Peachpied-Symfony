@@ -5,7 +5,7 @@
 		<PropsPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</PropsPath>
 		<ConfigPath>$(PropsPath)..\</ConfigPath>
 		<RepoPath>$(PropsPath)..\PS-Nuget-Repository\</RepoPath>
-		<LibsAssebly>$(PropsPath)..\Libs\PSTools.dll</LibsAssebly>
+		<LibsAssebly>$(PropsPath)..\Libs\PSComponentTools.dll</LibsAssebly>
 		<ProjPath>$(MSBuildProjectDirectory)</ProjPath>
 		<CacheDir>$(ProjDir)obj</CacheDir>
 		

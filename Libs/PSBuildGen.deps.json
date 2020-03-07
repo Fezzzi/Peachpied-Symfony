@@ -11,7 +11,7 @@
         "dependencies": {
           "Jokedst.GetOpt": "1.1.0",
           "Microsoft.NETCore.App": "2.1.12",
-          "PSTools": "1.0.0"
+          "PSComponentTools": "1.0.0"
         },
         "runtime": {
           "PSBuildGen.dll": {}
@@ -1055,7 +1055,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "PSTools/1.0.0": {
+      "PSComponentTools/1.0.0": {
         "dependencies": {
           "JsonFormatterPlus": "1.0.2",
           "Microsoft.Build.Framework": "16.4.0",
@@ -1068,7 +1068,7 @@
           "System.Threading.Thread": "4.0.0"
         },
         "runtime": {
-          "PSTools.dll": {}
+          "PSComponentTools.dll": {}
         }
       }
     }
@@ -1317,7 +1317,7 @@
       "path": "system.threading.thread/4.0.0",
       "hashPath": "system.threading.thread.4.0.0.nupkg.sha512"
     },
-    "PSTools/1.0.0": {
+    "PSComponentTools/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
