@@ -31,10 +31,6 @@
     <PackageReference Include="System.Threading.Thread" Version="4.0.0" />
   </ItemGroup>
   
-  <ItemGroup>
-    <Folder Include=".\" />
-  </ItemGroup>
-  
   <Target Name="ForcePublish" AfterTargets="Build">
 	  <MSBuild Projects="PSComponentTools.csproj" Properties="Configuration=$(Configuration)" Targets="Publish" />
 	  <ItemGroup>
