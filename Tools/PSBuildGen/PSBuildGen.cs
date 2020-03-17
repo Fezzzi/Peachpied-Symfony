@@ -17,6 +17,7 @@ namespace PSBuildGen {
         private static string projectOpt = String.Empty;
         private static string propsOpt = getDefaultPropsPath();
         private static bool buildOpt = false;
+        private static bool debugOpt = false;
 
         static void Main(string[] args) {
             GetOpt opts = configOpts();
@@ -49,6 +50,7 @@ namespace PSBuildGen {
                 Console.WriteLine("Generating build files...");
                 generateDirectoryBuildProps();
                 foreach (string component in components) {
+                    generateTargetsFile(component);
                     generateBuildFile(component);
                 }
 
@@ -58,11 +60,33 @@ namespace PSBuildGen {
                 if (buildOpt) {
                     Console.WriteLine("Building components...");
                     runPowershellBuild();
-                } else {
-                    Console.WriteLine("done!");
+                    if (!debugOpt) {
+                        cleanGeneratedFiles(components);
+                    }
                 }
+                Console.WriteLine("done!");
             } else {
                 Console.WriteLine("Cache generating failed, aborting! Please check your input and try again.");
+            }
+        }
+
+        /// <summary>
+        /// Removes generated files
+        /// </summary>
+        private static void cleanGeneratedFiles(List<string> components) {
+            if (File.Exists(Path.Combine(".", "buildScript.ps1"))) {
+                File.Delete(Path.Combine(".", "buildScript.ps1"));
+            }
+            if (File.Exists(Path.Combine(projectOpt, "Directory.Build.props"))) {
+                File.Delete(Path.Combine(projectOpt, "Directory.Build.props"));
+            }
+            foreach (string component in components) {
+                if (File.Exists(Path.Combine(projectOpt, component + ".targets"))) {
+                    File.Delete(Path.Combine(projectOpt, component + ".targets"));
+                }
+                if (File.Exists(Path.Combine(projectOpt, component + ".msbuildproj"))) {
+                    File.Delete(Path.Combine(projectOpt, component + ".msbuildproj"));
+                }
             }
         }
 
@@ -75,7 +99,7 @@ namespace PSBuildGen {
                 Arguments = $"-NoProfile -ExecutionPolicy unrestricted -file \"buildScript.ps1\"",
                 UseShellExecute = false
             };
-            Process.Start(startInfo);
+            Process.Start(startInfo).WaitForExit();
         }
 
         /// <summary>
@@ -97,13 +121,41 @@ namespace PSBuildGen {
                 file.Write($"\t\"{component}.msbuildproj\"");
             }
             file.Write(";\n\n");
-            file.WriteLine("echo \"Building Nuget packages...\";");
             file.WriteLine("foreach ($library in $libraries) {");
             file.WriteLine("\t$counter = $counter + 1;");
             file.WriteLine("\tdotnet build $library;");
             file.WriteLine("\techo \"Done building $counter of $($libraries.count) libraries...\"");
             file.WriteLine("}");
-            file.WriteLine("echo \"Building finished!\";");
+            file.Flush();
+            file.Close();
+        }
+
+        /// <summary>
+        /// Generate targets file with task that manually copies content files from nuget to project
+        /// </summary>
+        private static void generateTargetsFile(string component) {
+            string target = $"Copy{component.Replace(".", "_")}Vendor";
+            string assetsDir = $"$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)))../contentFiles/any/netcoreapp2.0";
+            string assetsPathSufix = component.Replace('.', '/').ToLower();
+            string fileContent =
+$@"<?xml version=""1.0"" encoding=""utf-8""?>
+<Project xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"" InitialTargets=""{target}"">
+
+    <!-- We won't define paths as properties as they would be overwritten by the last targets file executed -->
+
+    <Target Name=""{target}"" Condition=""$(RestoreVendor)==true AND !Exists('$(MSBuildProjectDirectory)/vendor/{assetsPathSufix}') AND Exists('{assetsDir}/vendor')"">
+        <Message Text=""Copying {component} assets..."" Importance=""high"" />
+        <ItemGroup>
+            <Files Include=""{assetsDir}/vendor/**/*.*"" />
+        </ItemGroup>
+        <Copy SourceFiles=""@(Files)"" DestinationFolder=""$(MSBuildProjectDirectory)/vendor/%(RecursiveDir)""/>
+    </Target>
+
+</Project>";
+
+            string fileName = Path.Combine(projectOpt, component + ".targets");
+            StreamWriter file = new StreamWriter(fileName, false);
+            file.Write(fileContent);
             file.Flush();
             file.Close();
         }
@@ -123,7 +175,13 @@ $@"<?xml version=""1.0"" encoding=""utf-8""?>
     <Import Project=""{Path.Combine(propsOpt, "propertiesConfig.props")}"" />
 
     <!-- Fills compile and content items -->   
-    <Import Project=""{Path.Combine(propsOpt, "compilationConfig.props")}"" />   
+    <Import Project=""{Path.Combine(propsOpt, "compilationConfig.props")}"" />
+
+    <!-- Adds task that manually copies content files from nuget to project -->
+    <ItemGroup>
+        <None Include="".\$(MSBuildProjectName).targets"" Pack=""true"" PackagePath=""build"" />
+        <None Include="".\$(MSBuildProjectName).targets"" Pack=""true"" PackagePath=""buildTransitive"" />
+    </ItemGroup>
 
 </Project>";
 
@@ -171,6 +229,8 @@ $@"<?xml version=""1.0"" encoding=""utf-8""?>
                         ParameterType.String, r => propsOpt = (string)r),
                     new CommandLineOption('b', "build", "Automatically run generated build script",
                         ParameterType.None, o => buildOpt = true),
+                    new CommandLineOption('d', "debug", "Skip generated files cleanup",
+                        ParameterType.None, o => debugOpt = true),
                 });
         }
 

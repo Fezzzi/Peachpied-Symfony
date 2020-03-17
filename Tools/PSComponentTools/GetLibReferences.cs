@@ -81,7 +81,20 @@ namespace Microsoft.Build.Tasks {
         /// </summary>
         private static bool isNugetAvailable(string name, string version, string repoPath) {
             string nuget = Path.Combine(repoPath, name + "." + version + ".nupkg");
-            return File.Exists(nuget);
+            return File.Exists(nuget) || isNugetAvailableRecursive(repoPath, name + "." + version + ".nupkg");
+        }
+
+        /// <summary>
+        /// Uses DFS to search directories inside provided repository for the nuget package
+        /// </summary>
+        private static bool isNugetAvailableRecursive(string currentDir, string nuget) {
+            string[] directories = Directory.GetDirectories(currentDir);
+            foreach (string directory in directories) {
+                if (File.Exists(Path.Combine(directory, nuget)) || isNugetAvailableRecursive(directory, nuget)) {
+                    return true;
+                }
+            }
+            return false;
         }
 
         /// <summary>

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
-using formater = JsonFormatterPlus.JsonFormatter;
+using Formater = JsonFormatterPlus.JsonFormatter;
 
 namespace Microsoft.Build.Tasks {
 
@@ -45,7 +45,7 @@ namespace Microsoft.Build.Tasks {
             graph.FilterCycles();
             List<Tuple<bool, Node>> orderedComponents = graph.SortPackages();
             OrderedComponents = new List<string>(orderedComponents.Select(el => el.Item2.name));
-            string jsonString = formater.Format(toJsonOrdered(orderedComponents));
+            string jsonString = Formater.Format(toJsonOrdered(orderedComponents));
             Directory.CreateDirectory(tempPath);
             using (StreamWriter sw = new StreamWriter(Path.Combine(tempPath, "libsCache.json"))) {
                 sw.Write(jsonString);
