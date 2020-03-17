@@ -6,7 +6,6 @@
 
 *.cache
 *.nupkg
-*.ps1
 
 .gitattributes
 .env
