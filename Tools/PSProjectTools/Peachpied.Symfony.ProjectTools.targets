@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	
+	<PropertyGroup>
+		<ThisPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</ThisPath>
+		<LibsAssebly>$(ThisPath)../lib/netstandard2.0/PSProjectTools.dll</LibsAssebly>
+		<ProjPath>$(MSBuildProjectDirectory)</ProjPath>
+		<RestoreVendor>true</RestoreVendor>
+	</PropertyGroup>
+	
+	<UsingTask TaskName="GenerateVendorComposer" AssemblyFile="$(LibsAssebly)" />
+	<UsingTask TaskName="GenerateSymfonyCache" AssemblyFile="$(LibsAssebly)" />
+	
+	<!-- Tasks to retrieve vendor folder's content from nugets and generate autoloaders -->
+	<Target Name="RestoreVendorDir" BeforeTargets="BeforeBuild">
+		<GenerateVendorComposer ProjPath="$(ProjPath)" Condition="!Exists('$(MSBuildProjectDirectory)\vendor\autoload.php') OR !Exists('$(MSBuildProjectDirectory)\vendor\composer')"/>
+	</Target>
+	
+</Project>
