@@ -5,7 +5,6 @@
 **/vendor/
 
 *.cache
-*.nupkg
 
 .gitattributes
 .env
