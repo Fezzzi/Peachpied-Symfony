@@ -32,8 +32,7 @@ namespace PSProjectTools {
 
             var startInfo = new ProcessStartInfo() {
                 FileName = "powershell.exe",
-                Arguments = $"-NoProfile -ExecutionPolicy unrestricted " +
-                    $"-file \"{contentPath}dumpAutoload.ps1\" -contentPath \"{contentPath}\"",
+                Arguments = $"-NoProfile -ExecutionPolicy unrestricted /c php \"{contentPath}\\composerDumpAutoload.phar\";",
                 UseShellExecute = false
             };
             // We need to wait until autoloaders are dumped 

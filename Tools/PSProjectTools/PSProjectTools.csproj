@@ -19,7 +19,7 @@
     <None Remove=".\**" />
     <None Include=".\Peachpied.Symfony.ProjectTools.targets" Pack="true" PackagePath="build" />
     <None Include="$(OutputPath)\publish\*dll" Exclude="$(OutputPath)\publish\PSProjectTools.dll" Pack="true" PackagePath="lib\netstandard2.0" />
-    <Content Include="composerDumpAutoload.phar; dumpAutoload.ps1" CopyToOutputDirectory="PreserveNewest">
+    <Content Include="composerDumpAutoload.phar" CopyToOutputDirectory="PreserveNewest">
       <BuildAction>Content</BuildAction>
       <PackagePath>tools\any\netstandard2.0\</PackagePath>
       <PackageCopyToOutput>true</PackageCopyToOutput>
