@@ -6,6 +6,8 @@ using Microsoft.Build.Tasks;
 using Microsoft.Build.Utilities;
 using System.Linq;
 using System.Diagnostics;
+using System.Json;
+using JsonFormatter;
 
 namespace PSBuildGen {
 
@@ -49,9 +51,17 @@ namespace PSBuildGen {
 
                 Console.WriteLine("Generating build files...");
                 generateDirectoryBuildProps();
-                foreach (string component in components) {
+                foreach(string component in components) {
                     generateTargetsFile(component);
                     generateBuildFile(component);
+                }
+
+                Console.WriteLine("Generating lock fragments...");
+                foreach(JsonObject package in wlc.LockPackages) {
+                    generatePackageLockPart(package, projectOpt, false);
+                }
+                foreach (JsonObject package in wlc.LockPackagesDev) {
+                    generatePackageLockPart(package, projectOpt, true);
                 }
 
                 Console.WriteLine("Generating build script...");
@@ -86,6 +96,9 @@ namespace PSBuildGen {
                 }
                 if (File.Exists(Path.Combine(projectOpt, component + ".msbuildproj"))) {
                     File.Delete(Path.Combine(projectOpt, component + ".msbuildproj"));
+                }
+                if (File.Exists(Path.Combine(projectOpt, component + ".lockFragment.json"))) {
+                    File.Delete(Path.Combine(projectOpt, component + ".lockFragment.json"));
                 }
             }
         }
@@ -131,24 +144,44 @@ namespace PSBuildGen {
         }
 
         /// <summary>
+        /// Saves package's part of composer.lock file into standalone file
+        /// </summary>
+        private static void generatePackageLockPart(JsonObject package, string projPath, bool isDev) {
+            string packageName = String.Join(".", package["name"].ToString().Replace("\"", "").Split('/').Select(
+                el => Char.ToUpper(el[0]) + el.Substring(1)
+            ));
+            string filePath = Path.Combine(projPath, $"{packageName}.lockFragment{(isDev ? "-dev" : "")}.json");
+            if (!File.Exists(filePath)) {
+                string jsonString = JsonHelper.FormatJson(package.ToString());
+                using (StreamWriter sw = new StreamWriter(filePath)) {
+                    sw.Write(jsonString);
+                }
+            }
+        }
+
+        /// <summary>
         /// Generate targets file with task that manually copies content files from nuget to project
+        /// Also sets up item with paths to components' lockFragments
         /// </summary>
         private static void generateTargetsFile(string component) {
-            string target = $"Copy{component.Replace(".", "_")}Vendor";
-            string assetsDir = $"$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)))../contentFiles/any/netcoreapp2.0";
+            string target = $"Copy_{component.Replace(".", "_")}_Vendor";
+            string toolsDir = "$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)))../tools/any/any";
+            string assetsDir = "$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)))../contentFiles/any/netcoreapp2.0";
             string assetsPathSufix = component.Replace('.', '/').ToLower();
             string fileContent =
 $@"<?xml version=""1.0"" encoding=""utf-8""?>
 <Project xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"" InitialTargets=""{target}"">
-
-    <!-- We won't define paths as properties as they would be overwritten by the last targets file executed -->
+    
+    <ItemGroup>
+        <LockFragments Include=""{toolsDir}/{component}.lockFragment.json"" />
+    </ItemGroup>
 
     <Target Name=""{target}"" Condition=""$(RestoreVendor)==true AND !Exists('$(MSBuildProjectDirectory)/vendor/{assetsPathSufix}') AND Exists('{assetsDir}/vendor')"">
         <Message Text=""Copying {component} assets..."" Importance=""high"" />
         <ItemGroup>
-            <Files Include=""{assetsDir}/vendor/**/*.*"" />
+            <{target}_Files Include=""{assetsDir}/vendor/**/*.*"" />
         </ItemGroup>
-        <Copy SourceFiles=""@(Files)"" DestinationFolder=""$(MSBuildProjectDirectory)/vendor/%(RecursiveDir)""/>
+        <Copy SourceFiles=""@({target}_Files)"" DestinationFolder=""$(MSBuildProjectDirectory)/vendor/%(RecursiveDir)""/>
     </Target>
 
 </Project>";

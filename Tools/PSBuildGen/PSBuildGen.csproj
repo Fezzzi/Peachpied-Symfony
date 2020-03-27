@@ -17,7 +17,7 @@
     <ProjectReference Include="..\PSComponentTools\PSComponentTools.csproj" />
   </ItemGroup>
 
-  <Target Name="ForcePublish" AfterTargets="Publish">
+  <Target Name="CopyLibs" AfterTargets="Publish">
     <ItemGroup>
       <Files Include="$(MSBuildThisFileDirectory)$(OutputPath)*.*" Exclude="$(MSBuildThisFileDirectory)$(OutputPath)publish\*.*" />
     </ItemGroup>

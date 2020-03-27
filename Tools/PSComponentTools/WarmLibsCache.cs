@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
-using Formater = JsonFormatterPlus.JsonFormatter;
+using JsonFormatter;
 
 namespace Microsoft.Build.Tasks {
 
@@ -20,6 +20,8 @@ namespace Microsoft.Build.Tasks {
         public ITaskItem ConfigPath { get; set; }
 
         public List<string> OrderedComponents { get; private set; }
+        public JsonArray LockPackages { get; private set; }
+        public JsonArray LockPackagesDev { get; private set; }
 
         public override bool Execute() {
             string lockPath = getLockPath(ProjPath.ItemSpec);
@@ -28,24 +30,24 @@ namespace Microsoft.Build.Tasks {
         }
 
         /// <summary>
-        /// Generates libsCache.json caches.
+        /// Generates libsCache.json cache.
         /// </summary>
         private bool warmCache(string lockPath, string tempPath, string configPath) {
             JsonObject config = getConfig(configPath);
-            (JsonArray lockPackages, JsonArray lockPackagesDev) = getPackageParts(lockPath);
+            (LockPackages, LockPackagesDev) = getPackageParts(lockPath);
             JsonObject packages = new JsonObject();
 
-            foreach (JsonObject package in lockPackages) {
+            foreach (JsonObject package in LockPackages) {
                 packages.Add(package["name"], getPackageRecord(package, config, false));
             }
-            foreach (JsonObject package in lockPackagesDev) {
+            foreach (JsonObject package in LockPackagesDev) {
                 packages.Add(package["name"], getPackageRecord(package, config, true));
             }
             DependencyGraph graph = DependencyGraph.BuildFromCache(packages);
             graph.FilterCycles();
             List<Tuple<bool, Node>> orderedComponents = graph.SortPackages();
             OrderedComponents = new List<string>(orderedComponents.Select(el => el.Item2.name));
-            string jsonString = Formater.Format(toJsonOrdered(orderedComponents));
+            string jsonString = JsonHelper.FormatJson(toJsonOrdered(orderedComponents));
             Directory.CreateDirectory(tempPath);
             using (StreamWriter sw = new StreamWriter(Path.Combine(tempPath, "libsCache.json"))) {
                 sw.Write(jsonString);

@@ -4,9 +4,9 @@ using System.IO;
 using System.Json;
 using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
-using Formater = JsonFormatterPlus.JsonFormatter;
+using JsonFormatter;
 
-namespace PSProjectTools {
+namespace Microsoft.Build.Tasks {
 
     /// <summary>
     /// Task that generates vendor/composer folder and autoload script
@@ -22,7 +22,7 @@ namespace PSProjectTools {
         }
 
         /// <summary>
-        /// Invokes simple powerShell script that calls included composer to dump autoloaders
+        /// Invokes composer to dump autoloaders
         /// </summary>
         private static void runRestoreScript(string projectPath) {
             // Actual path to .dll inside the nuget package
@@ -31,8 +31,8 @@ namespace PSProjectTools {
             string contentPath = $"{location}\\..\\..\\tools\\any\\netstandard2.0\\";
 
             var startInfo = new ProcessStartInfo() {
-                FileName = "powershell.exe",
-                Arguments = $"-NoProfile -ExecutionPolicy unrestricted /c php \"{contentPath}\\composerDumpAutoload.phar\";",
+                FileName = "php.exe",
+                Arguments = $"\"{contentPath}\\composer.phar\" dump-autoload",
                 UseShellExecute = false
             };
             // We need to wait until autoloaders are dumped 
@@ -45,9 +45,7 @@ namespace PSProjectTools {
         private static void generateInstalledJson(string projPath) {
             JsonArray packages = getPackages(projPath);
             string composerDir = Path.Combine(projPath, "vendor", "composer");
-            // Formater seems not to work properly
-            // string jsonString = Formater.Format(packages.ToString());
-            string jsonString = packages.ToString();
+            string jsonString = JsonHelper.FormatJson(packages.ToString());
             Directory.CreateDirectory(composerDir);
             using (StreamWriter sw = new StreamWriter(Path.Combine(composerDir, "installed.json"))) {
                 sw.Write(jsonString);
