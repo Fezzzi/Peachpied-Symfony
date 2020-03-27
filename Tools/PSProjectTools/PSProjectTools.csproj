@@ -3,23 +3,24 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <OutputType>library</OutputType>
-    <RootNamespace>PSProjectTools</RootNamespace>
     <PackageId>Peachpied.Symfony.ProjectTools</PackageId>
     <Description>Set of tasks for symfony project build process automatization</Description>
     <Version>1.0.0</Version>
     <Authors>Filip Horký</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageOutputPath>$(MSBuildThisFileDirectory)..\..\PS-Nuget-Repository</PackageOutputPath>
+    <Configuration>Release</Configuration>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove=".\**" />
-    <Compile Include="*.cs" />
-    <EmbeddedResource Remove=".\**" />
+    <Compile Include="*.cs;" />
     <None Remove=".\**" />
-    <None Include=".\Peachpied.Symfony.ProjectTools.targets" Pack="true" PackagePath="build" />
-    <None Include="$(OutputPath)\publish\*dll" Exclude="$(OutputPath)\publish\PSProjectTools.dll" Pack="true" PackagePath="lib\netstandard2.0" />
-    <Content Include="composerDumpAutoload.phar" CopyToOutputDirectory="PreserveNewest">
+    <None Include="Peachpied.Symfony.ProjectTools.targets" Pack="true" PackagePath="build" />
+    <None Include="$(OutputPath)publish\*dll" Pack="true" PackagePath="lib\netstandard2.0" />
+    <None Remove="$(OutputPath)publish\PSProjectTools.dll" />
+    
+    <Content Include="composer.phar; Cache-Generator-Tool.php" CopyToOutputDirectory="PreserveNewest">
       <BuildAction>Content</BuildAction>
       <PackagePath>tools\any\netstandard2.0\</PackagePath>
       <PackageCopyToOutput>true</PackageCopyToOutput>
@@ -27,14 +28,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="JsonFormatterPlus" Version="1.0.2" />
     <PackageReference Include="Microsoft.Build.Framework" Version="16.4.0" />
     <PackageReference Include="Microsoft.Build.Utilities.Core" Version="16.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.1.10" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
     <PackageReference Include="System.Json" Version="4.7.0" />
   </ItemGroup>
-
-  <Target Name="ForcePublish" AfterTargets="Build">
-    <MSBuild Projects="PSProjectTools.csproj" Properties="Configuration=$(Configuration)" Targets="Publish" />
-  </Target>
 
 </Project>

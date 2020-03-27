@@ -5,6 +5,8 @@ use \Symfony\Component\Config\FileLocator;
 use \Symfony\Component\Routing\Loader\YamlFileLoader;
 use \Symfony\Component\Routing\Router;
 
+generateCache($argv[1] ?? 'dev', isset($argv[2]));
+
 /**
  * Performs Kernel and Routing cache generating
  *
@@ -12,10 +14,8 @@ use \Symfony\Component\Routing\Router;
  * @param string $environment
  * @param bool $debug
  */
-function generateCache(string $projectPath, string $environment = "dev", bool $debug = false) {
-	$cwd = getcwd();
-
-	if (chdir($projectPath)) {
+function generateCache(string $environment, bool $debug) {
+	try {
         require (implode(DIRECTORY_SEPARATOR, ["vendor", "autoload.php"]));
 
         // Symfony project's Kernel cache generating
@@ -31,10 +31,8 @@ function generateCache(string $projectPath, string $environment = "dev", bool $d
         ));
         $router->getMatcher();
 
-        chdir($cwd);
         echo "Cache directory generated.\n";
-
-    } else {
+    } catch(\Exception $e) {
 	    echo "Cache directory creation failed!\n";
     }
 }

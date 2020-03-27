@@ -22,6 +22,12 @@
 			<Pack>true</Pack>
 			<Link>$(LibraryPath)%(RecursiveDir)%(Filename)%(Extension)</Link>
 		</Content>
+		
+		<Content Include="$(PackageId).lockFragment.json" CopyToOutputDirectory="PreserveNewest">
+		  <BuildAction>Content</BuildAction>
+		  <PackagePath>tools\any\any\</PackagePath>
+		  <PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
 	</ItemGroup>
  
 </Project>

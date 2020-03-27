@@ -2,18 +2,37 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	
 	<PropertyGroup>
-		<ThisPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</ThisPath>
-		<LibsAssebly>$(ThisPath)../lib/netstandard2.0/PSProjectTools.dll</LibsAssebly>
+		<ProjectToolsPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</ProjectToolsPath>
+    <ProjectToolsAssebly>$(ProjectToolsPath)../lib/netstandard2.0/PSProjectTools.dll</ProjectToolsAssebly>
+    <ProjectToolsTools>$(ProjectToolsPath)../tools/any/netstandard2.0</ProjectToolsTools>
 		<ProjPath>$(MSBuildProjectDirectory)</ProjPath>
-		<RestoreVendor>true</RestoreVendor>
+    <RestoreVendor>true</RestoreVendor>
 	</PropertyGroup>
+
+	<UsingTask TaskName="RestoreComposerLock" AssemblyFile="$(ProjectToolsAssebly)" />
+	<UsingTask TaskName="GenerateVendorComposer" AssemblyFile="$(ProjectToolsAssebly)" />
+	<UsingTask TaskName="GenerateSymfonyCache" AssemblyFile="$(ProjectToolsAssebly)" />
 	
-	<UsingTask TaskName="GenerateVendorComposer" AssemblyFile="$(LibsAssebly)" />
-	<UsingTask TaskName="GenerateSymfonyCache" AssemblyFile="$(LibsAssebly)" />
-	
-	<!-- Tasks to retrieve vendor folder's content from nugets and generate autoloaders -->
-	<Target Name="RestoreVendorDir" BeforeTargets="BeforeBuild">
-		<GenerateVendorComposer ProjPath="$(ProjPath)" Condition="!Exists('$(MSBuildProjectDirectory)\vendor\autoload.php') OR !Exists('$(MSBuildProjectDirectory)\vendor\composer')"/>
-	</Target>
-	
+  <!-- Call custom targets -->
+  <Target Name="RestoreVendorDir" BeforeTargets="BeforeBuild"> 
+    <CallTarget Targets="TRestoreComposerLock; TGenerateVendorComposer; TGenerateSymfonyCache"/>
+  </Target>
+
+  <!-- Generate composer.lock from lockFragments packed inside nugets -->
+  <Target Name="TRestoreComposerLock" Inputs="composer.json" Outputs="composer.lock">
+    <RestoreComposerLock ProjPath="$(ProjPath)" LockFragments="@(LockFragments)" />
+  </Target>
+  
+  <!-- Generate Symfony autoloaders -->
+  <Target Name="TGenerateVendorComposer" 
+          Condition="!Exists('$(MSBuildProjectDirectory)\vendor\autoload.php') OR !Exists('$(MSBuildProjectDirectory)\vendor\composer')">
+    <GenerateVendorComposer ProjPath="$(ProjPath)" />
+  </Target>
+
+  <!-- Generate var folder with Symfony cache -->
+  <Target Name="TGenerateSymfonyCache"  
+          Condition="!Exists('$(MSBuildProjectDirectory)\var') OR $(ForceCacheRefresh)==true">
+    <GenerateSymfonyCache />
+  </Target>
+  
 </Project>
