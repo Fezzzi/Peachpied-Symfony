@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "2c0cf8486dc0e6e61cb51206e635a91209b40262"
+    "signature": "6bed8c7da4df9f2edf642509074c5e660a2a83c1"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,7 +9,6 @@
     ".NETStandard,Version=v2.0/": {
       "PSComponentTools/1.0.0": {
         "dependencies": {
-          "JsonFormatterPlus": "1.0.2",
           "Microsoft.Build.Framework": "16.4.0",
           "Microsoft.Build.Utilities.Core": "16.4.0",
           "Microsoft.Win32.Registry": "4.3.0",
@@ -22,14 +21,6 @@
         },
         "runtime": {
           "PSComponentTools.dll": {}
-        }
-      },
-      "JsonFormatterPlus/1.0.2": {
-        "runtime": {
-          "lib/netstandard2.0/JsonFormatterPlus.dll": {
-            "assemblyVersion": "1.0.2.0",
-            "fileVersion": "1.0.2.0"
-          }
         }
       },
       "Microsoft.Build.Framework/16.4.0": {
@@ -234,13 +225,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "JsonFormatterPlus/1.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OHBzJkxmnMklY8QNmZVasxkaMV/Vnop+oXdykheWJzOz1YEewBeimQur/D+vL3iII7t6bA8BTz4NFZCN3s3tMg==",
-      "path": "jsonformatterplus/1.0.2",
-      "hashPath": "jsonformatterplus.1.0.2.nupkg.sha512"
     },
     "Microsoft.Build.Framework/16.4.0": {
       "type": "package",
