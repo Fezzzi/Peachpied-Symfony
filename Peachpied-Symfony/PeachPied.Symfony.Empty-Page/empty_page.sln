@@ -1,0 +1,92 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{AF5D53C1-32B5-473F-9229-817608068701}"
+EndProject
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Empty-Page", "Symfony.Empty-Page\Symfony.Empty-Page.msbuildproj", "{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E60340EC-507B-4DB4-89E0-A63DDF38D485}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Finder ONLY|Any CPU = Finder ONLY|Any CPU
+		Finder ONLY|x64 = Finder ONLY|x64
+		Finder ONLY|x86 = Finder ONLY|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		Symfony.AspNetCore Only|Any CPU = Symfony.AspNetCore Only|Any CPU
+		Symfony.AspNetCore Only|x64 = Symfony.AspNetCore Only|x64
+		Symfony.AspNetCore Only|x86 = Symfony.AspNetCore Only|x86
+		Testing|Any CPU = Testing|Any CPU
+		Testing|x64 = Testing|x64
+		Testing|x86 = Testing|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF5D53C1-32B5-473F-9229-817608068701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Debug|x64.Build.0 = Debug|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Debug|x86.Build.0 = Debug|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Finder ONLY|Any CPU.ActiveCfg = Release|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Finder ONLY|x64.ActiveCfg = Release|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Finder ONLY|x64.Build.0 = Release|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Finder ONLY|x86.ActiveCfg = Release|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Finder ONLY|x86.Build.0 = Release|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Release|x64.ActiveCfg = Release|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Release|x64.Build.0 = Release|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Release|x86.ActiveCfg = Release|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Release|x86.Build.0 = Release|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Symfony.AspNetCore Only|Any CPU.Build.0 = Debug|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Symfony.AspNetCore Only|x86.Build.0 = Debug|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Testing|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Testing|x64.ActiveCfg = Release|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Testing|x64.Build.0 = Release|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Testing|x86.ActiveCfg = Release|Any CPU
+		{AF5D53C1-32B5-473F-9229-817608068701}.Testing|x86.Build.0 = Release|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Debug|x64.Build.0 = Debug|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Debug|x86.Build.0 = Debug|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Finder ONLY|Any CPU.ActiveCfg = Release|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Finder ONLY|x64.ActiveCfg = Release|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Finder ONLY|x64.Build.0 = Release|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Finder ONLY|x86.ActiveCfg = Release|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Finder ONLY|x86.Build.0 = Release|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Release|x64.ActiveCfg = Release|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Release|x64.Build.0 = Release|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Release|x86.ActiveCfg = Release|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Release|x86.Build.0 = Release|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Symfony.AspNetCore Only|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Symfony.AspNetCore Only|x64.ActiveCfg = Debug|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Symfony.AspNetCore Only|x64.Build.0 = Debug|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Symfony.AspNetCore Only|x86.ActiveCfg = Debug|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Symfony.AspNetCore Only|x86.Build.0 = Debug|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Testing|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Testing|x64.ActiveCfg = Release|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Testing|x64.Build.0 = Release|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Testing|x86.ActiveCfg = Release|Any CPU
+		{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}.Testing|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E71564B1-D265-4C09-8B14-48701AC8252B}
+	EndGlobalSection
+EndGlobal

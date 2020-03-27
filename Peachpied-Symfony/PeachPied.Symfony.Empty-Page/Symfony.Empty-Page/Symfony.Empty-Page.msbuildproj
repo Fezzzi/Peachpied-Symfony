@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Peachpie.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Symfony.Empty-Page</AssemblyName>
+    <IntermediateOutputPath>.\obj\$(Configuration)\$(AssemblyName)\</IntermediateOutputPath>
+    <OutputPath>.\bin\$(Configuration)\$(AssemblyName)\</OutputPath>
+    <OutDir>$(OutputPath)</OutDir>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Include="**\*.php" Exclude="vendor\**; config\bootstrap.php; .\obj\**; .\bin\**" />
+	<Compile Include="vendor\composer\**; vendor\autoload.php" />
+    <Content Include=".\**" 
+			 Exclude="**\*.php; **\*.msbuildproj; **\*.csbuildproj; .\obj\**; .\bin\**; .\vendor\**" 
+			 CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="PeachPied.Symfony.Skeleton" Version="4.2.3" />
+    <PackageReference Include="Symfony.Twig-bundle" Version="4.2.10" />
+    <PackageReference Include="Peachpied.Symfony.ProjectTools" Version="1.0.0" />
+  </ItemGroup>
+  
+</Project>

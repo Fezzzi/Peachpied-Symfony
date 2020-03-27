@@ -8,21 +8,25 @@
 						$(LibraryPath)**\tests\**;
 						$(LibraryPath)**\Tests\**;"/>
 		<Content Include="$(LibraryPath)**" 
-			Exclude="	$(LibraryPath)**\*.php;
-						**\*.msbuildproj;
+			Exclude="	**\*.msbuildproj;
 						**\*.csbuildproj;
 						**\*.props;
 						$(LibraryPath)obj\**;
-						$(LibraryPath)bin\Debug\**;
-						$(LibraryPath)**\tests\**;
-						$(LibraryPath)**\Tests\**;
-						$(LibraryPath)**\test\**;
-						$(LibraryPath)**\Test\**;" 
+						$(LibraryPath)bin\Debug\**;"
 			CopyToOutputDirectory="PreserveNewest">
 			
-			<PackagePath>contentFiles\any\netcoreapp2.0\symfony\$(ProjectNameLocation)</PackagePath>
+			<BuildAction>Content</BuildAction>
+			<PackagePath>contentFiles\any\netcoreapp2.0\$(LibraryPath)</PackagePath>
 			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<Link>symfony\$(ProjectNameLocation)%(RecursiveDir)%(Filename)%(Extension)</Link>
+			<Visible>true</Visible>
+			<Pack>true</Pack>
+			<Link>$(LibraryPath)%(RecursiveDir)%(Filename)%(Extension)</Link>
+		</Content>
+		
+		<Content Include="$(PackageId).lockFragment.json" CopyToOutputDirectory="PreserveNewest">
+		  <BuildAction>Content</BuildAction>
+		  <PackagePath>tools\any\any\</PackagePath>
+		  <PackageCopyToOutput>true</PackageCopyToOutput>
 		</Content>
 	</ItemGroup>
  

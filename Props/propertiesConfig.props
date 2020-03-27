@@ -10,7 +10,7 @@
 		<AssemblyName>$(LibraryName)</AssemblyName>
 		<PackageId>$(LibraryName)</PackageId>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<PackageOutputPath>..\..\..\PS-Nuget-Repository\</PackageOutputPath>
+		<PackageOutputPath>..\..\..\PS-Nuget-Repository\Components\</PackageOutputPath>
 		<IntermediateOutputPath>.\obj\$(Configuration)\$(ProjectNameLocation)</IntermediateOutputPath>
 		<OutputPath>.\bin\$(Configuration)\$(ProjectNameLocation)</OutputPath>
 		<OutDir>$(OutputPath)</OutDir>
