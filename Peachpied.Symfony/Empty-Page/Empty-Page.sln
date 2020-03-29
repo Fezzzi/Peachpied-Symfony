@@ -4,7 +4,7 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{AF5D53C1-32B5-473F-9229-817608068701}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony.Empty-Page", "Symfony.Empty-Page\Symfony.Empty-Page.msbuildproj", "{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Empty-Page", "Empty-Page\Empty-Page.msbuildproj", "{DD2BF5AD-F49E-4CF5-A6CA-A76142A2CB6D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E60340EC-507B-4DB4-89E0-A63DDF38D485}"
 EndProject

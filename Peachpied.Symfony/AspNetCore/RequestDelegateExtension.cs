@@ -46,11 +46,11 @@ namespace Microsoft.AspNetCore.Builder
         /// Installs Symfony middleware.
         /// </summary>
         /// <param name="app">The application builder.</param>
+		/// <param name="path">Physical location of symfony folder. Can be absolute or relative to the current directory.</param>
         /// <param name="config">Symfony instance configuration.</param>
-        /// <param name="path">Physical location of symfony folder. Can be absolute or relative to the current directory.</param>
         /// <returns>IApplicationBuilder</returns>
         public static IApplicationBuilder UseSymfony
-            (this IApplicationBuilder app, SymfonyConfig config = null, string path = "Symfony.Skeleton")
+            (this IApplicationBuilder app, string path = "Symfony", SymfonyConfig config = null)
         {
             // symony root path:
             var symfonyRoot = System.IO.Path.GetFullPath(path);

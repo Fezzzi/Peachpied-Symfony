@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Symfony.Empty-Page\Symfony.Empty-Page.msbuildproj" />
+    <ProjectReference Include="..\Empty-Page\Empty-Page.msbuildproj" />
   </ItemGroup>
 
   <ItemGroup>

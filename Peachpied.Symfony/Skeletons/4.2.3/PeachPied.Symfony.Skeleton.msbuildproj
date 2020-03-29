@@ -7,7 +7,7 @@
 	<PackageId>PeachPied.Symfony.Skeleton</PackageId>
 	<PackageVersion>4.2.3</PackageVersion>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<PackageOutputPath>..\..\..\PS-Nuget-Repository\</PackageOutputPath>
+	<PackageOutputPath>..\..\..\Nuget-Repository\</PackageOutputPath>
 	<IncludeBuildOutput>false</IncludeBuildOutput>
   </PropertyGroup>
   
