@@ -23,7 +23,13 @@
 			<Link>$(LibraryPath)%(RecursiveDir)%(Filename)%(Extension)</Link>
 		</Content>
 		
-		<Content Include="$(PackageId).lockFragment.json" CopyToOutputDirectory="PreserveNewest">
+		<Content Include="$(PackageId).lockFragment.json" CopyToOutputDirectory="PreserveNewest" Condition="Exists('$(PackageId).lockFragment.json')">
+		  <BuildAction>Content</BuildAction>
+		  <PackagePath>tools\any\any\</PackagePath>
+		  <PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		
+		<Content Include="$(PackageId).lockFragment-dev.json" CopyToOutputDirectory="PreserveNewest" Condition="Exists('$(PackageId).lockFragment-dev.json')">
 		  <BuildAction>Content</BuildAction>
 		  <PackagePath>tools\any\any\</PackagePath>
 		  <PackageCopyToOutput>true</PackageCopyToOutput>
