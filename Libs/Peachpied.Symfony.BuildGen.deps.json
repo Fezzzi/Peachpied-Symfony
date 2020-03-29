@@ -7,14 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v2.0": {},
     ".NETCoreApp,Version=v2.0/win10-x64": {
-      "PSBuildGen/1.0.0": {
+      "Peachpied.Symfony.BuildGen/1.0.0": {
         "dependencies": {
           "Jokedst.GetOpt": "1.1.0",
           "Microsoft.NETCore.App": "2.0.9",
-          "PSComponentTools": "1.0.0"
+          "Peachpied.Symfony.ComponentTools": "1.0.0"
         },
         "runtime": {
-          "PSBuildGen.dll": {}
+          "Peachpied.Symfony.BuildGen.dll": {}
         }
       },
       "Jokedst.GetOpt/1.1.0": {
@@ -1085,7 +1085,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "PSComponentTools/1.0.0": {
+      "Peachpied.Symfony.ComponentTools/1.0.0": {
         "dependencies": {
           "Microsoft.Build.Framework": "16.4.0",
           "Microsoft.Build.Utilities.Core": "16.4.0",
@@ -1097,13 +1097,13 @@
           "System.Threading.Thread": "4.0.0"
         },
         "runtime": {
-          "PSComponentTools.dll": {}
+          "Peachpied.Symfony.ComponentTools.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "PSBuildGen/1.0.0": {
+    "Peachpied.Symfony.BuildGen/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1437,7 +1437,7 @@
       "path": "system.threading.thread/4.0.0",
       "hashPath": "system.threading.thread.4.0.0.nupkg.sha512"
     },
-    "PSComponentTools/1.0.0": {
+    "Peachpied.Symfony.ComponentTools/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

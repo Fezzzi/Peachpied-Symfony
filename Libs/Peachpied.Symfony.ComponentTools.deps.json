@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "PSComponentTools/1.0.0": {
+      "Peachpied.Symfony.ComponentTools/1.0.0": {
         "dependencies": {
           "Microsoft.Build.Framework": "16.4.0",
           "Microsoft.Build.Utilities.Core": "16.4.0",
@@ -20,7 +20,7 @@
           "System.Threading.Thread": "4.0.0"
         },
         "runtime": {
-          "PSComponentTools.dll": {}
+          "Peachpied.Symfony.ComponentTools.dll": {}
         }
       },
       "Microsoft.Build.Framework/16.4.0": {
@@ -221,7 +221,7 @@
     }
   },
   "libraries": {
-    "PSComponentTools/1.0.0": {
+    "Peachpied.Symfony.ComponentTools/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
