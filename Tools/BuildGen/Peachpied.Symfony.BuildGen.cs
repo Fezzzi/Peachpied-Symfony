@@ -100,6 +100,9 @@ namespace PSBuildGen {
                 if (File.Exists(Path.Combine(projectOpt, component + ".lockFragment.json"))) {
                     File.Delete(Path.Combine(projectOpt, component + ".lockFragment.json"));
                 }
+				if (File.Exists(Path.Combine(projectOpt, component + ".lockFragment-dev.json"))) {
+                    File.Delete(Path.Combine(projectOpt, component + ".lockFragment-dev.json"));
+                }
             }
         }
 
@@ -144,7 +147,7 @@ namespace PSBuildGen {
         }
 
         /// <summary>
-        /// Saves package's part of composer.lock file into standalone file
+        /// Saves minified package's part of composer.lock file into standalone file
         /// </summary>
         private static void generatePackageLockPart(JsonObject package, string projPath, bool isDev) {
             string packageName = String.Join(".", package["name"].ToString().Replace("\"", "").Split('/').Select(
@@ -152,9 +155,8 @@ namespace PSBuildGen {
             ));
             string filePath = Path.Combine(projPath, $"{packageName}.lockFragment{(isDev ? "-dev" : "")}.json");
             if (!File.Exists(filePath)) {
-                string jsonString = JsonHelper.FormatJson(package.ToString());
                 using (StreamWriter sw = new StreamWriter(filePath)) {
-                    sw.Write(jsonString);
+                    sw.Write(package.ToString());
                 }
             }
         }
@@ -173,7 +175,8 @@ $@"<?xml version=""1.0"" encoding=""utf-8""?>
 <Project xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"" InitialTargets=""{target}"">
     
     <ItemGroup>
-        <LockFragments Include=""{toolsDir}/{component}.lockFragment.json"" />
+        <LockFragments Include=""{toolsDir}/{component}.lockFragment.json"" Condition=""Exists('{toolsDir}/{component}.lockFragment.json')"" />
+        <LockFragments Include=""{toolsDir}/{component}.lockFragment-dev.json"" Condition=""Exists('{toolsDir}/{component}.lockFragment-dev.json')"" />
     </ItemGroup>
 
     <Target Name=""{target}"" Condition=""$(RestoreVendor)==true AND !Exists('$(MSBuildProjectDirectory)/vendor/{assetsPathSufix}') AND Exists('{assetsDir}/vendor')"">

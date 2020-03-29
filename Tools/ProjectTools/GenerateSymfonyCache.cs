@@ -103,7 +103,7 @@ namespace Microsoft.Build.Tasks {
 
             var startInfo = new ProcessStartInfo() {
                 FileName = "php.exe",
-                Arguments = $"\"{contentPath}\\Cache-Generator-Tool.php\" {env} {debug};",
+                Arguments = $"\"{contentPath}\\Cache-Generator-Tool.php\" {env} {debug}",
                 UseShellExecute = false
             };
             // We need to wait until autoloaders are dumped 

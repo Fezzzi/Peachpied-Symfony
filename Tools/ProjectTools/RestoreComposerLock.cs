@@ -7,6 +7,7 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using JsonFormatter;
 
 namespace Microsoft.Build.Tasks {
 
@@ -28,21 +29,19 @@ namespace Microsoft.Build.Tasks {
             string packagesPart = getPackagesParts(LockFragments);
             string footerPart = getFooterPart(composer);
             using (StreamWriter sw = new StreamWriter(Path.Combine(ProjPath.ItemSpec, "composer.lock"))) {
-                sw.Write(headerPart + packagesPart + footerPart);
+                sw.Write(JsonHelper.FormatJson(headerPart + packagesPart + footerPart));
             }
             return true;
         }
 
         private static string getHeaderPart(JsonObject composer) {
             string contentHash = getContentHash(composer);
-            return $@"{{
-    ""_readme"": [
-        ""This file locks the dependencies of your project to a known state"",
-        ""Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies"",
-        ""This file is @generated automatically""
-    ],
-    ""content-hash"": ""{contentHash}"",
-";
+            return "{\"_readme\": ["
+                + "\"This file locks the dependencies of your project to a known state\", "
+                + "\"Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies\", "
+                + "\"This file is @generated automatically\""
+                + "], "
+                + "\"content-hash\": \"" + contentHash + "\", ";
         }
 
         /// <summary>
@@ -54,19 +53,17 @@ namespace Microsoft.Build.Tasks {
             StringBuilder platform = new StringBuilder();
             bool first = true;
             foreach (string key in keys) {
-                platform.Append($"{(!first ? "," : "")}\"{key}\": {require[key].ToString()}");
+                platform.Append($"{(!first ? ", " : "")}\"{key}\": {require[key].ToString()}");
                 first = false;
             }
-            return $@"
-	""aliases"": [],
-    ""minimum-stability"": ""stable"",
-    ""stability-flags"": [],
-    ""prefer-stable"": false,
-    ""prefer-lowest"": false,
-    ""platform"": {{{platform}}},
-    ""platform-dev"": []
-    }}
-";
+            return "\"aliases\": [], "
+                + "\"minimum-stability\": \"stable\", "
+                + "\"stability-flags\": [], "
+                + "\"prefer-stable\": false, "
+                + "\"prefer-lowest\": false, "
+                + "\"platform\": {" + platform + "}, "
+                + "\"platform-dev\": []"
+                + "}";
         }
 
         /// <summary>
@@ -94,8 +91,8 @@ namespace Microsoft.Build.Tasks {
                     }
                 }
             }
-            packages.Append("],");
-            packagesDev.Append("],");
+            packages.Append("], ");
+            packagesDev.Append("], ");
 
             return packages.Append(packagesDev).ToString();
         }
@@ -139,13 +136,13 @@ namespace Microsoft.Build.Tasks {
             bool first = true;
             foreach (string key in relevantKeys) {
                 if (composer.ContainsKey(key)) {
-                    relevantContent.Append($"{(first ? "" : ",")}\"{key}\":{getSortedValue(composer[key])}");
+                    relevantContent.Append($"{(first ? "" : ", ")}\"{key}\": {getSortedValue(composer[key])}");
                     first = false;
                 }
             }
             string config = "{";
             if (composer.ContainsKey("config") && (composer["config"] as JsonObject).ContainsKey("platform")) {
-                config += $"\"config\":{{\"platform\":{(composer["config"] as JsonObject)["platform"]}}},";
+                config += $"\"config\": {{\"platform\": {(composer["config"] as JsonObject)["platform"]}}}, ";
             }
             string content = config + relevantContent.ToString() + "}";
             using (MD5 md5Hash = MD5.Create()) {
@@ -165,9 +162,9 @@ namespace Microsoft.Build.Tasks {
             bool first = true;
             foreach (string key in obj.Keys.OrderBy(s => s)) {
                 if (!first) {
-                    sorted.Append(',');
+                    sorted.Append(", ");
                 }
-                sorted.Append($"\"{key}\":{getSortedValue(obj[key])}");
+                sorted.Append($"\"{key}\": {getSortedValue(obj[key])}");
                 first = false;
             }
             sorted.Append(val.JsonType.Equals(JsonType.Object) ? "}" : "]");

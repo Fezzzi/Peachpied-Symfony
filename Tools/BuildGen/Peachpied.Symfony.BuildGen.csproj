@@ -1,4 +1,5 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -7,6 +8,7 @@
     <Version>1.0.0</Version>
     <Authors>Filip Horký</Authors>
     <LibsDir>$(MSBuildThisFileDirectory)..\..\Libs</LibsDir>
+	<Configuration>Release</Configuration>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PSComponentTools\PSComponentTools.csproj" />
+    <ProjectReference Include="..\ComponentTools\Peachpied.Symfony.ComponentTools.csproj" />
   </ItemGroup>
 
   <Target Name="CopyLibs" AfterTargets="Publish">
@@ -23,4 +25,5 @@
     </ItemGroup>
     <Copy SourceFiles="@(Files)" DestinationFolder="$(LibsDir)" />
   </Target>
+
 </Project>

@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	
-	<PropertyGroup>
-		<ProjectToolsPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</ProjectToolsPath>
-    <ProjectToolsAssebly>$(ProjectToolsPath)../lib/netstandard2.0/PSProjectTools.dll</ProjectToolsAssebly>
+  
+  <PropertyGroup>
+    <ProjectToolsPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</ProjectToolsPath>
+    <ProjectToolsAssebly>$(ProjectToolsPath)../lib/netstandard2.0/Peachpied.Symfony.ProjectTools.dll</ProjectToolsAssebly>
     <ProjectToolsTools>$(ProjectToolsPath)../tools/any/netstandard2.0</ProjectToolsTools>
-		<ProjPath>$(MSBuildProjectDirectory)</ProjPath>
+    <ProjPath>$(MSBuildProjectDirectory)</ProjPath>
     <RestoreVendor>true</RestoreVendor>
-	</PropertyGroup>
+  </PropertyGroup>
 
-	<UsingTask TaskName="RestoreComposerLock" AssemblyFile="$(ProjectToolsAssebly)" />
-	<UsingTask TaskName="GenerateVendorComposer" AssemblyFile="$(ProjectToolsAssebly)" />
-	<UsingTask TaskName="GenerateSymfonyCache" AssemblyFile="$(ProjectToolsAssebly)" />
-	
+  <UsingTask TaskName="RestoreComposerLock" AssemblyFile="$(ProjectToolsAssebly)" />
+  <UsingTask TaskName="GenerateVendorComposer" AssemblyFile="$(ProjectToolsAssebly)" />
+  <UsingTask TaskName="GenerateSymfonyCache" AssemblyFile="$(ProjectToolsAssebly)" />
+  
   <!-- Call custom targets -->
   <Target Name="RestoreVendorDir" BeforeTargets="BeforeBuild"> 
     <CallTarget Targets="TRestoreComposerLock; TGenerateVendorComposer; TGenerateSymfonyCache"/>

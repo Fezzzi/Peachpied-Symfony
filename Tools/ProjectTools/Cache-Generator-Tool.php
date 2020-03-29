@@ -5,7 +5,7 @@ use \Symfony\Component\Config\FileLocator;
 use \Symfony\Component\Routing\Loader\YamlFileLoader;
 use \Symfony\Component\Routing\Router;
 
-generateCache($argv[1] ?? 'dev', isset($argv[2]));
+generateCache($argv[1] ?? 'dev', isset($argv[2]) && $argv[2] == true);
 
 /**
  * Performs Kernel and Routing cache generating
