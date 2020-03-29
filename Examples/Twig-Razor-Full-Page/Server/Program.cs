@@ -57,7 +57,7 @@ namespace Peachpied.Symfony.Twig.Razor.Server
             var fprovider = new PhysicalFileProvider(root);
             app.UseStaticFiles(new StaticFileOptions() { FileProvider = fprovider });
 
-            app.UseSymfony(null, "twig-razor-page");
+            app.UseSymfony(null, "Symfony");
             app.UseDefaultFiles();
         }
     }

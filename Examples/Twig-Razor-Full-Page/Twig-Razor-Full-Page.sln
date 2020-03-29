@@ -4,7 +4,7 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{AF5D53C1-32B5-473F-9229-817608068701}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "twig-razor-page", "twig-razor-page\twig-razor-page.msbuildproj", "{21E0FF48-7CFA-4BC9-8572-6C7A61B9A126}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony", "Symfony\Symfony.msbuildproj", "{21E0FF48-7CFA-4BC9-8572-6C7A61B9A126}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
