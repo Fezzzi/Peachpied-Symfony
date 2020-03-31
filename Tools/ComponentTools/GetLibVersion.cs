@@ -15,7 +15,7 @@ namespace Microsoft.Build.Tasks {
         [Required]
         public ITaskItem LibName { get; set; }
         [Output]
-        public ITaskItem Version { get; private set; }
+        public string Version { get; private set; }
 
         public override bool Execute() {
             string name = LibName.ItemSpec.Replace('.', '/').ToLower();
@@ -24,7 +24,7 @@ namespace Microsoft.Build.Tasks {
             if (package == null) {
                 return false;
             }
-            Version = new TaskItem(package["version"].ToString().Trim('"'));
+            Version = package["version"].ToString().Trim('"');
             Console.WriteLine($"Building {name} with version {Version}");
 
             return true;
