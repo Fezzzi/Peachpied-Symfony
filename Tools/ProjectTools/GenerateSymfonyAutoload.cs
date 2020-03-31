@@ -11,13 +11,17 @@ namespace Microsoft.Build.Tasks {
     /// <summary>
     /// Task that generates vendor/composer folder and autoload script
     /// </summary>
-    public sealed class GenerateVendorComposer : Task {
+    public sealed class GenerateSymfonyAutoload : Task {
         [Required]
         public ITaskItem ProjPath { get; set; }
+        [Output]
+        public bool Executed { get; private set; } = false;
 
         public override bool Execute() {
-            generateInstalledJson(ProjPath.ItemSpec);
-            runRestoreScript(ProjPath.ItemSpec);
+            if (generateInstalledJson(ProjPath.ItemSpec)) {
+                runRestoreScript(ProjPath.ItemSpec);
+                Executed = true;
+            }
             return true;
         }
 
@@ -26,7 +30,7 @@ namespace Microsoft.Build.Tasks {
         /// </summary>
         private static void runRestoreScript(string projectPath) {
             // Actual path to .dll inside the nuget package
-            string location = new Uri(typeof(GenerateVendorComposer).Assembly.CodeBase).LocalPath;
+            string location = new Uri(typeof(GenerateSymfonyAutoload).Assembly.CodeBase).LocalPath;
             location = location.Substring(0, location.LastIndexOf(Path.DirectorySeparatorChar));
             string contentPath = $"{location}\\..\\..\\tools\\any\\netstandard2.0\\";
 
@@ -42,14 +46,18 @@ namespace Microsoft.Build.Tasks {
         /// <summary>
         /// Produces installed.json file that is further processed by composer
         /// </summary>
-        private static void generateInstalledJson(string projPath) {
+        private static bool generateInstalledJson(string projPath) {
             JsonArray packages = getPackages(projPath);
+            if (packages == null) {
+                return false;
+            }
             string composerDir = Path.Combine(projPath, "vendor", "composer");
             string jsonString = JsonHelper.FormatJson(packages.ToString());
             Directory.CreateDirectory(composerDir);
             using (StreamWriter sw = new StreamWriter(Path.Combine(composerDir, "installed.json"))) {
                 sw.Write(jsonString);
             }
+            return true;
         }
 
         /// <summary>
@@ -59,20 +67,21 @@ namespace Microsoft.Build.Tasks {
             JsonArray packages = new JsonArray();
             string lockPath = getLockPath(projPath);
 
-            if (lockPath != null) {
-                string lockText = File.ReadAllText(lockPath);
-                JsonObject json = JsonValue.Parse(lockText) as JsonObject;
+            if (lockPath == null) {
+                return null;
+            }
+            string lockText = File.ReadAllText(lockPath);
+            JsonObject json = JsonValue.Parse(lockText) as JsonObject;
 
-                foreach (JsonObject package in json["packages"] as JsonArray) {
-                    package.Add("version-normalized", package["version"] + ".0");
-                    package.Add("installation-source", "dist");
-                    packages.Add(package);
-                }
-                foreach (JsonObject package in json["packages-dev"] as JsonArray) {
-                    package.Add("version-normalized", package["version"] + ".0");
-                    package.Add("installation-source", "dist");
-                    packages.Add(package);
-                }
+            foreach (JsonObject package in json["packages"] as JsonArray) {
+                package.Add("version-normalized", package["version"] + ".0");
+                package.Add("installation-source", "dist");
+                packages.Add(package);
+            }
+            foreach (JsonObject package in json["packages-dev"] as JsonArray) {
+                package.Add("version-normalized", package["version"] + ".0");
+                package.Add("installation-source", "dist");
+                packages.Add(package);
             }
             return packages;
         }

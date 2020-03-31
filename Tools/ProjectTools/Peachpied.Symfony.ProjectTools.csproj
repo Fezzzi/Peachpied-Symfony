@@ -37,8 +37,8 @@
   </ItemGroup>
   
   <Target Name="Publish_n_Pack" AfterTargets="AfterBuild">
-	<MSBuild Projects="Peachpied.Symfony.ProjectTools.csproj" Properties="Configuration=$(Configuration);NoBuild=true" Targets="Publish" />
-	<MSBuild Projects="Peachpied.Symfony.ProjectTools.csproj" Properties="NoBuild=true" Targets="Pack" />
+	  <MSBuild Projects="Peachpied.Symfony.ProjectTools.csproj" Properties="Configuration=$(Configuration);NoBuild=true" Targets="Publish" />
+	  <MSBuild Projects="Peachpied.Symfony.ProjectTools.csproj" Properties="NoBuild=true" Targets="Pack" />
   </Target>
 
 </Project>

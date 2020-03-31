@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
 using Microsoft.Extensions.Configuration;
 
@@ -12,10 +13,13 @@ namespace Microsoft.Build.Tasks {
     /// Simple task to generate Symfony project cache with the help of dedicated PHP script
     /// <summary>
     public sealed class GenerateSymfonyCache : Task {
+        [Output]
+        public bool Executed { get; private set; }
 
         public override bool Execute() {
             Tuple<string, string> config = getAppConfig();
             runGeneratorScript(config.Item1, config.Item2);
+            Executed = true;
 
             return true;
         }
@@ -97,7 +101,7 @@ namespace Microsoft.Build.Tasks {
         /// </summary>
         private static void runGeneratorScript(string env, string debug) {
             // Actual path to .dll inside the nuget package
-            string location = new Uri(typeof(GenerateVendorComposer).Assembly.CodeBase).LocalPath;
+            string location = new Uri(typeof(GenerateSymfonyCache).Assembly.CodeBase).LocalPath;
             location = location.Substring(0, location.LastIndexOf(Path.DirectorySeparatorChar));
             string contentPath = $"{location}\\..\\..\\tools\\any\\netstandard2.0\\";
 
