@@ -28,7 +28,7 @@
                         <h4>Upcoming events</h4>
                         @{ KeyValuePair<string, int>[] data = band.Occupancy.ToArray(); }
                         @Html.Raw(RenderTwig(
-                            "twig-razor-page/templates/",
+                            "Symfony/templates/",
                             "twig-embedded-content.html.twig",
                             DataToPhp("data", data)))
                     </div>
