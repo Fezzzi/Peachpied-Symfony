@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <PackageReference Include="PeachPied.Symfony.Skeleton" Version="4.2.3" />
-    <PackageReference Include="Symfony.Twig-bundle" Version="4.2.10" />
     <PackageReference Include="Peachpied.Symfony.ProjectTools" Version="1.0.0" />
   </ItemGroup>
 

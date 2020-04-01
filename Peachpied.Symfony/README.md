@@ -9,7 +9,7 @@ Symfony components with certain edits. Reasons for the changes are imperfect ove
 were maid solely due to compilation errors and should not affect component's expected behaviour in any mean.
 
 #### Empty-Page
-Simple .NET Core application using Symfony with a sigle empty page displaying only basic text using twig.
+Simple .NET Core application using Symfony with a sigle empty page displaying only basic text.
 
 #### Skeletons
 Set of simple projects that iclude references to nuget packages that mimic bare bones Symfony Skeleton application in a single nuget. Each project correspond to a single version of
