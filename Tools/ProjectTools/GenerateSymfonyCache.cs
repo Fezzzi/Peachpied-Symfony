@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Json;
 using System.Linq;
 using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
-using Microsoft.Extensions.Configuration;
 
 namespace Microsoft.Build.Tasks {
 
@@ -13,11 +13,13 @@ namespace Microsoft.Build.Tasks {
     /// Simple task to generate Symfony project cache with the help of dedicated PHP script
     /// <summary>
     public sealed class GenerateSymfonyCache : Task {
+        [Required]
+        public ITaskItem Configuration { get; set; }
         [Output]
         public bool Executed { get; private set; }
 
         public override bool Execute() {
-            Tuple<string, string> config = getAppConfig();
+            Tuple<string, string> config = getAppConfig(Configuration.ItemSpec);
             runGeneratorScript(config.Item1, config.Item2);
             Executed = true;
 
@@ -27,21 +29,14 @@ namespace Microsoft.Build.Tasks {
         /// <summary>
         /// Parse application configuration to generate cache for corret environment
         /// </summary>
-        private static Tuple<string, string> getAppConfig() {
-            IConfigurationRoot appconfig = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetParent(Directory.GetCurrentDirectory()).FullName)
-                .AddJsonFile("appsettings.json", optional: true)
-                .Build();
-
-            if (appconfig != null) {
-                IConfigurationSection symfonyCfg = appconfig.GetSection("Symfony");
-
-                if (symfonyCfg.GetValue<bool>("OVERRIDE_ENV")) {
-                    return new Tuple<string, string>(
-                        symfonyCfg.GetValue<string>("APP_ENV"),
-                        symfonyCfg.GetValue<string>("APP_DEBUG")
-                    );
-                }
+        private static Tuple<string, string> getAppConfig(string configuration) {
+            // Load configuration appSettings files
+            JsonObject appSettings = getAppSettingsConfig(configuration);
+            if (appSettings != null && appSettings.ContainsKey("APP_ENV") && appSettings.ContainsKey("APP_DEBUG")) {
+                return new Tuple<string, string>(
+                    appSettings["APP_ENV"],
+                    appSettings["APP_DEBUG"]
+                );
             }
 
             // Load configuration from .env file
@@ -65,6 +60,52 @@ namespace Microsoft.Build.Tasks {
                 (env != null && env.ContainsKey("APP_ENV")) ? env["APP_ENV"] : "dev",
                 (env != null && env.ContainsKey("APP_DEBUG")) ? env["APP_DEBUG"] : "0"
             );
+        }
+
+        /// <summary>
+        /// Loads values appsettings based on current Configuration settings
+        /// </summary>
+        private static JsonObject getAppSettingsConfig(string configuration) {
+            JsonObject settings = null;
+            JsonObject settingsConf = null;
+            JsonObject getSymfonyPart(string file) {
+                JsonObject settingsJson = JsonValue.Parse(File.ReadAllText(file)) as JsonObject;
+                if (settingsJson.ContainsKey("Symfony")) {
+                    return settingsJson["Symfony"] as JsonObject;
+                } else if (settingsJson.ContainsKey("symfony")) {
+                    return settingsJson["symfony"] as JsonObject;
+                }
+                return null;
+            }
+
+            string dirName = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
+            string fileName = File.Exists(Path.Combine(dirName, $"appsettings.{configuration}.json")) 
+                ? $"appsettings.{configuration}.json" 
+                : File.Exists(Path.Combine(dirName, "appsettings.Development.json"))
+                    ? "appsettings.Development.json" 
+                    : String.Empty;
+            if (!configuration.Equals("Release") && !fileName.Equals(String.Empty)) {
+                settingsConf = getSymfonyPart(Path.Combine(dirName, fileName));
+            }
+            if (File.Exists(Path.Combine(dirName, "appsettings.json"))) {
+                settings = getSymfonyPart(Path.Combine(dirName, "appsettings.json"));
+            }
+            if (settingsConf == null && settings == null) {
+                return null;
+            }
+
+            JsonObject config = new JsonObject();
+            if (settingsConf != null && settingsConf.ContainsKey("APP_ENV")) {
+                config.Add("APP_ENV", settingsConf["APP_ENV"]);
+            } else if (settings != null && settings.ContainsKey("APP_ENV")) {
+                config.Add("APP_ENV", settings["APP_ENV"]);
+            }
+            if (settingsConf != null && settingsConf.ContainsKey("APP_DEBUG")) {
+                config.Add("APP_DEBUG", settingsConf["APP_DEBUG"]);
+            } else if (settings != null && settings.ContainsKey("APP_DEBUG")) {
+                config.Add("APP_DEBUG", settings["APP_DEBUG"]);
+            }
+            return config;
         }
 
         /// <summary>
