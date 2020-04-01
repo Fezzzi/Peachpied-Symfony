@@ -5,9 +5,6 @@
     <OutputType>Library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Empty-Page</AssemblyName>
-    <IntermediateOutputPath>.\obj\$(Configuration)\$(AssemblyName)\</IntermediateOutputPath>
-    <OutputPath>.\bin\$(Configuration)\$(AssemblyName)\</OutputPath>
-    <OutDir>$(OutputPath)</OutDir>
   </PropertyGroup>
 
   <ItemGroup>
