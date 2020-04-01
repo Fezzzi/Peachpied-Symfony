@@ -1,13 +1,10 @@
 ﻿using System;
 
-namespace PeachPied.Symfony.AspNetCore
-{
+namespace PeachPied.Symfony.AspNetCore {
     /// <summary>
-    /// Symfony configuration.
-    /// The configuration is loaded into Symfony before every request.
+    /// Configuration is loaded into Symfony before every request
     /// </summary>
-    public class SymfonyConfig
-    {
+    public class SymfonyConfig {
         // DEFAULTS
 
         /// <summary>Decides whether to override Symfony's .env configuration with appsettings.</summary>

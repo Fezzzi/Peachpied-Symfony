@@ -10,7 +10,6 @@ generateCache($argv[1] ?? 'dev', isset($argv[2]) && $argv[2] == true);
 /**
  * Performs Kernel and Routing cache generating
  *
- * @param string $projectPath
  * @param string $environment
  * @param bool $debug
  */

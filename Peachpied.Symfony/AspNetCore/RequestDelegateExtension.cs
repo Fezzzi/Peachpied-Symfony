@@ -5,37 +5,26 @@ using PeachPied.Symfony.AspNetCore.Internal;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.AspNetCore.Rewrite;
 
-namespace Microsoft.AspNetCore.Builder
-{
+namespace Microsoft.AspNetCore.Builder {
     /// <summary>
-    /// <see cref="IApplicationBuilder"/> extension for enabling Symfony.
+    /// <see cref="IApplicationBuilder"/> Extension for enabling Symfony
     /// </summary>
-    public static class RequestDelegateExtension
-    {
+    public static class RequestDelegateExtension {
         static SymfonyConfig bootstrapConfig;
 
         /// <summary>
         /// Function overwritting functionality in bootstrap.php
         /// </summary>
-        /// <param name="ctx">Context</param>
-        /// <param name="locals">PhpArray</param>
-        /// <param name="this">object</param>
-        /// <param name="self">RuntimeTypeHandle</param>
-        /// <returns></returns>
-        static PhpValue BootstrapMain(Context ctx, PhpArray locals, object @this, RuntimeTypeHandle self)
-        {
+        static PhpValue BootstrapMain(Context ctx, PhpArray locals, object @this, RuntimeTypeHandle self) {
             ctx.Include("vendor", "autoload.php", true);
             Apply(ctx, bootstrapConfig);
             return 0;
         }
 
         /// <summary>
-        /// Defines Symfony configuration constants and initializes runtime before proceeding to <c>index.php</c>.
+        /// Defines Symfony configuration constants and initializes runtime before proceeding to <c>index.php</c>
         /// </summary>
-        /// <param name="ctx">Context</param>
-        /// <param name="config">SymfonyConfig</param>
-        static void Apply(Context ctx, SymfonyConfig config)
-        {
+        static void Apply(Context ctx, SymfonyConfig config) {
             // see .env
             ctx.Server["APP_ENV"] = ctx.Env["APP__ENV"] = (PhpValue)config.AppEnv; 
             ctx.Server["APP_SECRET"] = (PhpValue)config.AppSecret;
@@ -43,16 +32,13 @@ namespace Microsoft.AspNetCore.Builder
         }
 
         /// <summary>
-        /// Installs Symfony middleware.
+        /// Installs Symfony middleware
         /// </summary>
-        /// <param name="app">The application builder.</param>
-		/// <param name="path">Physical location of symfony folder. Can be absolute or relative to the current directory.</param>
-        /// <param name="config">Symfony instance configuration.</param>
-        /// <returns>IApplicationBuilder</returns>
-        public static IApplicationBuilder UseSymfony
-            (this IApplicationBuilder app, string path = "Symfony", SymfonyConfig config = null)
-        {
-            // symony root path:
+        public static IApplicationBuilder UseSymfony(
+			this IApplicationBuilder app, 
+			string path = "Symfony", 
+			SymfonyConfig config = null
+		){
             var symfonyRoot = System.IO.Path.GetFullPath(path);
             var fproviderB = new PhysicalFileProvider(symfonyRoot);
 

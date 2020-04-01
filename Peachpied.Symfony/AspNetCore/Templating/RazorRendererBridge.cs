@@ -4,28 +4,22 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace PeachPied.Symfony.AspNetCore.Templating
-{
+namespace PeachPied.Symfony.AspNetCore.Templating {
+
     /// <summary>
     /// Class providing bridge between Razor supporting Environment and Razor rendering service
     /// </summary>
-    class RazorRendererBridge
-    {
+    class RazorRendererBridge {
         Context ctx;
 
-        public RazorRendererBridge(Context ctx)
-        {
+        public RazorRendererBridge(Context ctx) {
             this.ctx = ctx;
         }
 
         /// <summary>
         /// Returns Razor view rendered into a string
         /// </summary>
-        /// <param name="name">PhpValue</param>
-        /// <param name="data">PhpArray</param>
-        /// <returns>PhpValue</returns>
-        public PhpValue RenderRazor(PhpValue name, PhpArray data)
-        {
+        public PhpValue RenderRazor(PhpValue name, PhpArray data) {
             object httpCtx = ctx.GetType().GetProperty("HttpContext").GetValue(ctx, null);
 
             if (httpCtx is HttpContext) {
@@ -42,17 +36,13 @@ namespace PeachPied.Symfony.AspNetCore.Templating
                     }
                 }
             }
-
             return "";
         }
 
         /// <summary>
         /// Provides utilities for converting twig data to razor comprehensable format
         /// </summary>
-        /// <param name="data">PhpArray</param>
-        /// <returns>ViewDataDictionary</returns>
-        private static ViewDataDictionary GetData(PhpArray data)
-        {
+        private static ViewDataDictionary GetData(PhpArray data) {
             var viewDataDictionary = new ViewDataDictionary(
                 new EmptyModelMetadataProvider(),
                 new ModelStateDictionary()
@@ -67,17 +57,13 @@ namespace PeachPied.Symfony.AspNetCore.Templating
                     viewDataDictionary.Add(key, ResolveDataReccursive(el.Value.AsArray()));
                 }
             }
-
             return viewDataDictionary;
         }
 
         /// <summary>
         /// Recursive part of Twig to Razor data conversion
         /// </summary>
-        /// <param name="data">PhpArray</param>
-        /// <returns>Dictionary</returns>
-        private static Dictionary<string, object> ResolveDataReccursive(PhpArray data)
-        {
+        private static Dictionary<string, object> ResolveDataReccursive(PhpArray data) {
             Dictionary<string, object> output = new Dictionary<string, object>();
             foreach (var el in data) {
                 string key = el.Key.IsInteger ? el.Key.Integer.ToString() : el.Key.String;
@@ -88,7 +74,6 @@ namespace PeachPied.Symfony.AspNetCore.Templating
                     output.Add(key, ResolveDataReccursive(el.Value.AsArray()));
                 }
             }
-
             return output;
         }
     }

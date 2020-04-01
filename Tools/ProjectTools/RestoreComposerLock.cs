@@ -34,6 +34,9 @@ namespace Microsoft.Build.Tasks {
             return true;
         }
 
+        /// <summary>
+        /// Provides header part of composer.lock file
+        /// </summary>
         private static string getHeaderPart(JsonObject composer) {
             string contentHash = getContentHash(composer);
             return "{\"_readme\": ["
@@ -45,7 +48,7 @@ namespace Microsoft.Build.Tasks {
         }
 
         /// <summary>
-        /// Gets footer part of composer.lock file
+        /// Provides footer part of composer.lock file
         /// </summary>
         private static string getFooterPart(JsonObject composer) {
             JsonObject require = composer["require"] as JsonObject;

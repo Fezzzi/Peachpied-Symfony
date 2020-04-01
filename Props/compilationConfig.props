@@ -23,6 +23,7 @@
 			<Link>$(LibraryPath)%(RecursiveDir)%(Filename)%(Extension)</Link>
 		</Content>
 		
+		<!-- We include fragments of composer.lock file inside nugets to be able to restore the file later inside consumer Symfony project -->
 		<Content Include="$(PackageId).lockFragment.json" CopyToOutputDirectory="PreserveNewest" Condition="Exists('$(PackageId).lockFragment.json')">
 		  <BuildAction>Content</BuildAction>
 		  <PackagePath>tools\any\any\</PackagePath>

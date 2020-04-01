@@ -1,11 +1,13 @@
 ﻿using System.Linq;
 using System.Text;
 
-/// <summary>
-/// simple jsonFormatter inspired by aloisdg at https://dotnetfiddle.net/z7Gfu5
-/// </summary>
 namespace JsonFormatter {
+	
+	/// <summary>
+	/// Simple jsonFormatter inspired by aloisdg at https://dotnetfiddle.net/z7Gfu5
+	/// </summary>
     static class JsonHelper {
+		
         public static string FormatJson(string str) {
             int indent = 0;
             bool quoted = false;
@@ -45,6 +47,9 @@ namespace JsonFormatter {
             return sb.ToString();
         }
 
+		/// <summary>
+		/// Append desired number of indentation characters to the string builder
+		/// </summary>
         private static void padStringBuilder(StringBuilder sb, int indent, bool quoted) {
             const string INDENT_STRING = "    ";
             if (!quoted) {

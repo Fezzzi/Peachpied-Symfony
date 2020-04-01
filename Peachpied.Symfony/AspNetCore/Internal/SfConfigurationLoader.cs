@@ -4,31 +4,28 @@ using System.IO;
 using System.Linq;
 using Microsoft.Extensions.Configuration;
 
-namespace PeachPied.Symfony.AspNetCore.Internal
-{
+namespace PeachPied.Symfony.AspNetCore.Internal {
+
     /// <summary>
-    /// Provides methods of loading <see cref="SymfonyConfig"/>.
+    /// Provides methods of loading <see cref="SymfonyConfig"/>
     /// </summary>
-    static class SfConfigurationLoader
-    {
+    static class SfConfigurationLoader {
+		
         /// <summary>
         /// Crates default configuration with default values.
         /// </summary>
-        public static SymfonyConfig CreateDefault()
-        {
+        public static SymfonyConfig CreateDefault() {
             return new SymfonyConfig();
         }
 
         /// <summary>
-        /// Loads configuration from appsettings file (<see cref="IConfiguration"/>).
+        /// Loads configuration from appsettings file (<see cref="IConfiguration"/>)
         /// </summary>
-        /// <param name="config">SymfonyConfig</param>
-        /// <param name="services">IServiceProvider</param>
-        /// <param name="path">string</param>
-        /// <returns></returns>
-        public static SymfonyConfig LoadFromSettings
-            (this SymfonyConfig config, IServiceProvider services, string path)
-        {
+        public static SymfonyConfig LoadFromSettings(
+			this SymfonyConfig config, 
+			IServiceProvider services, 
+			string path
+		){
             if (config == null) {
                 config = CreateDefault();
             }
@@ -67,17 +64,13 @@ namespace PeachPied.Symfony.AspNetCore.Internal
                     }
                 }
             }
-
             return config;
         }
 
         /// <summary>
         /// Loads values from given env file and returns them as a dictionary
         /// </summary>
-        /// <param name="path">Path to a env file</param>
-        /// <returns>Dictionary or null</returns>
-        private static Dictionary<string, string> getEnvConfig(string path)
-        {
+        private static Dictionary<string, string> getEnvConfig(string path) {
             if (File.Exists(path)) {
                 Dictionary<string, string> env = new Dictionary<string, string>();
 
@@ -98,10 +91,8 @@ namespace PeachPied.Symfony.AspNetCore.Internal
                         }
                     }
                 }
-
                 return env;
             }
-
             return null;
         }
     }
