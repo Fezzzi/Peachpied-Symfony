@@ -2,7 +2,7 @@
 
 Symfony 4.2.3 framework nugetized and compiled to C# using peachpie, the PHP compiler (https://www.peachpie.io/).
 
-The project has following directory structure:
+#### Directory structure:
  - **[Docs](/Docs)**
    - The project is both Bachelor thesis and Semestral project - documentations for each can be found there.
    - The Semestral Project docs might be little obsolete as the project continued to develop after meeting the requiremnets of a semestral project.
@@ -23,7 +23,7 @@ The project has following directory structure:
  - **[Tools](/Tools)**
    - Helper tools that automatize processes of compilation of both Symfony components and resulting .NET Core apps are located here.
 
-Files:
+#### Files:
  - **Nuget.config**
    - File defining **Nuget-Repository** as local nuget repository for provided tools and nugets.
    - Hopefully, nugets will be distributed in the more standard way in the future.
