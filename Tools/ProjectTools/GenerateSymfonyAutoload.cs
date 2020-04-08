@@ -13,13 +13,13 @@ namespace Microsoft.Build.Tasks {
     /// </summary>
     public sealed class GenerateSymfonyAutoload : Task {
         [Required]
-        public ITaskItem ProjPath { get; set; }
+        public string ProjPath { get; set; }
         [Output]
         public bool Executed { get; private set; } = false;
 
         public override bool Execute() {
-            if (generateInstalledJson(ProjPath.ItemSpec)) {
-                runRestoreScript(ProjPath.ItemSpec);
+            if (generateInstalledJson(ProjPath)) {
+                runRestoreScript(ProjPath);
                 Executed = true;
             }
             return true;

@@ -15,20 +15,20 @@ namespace Microsoft.Build.Tasks {
     /// </summary>
     public sealed class WarmLibsCache : Task {
         [Required]
-        public ITaskItem ProjPath { get; set; }
+        public string ProjPath { get; set; }
         [Required]
-        public ITaskItem ConfigPath { get; set; }
+        public string ConfigPath { get; set; }
 
-        public ITaskItem CachePath { get; set; } = String.Empty;
+        public string CachePath { get; set; } = String.Empty;
 
         public List<string> OrderedComponents { get; private set; }
         public JsonArray LockPackages { get; private set; }
         public JsonArray LockPackagesDev { get; private set; }
 
         public override bool Execute() {
-            string lockPath = getLockPath(ProjPath.ItemSpec);
-            string tempPath = CachePath === String.Empty ? Path.Combine(ProjPath.ItemSpec, "obj") : CachePath.ItemSpec;
-            return !lockPath.Equals(String.Empty) && warmCache(lockPath, tempPath, ConfigPath.ItemSpec);
+            string lockPath = getLockPath(ProjPath);
+            string tempPath = CachePath == String.Empty ? Path.Combine(ProjPath, "obj") : CachePath;
+            return !lockPath.Equals(String.Empty) && warmCache(lockPath, tempPath, ConfigPath);
         }
 
         /// <summary>

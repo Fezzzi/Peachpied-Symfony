@@ -2,6 +2,11 @@
 
 Symfony 4.2.3 framework nugetized and compiled to C# using peachpie, the PHP compiler (https://www.peachpie.io/).
 
+#### Requirements:
+
+ - PHP 5.3.2+ with `openssl` extension
+ - Nuget Package Manager 5.0+
+
 #### Directory structure:
  - **[Docs](/Docs)**
    - The project is both Bachelor thesis and Semestral project - documentations for each can be found there.

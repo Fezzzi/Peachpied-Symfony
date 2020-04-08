@@ -37,8 +37,8 @@ namespace PSBuildGen {
         /// </summary>
         private static void generate() {
             WarmLibsCache wlc = new WarmLibsCache() {
-                ConfigPath = new TaskItem(configOpt),
-                ProjPath = new TaskItem(projectOpt)
+                ConfigPath = configOpt,
+                ProjPath = projectOpt
             };
 
             Console.WriteLine("Generating cache...");
