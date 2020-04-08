@@ -4,8 +4,8 @@
 	<PropertyGroup>
 		<PropsPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</PropsPath>
 		<ConfigPath>$(PropsPath)..\</ConfigPath>
-		<RepoPath>$(PropsPath)..\PS-Nuget-Repository\</RepoPath>
-		<LibsAssebly>$(PropsPath)..\Libs\PSComponentTools.dll</LibsAssebly>
+		<RepoPath>$(PropsPath)..\Nuget-Repository\</RepoPath>
+		<LibsAssebly>$(PropsPath)..\Libs\Peachpied.Symfony.ComponentTools.dll</LibsAssebly>
 		<ProjPath>$(MSBuildProjectDirectory)</ProjPath>
 		<CacheDir>$(ProjDir)obj</CacheDir>
 		
@@ -20,9 +20,9 @@
 	<UsingTask TaskName="FilterLibExcludes" AssemblyFile="$(LibsAssebly)" />
 	
 	<!-- To keep symfony components' cache up to date. -->
-	<Target Name="WarmSymfonyCache" Inputs="$(MSBuildProjectDirectory)\composer.lock" Outputs="$(CacheDir)\libsCache.json">
+	<Target Name="TWarmLibsCache" Inputs="$(MSBuildProjectDirectory)\composer.lock" Outputs="$(CacheDir)\libsCache.json">
 		<Delete Files="$(CacheDir)\libsCache.json" Condition="Exists('$(CacheDir)\libsCache.json')" />
-		<WarmLibsCache ProjPath="$(ProjPath)" ConfigPath="$(ConfigPath)" />
+		<WarmLibsCache ProjPath="$(ProjPath)" ConfigPath="$(ConfigPath)" CachePath="$(CacheDir)" />
 	</Target>
 	
 	<!-- To ensure libsCache are removed on clear request. -->
@@ -32,14 +32,14 @@
 	
 	<!-- To simulate component's dependencies with package references -->
 	<!-- We hook the target on CollectPackageDownloads instead of CollectPackageReferences as the later one is executed twice during build -->
-	<Target Name="AddSymfonyPackageReferences" BeforeTargets="CollectPackageReferences" DependsOnTargets="WarmSymfonyCache">
+	<Target Name="TGetLibReferences" BeforeTargets="CollectPackageReferences" DependsOnTargets="TWarmLibsCache">
 		<GetLibReferences CachePath="$(CacheDir)" RepoPath="$(RepoPath)" LibName="$(MSBuildProjectName)" Condition="$(ManualReferences)!=true">
 			<Output TaskParameter="References" ItemName="PackageReference" />
 		</GetLibReferences>
 	</Target>
 	
 	<!-- Tasks to retrieve library's version and compilation blocking files exclusion -->
-	<Target Name="SymfonyAutomatizationTasks" BeforeTargets="BeforeBuild" DependsOnTargets="WarmSymfonyCache">
+	<Target Name="TSymfonyAutomatization" BeforeTargets="BeforeBuild" DependsOnTargets="TWarmLibsCache">
 		<GetLibVersion CachePath="$(CacheDir)" LibName="$(MSBuildProjectName)" Condition="$(ManualVersion)!=true">
 			<Output TaskParameter="Version" PropertyName="PackageVersion" />
 		</GetLibVersion>

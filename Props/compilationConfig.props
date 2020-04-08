@@ -12,7 +12,7 @@
 						**\*.csbuildproj;
 						**\*.props;
 						$(LibraryPath)obj\**;
-						$(LibraryPath)bin\Debug\**;"
+						$(LibraryPath)bin\**;"
 			CopyToOutputDirectory="PreserveNewest">
 			
 			<BuildAction>Content</BuildAction>
@@ -23,7 +23,14 @@
 			<Link>$(LibraryPath)%(RecursiveDir)%(Filename)%(Extension)</Link>
 		</Content>
 		
-		<Content Include="$(PackageId).lockFragment.json" CopyToOutputDirectory="PreserveNewest">
+		<!-- We include fragments of composer.lock file inside nugets to be able to restore the file later inside consumer Symfony project -->
+		<Content Include="$(PackageId).lockFragment.json" CopyToOutputDirectory="PreserveNewest" Condition="Exists('$(PackageId).lockFragment.json')">
+		  <BuildAction>Content</BuildAction>
+		  <PackagePath>tools\any\any\</PackagePath>
+		  <PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		
+		<Content Include="$(PackageId).lockFragment-dev.json" CopyToOutputDirectory="PreserveNewest" Condition="Exists('$(PackageId).lockFragment-dev.json')">
 		  <BuildAction>Content</BuildAction>
 		  <PackagePath>tools\any\any\</PackagePath>
 		  <PackageCopyToOutput>true</PackageCopyToOutput>

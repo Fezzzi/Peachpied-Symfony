@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  
+  <PropertyGroup>
+    <ProjectToolsPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</ProjectToolsPath>
+    <ProjectToolsAssebly>$(ProjectToolsPath)../lib/netstandard2.0/Peachpied.Symfony.ProjectTools.dll</ProjectToolsAssebly>
+    <ProjectToolsTools>$(ProjectToolsPath)../tools/any/netstandard2.0</ProjectToolsTools>
+    <ProjPath>$(MSBuildProjectDirectory)</ProjPath>
+    <RestoreVendor>true</RestoreVendor>
+    <_RestoredAutoload>false</_RestoredAutoload>
+    <_RestoredVar>false</_RestoredVar>
+  </PropertyGroup>
+
+  <UsingTask TaskName="RestoreComposerLock" AssemblyFile="$(ProjectToolsAssebly)" />
+  <UsingTask TaskName="GenerateSymfonyAutoload" AssemblyFile="$(ProjectToolsAssebly)" />
+  <UsingTask TaskName="GenerateSymfonyCache" AssemblyFile="$(ProjectToolsAssebly)" />
+  
+  <!-- Call custom targets -->
+  <Target Name="RestoreVendorDir" BeforeTargets="BeforeBuild"> 
+    <CallTarget Targets="TRestoreComposerLock; TGenerateSymfonyAutoload; TGenerateSymfonyCache; CompileRestoredFiles"/>
+  </Target>
+
+  <!-- Generate composer.lock from lockFragments packed inside nugets -->
+  <Target Name="TRestoreComposerLock" Inputs="composer.json" Outputs="composer.lock">
+    <RestoreComposerLock ProjPath="$(ProjPath)" LockFragments="@(LockFragments)" />
+  </Target>
+  
+  <!-- Generate Symfony autoloaders -->
+  <Target Name="TGenerateSymfonyAutoload" 
+          Condition="!Exists('$(MSBuildProjectDirectory)\vendor\autoload.php') OR !Exists('$(MSBuildProjectDirectory)\vendor\composer')">
+    <GenerateSymfonyAutoload ProjPath="$(ProjPath)">
+      <Output TaskParameter="Executed" PropertyName="_RestoredAutoload" />
+    </GenerateSymfonyAutoload>
+  </Target>
+
+  <!-- Generate var folder with Symfony cache -->
+  <Target Name="TGenerateSymfonyCache"  
+          Condition="!Exists('$(MSBuildProjectDirectory)\var') OR $(ForceCacheRefresh)==true">
+    <GenerateSymfonyCache Configuration="$(Configuration)">
+      <Output TaskParameter="Executed" PropertyName="_RestoredVar" />
+    </GenerateSymfonyCache>
+  </Target>
+
+  <!-- Add generated files into Compile Item -->
+  <!-- We remove them first to ensure there are no duplicates -->
+  <Target Name="CompileRestoredFiles">
+    <ItemGroup Condition="$(_RestoredAutoload)==true">
+      <Compile Remove="vendor\autoload.php; vendor\composer\**\*.php" />
+      <Compile Include="vendor\autoload.php; vendor\composer\**\*.php"/>
+    </ItemGroup>
+
+    <ItemGroup Condition="$(_RestoredVar)==true">
+      <Compile Remove="var\**\*.php" />
+      <Compile Include="var\**\*.php"/>
+    </ItemGroup>
+  </Target>
+  
+</Project>

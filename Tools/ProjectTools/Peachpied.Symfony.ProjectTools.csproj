@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>library</OutputType>
+    <PackageId>Peachpied.Symfony.ProjectTools</PackageId>
+    <Description>Set of tasks for symfony project build process automatization</Description>
+    <Version>1.0.0</Version>
+    <Authors>Filip Horký</Authors>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)..\..\Nuget-Repository</PackageOutputPath>
+    <Configuration>Release</Configuration>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove=".\**" />
+    <Compile Include="*.cs;" />
+    <None Remove=".\**" />
+    <None Include="Peachpied.Symfony.ProjectTools.targets" Pack="true" PackagePath="build" />
+    <None Include="$(OutputPath)$(PackageId).dll; $(OutputPath)$(PackageId).pdb; $(OutputPath)publish\*dll" Pack="true" PackagePath="lib\$(TargetFramework)" />
+    <None Remove="$(OutputPath)publish\Peachpied.Symfony.ProjectTools.dll; $(OutputPath)publish\runtimes\*.*" />
+    
+    <Content Include="composer.phar; Cache-Generator-Tool.php" CopyToOutputDirectory="PreserveNewest">
+      <BuildAction>Content</BuildAction>
+      <PackagePath>tools\any\netstandard2.0\</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build.Framework" Version="16.4.0" />
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="16.4.0" />
+    <PackageReference Include="System.Json" Version="4.7.0" />
+  </ItemGroup>
+  
+  <Target Name="Publish_n_Pack" AfterTargets="AfterBuild">
+    <MSBuild Projects="Peachpied.Symfony.ProjectTools.csproj" Properties="Configuration=$(Configuration);NoBuild=true" Targets="Publish" />
+    <MSBuild Projects="Peachpied.Symfony.ProjectTools.csproj" Properties="NoBuild=true" Targets="Pack" />
+  </Target>
+
+</Project>

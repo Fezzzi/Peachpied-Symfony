@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Description>Simple generator of build files for Symfony components</Description>
+    <Version>1.0.0</Version>
+    <Authors>Filip Horký</Authors>
+    <LibsDir>$(MSBuildThisFileDirectory)..\..\Libs</LibsDir>
+	<Configuration>Release</Configuration>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Jokedst.GetOpt" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ComponentTools\Peachpied.Symfony.ComponentTools.csproj" />
+  </ItemGroup>
+
+  <Target Name="CopyLibs" AfterTargets="Publish">
+    <ItemGroup>
+      <Files Include="$(MSBuildThisFileDirectory)$(OutputPath)*.*" Exclude="$(MSBuildThisFileDirectory)$(OutputPath)publish\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(Files)" DestinationFolder="$(LibsDir)" />
+  </Target>
+
+</Project>

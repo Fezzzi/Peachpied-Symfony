@@ -1,0 +1,28 @@
+﻿<Project Sdk="Peachpie.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<Description>Set of Symfony Skeleton .NET class libraries in PHP</Description>
+    <AssemblyName>PeachPied.Symfony.Skeleton</AssemblyName>
+	<PackageId>PeachPied.Symfony.Skeleton</PackageId>
+	<PackageVersion>4.2.3</PackageVersion>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<PackageOutputPath>..\..\..\Nuget-Repository\</PackageOutputPath>
+	<IncludeBuildOutput>false</IncludeBuildOutput>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Remove=".\**" />
+    <EmbeddedResource Remove=".\**" />
+    <None Remove=".\**" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Symfony.Framework-bundle" Version="4.2.3" />
+    <PackageReference Include="Symfony.Debug" Version="4.2.3" />
+    <PackageReference Include="Symfony.Dotenv" Version="4.2.3" />
+    <PackageReference Include="Symfony.Polyfill-mbstring" Version="1.10.0" />
+    <PackageReference Include="Symfony.Routing" Version="4.2.3" />
+	<PackageReference Include="Symfony.Filesystem" Version="4.2.3" />
+  </ItemGroup>
+</Project>
