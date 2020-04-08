@@ -19,13 +19,15 @@ namespace Microsoft.Build.Tasks {
         [Required]
         public ITaskItem ConfigPath { get; set; }
 
+        public ITaskItem CachePath { get; set; } = String.Empty;
+
         public List<string> OrderedComponents { get; private set; }
         public JsonArray LockPackages { get; private set; }
         public JsonArray LockPackagesDev { get; private set; }
 
         public override bool Execute() {
             string lockPath = getLockPath(ProjPath.ItemSpec);
-            string tempPath = Path.Combine(ProjPath.ItemSpec, "obj");
+            string tempPath = CachePath === String.Empty ? Path.Combine(ProjPath.ItemSpec, "obj") : CachePath.ItemSpec;
             return !lockPath.Equals(String.Empty) && warmCache(lockPath, tempPath, ConfigPath.ItemSpec);
         }
 

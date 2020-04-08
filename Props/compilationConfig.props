@@ -12,7 +12,7 @@
 						**\*.csbuildproj;
 						**\*.props;
 						$(LibraryPath)obj\**;
-						$(LibraryPath)bin\Debug\**;"
+						$(LibraryPath)bin\**;"
 			CopyToOutputDirectory="PreserveNewest">
 			
 			<BuildAction>Content</BuildAction>

@@ -22,7 +22,7 @@
 	<!-- To keep symfony components' cache up to date. -->
 	<Target Name="TWarmLibsCache" Inputs="$(MSBuildProjectDirectory)\composer.lock" Outputs="$(CacheDir)\libsCache.json">
 		<Delete Files="$(CacheDir)\libsCache.json" Condition="Exists('$(CacheDir)\libsCache.json')" />
-		<WarmLibsCache ProjPath="$(ProjPath)" ConfigPath="$(ConfigPath)" />
+		<WarmLibsCache ProjPath="$(ProjPath)" ConfigPath="$(ConfigPath)" CachePath="$(CacheDir)" />
 	</Target>
 	
 	<!-- To ensure libsCache are removed on clear request. -->
