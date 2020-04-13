@@ -1,0 +1,10 @@
+{
+	"author": "Filip Horky",
+	"classifications": [ "Web", "Symfony" ],
+	"name": "ASP.NET Core with Symfony Empty Project",
+	"identity": "Symfony-Empty-Project",
+	"shortName": "syemptyproj",
+	"tags": {
+		"language": "[C#], PHP"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"author": "Filip Horky",
+	"classifications": [ "Web", "Symfony" ],
+	"name": "ASP.NET Core with Symfony Skeleton",
+	"identity": "Symfony-Skeleton",
+	"shortName": "syskeleton",
+	"tags": {
+		"language": "[C#], PHP"
+	}
+}
