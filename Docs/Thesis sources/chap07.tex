@@ -1,0 +1,19 @@
+\chapter{Examples of usage}
+
+
+\section{Migrating Symfony application}
+Using the tools provided, deployment of a Symfony application on the .NET environment was simplified into the following steps that are further divided into two parts, the Preparation phase and the Deployment phase.
+
+\paragraph{The Preparation phase} 
+Prior to the actual deploy, the user must first ensure that the NuGet repository with prepared peachpied Symfony components is accessible and the Symfony project is prepared for the compilation. At the moment, there is no remotely accessible repository providing precompiled Symfony components. However, the \texttt{Nuget-Repository/Components} directory contains a base set of 35 precompiled components that are sufficient for any bare-bones Symfony version 4.2.3 application. Also, custom nuget packages can be produced in addition to those provided as described in chapter 5. Moreover, each Symfony project must contain both the \texttt{vendor/composer} and the \texttt{var/cache} directories. On migration of an existing Symfony project from to .NET, these two directories will probably be present as they are required for the application to be executable. Nevertheless, these two files can be generated from project's \texttt{composer.json} file and thus are usually excluded from git. Therefore, when migrating  For such cases, the Composer Generator Tool is provided,
+handling their generation in a single task.
+
+\paragraph{The Deployment phase}
+
+\section{Example 1: Application using Symfony and both Twig and Razor template engines}
+\paragraph{Symfony strucure}
+- Aplikace ktera v ramci sebe pouziva obe template engines - twig i razor a ukazuje schopnost renderovani sablon z twigu i razoru
+
+\section{Example 2: Application using Twig and Razor template engines without Symfony}
+- Nastin merge 2 aplikaci - 1 napsane ciste v Symfony, druhe ciste v .NETu  tak aby se nejak hezky doplnovaly (napriklad jedna zazemi a druha front)
+
