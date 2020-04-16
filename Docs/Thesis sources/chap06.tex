@@ -1,4 +1,5 @@
 \chapter{Project compilation}
+This chapter focuses on the way actual Symfony projects are compiled and deployed using Peachpied Symfony toolkit. It introduces tools that make it possible and describes the process of their development. At the end of the chapter, overview of provided feature of template engines interoperability is revealed.
 
 \section{Compilation setup}
 Whether we want to embed our existing Symfony application within another
@@ -69,11 +70,11 @@ Furthermore, the constructor of the \texttt{Kernel} class accepts parameters ide
 \section{Peachpied.Symfony.AspNetCore}
 With the configuration as shown in the Listing 6.1, the application will successfully compile into a \texttt{.dll}. \texttt{Program.cs} file in the Server project provided by one of Symfony templates will then start a web server and upon accessing the application on default port, content of the \texttt{public/index.php} file will be displayed. In order for everything to work as expected, Server project uses \texttt{Peachpied.Symfony.AspNetCore} NuGet package and its \texttt{UseSymfony} method. Moreover, many additional efforts had to be made in misbehaviour errors identification, and by the PeachPie development team in particular, during Peachpie-related problems resolving. Significant errors encountered will be discussed later.
 
-This project is intended as a helper class for the Server project, encapsulating the Peachpied Symfony specific server configuration and implementation of additional interoperability features. Both are provided via Application programming interface (API), following the standard ASP.NET Core \texttt{Use[midlewareName]} naming conventions. The public API is provided by the \texttt{RequestDelegateExtension} class and provides the \texttt{UseSymfony} method discussed in the following paragraph.
+This package is intended as a helper class for the Server project, encapsulating the Symfony specific server configuration and implementation of additional interoperability features. Both are provided via Application programming interface (API), following the standard ASP.NET Core \texttt{Use[midlewareName]} naming conventions. The public API is provided by the \texttt{RequestDelegateExtension} class and provides the \texttt{UseSymfony} method discussed in the following paragraph.
 
 \paragraph{UseSymfony method} As the method's name suggests, it adds middleware to the pipeline that handles requests targeting Symfony application. Everything that needs to be provided is a relative path to the root of the project.
 
-Aside from calling the \texttt{UsePhp} method provided by the \texttt{Peachpie.AspNetCore.Web} which implements the actual middleware, the method configures static file serving middleware, further discussed URL rewriting and environmental variables load-up, and optionally overrides Symfony's \texttt{bootstrap.php} which is responsible for environmental variables load-up in Symfony. 
+Aside from calling the \texttt{UsePhp} method provided by the \texttt{Peachpie.AspNetCore.Web} which implements the actual middleware, the method configures static file serving middleware, further discussed URL rewriting and environmental variables load-up, and optionally overrides Symfony's \texttt{bootstrap.php} which is responsible for environmental variables loading in Symfony. 
 
 Content of the \texttt{bootstrap.php} file can be found in the Listing 5.6 without original comments that have been omitted for the sake of increased readability. The fragment of the code performing the overriding is captured in the Listing 5.7. This is done by accessing the \texttt{Context} object's script table that performs mapping from \texttt{.php} files to compiled .NET classes, and overwriting path to class stored for the \texttt{bootstrap.php} file. In is also worth of notice, that our \texttt{BootstrapMain} class effectively substitutes original file's additional functionality and overrides just the environmental configuration.
 
@@ -131,7 +132,29 @@ Context.DeclareScript(bootstrapPath, md);
 \paragraph{Environmental variables} Because Peachpied Symfony performs project migration to the ASP.NET Core environment using .NET based web server, it can be expected that users will want to set up environmental variables in a .NET-specific way with the use of previously mentioned \texttt{appsettings.json} configuration file. On the other hand, this way of configuring should not be compulsory as there might also be users who would prefer to simply compile existing Symfony project without the need to worry about environmental variables letting the application use Symfony's configuration already present in the code. This functionality is delivered by the \texttt{SymfonyConfig} and the \texttt{SfConfigurationLoader} classes. The first one represents a definition for environmental variables and their default values. Therefore, it consists solely of properties. The second class contains methods for configuration values parsing, default configuration loading and \texttt{appsettings.json} files processing.
 
 
-\paragraph{Runtime problems} Probably the most significant problem encountered was due to differences in server root directory in Symfony and .NET. +++
+\paragraph{Runtime problems} Probably the most significant problem encountered was due to differences in server root directory between Symfony and .NET. In Symfony, it is expected that a server operates from the root directory set to \texttt{public/}, therefore, all paths to assets like styles, scripts and images are set relative to this folder. In our .NET application however, we set the server root to the parent directory of the Symfony project. We have to do it this way in order to be able to reach assets from both the application. Peachpie's \texttt{UsePhp} midlleware simplifies this problem partially by locating Symfony projects' sources for us, however, it does not help us with the problem of assets that are expected to be relative to he \texttt{public} directory.
+
+This problem was resolved by adding URL rewriting into the \texttt{UseSymfony} method. URL rewriting is a technique used to modify request URLs based on one or more predefined rules \citep{microsoft.docs}. It creates an abstraction between resource locations and their addresses so that the locations and addresses aren't tightly linked. \citep{microsoft.docs}. In ASP.NET Core, the \texttt{UseRewriter} middleware serves this cause and for that accepts instance of the \texttt{RewriteOptions} class as an argument. Actual implementation of the URL rewriting in Symfony can be found on the following Listing.
+
+\begin{center}
+\lstset{language=[Sharp]C,
+	morekeywords={var}}
+\begin{lstlisting}[caption={Symfony URL rewritting middleware},captionpos=b]
+var options = new RewriteOptions()
+    .AddRewrite(
+        @"((.*\/)*([^\/\?&]*\.[^\/\?&]*))",
+        bootstrapConfig.PublicDir + "/$1",
+        skipRemainingRules: true
+    )
+    .AddRewrite(
+        @"^(?!"+ bootstrapConfig.PublicDir + "/)(.*)$", 
+        bootstrapConfig.PublicDir, 
+        skipRemainingRules: true
+    );
+
+app.UseRewriter(options);
+\end{lstlisting}
+\end{center}
 
 Regarding Peachpie-related errors we will mention invalid handling of \texttt{new ReflectionProperty("Exception", "trace")} expression. This was done due to lack of formal documentation of private \texttt{\$trace} property of the \texttt{Exception} class. For the moment, this enabled the application to run only with the \texttt{APP\_DEBUG} environmental variable set to \texttt{false}. However, the error was later on resolved by an update of PeachPie compiler and therefore the debug mode is fully supported at the moment. Along some less complicated errors we can name incorrect \texttt{realpath} function return value implementation, where the function returned \texttt{null} instead of \texttt{false} on failure.
 

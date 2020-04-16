@@ -7,7 +7,7 @@ When it comes down to numbers, PHP: Hypertext Preprocessor (PHP) is the ultimate
 
 Previous statistics show that if we were to sum the websites implemented in PHP and .NET, we would end up with almost 80\% of all surveyed, and presumably 8 out of 10 all existing, web applications. Moreover, unifying the two technologies would benefit both communities. Where PHP community could make use of security and manageability advantages of pre-compiled code, .NET developers will be given means to use dynamic features of PHP language and a vast of community libraries. This is the ultimate goal of Peachpie, modern PHP to .NET compiler, that is currently in development.
 
-Many web oriented PHP frameworks have been developed by utilizing built-in functionalities of PHP such as response and request handling, and providing them in a more abstract way. This results in making the process of web application deployment faster and thus less expensive. Due to lack of any reliable statistics on PHP web frameworks' usage, custom survey on the topic was performed. Considered parameters were Stack Overflow Trends, Google Trends, GitHub stars, Twitter followers and Facebook likes. This gives us quite accurate information about the popularity of selected frameworks compared to each other, which should at least correspond to their actual usage. Gathered data are displayed in the Figure 0.1 and apply to 27/6/2019. When evaluated, Wordpress is an absolute winner, followed by Laravel and Shopify that share the second place. Third place holds Symfony and after that comes the rest of compared frameworks such as CodeIgniter, PrestaShop, Zend or CakePHP.
+Many web oriented PHP frameworks have been developed by utilizing built-in functionalities of PHP such as response and request handling, and providing them in a more abstract way. This results in making the process of web application deployment faster and thus less expensive. Due to lack of any reliable statistics on PHP web frameworks' usage, custom survey on the topic was performed. Considered parameters were Stack Overflow Trends, Google Trends, GitHub stars, Twitter followers and Facebook likes. This gives us quite accurate information about the popularity of selected frameworks compared to each other, which should at least correspond to their actual usage. Gathered data are displayed in the Figure 0.1 and apply to 15/04/2020. When evaluated, Wordpress is an absolute winner, followed by Laravel and Shopify that share the second place. Third place holds Symfony and after that comes the rest of compared frameworks such as CodeIgniter, PrestaShop, Zend or CakePHP.
 
 Unfortunately, every web framework wraps PHP in its own unique way and provides special additional features. Some provide a basic functionality in a set of default scripts and a vast library of downloadable components with additional functionalities. Others deliver almost a working solution out of the box and leave the user only with the need to configure content and possibility to install whole features in a form of modules, such frameworks are usually called Content Management Systems or simply CMS. Therefore, each framework requires special treatment during its compilation, making their automatic compilation impossible. Peachpie developers has successfully compiled Wordpress framework. Shopify is not open-source and thus its source code is not simply accessible. On the other hand, Laravel is open-source, and the same goes for Symfony. Even though Laravel is in popularity superior to Symfony, Symfony is almost twice as old and its packages are produced mostly by teams recognized by Symfony developers themselves, for example FOS or KnpLabs can be named. Its long lasting stability and guaranteed quality of its packages has proved Symfony to be the perfect adept for compilation.
 
@@ -20,22 +20,26 @@ This work therefore examines the possibilities of compiling Symfony framework in
 \end{figure}
 
 
-
-
-
 \section*{Thesis overview}
 \addcontentsline{toc}{section}{An overview of the thesis}
 
 \paragraph{Chapter 1: PHP language}
-The first chapter will provide an introduction to PHP programming language. It will cover its origin, development, process of execution and all of the language features that will be further built atop. After that, configuration and usage of Composer will be explained, as its knowledge simplifies the understanding of Symfony framework, which will be discussed in the following part. The chapter ends with the explanation of TWIG engine's syntax and usage. 
+The first chapter introduces PHP programming language along with tools like Composer package manager, Symfony framework and Twig template engine. 
 
 \paragraph{Chapter 2: C\# language}
-The goal of the second chapter is to introduce C\# programming language and .NET platform. The following part of the chapter will focus on NuGet package manager as it forms a building block for the upcoming text. Furthermore, ASP.NET Core framework's background will be described, accompanied by an introduction to Razor markup, which is tightly entangled with ASP.NET Core. Both the ASP.NET Core part and the Razor part will also present an overview of their usage with simple code examples. 
+This chapter provides general overview of C\# programming language and tools associated with it: NuGet package manager, ASP.NET Core and Razor template engine.
 
 \paragraph{Chapter 3: PHP to .NET compilation}
-The third chapter talks about programming languages and communities around them in general. It provides a possible way of building a bridge between two selected communities and outlines some aspects of its practical implementation. Peachpie, an actual implementation of previously discussed tool is presented.
+Chapter 3 addresses the problematique of compiling one language to another in general and introduces Peachpie, PHP to .NET compiler.
 
 \paragraph{Chapter 4: Problem analysis}
-Chapter 4 describes the general idea behind the thesis and introduces specific tools and technologies that will be used on the way to its achieving. Moreover, the chapter provides general overview of possible alternatives to each selected technology and explains reasons for each choice.
+Problem the thesis aims to resolve along with proposed solution and possible alternatives is introduced in Chapter 4. 
 
-\paragraph{Chapter 5: Peachpied Symfony}
+\paragraph{Chapter 5: Component compilation}
+This chapter focuses on Symfony Components compilation and the tools that assist the process.
+
+\paragraph{Chapter 6: Project compilation}
+The way Symfony projects are compiled and deployed is discussed in Chapter 6.
+
+\paragraph{Chapter 7: Examples of usage}
+Chapter describes actual usage of the toolkit on three simple application provided with the project.

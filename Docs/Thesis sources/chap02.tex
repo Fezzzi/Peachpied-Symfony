@@ -1,4 +1,7 @@
 \chapter{C\# language}
+The goal of this chapter is to introduce C\# programming language and .NET platform. The following part of the chapter will focus on NuGet package manager as it forms a building block for the upcoming text. Furthermore, ASP.NET Core framework's background will be described, accompanied by an introduction to Razor markup, which is tightly entangled with ASP.NET Core. Both the ASP.NET Core part and the Razor part will also present an overview of their usage with simple code examples.
+
+\section{Language introduction}
 C\# is a general-purpose programming language, under the management of Microsoft Corporation. It is a part of the developer platform called .NET. One of the main features of .NET is language interoperability, giving programmer opportunity to combine multiple languages and libraries in a single project. That is possible because of the same specification that all .NET components are build atop, called the Common Language Infrastructure (CLI) \citep{Ecma335}. The CLI has been standardized by ECMA International in ECMA-335 and approved as ISO/IEC 23271 \citep{Ecma335}. This document covers following 4 areas of interest: type system, metadata, the Common Language Specification (CLS) and the Virtual Execution System (VES) \citep{Ecma335}. 
 
 At the time of writing, there are 8 major versions of C\# programming language released \citep{microsoft.docs}. When speaking of C\# we implicitly mean C\# version 8, as the latest officially released version.
@@ -29,9 +32,6 @@ The process of C\# application's deployment from compilation to execution is sum
   \caption{C\# application's deployment}
   \label{fig:csharp_execution}
 \end{figure}
-
-
-
 
 
 \section{Language features}
