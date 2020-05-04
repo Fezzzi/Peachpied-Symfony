@@ -17,7 +17,13 @@
   
   <!-- Call custom targets -->
   <Target Name="RestoreVendorDir" BeforeTargets="BeforeBuild"> 
-    <CallTarget Targets="TRestoreComposerLock; TGenerateSymfonyAutoload; TGenerateSymfonyCache; CompileRestoredFiles"/>
+    <CallTarget Targets="
+      TRestoreComposerLock;
+      TGenerateSymfonyAutoload;
+      TRefreshSymfonyCache;
+      TGenerateSymfonyCache;
+      CompileRestoredFiles"
+    />
   </Target>
 
   <!-- Generate composer.lock from lockFragments packed inside nugets -->
@@ -33,9 +39,26 @@
     </GenerateSymfonyAutoload>
   </Target>
 
+  <ItemGroup>
+    <ConfigFiles Include="
+        $(ProjPath)\config\**\*.php;
+        $(ProjPath)\config\**\*.yaml;
+        $(ProjPath)\config\**\*.yml;
+        $(ProjPath)\config\**\*.xml)"
+    />
+    <CacheFiles Include="$(ProjPath)\var\cache\**\*" />
+  </ItemGroup>
+  
+  <!-- Refresh var folder with Symfony Cache if needed -->
+  <Target Name="TRefreshSymfonyCache" Inputs="@(ConfigFiles)" Outputs="@(CacheFiles)">
+    <RemoveDir Directories="$(ProjPath)\var\cache" />
+	  <GenerateSymfonyCache Configuration="$(Configuration)">
+      <Output TaskParameter="Executed" PropertyName="_RestoredVar" />
+    </GenerateSymfonyCache>
+  </Target>
+  
   <!-- Generate var folder with Symfony cache -->
-  <Target Name="TGenerateSymfonyCache"  
-          Condition="!Exists('$(MSBuildProjectDirectory)\var') OR $(ForceCacheRefresh)==true">
+  <Target Name="TGenerateSymfonyCache" Condition="!Exists('$(MSBuildProjectDirectory)\var\cache')">
     <GenerateSymfonyCache Configuration="$(Configuration)">
       <Output TaskParameter="Executed" PropertyName="_RestoredVar" />
     </GenerateSymfonyCache>
