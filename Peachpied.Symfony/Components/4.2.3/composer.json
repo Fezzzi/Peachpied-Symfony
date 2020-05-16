@@ -9,7 +9,6 @@
         "ext-iconv": "*",
         "symfony/console": "*",
         "symfony/dotenv": "*",
-        "symfony/flex": "^1.1",
         "symfony/form": "4.2.*",
         "symfony/framework-bundle": "*",
         "symfony/templating": "4.2.*",
