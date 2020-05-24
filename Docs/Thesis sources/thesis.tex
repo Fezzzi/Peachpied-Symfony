@@ -49,9 +49,11 @@
 \usepackage{dcolumn}        % improved alignment of table columns
 \usepackage{booktabs}       % improved horizontal lines in tables
 \usepackage{paralist}       % improved enumerate and itemize
+\usepackage{float}			% enables figure placement enforcing
 
 \usepackage{xcolor}
 \definecolor{commnetsGreen}{RGB}{0,110,0}
+\definecolor{blockGray}{gray}{0.9}
 
 \usepackage{listings}		% listings
 \lstset{
@@ -70,6 +72,20 @@
 	identifierstyle=\color{blue},
 	stringstyle=\color{black},
 	keywordstyle=\color{red},}
+	
+\newsavebox\resheadingbox
+\newcommand{\codebox}[1]{%
+	\begin{center}\sbox\resheadingbox{\colorbox{blockGray}{%
+		\begin{minipage}{\dimexpr\textwidth-2\fboxsep\relax}
+			\centering
+			\strut\ttfamily#1\ttfamily\strut
+		\end{minipage}%
+	}}
+	\dp\resheadingbox\dimexpr\dp\resheadingbox\relax
+	\usebox\resheadingbox
+	\end{center}
+}
+	
 \renewcommand\lstlistlistingname{List of Listings}
 %\usepackage[usenames]{xcolor}  % typesetting in color
 
@@ -105,12 +121,12 @@
 % An optional dedication: you can thank whomever you wish (your supervisor,
 % consultant, a person who lent the software, etc.)
 \def\Dedication{%
-Foremost, I would like to thank my supervisor Ing. Mgr. Robert Husák for all his time and many advices in the course of this thesis. I want to offer thanks to Markéta Sauerová for hours of grammar and syntax consulting. I am also thankful to the whole Peachpie dev team, especially RNDr. Jakub Míšek, for their support and tips. Last but not least, I would like to express gratitude to my parents and family for their love and support.
+Foremost, I would like to thank my supervisor Ing. Mgr. Robert Husák for all his time and much advice in the course of this thesis. I want to offer thanks to Markéta Sauerová for hours of grammar and syntax consulting. I am also thankful to the whole Peachpie dev team, especially RNDr. Jakub Míšek, for their support and tips. Last but not least, I would like to express gratitude to my parents and family for their love and support.
 }
 
 % Abstract (recommended length around 80-200 words; this is not a copy of your thesis assignment!)
 \def\Abstract{%
-PHP language dominates the web development industry for over a decade. Peachpie is PHP compiler to .NET. Each major PHP framework brings together large community and a solid codebase, providing features and tools that make the PHP web application development even simpler. Ability to extend Symfony framework in .NET would therefore yield advantages for both PHP developers striving for more security and .NET programmers lacking third-party content. Doing so with plain Peachpie compiler, however, brings problem of actual usability of the features Symfony provides. Each project would require to recompile Symfony components again and thus result in both time and space overhead. This thesis shows it is possible to improve this process and enable intuitive usage and extensibility of Symfony framework in .NET environment. It denotes utilities for semi-automatic Symfony components compilation and migration of Symfony applications to .NET. Furthermore, it provides tools for additional interoperability between TWIG and Razor template engines, and a set of examples of its actual usage.
+PHP language dominates the web development industry for a long time now. Each major PHP framework brings together large community and a solid codebase, providing features and tools that make the PHP web application development even simpler. Joining this vast world with .NET is an aim of Peachpie, PHP compiler to .NET. This provides means to use Symfony framework in .NET, yielding advantages for both PHP developers striving for more security and .NET programmers lacking third-party content. Doing so with plain Peachpie compiler, however, brings problem of actual usability of the features Symfony provides. Each project would require to recompile Symfony Components again and thus result in both time overhead and tedious manual configuration. This thesis shows it is possible to improve this process and enable intuitive usage of Symfony framework in .NET environment. It denotes utilities for semi-automatic compilation of Symfony Components into NuGet packages and migration of simple Symfony applications to .NET. Furthermore, it provides tools for additional interoperability between Twig and Razor template engines, and a set of examples of its actual usage.
 }
 
 % 3 to 5 keywords (recommended), each enclosed in curly braces
@@ -156,6 +172,7 @@ PHP language dominates the web development industry for over a decade. Peachpie 
 
 %%% Listings
 \lstlistoflistings
+\addcontentsline{toc}{chapter}{List of Listings}
 
 %%% Abbreviations used in the thesis, if any, including their explanation
 %%% In mathematical theses, it could be better to move the list of abbreviations to the beginning of the thesis.
@@ -174,9 +191,51 @@ PHP language dominates the web development industry for over a decade. Peachpie 
 %%% should be uploaded to SIS and optionally also included in the thesis on a~CD/DVD.
 %%% Allowed file formats are specified in provision of the rector no. 72/2017.
 \appendix
-\chapter{Attachments}
+\chapter*{Attachments}
+\addcontentsline{toc}{chapter}{Attachments}
 
-\section{First Attachment}
+\section*{A. Project repository}
+\addcontentsline{toc}{section}{\numberline{A}Project repository}
+Content and structure of project repository attached to this thesis:
+
+\paragraph{}
+\begin{tabular}{@{}p{.3\textwidth}p{.62\textwidth}@{}}
+\textbf{Nuget.config} & Configures local NuGet repository. \\[0.4cm]
+
+\textbf{global.json} & Globally controls used Peachpie SDK version. \\[0.4cm]
+
+\textbf{libsConfig.json} & Holds per-component build configuration. \\[0.4cm]
+
+\textbf{favicon.png} & Icon used as example applications' favicon. \\[0.4cm]
+
+\textbf{README.md} & Repository's readme file. \\[0.4cm]
+
+\textbf{Docs/} & Contains electronic version of the thesis's text. \\[0.4cm]
+
+\textbf{Examples/} & Contains projects demonstrating possible usage. \\[0.4cm]
+
+\textbf{Libs/} & Contains \texttt{.dll}s used for Components building. \\[0.4cm]
+
+\textbf{Nuget-Repository/} & Local NuGet repository. \\[0.4cm]
+
+\textbf{Peachpied.Symfony/} & \\[0.3cm]
+\end{tabular}
+
+\begin{tabular}{p{.3\textwidth}p{.55\textwidth}}
+ \textbf{README.md} & Folder's readme file. \\[0.3cm] 
+ \textbf{AspNetCore/} & Provides API for the whole functionality.  \\[0.3cm] 
+ \textbf{Components/4.2.3/} & Folder with Symfony 4.2.3 Components. \\[0.3cm] 
+ \textbf{Empty-Page/} & Simple .NET Core application with Symfony. \\[0.3cm] 
+ \textbf{Skeletons/4.2.3/} & Project bundling Symfony 4.2.3 NuGets. \\[0.3cm] 
+ \textbf{Templates/} & Provides project templates. \\[0.4cm] 
+\end{tabular}
+
+\begin{tabular}{@{}p{.3\textwidth}p{.62\textwidth}@{}}
+\textbf{Props/} & Holds collective build settings for Components. \\[0.4cm]
+
+\textbf{Tools/} & Contains sources of tools responsible for automatization of compilation processes. \\[0.4cm]
+
+\end{tabular}
 
 \openright
 \end{document}
