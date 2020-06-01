@@ -85,6 +85,18 @@
 	\usebox\resheadingbox
 	\end{center}
 }
+
+\renewcommand{\texttt}[1]{%
+  \begingroup
+  \ttfamily
+  \begingroup\lccode`~=`/\lowercase{\endgroup\def~}{\discretionary{}{/}{/}}%
+  \begingroup\lccode`~=`\_\lowercase{\endgroup\def~}{\discretionary{}{\_}{\_}}%
+  \begingroup\lccode`~=`.\lowercase{\endgroup\def~}{\discretionary{}{.}{.}}%
+  \begingroup\lccode`~=`-\lowercase{\endgroup\def~}{\discretionary{}{-}{-}}%
+  \catcode`/=\active\catcode`\_=\active\catcode`.=\active\catcode`-=\active
+  \scantokens{#1\noexpand}%
+  \endgroup
+}
 	
 \renewcommand\lstlistlistingname{List of Listings}
 %\usepackage[usenames]{xcolor}  % typesetting in color
@@ -126,7 +138,7 @@ Foremost, I would like to thank my supervisor Ing. Mgr. Robert Husák for all hi
 
 % Abstract (recommended length around 80-200 words; this is not a copy of your thesis assignment!)
 \def\Abstract{%
-PHP language dominates the web development industry for a long time now. Each major PHP framework brings together large community and a solid codebase, providing features and tools that make the PHP web application development even simpler. Joining this vast world with .NET is an aim of Peachpie, PHP compiler to .NET. This provides means to use Symfony framework in .NET, yielding advantages for both PHP developers striving for more security and .NET programmers lacking third-party content. Doing so with plain Peachpie compiler, however, brings problem of actual usability of the features Symfony provides. Each project would require to recompile Symfony Components again and thus result in both time overhead and tedious manual configuration. This thesis shows it is possible to improve this process and enable intuitive usage of Symfony framework in .NET environment. It denotes utilities for semi-automatic compilation of Symfony Components into NuGet packages and migration of simple Symfony applications to .NET. Furthermore, it provides tools for additional interoperability between Twig and Razor template engines, and a set of examples of its actual usage.
+PHP language has been dominating the web development industry for a long time now. Each major PHP framework brings together a large community and a solid codebase, providing features and tools that make the PHP web application development even simpler. Joining this vast world with .NET is an aim of Peachpie, PHP compiler to .NET. This provides means to use Symfony framework in .NET, yielding advantages for both the PHP developers striving for more security and the .NET programmers lacking third-party content. Doing so with plain Peachpie compiler, however, brings problem of actual usability of the features Symfony provides. Each project would require to recompile Symfony Components again and thus result in both time overhead and tedious manual configuration. This thesis shows it is possible to improve this process and enable intuitive usage of Symfony framework in the .NET environment. It denotes utilities for semi-automatic compilation of the Symfony Components into the NuGet packages and migration of simple Symfony applications to .NET. Furthermore, it provides tools for additional interoperability between Twig and Razor template engines, and a set of examples of its actual usage.
 }
 
 % 3 to 5 keywords (recommended), each enclosed in curly braces
