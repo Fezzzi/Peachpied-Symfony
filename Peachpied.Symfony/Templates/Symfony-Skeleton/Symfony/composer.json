@@ -1,21 +1,17 @@
 {
-    "name": "symfony/skeleton",
     "type": "project",
-    "license": "MIT",
-    "description": "A minimal Symfony project recommended to create bare bones applications",
+    "license": "proprietary",
     "require": {
         "php": "^7.1.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "symfony/console": "*",
-        "symfony/dotenv": "*",
-        "symfony/form": "4.2.*",
-        "symfony/framework-bundle": "*",
-        "symfony/templating": "4.2.*",
-        "symfony/translation": "4.2.*",
-        "symfony/twig-bundle": "4.2.*",
-        "symfony/validator": "4.2.*",
-        "symfony/yaml": "*"
+        "symfony/console": "4.2.*",
+        "symfony/dotenv": "4.2.*",
+        "symfony/flex": "^1.3.1",
+        "symfony/framework-bundle": "4.2.*",
+        "symfony/yaml": "4.2.*"
+    },
+    "require-dev": {
     },
     "config": {
         "preferred-install": {
@@ -61,8 +57,5 @@
             "allow-contrib": false,
             "require": "4.2.*"
         }
-    },
-    "require-dev": {
-        "symfony/web-server-bundle": "4.2.*"
     }
 }

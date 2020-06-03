@@ -15,3 +15,6 @@ Simple .NET Core application using Symfony with a sigle empty page displaying on
 Set of simple projects that iclude references to nuget packages that mimic bare bones Symfony Skeleton application in a single nuget. Each project correspond to a single version of
 `Symfony-Skeleton` application. These are organized into directories by the versions.
 
+### Templates
+Contains two templates for .NET projects using Peachpied.Symfony. 
+
