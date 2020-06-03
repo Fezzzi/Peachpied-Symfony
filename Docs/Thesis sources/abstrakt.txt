@@ -1,9 +1,0 @@
-Již dlouhou dobu dominuje průmyslu vývoje webových aplikací programovací jazyk PHP.
-Každý významný PHP framework disponuje velkou komunitou programátorů a kvalitní codebase, které společně poskytují sadu technik a nástrojů, usnadňujících vývoj webových aplikací v PHP ještě více.
-Spojení tohoto obsáhlého světa PHP s .NET je hlavním cílem Peachpie, překadače PHP do .NET.
-Tím přináší prostředky pro použití Symfony frameworku v .NET, čímž potěší PHP programátory toužící po vyšší bezpečnosti, ale i .NET programátory postrádající third-party obsah.
-Přímé použití Peachpie však přináší problémy spojené s praktikou použitelností nástrojů poskytnutými Symfony frameworkem.
-Každý projekt by totiž vyžadoval opětovně kompilovat všechny Symfony komponenty, což přináší negativní časový dopad a potřebu zdlouhavé manuální konfigurace.
-Tato práce demonstruje možnost zlepšení tohoto procesu a usnadnění použití Symfony rameworku v .NET.
-Práce představuje sadu nástrojů pro semi-automatickou kompilaci Symfony komponent do NuGet balíčků a migraci jednoduchých Symfony aplikací na .NET.
-Navíc jsou poskytnuty i nástroje umožňující interoperabilitu mezi šablonovacími jazyky Twig a Razor, a série příkladů jejich praktického použití.
